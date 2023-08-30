@@ -848,6 +848,20 @@
   width: 1em;
   height: 1em;
 }
+.text__cy62H {
+  position: relative;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  color: #ff0000;
+  min-width: 0;
+  display: none;
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .text__cy62H {
+    display: block;
+  }
+}
 .freeBox__pzsY1 {
   display: flex;
   position: relative;
@@ -1424,4 +1438,17 @@
 }
 .footer:global(.__wab_instance) {
   position: relative;
+}
+.text__yGo4Y {
+  position: relative;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  min-width: 0;
+  display: none;
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .text__yGo4Y {
+    display: block;
+  }
 }

@@ -41,6 +41,7 @@ import {
 import "@plasmicapp/react-web/lib/plasmic.css";
 
 import plasmic_library_plasmic_color_type_css from "../library_plasmic_color_type/plasmic_library_plasmic_color_type.module.css"; // plasmic-import: seaQhLVS4bbjiGvJJrRwyL/projectcss
+import plasmic_antd_5_hostless_css from "../antd_5_hostless/plasmic_antd_5_hostless.module.css"; // plasmic-import: ohDidvG9XsCeFumugENU3J/projectcss
 import projectcss from "./plasmic_appel_site.module.css"; // plasmic-import: wBRmoS7Qf8danpDnoXZLVz/projectcss
 import sty from "./PlasmicTextInput.module.css"; // plasmic-import: FUGagdHJdaBb/css
 
@@ -237,6 +238,7 @@ function PlasmicTextInput__RenderFunc(props: {
         projectcss.plasmic_mixins,
         projectcss.plasmic_tokens,
         plasmic_library_plasmic_color_type_css.plasmic_tokens,
+        plasmic_antd_5_hostless_css.plasmic_tokens,
         sty.root,
         {
           [sty.root___focusVisibleWithin]: triggers.focusVisibleWithin_root,
