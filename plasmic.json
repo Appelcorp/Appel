@@ -1706,6 +1706,26 @@
           "id": "e6bxsoXeL",
           "name": "mysteryproductad.png 4",
           "filePath": "../public/plasmic/appel_site/images/mysteryproductadpng4.png"
+        },
+        {
+          "id": "u-vaXKC9d",
+          "name": "appel2.png 4",
+          "filePath": "../public/plasmic/appel_site/images/appel2Png4.png"
+        },
+        {
+          "id": "i7nu7V5-K",
+          "name": "appel2.png 5",
+          "filePath": "../public/plasmic/appel_site/images/appel2Png5.png"
+        },
+        {
+          "id": "xCjxXFjSh",
+          "name": "appel2lite.png 2",
+          "filePath": "../public/plasmic/appel_site/images/appel2Litepng2.png"
+        },
+        {
+          "id": "hRAlY6p-f",
+          "name": "appel2pro.png 3",
+          "filePath": "../public/plasmic/appel_site/images/appel2Propng3.png"
         }
       ],
       "indirect": false,
@@ -1995,7 +2015,8 @@
             "importPath": "@plasmicpkgs/antd5/skinny/registerTree"
           }
         }
-      ]
+      ],
+      "jsBundleThemes": []
     }
   ],
   "globalVariants": {

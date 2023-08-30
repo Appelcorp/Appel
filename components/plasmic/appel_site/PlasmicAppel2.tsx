@@ -573,11 +573,11 @@ function PlasmicAppel2__RenderFunc(props: {
                       displayMaxWidth={"100%" as const}
                       displayMinHeight={"0" as const}
                       displayMinWidth={"0" as const}
-                      displayWidth={"206px" as const}
+                      displayWidth={"300px" as const}
                       loading={"lazy" as const}
                       src={{
-                        src: "/plasmic/appel_site/images/appel2Fullpng2.png",
-                        fullWidth: 1748,
+                        src: "/plasmic/appel_site/images/appel2Png5.png",
+                        fullWidth: 2492,
                         fullHeight: 3388,
                         aspectRatio: undefined
                       }}

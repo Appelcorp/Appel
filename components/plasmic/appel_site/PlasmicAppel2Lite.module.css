@@ -778,7 +778,8 @@
   position: relative;
   object-fit: cover;
   max-width: 100%;
-  width: 206px;
+  height: auto;
+  width: 300px;
 }
 .img__gLfcn > picture > img {
   object-fit: cover;
