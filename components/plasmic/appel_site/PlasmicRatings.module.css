@@ -1,0 +1,220 @@
+.root {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  width: 200px;
+}
+.root > :global(.__wab_flex-container) {
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-left: calc(0px - 8px);
+  width: calc(100% + 8px);
+}
+.root > :global(.__wab_flex-container) > *,
+.root > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
+.root > :global(.__wab_flex-container) > picture > img,
+.root > :global(.__wab_flex-container) > :global(.__wab_slot) > picture > img {
+  margin-left: 8px;
+}
+.freeBox {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+}
+.freeBox > :global(.__wab_flex-container) {
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: flex-start;
+  margin-left: calc(0px - 5px);
+  width: calc(100% + 5px);
+}
+.freeBox > :global(.__wab_flex-container) > *,
+.freeBox > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
+.freeBox > :global(.__wab_flex-container) > picture > img,
+.freeBox
+  > :global(.__wab_flex-container)
+  > :global(.__wab_slot)
+  > picture
+  > img {
+  margin-left: 5px;
+}
+.svg__vesSx {
+  position: relative;
+  object-fit: cover;
+  width: 14px;
+  height: 14px;
+  color: var(--token-DBldBWEaOcI9U);
+  flex-shrink: 0;
+}
+.svgstars_zero__vesSxYXlg {
+  display: none;
+}
+.svg___6Ak9R {
+  position: relative;
+  object-fit: cover;
+  width: 14px;
+  height: 14px;
+  color: var(--token-DBldBWEaOcI9U);
+  flex-shrink: 0;
+  display: none;
+}
+.svgstars_zero___6Ak9RyXlg {
+  display: none;
+}
+.svgstars_one___6Ak9R0Jh77 {
+  display: none;
+}
+.svg__pkZj1 {
+  position: relative;
+  object-fit: cover;
+  width: 14px;
+  height: 14px;
+  color: var(--token-DBldBWEaOcI9U);
+  flex-shrink: 0;
+  display: none;
+}
+.svgstars_zero__pkZj1YXlg {
+  display: none;
+}
+.svgstars_one__pkZj10Jh77 {
+  display: none;
+}
+.svgstars_two__pkZj1H5TjB {
+  display: none;
+}
+.svg___2V1Gc {
+  position: relative;
+  object-fit: cover;
+  width: 14px;
+  height: 14px;
+  color: var(--token-DBldBWEaOcI9U);
+  flex-shrink: 0;
+  display: none;
+}
+.svgstars_zero___2V1GcYXlg {
+  display: none;
+}
+.svgstars_one___2V1Gc0Jh77 {
+  display: none;
+}
+.svgstars_two___2V1Gch5TjB {
+  display: none;
+}
+.svgstars_three___2V1GcURzM {
+  display: none;
+}
+.svg__uWfws {
+  position: relative;
+  object-fit: cover;
+  width: 14px;
+  height: 14px;
+  color: var(--token-DBldBWEaOcI9U);
+  flex-shrink: 0;
+  display: none;
+}
+.svgstars_zero__uWfwsYXlg {
+  display: none;
+}
+.svgstars_one__uWfws0Jh77 {
+  display: none;
+}
+.svgstars_two__uWfwsh5TjB {
+  display: none;
+}
+.svgstars_three__uWfwsURzM {
+  display: none;
+}
+.svgstars_four__uWfwsoQfvY {
+  display: none;
+}
+.svg__a6T69 {
+  position: relative;
+  object-fit: cover;
+  width: 14px;
+  height: 14px;
+  color: var(--token-rw01xcKv-L2GF);
+  flex-shrink: 0;
+  display: none;
+}
+.svgstars_one__a6T690Jh77 {
+  display: none;
+}
+.svgstars_two__a6T69H5TjB {
+  display: none;
+}
+.svgstars_three__a6T69URzM {
+  display: none;
+}
+.svgstars_four__a6T69OQfvY {
+  display: none;
+}
+.svgstars_five__a6T69F9DNt {
+  display: none;
+}
+.svg___2TVWw {
+  position: relative;
+  object-fit: cover;
+  width: 14px;
+  height: 14px;
+  color: var(--token-rw01xcKv-L2GF);
+  flex-shrink: 0;
+}
+.svgstars_two___2TVWwh5TjB {
+  display: none;
+}
+.svgstars_three___2TVWwURzM {
+  display: none;
+}
+.svgstars_four___2TVWwoQfvY {
+  display: none;
+}
+.svgstars_five___2TVWwf9DNt {
+  display: none;
+}
+.svg___4PzQc {
+  position: relative;
+  object-fit: cover;
+  width: 14px;
+  height: 14px;
+  color: var(--token-rw01xcKv-L2GF);
+  flex-shrink: 0;
+}
+.svgstars_three___4PzQcURzM {
+  display: none;
+}
+.svgstars_four___4PzQcoQfvY {
+  display: none;
+}
+.svgstars_five___4PzQcf9DNt {
+  display: none;
+}
+.svg__icZth {
+  position: relative;
+  object-fit: cover;
+  width: 14px;
+  height: 14px;
+  color: var(--token-rw01xcKv-L2GF);
+  flex-shrink: 0;
+}
+.svgstars_four__icZthoQfvY {
+  display: none;
+}
+.svgstars_five__icZthf9DNt {
+  display: none;
+}
+.svg__nnArn {
+  position: relative;
+  object-fit: cover;
+  width: 14px;
+  height: 14px;
+  color: var(--token-rw01xcKv-L2GF);
+  flex-shrink: 0;
+}
+.svgstars_five__nnArnf9DNt {
+  display: none;
+}
+.slotTargetNumReviews {
+  font-size: 14px;
+  color: var(--token-kOTi6bbN7LbON);
+}
