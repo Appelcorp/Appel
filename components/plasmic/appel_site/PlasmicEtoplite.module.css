@@ -493,6 +493,38 @@
   width: 1em;
   height: 1em;
 }
+.button__htX5A:global(.__wab_instance) {
+  max-width: 100%;
+  position: relative;
+  align-self: flex-start;
+}
+.svg___97DC {
+  position: relative;
+  object-fit: cover;
+  width: 1em;
+  height: 1em;
+}
+.text__kft1K {
+  font-family: "Inter", sans-serif;
+  font-size: 1em;
+  font-weight: 500;
+  font-style: normal;
+  color: var(--token-3JpfuKOQofckF);
+  text-align: left;
+  text-transform: none;
+  line-height: 1.5;
+  letter-spacing: normal;
+  white-space: pre;
+  user-select: text;
+  text-decoration-line: none !important;
+  text-overflow: clip !important;
+}
+.svg__yHnJv {
+  position: relative;
+  object-fit: cover;
+  width: 1em;
+  height: 1em;
+}
 .button__t6NkD:global(.__wab_instance) {
   max-width: 100%;
   position: relative;

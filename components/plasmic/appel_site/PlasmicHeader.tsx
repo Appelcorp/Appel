@@ -158,29 +158,24 @@ function PlasmicHeader__RenderFunc(props: {
         hasGap={true}
         className={classNames(projectcss.all, sty.freeBox__jjnTm)}
       >
-        {(hasVariant(globalVariants, "screen", "mobile") ? true : true) ? (
-          <MenuButton
-            data-plasmic-name={"menuButton"}
-            data-plasmic-override={overrides.menuButton}
-            className={classNames("__wab_instance", sty.menuButton, {
-              [sty.menuButtonexpanded]: hasVariant(
-                $state,
-                "expanded",
-                "expanded"
-              )
-            })}
-            expanded={
-              hasVariant($state, "expanded", "expanded") &&
-              hasVariant(globalVariants, "screen", "mobile")
-                ? true
-                : undefined
-            }
-          />
-        ) : null}
+        <MenuButton
+          data-plasmic-name={"menuButton"}
+          data-plasmic-override={overrides.menuButton}
+          className={classNames("__wab_instance", sty.menuButton, {
+            [sty.menuButtonexpanded]: hasVariant($state, "expanded", "expanded")
+          })}
+          expanded={
+            hasVariant($state, "expanded", "expanded") &&
+            hasVariant(globalVariants, "screen", "mobile")
+              ? true
+              : undefined
+          }
+        />
+
         <p.PlasmicLink
           className={classNames(projectcss.all, projectcss.a, sty.link__gMtN)}
           component={Link}
-          href={"/" as const}
+          href={"/"}
           platform={"nextjs"}
         >
           <p.PlasmicImg
@@ -188,12 +183,12 @@ function PlasmicHeader__RenderFunc(props: {
             data-plasmic-override={overrides.img}
             alt={""}
             className={classNames(sty.img)}
-            displayHeight={"auto" as const}
-            displayMaxHeight={"none" as const}
-            displayMaxWidth={"92px" as const}
-            displayMinHeight={"0" as const}
-            displayMinWidth={"0" as const}
-            displayWidth={"100%" as const}
+            displayHeight={"auto"}
+            displayMaxHeight={"none"}
+            displayMaxWidth={"92px"}
+            displayMinHeight={"0"}
+            displayMinWidth={"0"}
+            displayWidth={"100%"}
             src={{
               src: "/plasmic/appel_site/images/e7Ee5F1EB703486F950F33Cd6F5328B5BlockCloud8BitCompressedPngpng.png",
               fullWidth: 836,
@@ -212,151 +207,9 @@ function PlasmicHeader__RenderFunc(props: {
             {"Typedream"}
           </div>
         </p.PlasmicLink>
-        {(
-          hasVariant($state, "expanded", "expanded") &&
-          hasVariant(globalVariants, "screen", "mobile")
-            ? true
-            : hasVariant(globalVariants, "screen", "mobile")
-            ? true
-            : true
-        ) ? (
-          <div
-            className={classNames(projectcss.all, sty.freeBox__ehHUz, {
-              [sty.freeBoxexpanded__ehHUzE429R]: hasVariant(
-                $state,
-                "expanded",
-                "expanded"
-              )
-            })}
-          >
-            <LinkButton
-              className={classNames("__wab_instance", sty.linkButton__wkvq1)}
-              href={"/#home" as const}
-              size={"small" as const}
-              text={
-                <div
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.__wab_text,
-                    sty.text__kJf54
-                  )}
-                >
-                  {"Showcase"}
-                </div>
-              }
-              type={"blankGray" as const}
-            />
-
-            <LinkButton
-              className={classNames("__wab_instance", sty.linkButton___1QqBj)}
-              href={"/#new-arrival" as const}
-              size={"small" as const}
-              text={
-                <div
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.__wab_text,
-                    sty.text__o0LAf
-                  )}
-                >
-                  {"Templates"}
-                </div>
-              }
-              type={"blankGray" as const}
-            />
-
-            <LinkButton
-              className={classNames("__wab_instance", sty.linkButton__pe856)}
-              href={"/#features" as const}
-              size={"small" as const}
-              text={
-                <div
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.__wab_text,
-                    sty.text__gyzbc
-                  )}
-                >
-                  {"Guides"}
-                </div>
-              }
-              type={"blankGray" as const}
-            />
-
-            <LinkButton
-              className={classNames("__wab_instance", sty.linkButton___11URp)}
-              href={"/#blog" as const}
-              size={"small" as const}
-              text={
-                <div
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.__wab_text,
-                    sty.text__koAEd
-                  )}
-                >
-                  {"Integrations"}
-                </div>
-              }
-              type={"blankGray" as const}
-            />
-
-            <LinkButton
-              className={classNames("__wab_instance", sty.linkButton__iRZk3)}
-              href={"/#contact" as const}
-              size={"small" as const}
-              text={
-                <div
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.__wab_text,
-                    sty.text__vD5A
-                  )}
-                >
-                  {"Pricing"}
-                </div>
-              }
-              type={"blankGray" as const}
-            />
-
-            {true ? (
-              <div className={classNames(projectcss.all, sty.freeBox__fbrjf)}>
-                {true ? (
-                  <p.PlasmicLink
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.a,
-                      sty.link__tjoU
-                    )}
-                    component={Link}
-                    href={"#" as const}
-                    platform={"nextjs"}
-                  >
-                    <div
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.__wab_text,
-                        sty.text___7YsCf
-                      )}
-                    >
-                      {"Login"}
-                    </div>
-                  </p.PlasmicLink>
-                ) : null}
-              </div>
-            ) : null}
-          </div>
-        ) : null}
-      </p.Stack>
-      {(
-        hasVariant($state, "expanded", "expanded") &&
-        hasVariant(globalVariants, "screen", "mobile")
-          ? true
-          : true
-      ) ? (
         <div
-          className={classNames(projectcss.all, sty.freeBox___7WjC1, {
-            [sty.freeBoxexpanded___7WjC1E429R]: hasVariant(
+          className={classNames(projectcss.all, sty.freeBox__ehHUz, {
+            [sty.freeBoxexpanded__ehHUzE429R]: hasVariant(
               $state,
               "expanded",
               "expanded"
@@ -364,36 +217,158 @@ function PlasmicHeader__RenderFunc(props: {
           })}
         >
           <LinkButton
-            className={classNames("__wab_instance", sty.linkButton__sXyl7)}
-            text={"Home"}
-            type={"blankGray" as const}
+            className={classNames("__wab_instance", sty.linkButton__wkvq1)}
+            href={"/#home"}
+            size={"small"}
+            text={
+              <div
+                className={classNames(
+                  projectcss.all,
+                  projectcss.__wab_text,
+                  sty.text__kJf54
+                )}
+              >
+                {"Showcase"}
+              </div>
+            }
+            type={"blankGray"}
           />
 
           <LinkButton
-            className={classNames("__wab_instance", sty.linkButton__sLd9E)}
-            text={"New Arrival"}
-            type={"blankGray" as const}
+            className={classNames("__wab_instance", sty.linkButton___1QqBj)}
+            href={"/#new-arrival"}
+            size={"small"}
+            text={
+              <div
+                className={classNames(
+                  projectcss.all,
+                  projectcss.__wab_text,
+                  sty.text__o0LAf
+                )}
+              >
+                {"Templates"}
+              </div>
+            }
+            type={"blankGray"}
           />
 
           <LinkButton
-            className={classNames("__wab_instance", sty.linkButton__qEe2J)}
-            text={"Features"}
-            type={"blankGray" as const}
+            className={classNames("__wab_instance", sty.linkButton__pe856)}
+            href={"/#features"}
+            size={"small"}
+            text={
+              <div
+                className={classNames(
+                  projectcss.all,
+                  projectcss.__wab_text,
+                  sty.text__gyzbc
+                )}
+              >
+                {"Guides"}
+              </div>
+            }
+            type={"blankGray"}
           />
 
           <LinkButton
-            className={classNames("__wab_instance", sty.linkButton__ylvVq)}
-            text={"Blog"}
-            type={"blankGray" as const}
+            className={classNames("__wab_instance", sty.linkButton___11URp)}
+            href={"/#blog"}
+            size={"small"}
+            text={
+              <div
+                className={classNames(
+                  projectcss.all,
+                  projectcss.__wab_text,
+                  sty.text__koAEd
+                )}
+              >
+                {"Integrations"}
+              </div>
+            }
+            type={"blankGray"}
           />
 
           <LinkButton
-            className={classNames("__wab_instance", sty.linkButton__x14Zg)}
-            text={"Contact"}
-            type={"blankGray" as const}
+            className={classNames("__wab_instance", sty.linkButton__iRZk3)}
+            href={"/#contact"}
+            size={"small"}
+            text={
+              <div
+                className={classNames(
+                  projectcss.all,
+                  projectcss.__wab_text,
+                  sty.text__vD5A
+                )}
+              >
+                {"Pricing"}
+              </div>
+            }
+            type={"blankGray"}
           />
+
+          <div className={classNames(projectcss.all, sty.freeBox__fbrjf)}>
+            <p.PlasmicLink
+              className={classNames(
+                projectcss.all,
+                projectcss.a,
+                sty.link__tjoU
+              )}
+              component={Link}
+              href={"#"}
+              platform={"nextjs"}
+            >
+              <div
+                className={classNames(
+                  projectcss.all,
+                  projectcss.__wab_text,
+                  sty.text___7YsCf
+                )}
+              >
+                {"Login"}
+              </div>
+            </p.PlasmicLink>
+          </div>
         </div>
-      ) : null}
+      </p.Stack>
+      <div
+        className={classNames(projectcss.all, sty.freeBox___7WjC1, {
+          [sty.freeBoxexpanded___7WjC1E429R]: hasVariant(
+            $state,
+            "expanded",
+            "expanded"
+          )
+        })}
+      >
+        <LinkButton
+          className={classNames("__wab_instance", sty.linkButton__sXyl7)}
+          text={"Home"}
+          type={"blankGray"}
+        />
+
+        <LinkButton
+          className={classNames("__wab_instance", sty.linkButton__sLd9E)}
+          text={"New Arrival"}
+          type={"blankGray"}
+        />
+
+        <LinkButton
+          className={classNames("__wab_instance", sty.linkButton__qEe2J)}
+          text={"Features"}
+          type={"blankGray"}
+        />
+
+        <LinkButton
+          className={classNames("__wab_instance", sty.linkButton__ylvVq)}
+          text={"Blog"}
+          type={"blankGray"}
+        />
+
+        <LinkButton
+          className={classNames("__wab_instance", sty.linkButton__x14Zg)}
+          text={"Contact"}
+          type={"blankGray"}
+        />
+      </div>
     </div>
   ) as React.ReactElement | null;
 }

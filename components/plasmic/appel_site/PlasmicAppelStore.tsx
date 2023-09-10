@@ -50,13 +50,13 @@ import sty from "./PlasmicAppelStore.module.css"; // plasmic-import: fOSuQpZqxl/
 
 import ChecksvgIcon from "./icons/PlasmicIcon__Checksvg"; // plasmic-import: nWUWSgWJ4hmrU/icon
 import Icon38Icon from "./icons/PlasmicIcon__Icon38"; // plasmic-import: tjW8u0N4RQb/icon
-import Appel2ProAndRegsvg2Icon from "./icons/PlasmicIcon__Appel2ProAndRegsvg2"; // plasmic-import: NvKwx_b9Y/icon
 import Appel1Svg2Icon from "./icons/PlasmicIcon__Appel1Svg2"; // plasmic-import: gBVsTHBahp/icon
+import Appel2ProAndRegsvg2Icon from "./icons/PlasmicIcon__Appel2ProAndRegsvg2"; // plasmic-import: NvKwx_b9Y/icon
 import Appellitesvg2Icon from "./icons/PlasmicIcon__Appellitesvg2"; // plasmic-import: KOQRl1mc7d/icon
 import Comparesvg2Icon from "./icons/PlasmicIcon__Comparesvg2"; // plasmic-import: PKKaeI26jF/icon
-import Group19Svg2Icon from "./icons/PlasmicIcon__Group19Svg2"; // plasmic-import: H_pSTPfDlp/icon
+import Emaxlite2SvgIcon from "./icons/PlasmicIcon__Emaxlite2Svg"; // plasmic-import: dsOT3dlAx5oW/icon
 import Group20Svg2Icon from "./icons/PlasmicIcon__Group20Svg2"; // plasmic-import: V_5h_74dcu/icon
-import StuffsvgIcon from "./icons/PlasmicIcon__Stuffsvg"; // plasmic-import: rTSIAkkz-I/icon
+import Stuffsvg2Icon from "./icons/PlasmicIcon__Stuffsvg2"; // plasmic-import: 946drNMN0qzF/icon
 import CardsvgIcon from "./icons/PlasmicIcon__Cardsvg"; // plasmic-import: GBeGc91B0z/icon
 import Group21SvgIcon from "./icons/PlasmicIcon__Group21Svg"; // plasmic-import: dON5qOa0yP/icon
 import BarsIcon from "./icons/PlasmicIcon__Bars"; // plasmic-import: 4ZVpxMLEvcR9y/icon
@@ -160,522 +160,529 @@ function PlasmicAppelStore__RenderFunc(props: {
             sty.root
           )}
         >
-          {(hasVariant(globalVariants, "screen", "mobile") ? true : true) ? (
+          <p.Stack
+            as={"div"}
+            hasGap={true}
+            className={classNames(projectcss.all, sty.freeBox__meuFg)}
+          >
             <p.Stack
               as={"div"}
               hasGap={true}
-              className={classNames(projectcss.all, sty.freeBox__meuFg)}
+              className={classNames(projectcss.all, sty.freeBox__fdJz)}
             >
+              <p.PlasmicLink
+                className={classNames(
+                  projectcss.all,
+                  projectcss.a,
+                  projectcss.__wab_text,
+                  sty.link__d1Hhl
+                )}
+                component={Link}
+                href={`/`}
+                platform={"nextjs"}
+              >
+                {"\u212e"}
+              </p.PlasmicLink>
               <p.Stack
                 as={"div"}
                 hasGap={true}
-                className={classNames(projectcss.all, sty.freeBox__fdJz)}
+                className={classNames(projectcss.all, sty.freeBox__g5WMe)}
               >
+                <Button
+                  className={classNames("__wab_instance", sty.button___8Vq3H)}
+                  color={"clear"}
+                  endIcon={
+                    <Icon38Icon
+                      className={classNames(projectcss.all, sty.svg__f84N)}
+                      role={"img"}
+                    />
+                  }
+                  startIcon={
+                    <ChecksvgIcon
+                      className={classNames(projectcss.all, sty.svg__hpjCc)}
+                      role={"img"}
+                    />
+                  }
+                  submitsForm={true}
+                >
+                  <div
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text___2ApJn
+                    )}
+                  >
+                    {"Store"}
+                  </div>
+                </Button>
+                <Button
+                  className={classNames("__wab_instance", sty.button__sXdqF)}
+                  color={"clear"}
+                  endIcon={
+                    <Icon38Icon
+                      className={classNames(projectcss.all, sty.svg__m41Fw)}
+                      role={"img"}
+                    />
+                  }
+                  link={`/shop/appel`}
+                  startIcon={
+                    <ChecksvgIcon
+                      className={classNames(projectcss.all, sty.svg__i4Nh)}
+                      role={"img"}
+                    />
+                  }
+                  submitsForm={true}
+                >
+                  <div
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text___3URuy
+                    )}
+                  >
+                    {"Appel"}
+                  </div>
+                </Button>
+                <Button
+                  className={classNames("__wab_instance", sty.button__s1Cy6)}
+                  color={"clear"}
+                  endIcon={
+                    <Icon38Icon
+                      className={classNames(projectcss.all, sty.svg__jaXf0)}
+                      role={"img"}
+                    />
+                  }
+                  link={`/shop/epad`}
+                  startIcon={
+                    <ChecksvgIcon
+                      className={classNames(projectcss.all, sty.svg__yyiGa)}
+                      role={"img"}
+                    />
+                  }
+                  submitsForm={true}
+                >
+                  <div
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text__o5PyS
+                    )}
+                  >
+                    {"ePad"}
+                  </div>
+                </Button>
+                <Button
+                  className={classNames("__wab_instance", sty.button__r5Zr9)}
+                  color={"clear"}
+                  endIcon={
+                    <Icon38Icon
+                      className={classNames(projectcss.all, sty.svg__sPtbG)}
+                      role={"img"}
+                    />
+                  }
+                  link={`/shop/etop`}
+                  startIcon={
+                    <ChecksvgIcon
+                      className={classNames(projectcss.all, sty.svg___55L)}
+                      role={"img"}
+                    />
+                  }
+                  submitsForm={true}
+                >
+                  <div
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text___1Csq
+                    )}
+                  >
+                    {"eTop"}
+                  </div>
+                </Button>
+                <Button
+                  className={classNames("__wab_instance", sty.button__uZCn)}
+                  color={"clear"}
+                  endIcon={
+                    <Icon38Icon
+                      className={classNames(projectcss.all, sty.svg__dYf0)}
+                      role={"img"}
+                    />
+                  }
+                  startIcon={
+                    <ChecksvgIcon
+                      className={classNames(projectcss.all, sty.svg___1ByRd)}
+                      role={"img"}
+                    />
+                  }
+                  submitsForm={true}
+                >
+                  <div
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text__n63VC
+                    )}
+                  >
+                    {"InVision"}
+                  </div>
+                </Button>
+                <Button
+                  className={classNames("__wab_instance", sty.button___78TpN)}
+                  color={"clear"}
+                  endIcon={
+                    <Icon38Icon
+                      className={classNames(projectcss.all, sty.svg__sfbbe)}
+                      role={"img"}
+                    />
+                  }
+                  startIcon={
+                    <ChecksvgIcon
+                      className={classNames(projectcss.all, sty.svg__dKdB)}
+                      role={"img"}
+                    />
+                  }
+                  submitsForm={true}
+                >
+                  <div
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text__aHeD
+                    )}
+                  >
+                    {"eMax"}
+                  </div>
+                </Button>
+                <Button
+                  className={classNames("__wab_instance", sty.button__tosa6)}
+                  color={"clear"}
+                  endIcon={
+                    <Icon38Icon
+                      className={classNames(projectcss.all, sty.svg__kaJMc)}
+                      role={"img"}
+                    />
+                  }
+                  link={`/login`}
+                  startIcon={
+                    <ChecksvgIcon
+                      className={classNames(projectcss.all, sty.svg__lK5Zn)}
+                      role={"img"}
+                    />
+                  }
+                  submitsForm={true}
+                >
+                  <div
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text__aaAVl
+                    )}
+                  >
+                    {"Log in"}
+                  </div>
+                </Button>
+                <Button
+                  className={classNames("__wab_instance", sty.button__pbDz)}
+                  endIcon={
+                    <Icon38Icon
+                      className={classNames(projectcss.all, sty.svg__pIgBf)}
+                      role={"img"}
+                    />
+                  }
+                  startIcon={
+                    <ChecksvgIcon
+                      className={classNames(projectcss.all, sty.svg__whEeB)}
+                      role={"img"}
+                    />
+                  }
+                  submitsForm={true}
+                >
+                  <div
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text__wpHbz
+                    )}
+                  >
+                    {"Sign up"}
+                  </div>
+                </Button>
+              </p.Stack>
+              {false ? (
+                <div className={classNames(projectcss.all, sty.freeBox__vCqma)}>
+                  <button
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.button,
+                      projectcss.__wab_text,
+                      sty.button__xgRr3
+                    )}
+                  >
+                    {"Sign up"}
+                  </button>
+                  <Button
+                    className={classNames("__wab_instance", sty.button__pcQWg)}
+                    color={"clear"}
+                    endIcon={
+                      <Icon38Icon
+                        className={classNames(projectcss.all, sty.svg___3AW9)}
+                        role={"img"}
+                      />
+                    }
+                    startIcon={
+                      <ChecksvgIcon
+                        className={classNames(projectcss.all, sty.svg__drG9T)}
+                        role={"img"}
+                      />
+                    }
+                    submitsForm={true}
+                  >
+                    <div
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.__wab_text,
+                        sty.text__ek2Mi
+                      )}
+                    >
+                      {"Log in"}
+                    </div>
+                  </Button>
+                </div>
+              ) : null}
+            </p.Stack>
+          </p.Stack>
+          <p.Stack
+            as={"div"}
+            hasGap={true}
+            className={classNames(projectcss.all, sty.freeBox___55Pf2)}
+          >
+            <p.Stack
+              as={"div"}
+              hasGap={true}
+              className={classNames(projectcss.all, sty.freeBox__km9UG)}
+            >
+              <div className={classNames(projectcss.all, sty.freeBox__do4WX)}>
+                <Appel1Svg2Icon
+                  className={classNames(projectcss.all, sty.svg__xvc2Q)}
+                  role={"img"}
+                />
+
                 <p.PlasmicLink
                   className={classNames(
                     projectcss.all,
                     projectcss.a,
                     projectcss.__wab_text,
-                    sty.link__d1Hhl
+                    sty.link__viG6S
                   )}
                   component={Link}
-                  href={`/`}
+                  href={`/shop/appel/appel-3-pro`}
                   platform={"nextjs"}
                 >
-                  {"\u212e"}
+                  {"Appel 3 Pro"}
                 </p.PlasmicLink>
-                <p.Stack
-                  as={"div"}
-                  hasGap={true}
-                  className={classNames(projectcss.all, sty.freeBox__g5WMe)}
+                <p.PlasmicLink
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.a,
+                    projectcss.__wab_text,
+                    sty.link__aglo2
+                  )}
+                  component={Link}
+                  href={`/shop/appel/appel-3-pro`}
+                  platform={"nextjs"}
                 >
-                  <Button
-                    className={classNames("__wab_instance", sty.button___8Vq3H)}
-                    color={"clear" as const}
-                    endIcon={
-                      <Icon38Icon
-                        className={classNames(projectcss.all, sty.svg__f84N)}
-                        role={"img"}
-                      />
-                    }
-                    startIcon={
-                      <ChecksvgIcon
-                        className={classNames(projectcss.all, sty.svg__hpjCc)}
-                        role={"img"}
-                      />
-                    }
-                    submitsForm={true}
-                  >
-                    <div
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.__wab_text,
-                        sty.text___2ApJn
-                      )}
-                    >
-                      {"Store"}
-                    </div>
-                  </Button>
-                  <Button
-                    className={classNames("__wab_instance", sty.button__sXdqF)}
-                    color={"clear" as const}
-                    endIcon={
-                      <Icon38Icon
-                        className={classNames(projectcss.all, sty.svg__m41Fw)}
-                        role={"img"}
-                      />
-                    }
-                    link={`/shop/appel`}
-                    startIcon={
-                      <ChecksvgIcon
-                        className={classNames(projectcss.all, sty.svg__i4Nh)}
-                        role={"img"}
-                      />
-                    }
-                    submitsForm={true}
-                  >
-                    <div
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.__wab_text,
-                        sty.text___3URuy
-                      )}
-                    >
-                      {"Appel"}
-                    </div>
-                  </Button>
-                  <Button
-                    className={classNames("__wab_instance", sty.button__s1Cy6)}
-                    color={"clear" as const}
-                    endIcon={
-                      <Icon38Icon
-                        className={classNames(projectcss.all, sty.svg__jaXf0)}
-                        role={"img"}
-                      />
-                    }
-                    link={`/shop/epad`}
-                    startIcon={
-                      <ChecksvgIcon
-                        className={classNames(projectcss.all, sty.svg__yyiGa)}
-                        role={"img"}
-                      />
-                    }
-                    submitsForm={true}
-                  >
-                    <div
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.__wab_text,
-                        sty.text__o5PyS
-                      )}
-                    >
-                      {"ePad"}
-                    </div>
-                  </Button>
-                  <Button
-                    className={classNames("__wab_instance", sty.button__r5Zr9)}
-                    color={"clear" as const}
-                    endIcon={
-                      <Icon38Icon
-                        className={classNames(projectcss.all, sty.svg__sPtbG)}
-                        role={"img"}
-                      />
-                    }
-                    link={`/shop/etop`}
-                    startIcon={
-                      <ChecksvgIcon
-                        className={classNames(projectcss.all, sty.svg___55L)}
-                        role={"img"}
-                      />
-                    }
-                    submitsForm={true}
-                  >
-                    <div
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.__wab_text,
-                        sty.text___1Csq
-                      )}
-                    >
-                      {"eTop"}
-                    </div>
-                  </Button>
-                  <Button
-                    className={classNames("__wab_instance", sty.button___78TpN)}
-                    color={"clear" as const}
-                    endIcon={
-                      <Icon38Icon
-                        className={classNames(projectcss.all, sty.svg__sfbbe)}
-                        role={"img"}
-                      />
-                    }
-                    startIcon={
-                      <ChecksvgIcon
-                        className={classNames(projectcss.all, sty.svg__dKdB)}
-                        role={"img"}
-                      />
-                    }
-                    submitsForm={true}
-                  >
-                    <div
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.__wab_text,
-                        sty.text__aHeD
-                      )}
-                    >
-                      {"eMax"}
-                    </div>
-                  </Button>
-                  {(
-                    hasVariant(globalVariants, "screen", "mobile") ? true : true
-                  ) ? (
-                    <Button
-                      className={classNames(
-                        "__wab_instance",
-                        sty.button__tosa6
-                      )}
-                      color={"clear" as const}
-                      endIcon={
-                        <Icon38Icon
-                          className={classNames(projectcss.all, sty.svg__kaJMc)}
-                          role={"img"}
-                        />
-                      }
-                      link={`/login`}
-                      startIcon={
-                        <ChecksvgIcon
-                          className={classNames(projectcss.all, sty.svg__lK5Zn)}
-                          role={"img"}
-                        />
-                      }
-                      submitsForm={true}
-                    >
-                      <div
-                        className={classNames(
-                          projectcss.all,
-                          projectcss.__wab_text,
-                          sty.text__aaAVl
-                        )}
-                      >
-                        {"Log in"}
-                      </div>
-                    </Button>
-                  ) : null}
-                  <Button
-                    className={classNames("__wab_instance", sty.button__pbDz)}
-                    endIcon={
-                      <Icon38Icon
-                        className={classNames(projectcss.all, sty.svg__pIgBf)}
-                        role={"img"}
-                      />
-                    }
-                    startIcon={
-                      <ChecksvgIcon
-                        className={classNames(projectcss.all, sty.svg__whEeB)}
-                        role={"img"}
-                      />
-                    }
-                    submitsForm={true}
-                  >
-                    <div
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.__wab_text,
-                        sty.text__wpHbz
-                      )}
-                    >
-                      {"Sign up"}
-                    </div>
-                  </Button>
-                </p.Stack>
-                {false ? (
-                  <div
-                    className={classNames(projectcss.all, sty.freeBox__vCqma)}
-                  >
-                    <button
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.button,
-                        projectcss.__wab_text,
-                        sty.button__xgRr3
-                      )}
-                    >
-                      {"Sign up"}
-                    </button>
-                    {true ? (
-                      <Button
-                        className={classNames(
-                          "__wab_instance",
-                          sty.button__pcQWg
-                        )}
-                        color={"clear" as const}
-                        endIcon={
-                          <Icon38Icon
-                            className={classNames(
-                              projectcss.all,
-                              sty.svg___3AW9
-                            )}
-                            role={"img"}
-                          />
-                        }
-                        startIcon={
-                          <ChecksvgIcon
-                            className={classNames(
-                              projectcss.all,
-                              sty.svg__drG9T
-                            )}
-                            role={"img"}
-                          />
-                        }
-                        submitsForm={true}
-                      >
-                        <div
-                          className={classNames(
-                            projectcss.all,
-                            projectcss.__wab_text,
-                            sty.text__ek2Mi
-                          )}
-                        >
-                          {"Log in"}
-                        </div>
-                      </Button>
-                    ) : null}
-                  </div>
-                ) : null}
-              </p.Stack>
+                  {"New"}
+                </p.PlasmicLink>
+              </div>
+              <div className={classNames(projectcss.all, sty.freeBox__aZap2)}>
+                <Appel1Svg2Icon
+                  className={classNames(projectcss.all, sty.svg__dGGo)}
+                  role={"img"}
+                />
+
+                <p.PlasmicLink
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.a,
+                    projectcss.__wab_text,
+                    sty.link__lp0In
+                  )}
+                  component={Link}
+                  href={`/shop/appel/appel-3`}
+                  platform={"nextjs"}
+                >
+                  {"Appel 3"}
+                </p.PlasmicLink>
+                <p.PlasmicLink
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.a,
+                    projectcss.__wab_text,
+                    sty.link__cgLaw
+                  )}
+                  component={Link}
+                  href={`/shop/appel/appel-3`}
+                  platform={"nextjs"}
+                >
+                  {"New"}
+                </p.PlasmicLink>
+              </div>
+              <div className={classNames(projectcss.all, sty.freeBox__hUNzw)}>
+                <Appel2ProAndRegsvg2Icon
+                  className={classNames(projectcss.all, sty.svg__iuRz5)}
+                  role={"img"}
+                />
+
+                <p.PlasmicLink
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.a,
+                    projectcss.__wab_text,
+                    sty.link__k0Htn
+                  )}
+                  component={Link}
+                  href={`/shop/appel/appel-2`}
+                  platform={"nextjs"}
+                >
+                  {"Appel 2"}
+                </p.PlasmicLink>
+              </div>
+              <div className={classNames(projectcss.all, sty.freeBox__sAmbw)}>
+                <Appellitesvg2Icon
+                  className={classNames(projectcss.all, sty.svg__hzClM)}
+                  role={"img"}
+                />
+
+                <p.PlasmicLink
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.a,
+                    projectcss.__wab_text,
+                    sty.link__ldjTl
+                  )}
+                  component={Link}
+                  href={`/shop/appel/appel-2-lite`}
+                  platform={"nextjs"}
+                >
+                  {"Appel 2 Lite"}
+                </p.PlasmicLink>
+              </div>
+              <div className={classNames(projectcss.all, sty.freeBox__ersp)}>
+                <Comparesvg2Icon
+                  className={classNames(projectcss.all, sty.svg__tF7Pa)}
+                  role={"img"}
+                />
+
+                <div
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.__wab_text,
+                    sty.text___6LCns
+                  )}
+                >
+                  {"Compare"}
+                </div>
+              </div>
+              <div className={classNames(projectcss.all, sty.freeBox__hVdY9)}>
+                <Emaxlite2SvgIcon
+                  className={classNames(projectcss.all, sty.svg__meTje)}
+                  role={"img"}
+                />
+
+                <div
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.__wab_text,
+                    sty.text___6Yv3T
+                  )}
+                >
+                  {"eMax Lite 2"}
+                </div>
+                <div
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.__wab_text,
+                    sty.text___4ZzNk
+                  )}
+                >
+                  {"New"}
+                </div>
+              </div>
+              <div className={classNames(projectcss.all, sty.freeBox__spxRr)}>
+                <Group20Svg2Icon
+                  className={classNames(projectcss.all, sty.svg__xf1Wd)}
+                  role={"img"}
+                />
+
+                <div
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.__wab_text,
+                    sty.text___6LtDp
+                  )}
+                >
+                  {"Findr"}
+                </div>
+              </div>
+              <div className={classNames(projectcss.all, sty.freeBox__fTFi)}>
+                <Stuffsvg2Icon
+                  className={classNames(projectcss.all, sty.svg___3WQtx)}
+                  role={"img"}
+                />
+
+                <div
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.__wab_text,
+                    sty.text__rl1Tu
+                  )}
+                >
+                  {"Accessories"}
+                </div>
+              </div>
+              <div className={classNames(projectcss.all, sty.freeBox__wm6Jd)}>
+                <CardsvgIcon
+                  className={classNames(projectcss.all, sty.svg__ixCqN)}
+                  role={"img"}
+                />
+
+                <div
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.__wab_text,
+                    sty.text__ylpfV
+                  )}
+                >
+                  {"eCard"}
+                </div>
+              </div>
+              <div className={classNames(projectcss.all, sty.freeBox__mq239)}>
+                <Group21SvgIcon
+                  className={classNames(projectcss.all, sty.svg__rBqj6)}
+                  role={"img"}
+                />
+
+                <div
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.__wab_text,
+                    sty.text__pyUdC
+                  )}
+                >
+                  {"eOS 15"}
+                </div>
+                <div
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.__wab_text,
+                    sty.text__wkHtm
+                  )}
+                >
+                  {"Preview"}
+                </div>
+              </div>
             </p.Stack>
-          ) : null}
-          {(hasVariant(globalVariants, "screen", "mobile") ? true : true) ? (
-            <p.Stack
-              as={"div"}
-              hasGap={true}
-              className={classNames(projectcss.all, sty.freeBox___55Pf2)}
-            >
-              <p.Stack
-                as={"div"}
-                hasGap={true}
-                className={classNames(projectcss.all, sty.freeBox__km9UG)}
-              >
-                {true ? (
-                  <div
-                    className={classNames(projectcss.all, sty.freeBox__do4WX)}
-                  >
-                    <Appel2ProAndRegsvg2Icon
-                      className={classNames(projectcss.all, sty.svg__bDqXn)}
-                      role={"img"}
-                    />
-
-                    <p.PlasmicLink
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.a,
-                        projectcss.__wab_text,
-                        sty.link__viG6S
-                      )}
-                      component={Link}
-                      href={`/shop/appel/appel-2-pro`}
-                      platform={"nextjs"}
-                    >
-                      {"Appel 2 Pro"}
-                    </p.PlasmicLink>
-                  </div>
-                ) : null}
-                {true ? (
-                  <div
-                    className={classNames(projectcss.all, sty.freeBox__hUNzw)}
-                  >
-                    <Appel2ProAndRegsvg2Icon
-                      className={classNames(projectcss.all, sty.svg__iuRz5)}
-                      role={"img"}
-                    />
-
-                    <p.PlasmicLink
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.a,
-                        projectcss.__wab_text,
-                        sty.link__k0Htn
-                      )}
-                      component={Link}
-                      href={`/shop/appel/appel-2`}
-                      platform={"nextjs"}
-                    >
-                      {"Appel 2"}
-                    </p.PlasmicLink>
-                  </div>
-                ) : null}
-                {true ? (
-                  <div
-                    className={classNames(projectcss.all, sty.freeBox__aZap2)}
-                  >
-                    <Appel1Svg2Icon
-                      className={classNames(projectcss.all, sty.svg__dGGo)}
-                      role={"img"}
-                    />
-
-                    <p.PlasmicLink
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.a,
-                        projectcss.__wab_text,
-                        sty.link__lp0In
-                      )}
-                      component={Link}
-                      href={`/shop/appel/appel-1`}
-                      platform={"nextjs"}
-                    >
-                      {"Appel 1"}
-                    </p.PlasmicLink>
-                  </div>
-                ) : null}
-                {true ? (
-                  <div
-                    className={classNames(projectcss.all, sty.freeBox__sAmbw)}
-                  >
-                    <Appellitesvg2Icon
-                      className={classNames(projectcss.all, sty.svg__hzClM)}
-                      role={"img"}
-                    />
-
-                    <p.PlasmicLink
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.a,
-                        projectcss.__wab_text,
-                        sty.link__ldjTl
-                      )}
-                      component={Link}
-                      href={`/shop/appel/appel-2-lite`}
-                      platform={"nextjs"}
-                    >
-                      {"Appel 2 Lite"}
-                    </p.PlasmicLink>
-                  </div>
-                ) : null}
-                {true ? (
-                  <div
-                    className={classNames(projectcss.all, sty.freeBox__ersp)}
-                  >
-                    <Comparesvg2Icon
-                      className={classNames(projectcss.all, sty.svg__tF7Pa)}
-                      role={"img"}
-                    />
-
-                    <div
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.__wab_text,
-                        sty.text___6LCns
-                      )}
-                    >
-                      {"Compare"}
-                    </div>
-                  </div>
-                ) : null}
-                {true ? (
-                  <div
-                    className={classNames(projectcss.all, sty.freeBox__hVdY9)}
-                  >
-                    <Group19Svg2Icon
-                      className={classNames(projectcss.all, sty.svg__meTje)}
-                      role={"img"}
-                    />
-
-                    <div
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.__wab_text,
-                        sty.text___6Yv3T
-                      )}
-                    >
-                      {"eMax Lite"}
-                    </div>
-                  </div>
-                ) : null}
-                {true ? (
-                  <div
-                    className={classNames(projectcss.all, sty.freeBox__spxRr)}
-                  >
-                    <Group20Svg2Icon
-                      className={classNames(projectcss.all, sty.svg__xf1Wd)}
-                      role={"img"}
-                    />
-
-                    <div
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.__wab_text,
-                        sty.text___6LtDp
-                      )}
-                    >
-                      {"Findr"}
-                    </div>
-                  </div>
-                ) : null}
-                {true ? (
-                  <div
-                    className={classNames(projectcss.all, sty.freeBox__fTFi)}
-                  >
-                    <StuffsvgIcon
-                      className={classNames(projectcss.all, sty.svg___3WQtx)}
-                      role={"img"}
-                    />
-
-                    <div
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.__wab_text,
-                        sty.text__rl1Tu
-                      )}
-                    >
-                      {"Accessories"}
-                    </div>
-                  </div>
-                ) : null}
-                {true ? (
-                  <div
-                    className={classNames(projectcss.all, sty.freeBox__wm6Jd)}
-                  >
-                    <CardsvgIcon
-                      className={classNames(projectcss.all, sty.svg__ixCqN)}
-                      role={"img"}
-                    />
-
-                    <div
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.__wab_text,
-                        sty.text__ylpfV
-                      )}
-                    >
-                      {"eCard"}
-                    </div>
-                  </div>
-                ) : null}
-                {true ? (
-                  <div
-                    className={classNames(projectcss.all, sty.freeBox__mq239)}
-                  >
-                    <Group21SvgIcon
-                      className={classNames(projectcss.all, sty.svg__rBqj6)}
-                      role={"img"}
-                    />
-
-                    <div
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.__wab_text,
-                        sty.text__pyUdC
-                      )}
-                    >
-                      {"eOS 14"}
-                    </div>
-                  </div>
-                ) : null}
-              </p.Stack>
-            </p.Stack>
-          ) : null}
+          </p.Stack>
           {(hasVariant(globalVariants, "screen", "mobile") ? true : false) ? (
             <p.Stack
               as={"div"}
@@ -714,44 +721,36 @@ function PlasmicAppelStore__RenderFunc(props: {
                     >
                       {"Sign up"}
                     </button>
-                    {true ? (
-                      <Button
+                    <Button
+                      className={classNames(
+                        "__wab_instance",
+                        sty.button__zDh1P
+                      )}
+                      color={"clear"}
+                      endIcon={
+                        <Icon38Icon
+                          className={classNames(projectcss.all, sty.svg__osKA)}
+                          role={"img"}
+                        />
+                      }
+                      startIcon={
+                        <ChecksvgIcon
+                          className={classNames(projectcss.all, sty.svg__dxKwu)}
+                          role={"img"}
+                        />
+                      }
+                      submitsForm={true}
+                    >
+                      <div
                         className={classNames(
-                          "__wab_instance",
-                          sty.button__zDh1P
+                          projectcss.all,
+                          projectcss.__wab_text,
+                          sty.text__t2L5J
                         )}
-                        color={"clear" as const}
-                        endIcon={
-                          <Icon38Icon
-                            className={classNames(
-                              projectcss.all,
-                              sty.svg__osKA
-                            )}
-                            role={"img"}
-                          />
-                        }
-                        startIcon={
-                          <ChecksvgIcon
-                            className={classNames(
-                              projectcss.all,
-                              sty.svg__dxKwu
-                            )}
-                            role={"img"}
-                          />
-                        }
-                        submitsForm={true}
                       >
-                        <div
-                          className={classNames(
-                            projectcss.all,
-                            projectcss.__wab_text,
-                            sty.text__t2L5J
-                          )}
-                        >
-                          {"Log in"}
-                        </div>
-                      </Button>
-                    ) : null}
+                        {"Log in"}
+                      </div>
+                    </Button>
                   </div>
                 ) : null}
                 <BarsIcon
@@ -761,99 +760,72 @@ function PlasmicAppelStore__RenderFunc(props: {
               </p.Stack>
             </p.Stack>
           ) : null}
-          <div className={classNames(projectcss.all, sty.freeBox__amC1D)}>
-            <div
-              className={classNames(
-                projectcss.all,
-                projectcss.__wab_text,
-                sty.text__kNxKd
-              )}
-            >
-              <React.Fragment>
-                <React.Fragment>
-                  {
-                    "Get 20% to 50% off of your next Appel Phone by trading in any android phone.* "
-                  }
-                </React.Fragment>
-                <span
-                  className={"plasmic_default__all plasmic_default__span"}
-                  style={{ color: "#0084FF" }}
-                >
-                  {"Shop Appel >"}
-                </span>
-              </React.Fragment>
-            </div>
-          </div>
           {(hasVariant(globalVariants, "screen", "mobile") ? true : false) ? (
             <p.Stack
               as={"div"}
               hasGap={true}
               className={classNames(projectcss.all, sty.freeBox__yFyen)}
             >
-              {(
-                hasVariant(globalVariants, "screen", "mobile") ? true : true
-              ) ? (
-                <p.Stack
-                  as={"div"}
-                  hasGap={true}
-                  className={classNames(projectcss.all, sty.freeBox__aPpcU)}
-                >
-                  <svg
-                    className={classNames(projectcss.all, sty.svg___9SJg2)}
-                    role={"img"}
-                  />
+              <p.Stack
+                as={"div"}
+                hasGap={true}
+                className={classNames(projectcss.all, sty.freeBox__aPpcU)}
+              >
+                <svg
+                  className={classNames(projectcss.all, sty.svg___9SJg2)}
+                  role={"img"}
+                />
 
-                  <svg
-                    className={classNames(projectcss.all, sty.svg___58Toc)}
-                    role={"img"}
-                  />
+                <svg
+                  className={classNames(projectcss.all, sty.svg___58Toc)}
+                  role={"img"}
+                />
 
-                  <svg
-                    className={classNames(projectcss.all, sty.svg__kltqC)}
-                    role={"img"}
-                  />
+                <svg
+                  className={classNames(projectcss.all, sty.svg__kltqC)}
+                  role={"img"}
+                />
 
-                  <svg
-                    className={classNames(projectcss.all, sty.svg__sYbCn)}
-                    role={"img"}
-                  />
+                <svg
+                  className={classNames(projectcss.all, sty.svg__sYbCn)}
+                  role={"img"}
+                />
 
-                  <svg
-                    className={classNames(projectcss.all, sty.svg__n1Kyy)}
-                    role={"img"}
-                  />
+                <svg
+                  className={classNames(projectcss.all, sty.svg__n1Kyy)}
+                  role={"img"}
+                />
 
-                  <svg
-                    className={classNames(projectcss.all, sty.svg___9QjWd)}
-                    role={"img"}
-                  />
+                <svg
+                  className={classNames(projectcss.all, sty.svg___9QjWd)}
+                  role={"img"}
+                />
 
-                  <svg
-                    className={classNames(projectcss.all, sty.svg__roOj9)}
-                    role={"img"}
-                  />
+                <svg
+                  className={classNames(projectcss.all, sty.svg__roOj9)}
+                  role={"img"}
+                />
 
-                  <svg
-                    className={classNames(projectcss.all, sty.svg__nusrp)}
-                    role={"img"}
-                  />
+                <svg
+                  className={classNames(projectcss.all, sty.svg__nusrp)}
+                  role={"img"}
+                />
 
-                  <svg
-                    className={classNames(projectcss.all, sty.svg__pDpXp)}
-                    role={"img"}
-                  />
+                <svg
+                  className={classNames(projectcss.all, sty.svg__pDpXp)}
+                  role={"img"}
+                />
 
-                  <svg
-                    className={classNames(projectcss.all, sty.svg__kXc6R)}
-                    role={"img"}
-                  />
+                <svg
+                  className={classNames(projectcss.all, sty.svg__kXc6R)}
+                  role={"img"}
+                />
 
-                  <svg
-                    className={classNames(projectcss.all, sty.svg__fRoVn)}
-                    role={"img"}
-                  />
-                </p.Stack>
-              ) : null}
+                <svg
+                  className={classNames(projectcss.all, sty.svg__fRoVn)}
+                  role={"img"}
+                />
+              </p.Stack>
               <p.Stack
                 as={"div"}
                 hasGap={true}
@@ -867,7 +839,7 @@ function PlasmicAppelStore__RenderFunc(props: {
                     sty.link__niZll
                   )}
                   component={Link}
-                  href={`/shop/appel/appel-2-pro`}
+                  href={`/shop/appel/appel-3-pro`}
                   platform={"nextjs"}
                 >
                   {"Appel 2 Pro"}
@@ -970,170 +942,162 @@ function PlasmicAppelStore__RenderFunc(props: {
             </p.Stack>
           ) : null}
           <div className={classNames(projectcss.all, sty.freeBox__a05ND)}>
-            {true ? (
-              <div className={classNames(projectcss.all, sty.freeBox__v7NGq)}>
-                <p.Stack
-                  as={"div"}
-                  hasGap={true}
-                  className={classNames(projectcss.all, sty.freeBox__t7C53)}
-                >
-                  {true ? (
-                    <div
-                      className={classNames(projectcss.all, sty.freeBox__k6V2)}
-                    >
-                      <h1
-                        className={classNames(
-                          projectcss.all,
-                          projectcss.h1,
-                          projectcss.__wab_text,
-                          sty.h1__ucY4O
-                        )}
-                      >
-                        {"Appel 2"}
-                      </h1>
-                    </div>
-                  ) : null}
-                  {true ? (
-                    <div
-                      className={classNames(projectcss.all, sty.freeBox__o1Ecw)}
-                    >
-                      {true ? (
-                        <div
-                          className={classNames(
-                            projectcss.all,
-                            sty.freeBox__h1Vxs
-                          )}
-                        >
-                          <div
-                            className={classNames(
-                              projectcss.all,
-                              projectcss.__wab_text,
-                              sty.text__f0Po
-                            )}
-                          >
-                            {hasVariant(globalVariants, "screen", "mobile")
-                              ? "From $29.13/mo. for 24 mo. or $699 before trade in"
-                              : "From $29.13/mo. for 24 mo. or $699 before trade in"}
-                          </div>
-                          <div
-                            className={classNames(
-                              projectcss.all,
-                              projectcss.__wab_text,
-                              sty.text__qjQg
-                            )}
-                          >
-                            {hasVariant(globalVariants, "screen", "mobile")
-                              ? "Simply Beautiful."
-                              : "Simply Beautiful."}
-                          </div>
-                        </div>
-                      ) : null}
-                    </div>
-                  ) : null}
-                  <Button
-                    className={classNames("__wab_instance", sty.button__qCqDq)}
-                    color={"blue" as const}
-                    link={`/shop/appel/appel-2`}
-                    submitsForm={true}
+            <div className={classNames(projectcss.all, sty.freeBox__v7NGq)}>
+              <p.Stack
+                as={"div"}
+                hasGap={true}
+                className={classNames(projectcss.all, sty.freeBox__t7C53)}
+              >
+                <div className={classNames(projectcss.all, sty.freeBox__k6V2)}>
+                  <h1
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.h1,
+                      projectcss.__wab_text,
+                      sty.h1__ucY4O
+                    )}
+                  >
+                    {"Appel 3"}
+                  </h1>
+                </div>
+                <div className={classNames(projectcss.all, sty.freeBox__o1Ecw)}>
+                  <div
+                    className={classNames(projectcss.all, sty.freeBox__h1Vxs)}
                   >
                     <div
                       className={classNames(
                         projectcss.all,
                         projectcss.__wab_text,
-                        sty.text__d8RQh
+                        sty.text__f0Po
                       )}
                     >
                       {hasVariant(globalVariants, "screen", "mobile")
-                        ? "Buy Now"
-                        : "Buy Now"}
+                        ? "From $29.13/mo. for 24 mo. or $699 before trade in"
+                        : "From $29.13/mo. for 24 mo. or $699 before trade in"}
                     </div>
-                  </Button>
-                </p.Stack>
+                    <div
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.__wab_text,
+                        sty.text__qjQg
+                      )}
+                    >
+                      {hasVariant(globalVariants, "screen", "mobile")
+                        ? "Simply Beautiful."
+                        : "In Full Color"}
+                    </div>
+                  </div>
+                </div>
+                <Button
+                  className={classNames("__wab_instance", sty.button__qCqDq)}
+                  color={"blue"}
+                  link={`/shop/appel/appel-3`}
+                  submitsForm={true}
+                >
+                  <div
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text__d8RQh
+                    )}
+                  >
+                    {hasVariant(globalVariants, "screen", "mobile")
+                      ? "Buy Now"
+                      : "PRE ORDER"}
+                  </div>
+                </Button>
+              </p.Stack>
+              <div
+                className={classNames(
+                  projectcss.all,
+                  projectcss.__wab_text,
+                  sty.text___6GZ91
+                )}
+              >
+                {hasVariant(globalVariants, "screen", "mobile")
+                  ? "From $29.13/mo. for 24 mo. or $699 before trade in"
+                  : "Coming This Fall"}
               </div>
-            ) : null}
+            </div>
           </div>
           <div className={classNames(projectcss.all, sty.freeBox__xuLz)}>
-            {true ? (
-              <div className={classNames(projectcss.all, sty.freeBox__dRfVv)}>
-                <p.Stack
-                  as={"div"}
-                  hasGap={true}
-                  className={classNames(projectcss.all, sty.freeBox___9Smf3)}
-                >
-                  {true ? (
-                    <div
-                      className={classNames(projectcss.all, sty.freeBox__ojmAp)}
-                    >
-                      <h1
-                        className={classNames(
-                          projectcss.all,
-                          projectcss.h1,
-                          projectcss.__wab_text,
-                          sty.h1__rx2Kj
-                        )}
-                      >
-                        {"Appel 2 Pro"}
-                      </h1>
-                    </div>
-                  ) : null}
-                  {true ? (
-                    <div
-                      className={classNames(projectcss.all, sty.freeBox__xvT0X)}
-                    >
-                      {true ? (
-                        <div
-                          className={classNames(
-                            projectcss.all,
-                            sty.freeBox__iOv7
-                          )}
-                        >
-                          <div
-                            className={classNames(
-                              projectcss.all,
-                              projectcss.__wab_text,
-                              sty.text__yDvC8
-                            )}
-                          >
-                            {hasVariant(globalVariants, "screen", "mobile")
-                              ? "From $41.63/mo. for 24 mo. or $999 before trade in"
-                              : "From $41.63/mo. for 24 mo. or $999 before trade in"}
-                          </div>
-                          <div
-                            className={classNames(
-                              projectcss.all,
-                              projectcss.__wab_text,
-                              sty.text__smRk6
-                            )}
-                          >
-                            {hasVariant(globalVariants, "screen", "mobile")
-                              ? "Pro Power. Pro Capabilities."
-                              : "Pro Power. Pro Capabilities"}
-                          </div>
-                        </div>
-                      ) : null}
-                    </div>
-                  ) : null}
-                  <Button
-                    className={classNames("__wab_instance", sty.button__mQpDs)}
-                    color={"blue" as const}
-                    link={`/shop/appel/appel-2-pro`}
-                    submitsForm={true}
+            <div className={classNames(projectcss.all, sty.freeBox__dRfVv)}>
+              <p.Stack
+                as={"div"}
+                hasGap={true}
+                className={classNames(projectcss.all, sty.freeBox___9Smf3)}
+              >
+                <div className={classNames(projectcss.all, sty.freeBox__ojmAp)}>
+                  <h1
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.h1,
+                      projectcss.__wab_text,
+                      sty.h1__rx2Kj
+                    )}
+                  >
+                    {"Appel 3 Pro"}
+                  </h1>
+                </div>
+                <div className={classNames(projectcss.all, sty.freeBox__xvT0X)}>
+                  <div
+                    className={classNames(projectcss.all, sty.freeBox__iOv7)}
                   >
                     <div
                       className={classNames(
                         projectcss.all,
                         projectcss.__wab_text,
-                        sty.text__bufdO
+                        sty.text__yDvC8
                       )}
                     >
                       {hasVariant(globalVariants, "screen", "mobile")
-                        ? "Buy Now"
-                        : "Buy Now"}
+                        ? "From $41.63/mo. for 24 mo. or $999 before trade in"
+                        : "From $41.63/mo. for 24 mo. or $999 before trade in"}
                     </div>
-                  </Button>
-                </p.Stack>
-              </div>
-            ) : null}
+                    <div
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.__wab_text,
+                        sty.text__smRk6
+                      )}
+                    >
+                      {hasVariant(globalVariants, "screen", "mobile")
+                        ? "Pro Power. Pro Capabilities."
+                        : "The Powerhouse"}
+                    </div>
+                  </div>
+                </div>
+                <Button
+                  className={classNames("__wab_instance", sty.button__mQpDs)}
+                  color={"blue"}
+                  link={`/shop/appel/appel-3-pro`}
+                  submitsForm={true}
+                >
+                  <div
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text__bufdO
+                    )}
+                  >
+                    {hasVariant(globalVariants, "screen", "mobile")
+                      ? "Buy Now"
+                      : "PRE ORDER"}
+                  </div>
+                </Button>
+                <div
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.__wab_text,
+                    sty.text__fi5HV
+                  )}
+                >
+                  {hasVariant(globalVariants, "screen", "mobile")
+                    ? "From $29.13/mo. for 24 mo. or $699 before trade in"
+                    : "Coming This Fall"}
+                </div>
+              </p.Stack>
+            </div>
           </div>
           <Footer
             data-plasmic-name={"footer"}

@@ -157,36 +157,34 @@ function PlasmicBlogPost__RenderFunc(props: {
         { [sty.rootlong]: hasVariant($state, "long", "long") }
       )}
     >
-      {(hasVariant($state, "long", "long") ? true : true) ? (
-        <div
-          className={classNames(projectcss.all, sty.freeBox__pE8Xf, {
-            [sty.freeBoxlong__pE8XfVpdfx]: hasVariant($state, "long", "long")
-          })}
-        >
-          {p.renderPlasmicSlot({
-            defaultContents: (
-              <p.PlasmicImg
-                alt={""}
-                className={classNames(sty.img__uu8K)}
-                displayHeight={"auto" as const}
-                displayMaxHeight={"none" as const}
-                displayMaxWidth={"none" as const}
-                displayMinHeight={"0" as const}
-                displayMinWidth={"0" as const}
-                displayWidth={"100%" as const}
-                src={{
-                  src: "/plasmic/appel_site/images/b1.jpg",
-                  fullWidth: 370,
-                  fullHeight: 250,
-                  aspectRatio: undefined
-                }}
-              />
-            ),
+      <div
+        className={classNames(projectcss.all, sty.freeBox__pE8Xf, {
+          [sty.freeBoxlong__pE8XfVpdfx]: hasVariant($state, "long", "long")
+        })}
+      >
+        {p.renderPlasmicSlot({
+          defaultContents: (
+            <p.PlasmicImg
+              alt={""}
+              className={classNames(sty.img__uu8K)}
+              displayHeight={"auto"}
+              displayMaxHeight={"none"}
+              displayMaxWidth={"none"}
+              displayMinHeight={"0"}
+              displayMinWidth={"0"}
+              displayWidth={"100%"}
+              src={{
+                src: "/plasmic/appel_site/images/b1.jpg",
+                fullWidth: 370,
+                fullHeight: 250,
+                aspectRatio: undefined
+              }}
+            />
+          ),
 
-            value: args.image
-          })}
-        </div>
-      ) : null}
+          value: args.image
+        })}
+      </div>
       <p.Stack
         as={"div"}
         hasGap={true}

@@ -39,8 +39,7 @@
           "displayName": "hostless-plasmic-navigation-bar",
           "componentImportPath": "@plasmicpkgs/plasmic-nav"
         }
-      ],
-      "jsBundleThemes": []
+      ]
     },
     {
       "projectId": "caTPwKxj5ZrD9LQ7DMdK4Z",
@@ -84,8 +83,7 @@
           "displayName": "hostless-condition-guard",
           "componentImportPath": "@plasmicpkgs/plasmic-basic-components"
         }
-      ],
-      "jsBundleThemes": []
+      ]
     },
     {
       "projectId": "gLnoj82AzKVVT7qXiqAbHD",
@@ -149,8 +147,7 @@
           "displayName": "hostless-tab-content",
           "componentImportPath": "@plasmicpkgs/plasmic-tabs"
         }
-      ],
-      "jsBundleThemes": []
+      ]
     },
     {
       "projectId": "szjgMQpPpxhmkjnaBvZQJG",
@@ -170,8 +167,7 @@
           "displayName": "hostless-parallax-tilt",
           "componentImportPath": "@plasmicpkgs/react-parallax-tilt"
         }
-      ],
-      "jsBundleThemes": []
+      ]
     },
     {
       "projectId": "58GpZjZCWTaJ8AUhpCwt2K",
@@ -191,8 +187,7 @@
           "displayName": "hostless-reveal",
           "componentImportPath": "@plasmicpkgs/react-awesome-reveal"
         }
-      ],
-      "jsBundleThemes": []
+      ]
     },
     {
       "projectId": "5dGW8Awro3qq8Hh5MveXLP",
@@ -212,8 +207,7 @@
           "displayName": "hostless-lottie-react",
           "componentImportPath": "@plasmicpkgs/lottie-react"
         }
-      ],
-      "jsBundleThemes": []
+      ]
     },
     {
       "projectId": "84wxoth5npGrp6RRXPL88z",
@@ -239,8 +233,7 @@
           "displayName": "global-parallax-provider",
           "componentImportPath": "@plasmicpkgs/react-scroll-parallax"
         }
-      ],
-      "jsBundleThemes": []
+      ]
     },
     {
       "projectId": "eiC1VCbma8t6iMexZerqLa",
@@ -260,8 +253,7 @@
           "displayName": "plasmic-commerce-swell-provider",
           "componentImportPath": "@plasmicpkgs/commerce-swell"
         }
-      ],
-      "jsBundleThemes": []
+      ]
     },
     {
       "projectId": "xp1p7dmg329XVLHyuEUxD2",
@@ -377,8 +369,7 @@
           "displayName": "plasmic-commerce-cart-provider",
           "componentImportPath": "@plasmicpkgs/commerce"
         }
-      ],
-      "jsBundleThemes": []
+      ]
     },
     {
       "projectId": "seaQhLVS4bbjiGvJJrRwyL",
@@ -557,19 +548,6 @@
           "scheme": "blackbox",
           "componentType": "component",
           "plumeType": "button"
-        },
-        {
-          "id": "XjqCh-5qZX",
-          "name": "Appel2Pro",
-          "type": "managed",
-          "projectId": "wBRmoS7Qf8danpDnoXZLVz",
-          "renderModuleFilePath": "plasmic/appel_site/PlasmicAppel2Pro.tsx",
-          "importSpec": {
-            "modulePath": "../pages/shop/appel/appel-2-pro.tsx"
-          },
-          "cssFilePath": "plasmic/appel_site/PlasmicAppel2Pro.module.css",
-          "scheme": "blackbox",
-          "componentType": "page"
         },
         {
           "id": "UZjdrU3vHc5",
@@ -881,15 +859,41 @@
           "componentType": "page"
         },
         {
-          "id": "t6IGZHvHIbX",
-          "name": "Appel1",
+          "id": "XjqCh-5qZX",
+          "name": "Appel3Pro",
           "type": "managed",
           "projectId": "wBRmoS7Qf8danpDnoXZLVz",
-          "renderModuleFilePath": "plasmic/appel_site/PlasmicAppel1.tsx",
+          "renderModuleFilePath": "plasmic/appel_site/PlasmicAppel3Pro.tsx",
           "importSpec": {
-            "modulePath": "../pages/shop/appel/appel-1.tsx"
+            "modulePath": "../pages/shop/appel/appel-3-pro.tsx"
           },
-          "cssFilePath": "plasmic/appel_site/PlasmicAppel1.module.css",
+          "cssFilePath": "plasmic/appel_site/PlasmicAppel3Pro.module.css",
+          "scheme": "blackbox",
+          "componentType": "page"
+        },
+        {
+          "id": "aN-YkR2tN53",
+          "name": "Appel3",
+          "type": "managed",
+          "projectId": "wBRmoS7Qf8danpDnoXZLVz",
+          "renderModuleFilePath": "plasmic/appel_site/PlasmicAppel3.tsx",
+          "importSpec": {
+            "modulePath": "../pages/shop/appel/appel-3.tsx"
+          },
+          "cssFilePath": "plasmic/appel_site/PlasmicAppel3.module.css",
+          "scheme": "blackbox",
+          "componentType": "page"
+        },
+        {
+          "id": "ODCRtGAk6YgZ",
+          "name": "Etoplite2",
+          "type": "managed",
+          "projectId": "wBRmoS7Qf8danpDnoXZLVz",
+          "renderModuleFilePath": "plasmic/appel_site/PlasmicEtoplite2.tsx",
+          "importSpec": {
+            "modulePath": "../pages/shop/etop/etop-lite-2.tsx"
+          },
+          "cssFilePath": "plasmic/appel_site/PlasmicEtoplite2.module.css",
           "scheme": "blackbox",
           "componentType": "page"
         }
@@ -1194,6 +1198,31 @@
           "id": "NyNFQa4Jbb",
           "name": "EdisplayPlussvgIcon",
           "moduleFilePath": "plasmic/appel_site/icons/PlasmicIcon__EdisplayPlussvg.tsx"
+        },
+        {
+          "id": "dsOT3dlAx5oW",
+          "name": "Emaxlite2SvgIcon",
+          "moduleFilePath": "plasmic/appel_site/icons/PlasmicIcon__Emaxlite2Svg.tsx"
+        },
+        {
+          "id": "946drNMN0qzF",
+          "name": "Stuffsvg2Icon",
+          "moduleFilePath": "plasmic/appel_site/icons/PlasmicIcon__Stuffsvg2.tsx"
+        },
+        {
+          "id": "bHDKT_97Rl3y",
+          "name": "TwitterXSeeklogocom4SvgIcon",
+          "moduleFilePath": "plasmic/appel_site/icons/PlasmicIcon__TwitterXSeeklogocom4Svg.tsx"
+        },
+        {
+          "id": "AXYHtippGlW3",
+          "name": "TwitterXSeeklogocom4Svg2Icon",
+          "moduleFilePath": "plasmic/appel_site/icons/PlasmicIcon__TwitterXSeeklogocom4Svg2.tsx"
+        },
+        {
+          "id": "DzPVzDvGCHfb",
+          "name": "EtopLite2SvgIcon",
+          "moduleFilePath": "plasmic/appel_site/icons/PlasmicIcon__EtopLite2Svg.tsx"
         }
       ],
       "images": [
@@ -1726,6 +1755,86 @@
           "id": "hRAlY6p-f",
           "name": "appel2pro.png 3",
           "filePath": "../public/plasmic/appel_site/images/appel2Propng3.png"
+        },
+        {
+          "id": "dJ2KayqIE",
+          "name": "usbc cable.png",
+          "filePath": "../public/plasmic/appel_site/images/usbcCablepng.png"
+        },
+        {
+          "id": "ogW91X2gB",
+          "name": "Group 5.png",
+          "filePath": "../public/plasmic/appel_site/images/group5Png.png"
+        },
+        {
+          "id": "hAACRfXgf",
+          "name": "usbc cable.png 2",
+          "filePath": "../public/plasmic/appel_site/images/usbcCablepng2.png"
+        },
+        {
+          "id": "HvG82tsDC",
+          "name": "mainpic.png",
+          "filePath": "../public/plasmic/appel_site/images/mainpicpng.png"
+        },
+        {
+          "id": "A0Ynr_PdM",
+          "name": "mainpic.png 2",
+          "filePath": "../public/plasmic/appel_site/images/mainpicpng2.png"
+        },
+        {
+          "id": "UHSs4Ztb1",
+          "name": "appel3shine.png",
+          "filePath": "../public/plasmic/appel_site/images/appel3Shinepng.png"
+        },
+        {
+          "id": "hHI7VGjoG",
+          "name": "mainpic.png 3",
+          "filePath": "../public/plasmic/appel_site/images/mainpicpng3.png"
+        },
+        {
+          "id": "iv7Rsm0Bi",
+          "name": "mainpic.png 4",
+          "filePath": "../public/plasmic/appel_site/images/mainpicpng4.png"
+        },
+        {
+          "id": "fwM53fSyc",
+          "name": "allcolors.png",
+          "filePath": "../public/plasmic/appel_site/images/allcolorspng.png"
+        },
+        {
+          "id": "3sLH7gjIJjJu",
+          "name": "mainpicpro.png",
+          "filePath": "../public/plasmic/appel_site/images/mainpicpropng.png"
+        },
+        {
+          "id": "Km6ltsnoiomU",
+          "name": "mainpicpro.png 2",
+          "filePath": "../public/plasmic/appel_site/images/mainpicpropng2.png"
+        },
+        {
+          "id": "RyXxcDmqQSwg",
+          "name": "allcolorspro.png",
+          "filePath": "../public/plasmic/appel_site/images/allcolorspropng.png"
+        },
+        {
+          "id": "hXRHB3aszl2r",
+          "name": "appel3.png",
+          "filePath": "../public/plasmic/appel_site/images/appel3Png.png"
+        },
+        {
+          "id": "EU0w3mNKFSWn",
+          "name": "appel3pro.png",
+          "filePath": "../public/plasmic/appel_site/images/appel3Propng.png"
+        },
+        {
+          "id": "37nwGFRsXKWw",
+          "name": "Group 5.png 2",
+          "filePath": "../public/plasmic/appel_site/images/group5Png2.png"
+        },
+        {
+          "id": "_HayYJVeY4vh",
+          "name": "etop lite 2.png",
+          "filePath": "../public/plasmic/appel_site/images/etopLite2Png.png"
         }
       ],
       "indirect": false,
@@ -2014,9 +2123,24 @@
             "name": "treeHelpers",
             "importPath": "@plasmicpkgs/antd5/skinny/registerTree"
           }
+        },
+        {
+          "id": "oPUhN99n4VXI",
+          "name": "AntdCollapse",
+          "displayName": "plasmic-antd5-collapse",
+          "componentImportPath": "@plasmicpkgs/antd5/skinny/registerCollapse",
+          "helper": {
+            "name": "collapseHelpers",
+            "importPath": "@plasmicpkgs/antd5/skinny/registerCollapse"
+          }
+        },
+        {
+          "id": "4mmDdnlyWx2k",
+          "name": "AntdCollapseItem",
+          "displayName": "plasmic-antd5-collapse-item",
+          "componentImportPath": "@plasmicpkgs/antd5/skinny/registerCollapse"
         }
-      ],
-      "jsBundleThemes": []
+      ]
     }
   ],
   "globalVariants": {
@@ -2033,6 +2157,6 @@
   "nextjsConfig": {
     "pagesDir": "../pages"
   },
-  "cliVersion": "0.1.307",
-  "$schema": "https://unpkg.com/@plasmicapp/cli@0.1.307/dist/plasmic.schema.json"
+  "cliVersion": "0.1.308",
+  "$schema": "https://unpkg.com/@plasmicapp/cli@0.1.308/dist/plasmic.schema.json"
 }

@@ -217,239 +217,21 @@ function PlasmicEtoplite__RenderFunc(props: {
                     >
                       {"Sign up"}
                     </button>
-                    {true ? (
-                      <Button
-                        className={classNames(
-                          "__wab_instance",
-                          sty.button___92KG
-                        )}
-                        color={"clear" as const}
-                        endIcon={
-                          <Icon38Icon
-                            className={classNames(
-                              projectcss.all,
-                              sty.svg__jD0B1
-                            )}
-                            role={"img"}
-                          />
-                        }
-                        startIcon={
-                          <ChecksvgIcon
-                            className={classNames(
-                              projectcss.all,
-                              sty.svg__fcosy
-                            )}
-                            role={"img"}
-                          />
-                        }
-                        submitsForm={true}
-                      >
-                        <div
-                          className={classNames(
-                            projectcss.all,
-                            projectcss.__wab_text,
-                            sty.text__ghHi3
-                          )}
-                        >
-                          {"Log in"}
-                        </div>
-                      </Button>
-                    ) : null}
-                  </div>
-                ) : null}
-                <BarsIcon
-                  className={classNames(projectcss.all, sty.svg___3X4Zb)}
-                  role={"img"}
-                />
-              </p.Stack>
-            </p.Stack>
-          ) : null}
-          {(hasVariant(globalVariants, "screen", "mobile") ? true : true) ? (
-            <p.Stack
-              as={"div"}
-              hasGap={true}
-              className={classNames(projectcss.all, sty.freeBox__ucu9F)}
-            >
-              <p.Stack
-                as={"div"}
-                hasGap={true}
-                className={classNames(projectcss.all, sty.freeBox__y181P)}
-              >
-                <p.PlasmicLink
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.a,
-                    projectcss.__wab_text,
-                    sty.link___4WbKs
-                  )}
-                  component={Link}
-                  href={`/`}
-                  platform={"nextjs"}
-                >
-                  {"\u212e"}
-                </p.PlasmicLink>
-                <p.Stack
-                  as={"div"}
-                  hasGap={true}
-                  className={classNames(projectcss.all, sty.freeBox__dFtzr)}
-                >
-                  <Button
-                    className={classNames("__wab_instance", sty.button__cmohO)}
-                    color={"clear" as const}
-                    endIcon={
-                      <Icon38Icon
-                        className={classNames(projectcss.all, sty.svg__lj8Pe)}
-                        role={"img"}
-                      />
-                    }
-                    startIcon={
-                      <ChecksvgIcon
-                        className={classNames(projectcss.all, sty.svg__zls3Z)}
-                        role={"img"}
-                      />
-                    }
-                    submitsForm={true}
-                  >
-                    <div
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.__wab_text,
-                        sty.text___91Ro0
-                      )}
-                    >
-                      {"Store"}
-                    </div>
-                  </Button>
-                  <Button
-                    className={classNames("__wab_instance", sty.button__iGWno)}
-                    color={"clear" as const}
-                    endIcon={
-                      <Icon38Icon
-                        className={classNames(projectcss.all, sty.svg___0BNc8)}
-                        role={"img"}
-                      />
-                    }
-                    link={`/shop/appel`}
-                    startIcon={
-                      <ChecksvgIcon
-                        className={classNames(projectcss.all, sty.svg___1HoHs)}
-                        role={"img"}
-                      />
-                    }
-                    submitsForm={true}
-                  >
-                    <div
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.__wab_text,
-                        sty.text__obsWc
-                      )}
-                    >
-                      {"Appel"}
-                    </div>
-                  </Button>
-                  <Button
-                    className={classNames("__wab_instance", sty.button__ns305)}
-                    color={"clear" as const}
-                    endIcon={
-                      <Icon38Icon
-                        className={classNames(projectcss.all, sty.svg__ceYqU)}
-                        role={"img"}
-                      />
-                    }
-                    link={`/shop/epad`}
-                    startIcon={
-                      <ChecksvgIcon
-                        className={classNames(projectcss.all, sty.svg__isv8)}
-                        role={"img"}
-                      />
-                    }
-                    submitsForm={true}
-                  >
-                    <div
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.__wab_text,
-                        sty.text___5NZ9I
-                      )}
-                    >
-                      {"ePad"}
-                    </div>
-                  </Button>
-                  <Button
-                    className={classNames("__wab_instance", sty.button__mfCe)}
-                    color={"clear" as const}
-                    endIcon={
-                      <Icon38Icon
-                        className={classNames(projectcss.all, sty.svg__xDKs)}
-                        role={"img"}
-                      />
-                    }
-                    link={`/shop/etop`}
-                    startIcon={
-                      <ChecksvgIcon
-                        className={classNames(projectcss.all, sty.svg__evF7)}
-                        role={"img"}
-                      />
-                    }
-                    submitsForm={true}
-                  >
-                    <div
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.__wab_text,
-                        sty.text__c4Mwn
-                      )}
-                    >
-                      {"eTop"}
-                    </div>
-                  </Button>
-                  <Button
-                    className={classNames("__wab_instance", sty.button__t6NkD)}
-                    color={"clear" as const}
-                    endIcon={
-                      <Icon38Icon
-                        className={classNames(projectcss.all, sty.svg__jCx9)}
-                        role={"img"}
-                      />
-                    }
-                    startIcon={
-                      <ChecksvgIcon
-                        className={classNames(projectcss.all, sty.svg__uwERg)}
-                        role={"img"}
-                      />
-                    }
-                    submitsForm={true}
-                  >
-                    <div
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.__wab_text,
-                        sty.text___3FLtf
-                      )}
-                    >
-                      {"eMax"}
-                    </div>
-                  </Button>
-                  {(
-                    hasVariant(globalVariants, "screen", "mobile") ? true : true
-                  ) ? (
                     <Button
                       className={classNames(
                         "__wab_instance",
-                        sty.button__vL40K
+                        sty.button___92KG
                       )}
-                      color={"clear" as const}
+                      color={"clear"}
                       endIcon={
                         <Icon38Icon
-                          className={classNames(projectcss.all, sty.svg__nSUe6)}
+                          className={classNames(projectcss.all, sty.svg__jD0B1)}
                           role={"img"}
                         />
                       }
-                      link={`/login`}
                       startIcon={
                         <ChecksvgIcon
-                          className={classNames(projectcss.all, sty.svg__qOoKu)}
+                          className={classNames(projectcss.all, sty.svg__fcosy)}
                           role={"img"}
                         />
                       }
@@ -459,24 +241,293 @@ function PlasmicEtoplite__RenderFunc(props: {
                         className={classNames(
                           projectcss.all,
                           projectcss.__wab_text,
-                          sty.text___2Lsdz
+                          sty.text__ghHi3
                         )}
                       >
                         {"Log in"}
                       </div>
                     </Button>
-                  ) : null}
+                  </div>
+                ) : null}
+                <BarsIcon
+                  className={classNames(projectcss.all, sty.svg___3X4Zb)}
+                  role={"img"}
+                />
+              </p.Stack>
+            </p.Stack>
+          ) : null}
+          <p.Stack
+            as={"div"}
+            hasGap={true}
+            className={classNames(projectcss.all, sty.freeBox__ucu9F)}
+          >
+            <p.Stack
+              as={"div"}
+              hasGap={true}
+              className={classNames(projectcss.all, sty.freeBox__y181P)}
+            >
+              <p.PlasmicLink
+                className={classNames(
+                  projectcss.all,
+                  projectcss.a,
+                  projectcss.__wab_text,
+                  sty.link___4WbKs
+                )}
+                component={Link}
+                href={`/`}
+                platform={"nextjs"}
+              >
+                {"\u212e"}
+              </p.PlasmicLink>
+              <p.Stack
+                as={"div"}
+                hasGap={true}
+                className={classNames(projectcss.all, sty.freeBox__dFtzr)}
+              >
+                <Button
+                  className={classNames("__wab_instance", sty.button__cmohO)}
+                  color={"clear"}
+                  endIcon={
+                    <Icon38Icon
+                      className={classNames(projectcss.all, sty.svg__lj8Pe)}
+                      role={"img"}
+                    />
+                  }
+                  startIcon={
+                    <ChecksvgIcon
+                      className={classNames(projectcss.all, sty.svg__zls3Z)}
+                      role={"img"}
+                    />
+                  }
+                  submitsForm={true}
+                >
+                  <div
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text___91Ro0
+                    )}
+                  >
+                    {"Store"}
+                  </div>
+                </Button>
+                <Button
+                  className={classNames("__wab_instance", sty.button__iGWno)}
+                  color={"clear"}
+                  endIcon={
+                    <Icon38Icon
+                      className={classNames(projectcss.all, sty.svg___0BNc8)}
+                      role={"img"}
+                    />
+                  }
+                  link={`/shop/appel`}
+                  startIcon={
+                    <ChecksvgIcon
+                      className={classNames(projectcss.all, sty.svg___1HoHs)}
+                      role={"img"}
+                    />
+                  }
+                  submitsForm={true}
+                >
+                  <div
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text__obsWc
+                    )}
+                  >
+                    {"Appel"}
+                  </div>
+                </Button>
+                <Button
+                  className={classNames("__wab_instance", sty.button__ns305)}
+                  color={"clear"}
+                  endIcon={
+                    <Icon38Icon
+                      className={classNames(projectcss.all, sty.svg__ceYqU)}
+                      role={"img"}
+                    />
+                  }
+                  link={`/shop/epad`}
+                  startIcon={
+                    <ChecksvgIcon
+                      className={classNames(projectcss.all, sty.svg__isv8)}
+                      role={"img"}
+                    />
+                  }
+                  submitsForm={true}
+                >
+                  <div
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text___5NZ9I
+                    )}
+                  >
+                    {"ePad"}
+                  </div>
+                </Button>
+                <Button
+                  className={classNames("__wab_instance", sty.button__mfCe)}
+                  color={"clear"}
+                  endIcon={
+                    <Icon38Icon
+                      className={classNames(projectcss.all, sty.svg__xDKs)}
+                      role={"img"}
+                    />
+                  }
+                  link={`/shop/etop`}
+                  startIcon={
+                    <ChecksvgIcon
+                      className={classNames(projectcss.all, sty.svg__evF7)}
+                      role={"img"}
+                    />
+                  }
+                  submitsForm={true}
+                >
+                  <div
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text__c4Mwn
+                    )}
+                  >
+                    {"eTop"}
+                  </div>
+                </Button>
+                <Button
+                  className={classNames("__wab_instance", sty.button__htX5A)}
+                  color={"clear"}
+                  endIcon={
+                    <Icon38Icon
+                      className={classNames(projectcss.all, sty.svg__yHnJv)}
+                      role={"img"}
+                    />
+                  }
+                  startIcon={
+                    <ChecksvgIcon
+                      className={classNames(projectcss.all, sty.svg___97DC)}
+                      role={"img"}
+                    />
+                  }
+                  submitsForm={true}
+                >
+                  <div
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text__kft1K
+                    )}
+                  >
+                    {"InVision"}
+                  </div>
+                </Button>
+                <Button
+                  className={classNames("__wab_instance", sty.button__t6NkD)}
+                  color={"clear"}
+                  endIcon={
+                    <Icon38Icon
+                      className={classNames(projectcss.all, sty.svg__jCx9)}
+                      role={"img"}
+                    />
+                  }
+                  startIcon={
+                    <ChecksvgIcon
+                      className={classNames(projectcss.all, sty.svg__uwERg)}
+                      role={"img"}
+                    />
+                  }
+                  submitsForm={true}
+                >
+                  <div
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text___3FLtf
+                    )}
+                  >
+                    {"eMax"}
+                  </div>
+                </Button>
+                <Button
+                  className={classNames("__wab_instance", sty.button__vL40K)}
+                  color={"clear"}
+                  endIcon={
+                    <Icon38Icon
+                      className={classNames(projectcss.all, sty.svg__nSUe6)}
+                      role={"img"}
+                    />
+                  }
+                  link={`/login`}
+                  startIcon={
+                    <ChecksvgIcon
+                      className={classNames(projectcss.all, sty.svg__qOoKu)}
+                      role={"img"}
+                    />
+                  }
+                  submitsForm={true}
+                >
+                  <div
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text___2Lsdz
+                    )}
+                  >
+                    {"Log in"}
+                  </div>
+                </Button>
+                <Button
+                  className={classNames("__wab_instance", sty.button__kFrjS)}
+                  endIcon={
+                    <Icon38Icon
+                      className={classNames(projectcss.all, sty.svg___8A0Rl)}
+                      role={"img"}
+                    />
+                  }
+                  startIcon={
+                    <ChecksvgIcon
+                      className={classNames(projectcss.all, sty.svg___4Ts0G)}
+                      role={"img"}
+                    />
+                  }
+                  submitsForm={true}
+                >
+                  <div
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text__qbBn
+                    )}
+                  >
+                    {"Sign up"}
+                  </div>
+                </Button>
+              </p.Stack>
+              {false ? (
+                <div className={classNames(projectcss.all, sty.freeBox__beYqb)}>
+                  <button
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.button,
+                      projectcss.__wab_text,
+                      sty.button__td5P
+                    )}
+                  >
+                    {"Sign up"}
+                  </button>
                   <Button
-                    className={classNames("__wab_instance", sty.button__kFrjS)}
+                    className={classNames("__wab_instance", sty.button__qRQh)}
+                    color={"clear"}
                     endIcon={
                       <Icon38Icon
-                        className={classNames(projectcss.all, sty.svg___8A0Rl)}
+                        className={classNames(projectcss.all, sty.svg__fzY49)}
                         role={"img"}
                       />
                     }
                     startIcon={
                       <ChecksvgIcon
-                        className={classNames(projectcss.all, sty.svg___4Ts0G)}
+                        className={classNames(projectcss.all, sty.svg__cudAn)}
                         role={"img"}
                       />
                     }
@@ -486,223 +537,156 @@ function PlasmicEtoplite__RenderFunc(props: {
                       className={classNames(
                         projectcss.all,
                         projectcss.__wab_text,
-                        sty.text__qbBn
+                        sty.text___7Gofx
                       )}
                     >
-                      {"Sign up"}
+                      {"Log in"}
                     </div>
                   </Button>
-                </p.Stack>
-                {false ? (
-                  <div
-                    className={classNames(projectcss.all, sty.freeBox__beYqb)}
-                  >
-                    <button
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.button,
-                        projectcss.__wab_text,
-                        sty.button__td5P
-                      )}
-                    >
-                      {"Sign up"}
-                    </button>
-                    {true ? (
-                      <Button
-                        className={classNames(
-                          "__wab_instance",
-                          sty.button__qRQh
-                        )}
-                        color={"clear" as const}
-                        endIcon={
-                          <Icon38Icon
-                            className={classNames(
-                              projectcss.all,
-                              sty.svg__fzY49
-                            )}
-                            role={"img"}
-                          />
-                        }
-                        startIcon={
-                          <ChecksvgIcon
-                            className={classNames(
-                              projectcss.all,
-                              sty.svg__cudAn
-                            )}
-                            role={"img"}
-                          />
-                        }
-                        submitsForm={true}
-                      >
-                        <div
-                          className={classNames(
-                            projectcss.all,
-                            projectcss.__wab_text,
-                            sty.text___7Gofx
-                          )}
-                        >
-                          {"Log in"}
-                        </div>
-                      </Button>
-                    ) : null}
-                  </div>
-                ) : null}
-              </p.Stack>
+                </div>
+              ) : null}
             </p.Stack>
-          ) : null}
-          {true ? (
-            <p.Stack
-              as={"div"}
-              hasGap={true}
-              className={classNames(projectcss.all, sty.freeBox__hS2J)}
-            >
-              <div className={classNames(projectcss.all, sty.freeBox__bCnfd)}>
-                <div
-                  data-plasmic-name={"columns"}
-                  data-plasmic-override={overrides.columns}
-                  className={classNames(projectcss.all, sty.columns)}
+          </p.Stack>
+          <p.Stack
+            as={"div"}
+            hasGap={true}
+            className={classNames(projectcss.all, sty.freeBox__hS2J)}
+          >
+            <div className={classNames(projectcss.all, sty.freeBox__bCnfd)}>
+              <div
+                data-plasmic-name={"columns"}
+                data-plasmic-override={overrides.columns}
+                className={classNames(projectcss.all, sty.columns)}
+              >
+                <div className={classNames(projectcss.all, sty.column__ylgoE)}>
+                  <p.PlasmicImg
+                    alt={""}
+                    className={classNames(sty.img__pNqab)}
+                    displayHeight={"auto"}
+                    displayMaxHeight={"none"}
+                    displayMaxWidth={"100%"}
+                    displayMinHeight={"0"}
+                    displayMinWidth={"0"}
+                    displayWidth={"539px"}
+                    loading={"lazy"}
+                    src={{
+                      src: "/plasmic/appel_site/images/etopLitepng.png",
+                      fullWidth: 2117,
+                      fullHeight: 1240,
+                      aspectRatio: undefined
+                    }}
+                  />
+                </div>
+                <p.Stack
+                  as={"div"}
+                  hasGap={true}
+                  className={classNames(projectcss.all, sty.column__rx9Qh)}
                 >
-                  <div
-                    className={classNames(projectcss.all, sty.column__ylgoE)}
+                  <h1
+                    data-plasmic-name={"h1"}
+                    data-plasmic-override={overrides.h1}
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.h1,
+                      projectcss.__wab_text,
+                      sty.h1
+                    )}
                   >
-                    <p.PlasmicImg
-                      alt={""}
-                      className={classNames(sty.img__pNqab)}
-                      displayHeight={"auto" as const}
-                      displayMaxHeight={"none" as const}
-                      displayMaxWidth={"100%" as const}
-                      displayMinHeight={"0" as const}
-                      displayMinWidth={"0" as const}
-                      displayWidth={"539px" as const}
-                      loading={"lazy" as const}
-                      src={{
-                        src: "/plasmic/appel_site/images/etopLitepng.png",
-                        fullWidth: 2117,
-                        fullHeight: 1240,
-                        aspectRatio: undefined
-                      }}
-                    />
+                    {"eTop Lite"}
+                  </h1>
+                  <div
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text__g5B3
+                    )}
+                  >
+                    {"From $999 or\n $41.63/mo for 24 mo."}
                   </div>
                   <p.Stack
                     as={"div"}
                     hasGap={true}
-                    className={classNames(projectcss.all, sty.column__rx9Qh)}
+                    className={classNames(projectcss.all, sty.freeBox___2Uko)}
                   >
-                    <h1
-                      data-plasmic-name={"h1"}
-                      data-plasmic-override={overrides.h1}
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.h1,
-                        projectcss.__wab_text,
-                        sty.h1
-                      )}
-                    >
-                      {"eTop Lite"}
-                    </h1>
-                    <div
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.__wab_text,
-                        sty.text__g5B3
-                      )}
-                    >
-                      {"From $999 or\n $41.63/mo for 24 mo."}
-                    </div>
-                    {(
-                      hasVariant(globalVariants, "screen", "mobile")
-                        ? true
-                        : true
-                    ) ? (
-                      <p.Stack
-                        as={"div"}
-                        hasGap={true}
-                        className={classNames(
-                          projectcss.all,
-                          sty.freeBox___2Uko
-                        )}
-                      >
-                        <Select
-                          data-plasmic-name={"select"}
-                          data-plasmic-override={overrides.select}
-                          className={classNames("__wab_instance", sty.select)}
-                          onChange={(...eventArgs) => {
-                            p.generateStateOnChangeProp($state, [
-                              "select",
-                              "value"
-                            ])(eventArgs[0]);
-                          }}
-                          placeholder={
-                            <div
-                              className={classNames(
-                                projectcss.all,
-                                projectcss.__wab_text,
-                                sty.text__zXtS5
-                              )}
-                            >
-                              {"Pick Color"}
-                            </div>
-                          }
-                          value={p.generateStateValueProp($state, [
-                            "select",
-                            "value"
-                          ])}
-                        >
-                          <Select__Option
-                            className={classNames(
-                              "__wab_instance",
-                              sty.option__vGcnq
-                            )}
-                            value={"value1" as const}
-                          >
-                            <div
-                              data-plasmic-name={"hello"}
-                              data-plasmic-override={overrides.hello}
-                              className={classNames(
-                                projectcss.all,
-                                projectcss.__wab_text,
-                                sty.hello
-                              )}
-                            >
-                              {"Shine"}
-                            </div>
-                          </Select__Option>
-                          <Select__Option
-                            className={classNames(
-                              "__wab_instance",
-                              sty.option__b8Tvt
-                            )}
-                            value={"value2" as const}
-                          >
-                            <div
-                              data-plasmic-name={"plus"}
-                              data-plasmic-override={overrides.plus}
-                              className={classNames(
-                                projectcss.all,
-                                projectcss.__wab_text,
-                                sty.plus
-                              )}
-                            >
-                              {"Matte"}
-                            </div>
-                          </Select__Option>
-                        </Select>
-                        <Button
+                    <Select
+                      data-plasmic-name={"select"}
+                      data-plasmic-override={overrides.select}
+                      className={classNames("__wab_instance", sty.select)}
+                      onChange={(...eventArgs) => {
+                        p.generateStateOnChangeProp($state, [
+                          "select",
+                          "value"
+                        ])(eventArgs[0]);
+                      }}
+                      placeholder={
+                        <div
                           className={classNames(
-                            "__wab_instance",
-                            sty.button__t4DpK
+                            projectcss.all,
+                            projectcss.__wab_text,
+                            sty.text__zXtS5
                           )}
-                          submitsForm={true}
                         >
-                          {"Buy"}
-                        </Button>
-                      </p.Stack>
-                    ) : null}
+                          {"Pick Color"}
+                        </div>
+                      }
+                      value={p.generateStateValueProp($state, [
+                        "select",
+                        "value"
+                      ])}
+                    >
+                      <Select__Option
+                        className={classNames(
+                          "__wab_instance",
+                          sty.option__vGcnq
+                        )}
+                        value={"value1"}
+                      >
+                        <div
+                          data-plasmic-name={"hello"}
+                          data-plasmic-override={overrides.hello}
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.__wab_text,
+                            sty.hello
+                          )}
+                        >
+                          {"Shine"}
+                        </div>
+                      </Select__Option>
+                      <Select__Option
+                        className={classNames(
+                          "__wab_instance",
+                          sty.option__b8Tvt
+                        )}
+                        value={"value2"}
+                      >
+                        <div
+                          data-plasmic-name={"plus"}
+                          data-plasmic-override={overrides.plus}
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.__wab_text,
+                            sty.plus
+                          )}
+                        >
+                          {"Matte"}
+                        </div>
+                      </Select__Option>
+                    </Select>
+                    <Button
+                      className={classNames(
+                        "__wab_instance",
+                        sty.button__t4DpK
+                      )}
+                      submitsForm={true}
+                    >
+                      {"Buy"}
+                    </Button>
                   </p.Stack>
-                </div>
+                </p.Stack>
               </div>
-            </p.Stack>
-          ) : null}
+            </div>
+          </p.Stack>
           <p.Stack
             as={"div"}
             hasGap={true}
@@ -751,15 +735,15 @@ function PlasmicEtoplite__RenderFunc(props: {
                       className={classNames(sty.img__tYeEe)}
                       displayHeight={
                         hasVariant(globalVariants, "screen", "mobile")
-                          ? ("102px" as const)
-                          : ("161px" as const)
+                          ? "102px"
+                          : "161px"
                       }
-                      displayMaxHeight={"none" as const}
-                      displayMaxWidth={"100%" as const}
-                      displayMinHeight={"0" as const}
-                      displayMinWidth={"0" as const}
-                      displayWidth={"auto" as const}
-                      loading={"lazy" as const}
+                      displayMaxHeight={"none"}
+                      displayMaxWidth={"100%"}
+                      displayMinHeight={"0"}
+                      displayMinWidth={"0"}
+                      displayWidth={"auto"}
+                      loading={"lazy"}
                       src={{
                         src: "/plasmic/appel_site/images/etopLitepng.png",
                         fullWidth: 2117,
@@ -768,24 +752,19 @@ function PlasmicEtoplite__RenderFunc(props: {
                       }}
                     />
 
-                    {true ? (
+                    <div
+                      className={classNames(projectcss.all, sty.freeBox__afhor)}
+                    >
                       <div
                         className={classNames(
                           projectcss.all,
-                          sty.freeBox__afhor
+                          projectcss.__wab_text,
+                          sty.text__llhFb
                         )}
                       >
-                        <div
-                          className={classNames(
-                            projectcss.all,
-                            projectcss.__wab_text,
-                            sty.text__llhFb
-                          )}
-                        >
-                          {"Device"}
-                        </div>
+                        {"Device"}
                       </div>
-                    ) : null}
+                    </div>
                   </p.Stack>
                 </div>
                 <div className={classNames(projectcss.all, sty.freeBox__oPuuz)}>
@@ -797,13 +776,13 @@ function PlasmicEtoplite__RenderFunc(props: {
                     <p.PlasmicImg
                       alt={""}
                       className={classNames(sty.img__vpxqc)}
-                      displayHeight={"161px" as const}
-                      displayMaxHeight={"none" as const}
-                      displayMaxWidth={"100%" as const}
-                      displayMinHeight={"0" as const}
-                      displayMinWidth={"0" as const}
-                      displayWidth={"90px" as const}
-                      loading={"lazy" as const}
+                      displayHeight={"161px"}
+                      displayMaxHeight={"none"}
+                      displayMaxWidth={"100%"}
+                      displayMinHeight={"0"}
+                      displayMinWidth={"0"}
+                      displayWidth={"90px"}
+                      loading={"lazy"}
                       src={{
                         src: "/plasmic/appel_site/images/chargerpng.png",
                         fullWidth: 480,
@@ -812,24 +791,19 @@ function PlasmicEtoplite__RenderFunc(props: {
                       }}
                     />
 
-                    {true ? (
+                    <div
+                      className={classNames(projectcss.all, sty.freeBox__bmFsp)}
+                    >
                       <div
                         className={classNames(
                           projectcss.all,
-                          sty.freeBox__bmFsp
+                          projectcss.__wab_text,
+                          sty.text__ez38E
                         )}
                       >
-                        <div
-                          className={classNames(
-                            projectcss.all,
-                            projectcss.__wab_text,
-                            sty.text__ez38E
-                          )}
-                        >
-                          {"Charging Cable"}
-                        </div>
+                        {"Charging Cable"}
                       </div>
-                    ) : null}
+                    </div>
                   </p.Stack>
                 </div>
               </p.Stack>

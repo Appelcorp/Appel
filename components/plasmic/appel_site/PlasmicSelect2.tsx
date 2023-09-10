@@ -581,7 +581,7 @@ function PlasmicSelect2__RenderFunc(props: {
             className={classNames("__wab_instance", sty.overlay, {
               [sty.overlayisOpen]: hasVariant($state, "isOpen", "isOpen")
             })}
-            relativePlacement={"bottom" as const}
+            relativePlacement={"bottom"}
           >
             <div
               data-plasmic-name={"optionsContainer"}
@@ -602,7 +602,7 @@ function PlasmicSelect2__RenderFunc(props: {
                         "__wab_instance",
                         sty.option__qLfio
                       )}
-                      value={"value1" as const}
+                      value={"value1"}
                     >
                       {"Option 1"}
                     </Select2__Option>
@@ -611,7 +611,7 @@ function PlasmicSelect2__RenderFunc(props: {
                         "__wab_instance",
                         sty.option__fosLm
                       )}
-                      value={"value2" as const}
+                      value={"value2"}
                     >
                       {"Option 2"}
                     </Select2__Option>
@@ -639,13 +639,13 @@ function useBehavior<P extends pp.BaseSelectProps>(
           <React.Fragment>
             <Select2__Option
               className={classNames("__wab_instance", sty.option__qLfio)}
-              value={"value1" as const}
+              value={"value1"}
             >
               {"Option 1"}
             </Select2__Option>
             <Select2__Option
               className={classNames("__wab_instance", sty.option__fosLm)}
-              value={"value2" as const}
+              value={"value2"}
             >
               {"Option 2"}
             </Select2__Option>

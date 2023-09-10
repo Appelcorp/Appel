@@ -93,7 +93,7 @@ function PlasmicIconLink__RenderFunc(props: {
     () =>
       Object.assign(
         {
-          href: "#" as const
+          href: "#"
         },
         props.args
       ),

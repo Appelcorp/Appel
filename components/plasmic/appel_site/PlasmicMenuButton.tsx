@@ -104,7 +104,7 @@ function PlasmicMenuButton__RenderFunc(props: {
     () =>
       Object.assign(
         {
-          href: "#" as const
+          href: "#"
         },
         props.args
       ),
@@ -166,30 +166,27 @@ function PlasmicMenuButton__RenderFunc(props: {
           [sty.freeBoxexpanded]: hasVariant($state, "expanded", "expanded")
         })}
       >
-        {(hasVariant($state, "expanded", "expanded") ? true : true) ? (
-          <BarsIcon
-            className={classNames(projectcss.all, sty.svg__qppw, {
-              [sty.svgexpanded__qppwBvYoh]: hasVariant(
-                $state,
-                "expanded",
-                "expanded"
-              )
-            })}
-            role={"img"}
-          />
-        ) : null}
-        {(hasVariant($state, "expanded", "expanded") ? true : true) ? (
-          <TimesIcon
-            className={classNames(projectcss.all, sty.svg__i6Cew, {
-              [sty.svgexpanded__i6CewBvYoh]: hasVariant(
-                $state,
-                "expanded",
-                "expanded"
-              )
-            })}
-            role={"img"}
-          />
-        ) : null}
+        <BarsIcon
+          className={classNames(projectcss.all, sty.svg__qppw, {
+            [sty.svgexpanded__qppwBvYoh]: hasVariant(
+              $state,
+              "expanded",
+              "expanded"
+            )
+          })}
+          role={"img"}
+        />
+
+        <TimesIcon
+          className={classNames(projectcss.all, sty.svg__i6Cew, {
+            [sty.svgexpanded__i6CewBvYoh]: hasVariant(
+              $state,
+              "expanded",
+              "expanded"
+            )
+          })}
+          role={"img"}
+        />
       </div>
     </button>
   ) as React.ReactElement | null;

@@ -178,7 +178,7 @@ function PlasmicFeatureItem__RenderFunc(props: {
                 data-plasmic-override={overrides.linkButton}
                 className={classNames("__wab_instance", sty.linkButton)}
                 text={"View More"}
-                type={"solidOrange" as const}
+                type={"solidOrange"}
               />
             </p.Stack>
           </p.Stack>

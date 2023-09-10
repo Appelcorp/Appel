@@ -276,13 +276,13 @@ function PlasmicProductCarousel__RenderFunc(props: {
             <LinkButton
               className={classNames("__wab_instance", sty.linkButton__jSz9C)}
               text={"\u2295 Add to cart"}
-              type={"solidOrange" as const}
+              type={"solidOrange"}
             />
 
             <LinkButton
               className={classNames("__wab_instance", sty.linkButton__aHdVj)}
               text={"More Info"}
-              type={"blankOrange" as const}
+              type={"blankOrange"}
             />
           </p.Stack>
         </p.Stack>
@@ -296,12 +296,12 @@ function PlasmicProductCarousel__RenderFunc(props: {
               [sty.imgslider_second]: hasVariant($state, "slider", "second"),
               [sty.imgslider_third]: hasVariant($state, "slider", "third")
             })}
-            displayHeight={"auto" as const}
-            displayMaxHeight={"none" as const}
-            displayMaxWidth={"none" as const}
-            displayMinHeight={"0" as const}
-            displayMinWidth={"0" as const}
-            displayWidth={"100%" as const}
+            displayHeight={"auto"}
+            displayMaxHeight={"none"}
+            displayMaxWidth={"none"}
+            displayMinHeight={"0"}
+            displayMinWidth={"0"}
+            displayWidth={"100%"}
             src={
               hasVariant($state, "slider", "third")
                 ? {

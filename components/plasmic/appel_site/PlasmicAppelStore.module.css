@@ -288,6 +288,38 @@
   width: 1em;
   height: 1em;
 }
+.button__uZCn:global(.__wab_instance) {
+  max-width: 100%;
+  position: relative;
+  align-self: flex-start;
+}
+.svg___1ByRd {
+  position: relative;
+  object-fit: cover;
+  width: 1em;
+  height: 1em;
+}
+.text__n63VC {
+  font-family: "Inter", sans-serif;
+  font-size: 1em;
+  font-weight: 500;
+  font-style: normal;
+  color: var(--token-3JpfuKOQofckF);
+  text-align: left;
+  text-transform: none;
+  line-height: 1.5;
+  letter-spacing: normal;
+  white-space: pre;
+  user-select: text;
+  text-decoration-line: none !important;
+  text-overflow: clip !important;
+}
+.svg__dYf0 {
+  position: relative;
+  object-fit: cover;
+  width: 1em;
+  height: 1em;
+}
 .button___78TpN:global(.__wab_instance) {
   max-width: 100%;
   position: relative;
@@ -561,12 +593,12 @@
   min-width: 0;
   padding: 8px;
 }
-.svg__bDqXn {
+.svg__xvc2Q {
   position: relative;
   object-fit: cover;
   max-width: 100%;
-  height: 50px;
   width: 50px;
+  height: 50px;
   left: auto;
   top: auto;
   flex-shrink: 0;
@@ -583,31 +615,9 @@
   font-family: "Inter", sans-serif;
   min-width: 0;
 }
-.freeBox__hUNzw {
-  display: flex;
-  position: relative;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
+.link__aglo2 {
   width: 100%;
-  height: auto;
-  max-width: 100%;
-  min-width: 0;
-  padding: 8px;
-}
-.svg__iuRz5 {
-  position: relative;
-  object-fit: cover;
-  max-width: 100%;
-  width: 50px;
-  height: 50px;
-  left: auto;
-  top: auto;
-  flex-shrink: 0;
-}
-.link__k0Htn {
-  width: 100%;
-  color: #000000;
+  color: var(--token-GcwBAJtdG3Xn);
   white-space: pre-wrap;
   user-select: text;
   flex-shrink: 1;
@@ -615,6 +625,8 @@
   flex-basis: auto;
   text-align: center;
   font-family: "Inter", sans-serif;
+  font-size: 12px;
+  margin-bottom: 0px;
   min-width: 0;
 }
 .freeBox__aZap2 {
@@ -640,6 +652,53 @@
   flex-shrink: 0;
 }
 .link__lp0In {
+  width: 100%;
+  color: #000000;
+  white-space: pre-wrap;
+  user-select: text;
+  flex-shrink: 1;
+  flex-grow: 0;
+  flex-basis: auto;
+  text-align: center;
+  font-family: "Inter", sans-serif;
+  min-width: 0;
+}
+.link__cgLaw {
+  width: 100%;
+  color: var(--token-GcwBAJtdG3Xn);
+  white-space: pre-wrap;
+  user-select: text;
+  flex-shrink: 1;
+  flex-grow: 0;
+  flex-basis: auto;
+  text-align: center;
+  font-family: "Inter", sans-serif;
+  font-size: 12px;
+  min-width: 0;
+}
+.freeBox__hUNzw {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  min-width: 0;
+  padding: 8px;
+}
+.svg__iuRz5 {
+  position: relative;
+  object-fit: cover;
+  max-width: 100%;
+  width: 50px;
+  height: 50px;
+  left: auto;
+  top: auto;
+  flex-shrink: 0;
+}
+.link__k0Htn {
   width: 100%;
   color: #000000;
   white-space: pre-wrap;
@@ -751,6 +810,19 @@
   flex-basis: auto;
   text-align: center;
   font-family: "Inter", sans-serif;
+  min-width: 0;
+}
+.text___4ZzNk {
+  width: 100%;
+  color: var(--token-GcwBAJtdG3Xn);
+  white-space: pre-wrap;
+  user-select: text;
+  flex-shrink: 1;
+  flex-grow: 0;
+  flex-basis: auto;
+  text-align: center;
+  font-family: "Inter", sans-serif;
+  font-size: 12px;
   min-width: 0;
 }
 .freeBox__spxRr {
@@ -888,6 +960,19 @@
   flex-basis: auto;
   text-align: center;
   font-family: "Inter", sans-serif;
+  min-width: 0;
+}
+.text__wkHtm {
+  width: 100%;
+  color: var(--token-GcwBAJtdG3Xn);
+  white-space: pre-wrap;
+  user-select: text;
+  flex-shrink: 1;
+  flex-grow: 0;
+  flex-basis: auto;
+  text-align: center;
+  font-family: "Inter", sans-serif;
+  font-size: 12px;
   min-width: 0;
 }
 .freeBox__vdRy2 {
@@ -1066,27 +1151,6 @@
   width: 1em;
   flex-shrink: 0;
   height: 1em;
-}
-.freeBox__amC1D {
-  display: flex;
-  position: relative;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-  width: 100%;
-  max-width: 100%;
-  height: 40px;
-  min-width: 0;
-  flex-shrink: 0;
-  padding: 8px;
-}
-.text__kNxKd {
-  position: relative;
-  width: 100%;
-  height: auto;
-  max-width: 800px;
-  text-align: center;
-  min-width: 0;
 }
 .freeBox__yFyen {
   display: flex;
@@ -1501,7 +1565,7 @@
   width: 100%;
   height: 100%;
   max-width: 100%;
-  background: url("/plasmic/appel_site/images/appel2Png3.png") top 76% left 50% / cover no-repeat,
+  background: url("/plasmic/appel_site/images/appel3Png.png") top 76% left 50% / cover no-repeat,
     var(--token-NEon4Y--Z);
   overflow: hidden;
   align-self: auto;
@@ -1547,8 +1611,10 @@
   width: 100%;
   height: auto;
   max-width: 650px;
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-bottom: 8px;
   min-width: 0;
-  padding: 4px 8px 8px;
 }
 .freeBox__t7C53 > :global(.__wab_flex-container) {
   flex-direction: column;
@@ -1654,13 +1720,13 @@
   width: 100%;
   height: auto;
   max-width: 530px;
-  padding-bottom: 0px;
-  color: var(--token-O-_kuWXKoTZI);
+  color: var(--token-7aptV6d2UWhTX);
   text-align: center;
   font-size: 30px;
   box-shadow: none;
   backdrop-filter: drop-shadow(10px 9px 10px #000000);
   font-family: "Inter", sans-serif;
+  padding-top: 0px;
   min-width: 0;
   -webkit-backdrop-filter: drop-shadow(10px 9px 10px #000000);
 }
@@ -1692,6 +1758,27 @@
   width: 1em;
   height: 1em;
 }
+.text___6GZ91 {
+  width: 100%;
+  height: auto;
+  max-width: 530px;
+  padding-bottom: 0px;
+  color: var(--token-YxFJTv0qIp7rQ);
+  text-align: center;
+  font-size: 20px;
+  box-shadow: none;
+  backdrop-filter: drop-shadow(10px 9px 10px #000000);
+  font-family: "Inter", sans-serif;
+  min-width: 0;
+  -webkit-backdrop-filter: drop-shadow(10px 9px 10px #000000);
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .text___6GZ91 {
+    text-align: center;
+    padding-bottom: 13px;
+    padding-top: 5px;
+  }
+}
 .freeBox__xuLz {
   display: flex;
   position: relative;
@@ -1701,7 +1788,7 @@
   width: 100%;
   height: 100%;
   max-width: 100%;
-  background: url("/plasmic/appel_site/images/appel2Proadpng.png") top 26% left 50% / cover no-repeat,
+  background: url("/plasmic/appel_site/images/appel3Propng.png") top 73% left 50% / cover no-repeat,
     var(--token-NEon4Y--Z);
   overflow: hidden;
   align-self: auto;
@@ -1856,7 +1943,7 @@
   height: auto;
   max-width: 530px;
   padding-bottom: 0px;
-  color: #8c54ff;
+  color: #954a65;
   text-align: center;
   font-size: 30px;
   box-shadow: none;
@@ -1892,6 +1979,27 @@
   object-fit: cover;
   width: 1em;
   height: 1em;
+}
+.text__fi5HV {
+  width: 100%;
+  height: auto;
+  max-width: 530px;
+  padding-bottom: 0px;
+  color: var(--token-YxFJTv0qIp7rQ);
+  text-align: center;
+  font-size: 20px;
+  box-shadow: none;
+  backdrop-filter: drop-shadow(10px 9px 10px #000000);
+  font-family: "Inter", sans-serif;
+  min-width: 0;
+  -webkit-backdrop-filter: drop-shadow(10px 9px 10px #000000);
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .text__fi5HV {
+    text-align: center;
+    padding-bottom: 13px;
+    padding-top: 5px;
+  }
 }
 .footer:global(.__wab_instance) {
   position: relative;

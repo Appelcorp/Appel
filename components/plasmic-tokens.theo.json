@@ -4103,7 +4103,7 @@
     {
       "name": "subtext",
       "type": "color",
-      "value": "rgb(188,183,178)",
+      "value": "#FFF6EC",
       "category": "color",
       "meta": {
         "projectId": "wBRmoS7Qf8danpDnoXZLVz",

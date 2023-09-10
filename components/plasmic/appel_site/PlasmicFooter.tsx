@@ -46,8 +46,7 @@ import plasmic_antd_5_hostless_css from "../antd_5_hostless/plasmic_antd_5_hostl
 import projectcss from "./plasmic_appel_site.module.css"; // plasmic-import: wBRmoS7Qf8danpDnoXZLVz/projectcss
 import sty from "./PlasmicFooter.module.css"; // plasmic-import: O8jRJZzkmVNu/css
 
-import FontAwesome5BrandsMastodonsvgIcon from "./icons/PlasmicIcon__FontAwesome5BrandsMastodonsvg"; // plasmic-import: cfOfwCibyD/icon
-import Icon28Icon from "./icons/PlasmicIcon__Icon28"; // plasmic-import: 1IRPnDViAlDs9/icon
+import TwitterXSeeklogocom4Svg2Icon from "./icons/PlasmicIcon__TwitterXSeeklogocom4Svg2"; // plasmic-import: AXYHtippGlW3/icon
 import IconIcon from "./icons/PlasmicIcon__Icon"; // plasmic-import: zVudMwrt8UrDS/icon
 
 createPlasmicElementProxy;
@@ -128,17 +127,6 @@ function PlasmicFooter__RenderFunc(props: {
         sty.root
       )}
     >
-      <div
-        className={classNames(
-          projectcss.all,
-          projectcss.__wab_text,
-          sty.text___4GmUn
-        )}
-      >
-        {
-          "*When using trade in your android phone must be from 2020 or later, it also must be from Samsung, Huawei or Oneplus."
-        }
-      </div>
       <p.Stack
         as={"div"}
         data-plasmic-name={"columns"}
@@ -181,42 +169,22 @@ function PlasmicFooter__RenderFunc(props: {
                 hasGap={true}
                 className={classNames(projectcss.all, sty.freeBox__odo5G)}
               >
-                {true ? (
-                  <p.PlasmicLink
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.a,
-                      sty.link___2WDq6
-                    )}
-                    component={Link}
-                    href={"https://mastodon.au/@appel" as const}
-                    platform={"nextjs"}
-                    target={"_blank" as const}
-                  >
-                    <FontAwesome5BrandsMastodonsvgIcon
-                      className={classNames(projectcss.all, sty.svg__rw3Lg)}
-                      role={"img"}
-                    />
-                  </p.PlasmicLink>
-                ) : null}
-                {true ? (
-                  <p.PlasmicLink
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.a,
-                      sty.link__lGC9
-                    )}
-                    component={Link}
-                    href={"#" as const}
-                    platform={"nextjs"}
-                    target={"_blank" as const}
-                  >
-                    <Icon28Icon
-                      className={classNames(projectcss.all, sty.svg__d8Hxt)}
-                      role={"img"}
-                    />
-                  </p.PlasmicLink>
-                ) : null}
+                <p.PlasmicLink
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.a,
+                    sty.link___2WDq6
+                  )}
+                  component={Link}
+                  href={"https://www.twitter.com/appel_us"}
+                  platform={"nextjs"}
+                  target={undefined}
+                >
+                  <TwitterXSeeklogocom4Svg2Icon
+                    className={classNames(projectcss.all, sty.svg__rw3Lg)}
+                    role={"img"}
+                  />
+                </p.PlasmicLink>
               </p.Stack>
             </p.Stack>
           </p.Stack>
@@ -275,6 +243,15 @@ function PlasmicFooter__RenderFunc(props: {
                   />
                 ) : null}
               </p.Stack>
+              <div
+                className={classNames(
+                  projectcss.all,
+                  projectcss.__wab_text,
+                  sty.text__y0OAx
+                )}
+              >
+                {"Event23"}
+              </div>
               <p.Stack
                 as={p.PlasmicLink}
                 hasGap={true}
@@ -284,18 +261,22 @@ function PlasmicFooter__RenderFunc(props: {
                   sty.link__wOw2H
                 )}
                 component={Link}
-                href={"https://mastodon.au/@appel" as const}
+                href={"https://mastodon.au/@appel"}
                 platform={"nextjs"}
               >
-                <div
+                <p.PlasmicLink
                   className={classNames(
                     projectcss.all,
+                    projectcss.a,
                     projectcss.__wab_text,
-                    sty.text__stTL
+                    sty.link__stTL
                   )}
+                  component={Link}
+                  href={"https://www.twitter.com/appel_us"}
+                  platform={"nextjs"}
                 >
-                  {"Mastodon"}
-                </div>
+                  {"X"}
+                </p.PlasmicLink>
               </p.Stack>
             </p.Stack>
           </p.Stack>

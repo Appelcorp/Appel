@@ -193,12 +193,12 @@ function PlasmicProductCard__RenderFunc(props: {
             <p.PlasmicImg
               alt={""}
               className={classNames(sty.img__jwE9O)}
-              displayHeight={"auto" as const}
-              displayMaxHeight={"none" as const}
-              displayMaxWidth={"none" as const}
-              displayMinHeight={"0" as const}
-              displayMinWidth={"0" as const}
-              displayWidth={"100%" as const}
+              displayHeight={"auto"}
+              displayMaxHeight={"none"}
+              displayMaxWidth={"none"}
+              displayMinHeight={"0"}
+              displayMinWidth={"0"}
+              displayWidth={"100%"}
               src={{
                 src: "/plasmic/appel_site/images/f1.jpg",
                 fullWidth: 270,
@@ -210,70 +210,64 @@ function PlasmicProductCard__RenderFunc(props: {
 
           value: args.image
         })}
-        {(hasVariant($state, "onSale", "onSale") ? true : true) ? (
+        <div
+          className={classNames(projectcss.all, sty.freeBox___9KLnE, {
+            [sty.freeBoxonSale___9KLnEjelFp]: hasVariant(
+              $state,
+              "onSale",
+              "onSale"
+            )
+          })}
+        >
           <div
-            className={classNames(projectcss.all, sty.freeBox___9KLnE, {
-              [sty.freeBoxonSale___9KLnEjelFp]: hasVariant(
-                $state,
-                "onSale",
-                "onSale"
-              )
-            })}
+            className={classNames(
+              projectcss.all,
+              projectcss.__wab_text,
+              sty.text__tVmnh
+            )}
           >
-            <div
-              className={classNames(
-                projectcss.all,
-                projectcss.__wab_text,
-                sty.text__tVmnh
-              )}
-            >
-              {"Sale"}
-            </div>
+            {"Sale"}
           </div>
-        ) : null}
-        {(triggers.hover_root ? true : true) ? (
-          <p.Stack
-            as={"div"}
-            hasGap={true}
-            className={classNames(projectcss.all, sty.freeBox__ezlNs)}
+        </div>
+        <p.Stack
+          as={"div"}
+          hasGap={true}
+          className={classNames(projectcss.all, sty.freeBox__ezlNs)}
+        >
+          <ShoppingCartIcon
+            className={classNames(projectcss.all, sty.svg__jVm3G)}
+            role={"img"}
+          />
+
+          <div
+            className={classNames(
+              projectcss.all,
+              projectcss.__wab_text,
+              sty.text__p7Zgr
+            )}
           >
-            <ShoppingCartIcon
-              className={classNames(projectcss.all, sty.svg__jVm3G)}
-              role={"img"}
-            />
+            {"Add to cart"}
+          </div>
+          <HeartOIcon
+            className={classNames(projectcss.all, sty.svg__qB7FC)}
+            role={"img"}
+          />
 
-            <div
-              className={classNames(
-                projectcss.all,
-                projectcss.__wab_text,
-                sty.text__p7Zgr
-              )}
-            >
-              {"Add to cart"}
-            </div>
-            <HeartOIcon
-              className={classNames(projectcss.all, sty.svg__qB7FC)}
-              role={"img"}
-            />
-
-            <ExpandIcon
-              className={classNames(projectcss.all, sty.svg__zcmmn)}
-              role={"img"}
-            />
-          </p.Stack>
-        ) : null}
+          <ExpandIcon
+            className={classNames(projectcss.all, sty.svg__zcmmn)}
+            role={"img"}
+          />
+        </p.Stack>
       </div>
-      {(hasVariant($state, "withReviews", "withReviews") ? true : true)
-        ? p.renderPlasmicSlot({
-            defaultContents: (
-              <Ratings
-                className={classNames("__wab_instance", sty.ratings__rcq1Z)}
-              />
-            ),
+      {p.renderPlasmicSlot({
+        defaultContents: (
+          <Ratings
+            className={classNames("__wab_instance", sty.ratings__rcq1Z)}
+          />
+        ),
 
-            value: args.ratings
-          })
-        : null}
+        value: args.ratings
+      })}
       <p.Stack
         as={"div"}
         hasGap={true}

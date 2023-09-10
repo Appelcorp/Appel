@@ -163,380 +163,199 @@ function PlasmicRatings__RenderFunc(props: {
         hasGap={true}
         className={classNames(projectcss.all, sty.freeBox)}
       >
-        {(hasVariant($state, "stars", "zero") ? true : true) ? (
-          <StarIcon
-            className={classNames(projectcss.all, sty.svg__vesSx, {
-              [sty.svgstars_five__vesSxf9DNt]: hasVariant(
-                $state,
-                "stars",
-                "five"
-              ),
-              [sty.svgstars_zero__vesSxYXlg]: hasVariant(
-                $state,
-                "stars",
-                "zero"
-              )
-            })}
-            role={"img"}
-          />
-        ) : null}
-        {(
-          hasVariant($state, "stars", "five")
-            ? true
-            : hasVariant($state, "stars", "four")
-            ? true
-            : hasVariant($state, "stars", "three")
-            ? true
-            : hasVariant($state, "stars", "two")
-            ? true
-            : hasVariant($state, "stars", "one")
-            ? true
-            : hasVariant($state, "stars", "zero")
-            ? true
-            : true
-        ) ? (
-          <StarIcon
-            className={classNames(projectcss.all, sty.svg___6Ak9R, {
-              [sty.svgstars_five___6Ak9Rf9DNt]: hasVariant(
-                $state,
-                "stars",
-                "five"
-              ),
-              [sty.svgstars_four___6Ak9RoQfvY]: hasVariant(
-                $state,
-                "stars",
-                "four"
-              ),
-              [sty.svgstars_one___6Ak9R0Jh77]: hasVariant(
-                $state,
-                "stars",
-                "one"
-              ),
-              [sty.svgstars_three___6Ak9RuRzM]: hasVariant(
-                $state,
-                "stars",
-                "three"
-              ),
-              [sty.svgstars_two___6Ak9Rh5TjB]: hasVariant(
-                $state,
-                "stars",
-                "two"
-              ),
-              [sty.svgstars_zero___6Ak9RyXlg]: hasVariant(
-                $state,
-                "stars",
-                "zero"
-              )
-            })}
-            role={"img"}
-          />
-        ) : null}
-        {(
-          hasVariant($state, "stars", "five")
-            ? true
-            : hasVariant($state, "stars", "four")
-            ? true
-            : hasVariant($state, "stars", "three")
-            ? true
-            : hasVariant($state, "stars", "two")
-            ? true
-            : hasVariant($state, "stars", "one")
-            ? true
-            : hasVariant($state, "stars", "zero")
-            ? true
-            : true
-        ) ? (
-          <StarIcon
-            className={classNames(projectcss.all, sty.svg__pkZj1, {
-              [sty.svgstars_five__pkZj1F9DNt]: hasVariant(
-                $state,
-                "stars",
-                "five"
-              ),
-              [sty.svgstars_four__pkZj1OQfvY]: hasVariant(
-                $state,
-                "stars",
-                "four"
-              ),
-              [sty.svgstars_one__pkZj10Jh77]: hasVariant(
-                $state,
-                "stars",
-                "one"
-              ),
-              [sty.svgstars_three__pkZj1URzM]: hasVariant(
-                $state,
-                "stars",
-                "three"
-              ),
-              [sty.svgstars_two__pkZj1H5TjB]: hasVariant(
-                $state,
-                "stars",
-                "two"
-              ),
-              [sty.svgstars_zero__pkZj1YXlg]: hasVariant(
-                $state,
-                "stars",
-                "zero"
-              )
-            })}
-            role={"img"}
-          />
-        ) : null}
-        {(
-          hasVariant($state, "stars", "five")
-            ? true
-            : hasVariant($state, "stars", "four")
-            ? true
-            : hasVariant($state, "stars", "three")
-            ? true
-            : hasVariant($state, "stars", "two")
-            ? true
-            : hasVariant($state, "stars", "one")
-            ? true
-            : hasVariant($state, "stars", "zero")
-            ? true
-            : true
-        ) ? (
-          <StarIcon
-            className={classNames(projectcss.all, sty.svg___2V1Gc, {
-              [sty.svgstars_five___2V1Gcf9DNt]: hasVariant(
-                $state,
-                "stars",
-                "five"
-              ),
-              [sty.svgstars_four___2V1GcoQfvY]: hasVariant(
-                $state,
-                "stars",
-                "four"
-              ),
-              [sty.svgstars_one___2V1Gc0Jh77]: hasVariant(
-                $state,
-                "stars",
-                "one"
-              ),
-              [sty.svgstars_three___2V1GcURzM]: hasVariant(
-                $state,
-                "stars",
-                "three"
-              ),
-              [sty.svgstars_two___2V1Gch5TjB]: hasVariant(
-                $state,
-                "stars",
-                "two"
-              ),
-              [sty.svgstars_zero___2V1GcYXlg]: hasVariant(
-                $state,
-                "stars",
-                "zero"
-              )
-            })}
-            role={"img"}
-          />
-        ) : null}
-        {(
-          hasVariant($state, "stars", "five")
-            ? true
-            : hasVariant($state, "stars", "four")
-            ? true
-            : hasVariant($state, "stars", "three")
-            ? true
-            : hasVariant($state, "stars", "two")
-            ? true
-            : hasVariant($state, "stars", "one")
-            ? true
-            : hasVariant($state, "stars", "zero")
-            ? true
-            : true
-        ) ? (
-          <StarIcon
-            className={classNames(projectcss.all, sty.svg__uWfws, {
-              [sty.svgstars_five__uWfwsf9DNt]: hasVariant(
-                $state,
-                "stars",
-                "five"
-              ),
-              [sty.svgstars_four__uWfwsoQfvY]: hasVariant(
-                $state,
-                "stars",
-                "four"
-              ),
-              [sty.svgstars_one__uWfws0Jh77]: hasVariant(
-                $state,
-                "stars",
-                "one"
-              ),
-              [sty.svgstars_three__uWfwsURzM]: hasVariant(
-                $state,
-                "stars",
-                "three"
-              ),
-              [sty.svgstars_two__uWfwsh5TjB]: hasVariant(
-                $state,
-                "stars",
-                "two"
-              ),
-              [sty.svgstars_zero__uWfwsYXlg]: hasVariant(
-                $state,
-                "stars",
-                "zero"
-              )
-            })}
-            role={"img"}
-          />
-        ) : null}
-        {(
-          hasVariant($state, "stars", "five")
-            ? true
-            : hasVariant($state, "stars", "four")
-            ? true
-            : hasVariant($state, "stars", "three")
-            ? true
-            : hasVariant($state, "stars", "two")
-            ? true
-            : hasVariant($state, "stars", "one")
-            ? true
-            : hasVariant($state, "stars", "zero")
-            ? true
-            : true
-        ) ? (
-          <StarIcon
-            className={classNames(projectcss.all, sty.svg__a6T69, {
-              [sty.svgstars_five__a6T69F9DNt]: hasVariant(
-                $state,
-                "stars",
-                "five"
-              ),
-              [sty.svgstars_four__a6T69OQfvY]: hasVariant(
-                $state,
-                "stars",
-                "four"
-              ),
-              [sty.svgstars_one__a6T690Jh77]: hasVariant(
-                $state,
-                "stars",
-                "one"
-              ),
-              [sty.svgstars_three__a6T69URzM]: hasVariant(
-                $state,
-                "stars",
-                "three"
-              ),
-              [sty.svgstars_two__a6T69H5TjB]: hasVariant(
-                $state,
-                "stars",
-                "two"
-              ),
-              [sty.svgstars_zero__a6T69YXlg]: hasVariant(
-                $state,
-                "stars",
-                "zero"
-              )
-            })}
-            role={"img"}
-          />
-        ) : null}
-        {(
-          hasVariant($state, "stars", "five")
-            ? true
-            : hasVariant($state, "stars", "four")
-            ? true
-            : hasVariant($state, "stars", "three")
-            ? true
-            : hasVariant($state, "stars", "two")
-            ? true
-            : true
-        ) ? (
-          <StarIcon
-            className={classNames(projectcss.all, sty.svg___2TVWw, {
-              [sty.svgstars_five___2TVWwf9DNt]: hasVariant(
-                $state,
-                "stars",
-                "five"
-              ),
-              [sty.svgstars_four___2TVWwoQfvY]: hasVariant(
-                $state,
-                "stars",
-                "four"
-              ),
-              [sty.svgstars_three___2TVWwURzM]: hasVariant(
-                $state,
-                "stars",
-                "three"
-              ),
-              [sty.svgstars_two___2TVWwh5TjB]: hasVariant(
-                $state,
-                "stars",
-                "two"
-              )
-            })}
-            role={"img"}
-          />
-        ) : null}
-        {(
-          hasVariant($state, "stars", "five")
-            ? true
-            : hasVariant($state, "stars", "four")
-            ? true
-            : hasVariant($state, "stars", "three")
-            ? true
-            : true
-        ) ? (
-          <StarIcon
-            className={classNames(projectcss.all, sty.svg___4PzQc, {
-              [sty.svgstars_five___4PzQcf9DNt]: hasVariant(
-                $state,
-                "stars",
-                "five"
-              ),
-              [sty.svgstars_four___4PzQcoQfvY]: hasVariant(
-                $state,
-                "stars",
-                "four"
-              ),
-              [sty.svgstars_three___4PzQcURzM]: hasVariant(
-                $state,
-                "stars",
-                "three"
-              )
-            })}
-            role={"img"}
-          />
-        ) : null}
-        {(
-          hasVariant($state, "stars", "five")
-            ? true
-            : hasVariant($state, "stars", "four")
-            ? true
-            : true
-        ) ? (
-          <StarIcon
-            className={classNames(projectcss.all, sty.svg__icZth, {
-              [sty.svgstars_five__icZthf9DNt]: hasVariant(
-                $state,
-                "stars",
-                "five"
-              ),
-              [sty.svgstars_four__icZthoQfvY]: hasVariant(
-                $state,
-                "stars",
-                "four"
-              )
-            })}
-            role={"img"}
-          />
-        ) : null}
-        {(hasVariant($state, "stars", "five") ? true : true) ? (
-          <StarIcon
-            className={classNames(projectcss.all, sty.svg__nnArn, {
-              [sty.svgstars_five__nnArnf9DNt]: hasVariant(
-                $state,
-                "stars",
-                "five"
-              )
-            })}
-            role={"img"}
-          />
-        ) : null}
+        <StarIcon
+          className={classNames(projectcss.all, sty.svg__vesSx, {
+            [sty.svgstars_five__vesSxf9DNt]: hasVariant(
+              $state,
+              "stars",
+              "five"
+            ),
+            [sty.svgstars_zero__vesSxYXlg]: hasVariant($state, "stars", "zero")
+          })}
+          role={"img"}
+        />
+
+        <StarIcon
+          className={classNames(projectcss.all, sty.svg___6Ak9R, {
+            [sty.svgstars_five___6Ak9Rf9DNt]: hasVariant(
+              $state,
+              "stars",
+              "five"
+            ),
+            [sty.svgstars_four___6Ak9RoQfvY]: hasVariant(
+              $state,
+              "stars",
+              "four"
+            ),
+            [sty.svgstars_one___6Ak9R0Jh77]: hasVariant($state, "stars", "one"),
+            [sty.svgstars_three___6Ak9RuRzM]: hasVariant(
+              $state,
+              "stars",
+              "three"
+            ),
+            [sty.svgstars_two___6Ak9Rh5TjB]: hasVariant($state, "stars", "two"),
+            [sty.svgstars_zero___6Ak9RyXlg]: hasVariant($state, "stars", "zero")
+          })}
+          role={"img"}
+        />
+
+        <StarIcon
+          className={classNames(projectcss.all, sty.svg__pkZj1, {
+            [sty.svgstars_five__pkZj1F9DNt]: hasVariant(
+              $state,
+              "stars",
+              "five"
+            ),
+            [sty.svgstars_four__pkZj1OQfvY]: hasVariant(
+              $state,
+              "stars",
+              "four"
+            ),
+            [sty.svgstars_one__pkZj10Jh77]: hasVariant($state, "stars", "one"),
+            [sty.svgstars_three__pkZj1URzM]: hasVariant(
+              $state,
+              "stars",
+              "three"
+            ),
+            [sty.svgstars_two__pkZj1H5TjB]: hasVariant($state, "stars", "two"),
+            [sty.svgstars_zero__pkZj1YXlg]: hasVariant($state, "stars", "zero")
+          })}
+          role={"img"}
+        />
+
+        <StarIcon
+          className={classNames(projectcss.all, sty.svg___2V1Gc, {
+            [sty.svgstars_five___2V1Gcf9DNt]: hasVariant(
+              $state,
+              "stars",
+              "five"
+            ),
+            [sty.svgstars_four___2V1GcoQfvY]: hasVariant(
+              $state,
+              "stars",
+              "four"
+            ),
+            [sty.svgstars_one___2V1Gc0Jh77]: hasVariant($state, "stars", "one"),
+            [sty.svgstars_three___2V1GcURzM]: hasVariant(
+              $state,
+              "stars",
+              "three"
+            ),
+            [sty.svgstars_two___2V1Gch5TjB]: hasVariant($state, "stars", "two"),
+            [sty.svgstars_zero___2V1GcYXlg]: hasVariant($state, "stars", "zero")
+          })}
+          role={"img"}
+        />
+
+        <StarIcon
+          className={classNames(projectcss.all, sty.svg__uWfws, {
+            [sty.svgstars_five__uWfwsf9DNt]: hasVariant(
+              $state,
+              "stars",
+              "five"
+            ),
+            [sty.svgstars_four__uWfwsoQfvY]: hasVariant(
+              $state,
+              "stars",
+              "four"
+            ),
+            [sty.svgstars_one__uWfws0Jh77]: hasVariant($state, "stars", "one"),
+            [sty.svgstars_three__uWfwsURzM]: hasVariant(
+              $state,
+              "stars",
+              "three"
+            ),
+            [sty.svgstars_two__uWfwsh5TjB]: hasVariant($state, "stars", "two"),
+            [sty.svgstars_zero__uWfwsYXlg]: hasVariant($state, "stars", "zero")
+          })}
+          role={"img"}
+        />
+
+        <StarIcon
+          className={classNames(projectcss.all, sty.svg__a6T69, {
+            [sty.svgstars_five__a6T69F9DNt]: hasVariant(
+              $state,
+              "stars",
+              "five"
+            ),
+            [sty.svgstars_four__a6T69OQfvY]: hasVariant(
+              $state,
+              "stars",
+              "four"
+            ),
+            [sty.svgstars_one__a6T690Jh77]: hasVariant($state, "stars", "one"),
+            [sty.svgstars_three__a6T69URzM]: hasVariant(
+              $state,
+              "stars",
+              "three"
+            ),
+            [sty.svgstars_two__a6T69H5TjB]: hasVariant($state, "stars", "two"),
+            [sty.svgstars_zero__a6T69YXlg]: hasVariant($state, "stars", "zero")
+          })}
+          role={"img"}
+        />
+
+        <StarIcon
+          className={classNames(projectcss.all, sty.svg___2TVWw, {
+            [sty.svgstars_five___2TVWwf9DNt]: hasVariant(
+              $state,
+              "stars",
+              "five"
+            ),
+            [sty.svgstars_four___2TVWwoQfvY]: hasVariant(
+              $state,
+              "stars",
+              "four"
+            ),
+            [sty.svgstars_three___2TVWwURzM]: hasVariant(
+              $state,
+              "stars",
+              "three"
+            ),
+            [sty.svgstars_two___2TVWwh5TjB]: hasVariant($state, "stars", "two")
+          })}
+          role={"img"}
+        />
+
+        <StarIcon
+          className={classNames(projectcss.all, sty.svg___4PzQc, {
+            [sty.svgstars_five___4PzQcf9DNt]: hasVariant(
+              $state,
+              "stars",
+              "five"
+            ),
+            [sty.svgstars_four___4PzQcoQfvY]: hasVariant(
+              $state,
+              "stars",
+              "four"
+            ),
+            [sty.svgstars_three___4PzQcURzM]: hasVariant(
+              $state,
+              "stars",
+              "three"
+            )
+          })}
+          role={"img"}
+        />
+
+        <StarIcon
+          className={classNames(projectcss.all, sty.svg__icZth, {
+            [sty.svgstars_five__icZthf9DNt]: hasVariant(
+              $state,
+              "stars",
+              "five"
+            ),
+            [sty.svgstars_four__icZthoQfvY]: hasVariant($state, "stars", "four")
+          })}
+          role={"img"}
+        />
+
+        <StarIcon
+          className={classNames(projectcss.all, sty.svg__nnArn, {
+            [sty.svgstars_five__nnArnf9DNt]: hasVariant($state, "stars", "five")
+          })}
+          role={"img"}
+        />
       </p.Stack>
       {p.renderPlasmicSlot({
         defaultContents: "(45 Review)",

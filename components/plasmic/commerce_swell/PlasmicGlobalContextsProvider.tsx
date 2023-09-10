@@ -27,13 +27,13 @@ export default function GlobalContextsProvider(
         commerceProviderComponentProps &&
         "publicKey" in commerceProviderComponentProps
           ? commerceProviderComponentProps.publicKey!
-          : ("pk_QaZeGhtpQaVbNQnWJdRlE1abE6Ezf9U9" as const)
+          : "pk_QaZeGhtpQaVbNQnWJdRlE1abE6Ezf9U9"
       }
       storeId={
         commerceProviderComponentProps &&
         "storeId" in commerceProviderComponentProps
           ? commerceProviderComponentProps.storeId!
-          : ("plasmic-sandbox" as const)
+          : "plasmic-sandbox"
       }
     >
       {children}
