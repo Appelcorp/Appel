@@ -513,7 +513,7 @@ function PlasmicETopStore__RenderFunc(props: {
                     sty.link__zQi3V
                   )}
                   component={Link}
-                  href={`/shop/etop/etop-lite`}
+                  href={`/shop/etop/etop-lite-2`}
                   platform={"nextjs"}
                 >
                   {"eTop Lite 2"}
