@@ -75,13 +75,7 @@ export type PlasmicAppel3__OverridesType = {
 
 export interface DefaultAppel3Props {}
 
-const __wrapUserFunction =
-  globalThis.__PlasmicWrapUserFunction ?? ((loc, fn) => fn());
-const __wrapUserPromise =
-  globalThis.__PlasmicWrapUserPromise ??
-  (async (loc, promise) => {
-    return await promise;
-  });
+const $$ = {};
 
 function useNextRouter() {
   try {
@@ -665,7 +659,7 @@ function PlasmicAppel3__RenderFunc(props: {
                       )}
                       submitsForm={true}
                     >
-                      {"Pre Order"}
+                      {"BUY NOW"}
                     </Button>
                   </p.Stack>
                 </p.Stack>
@@ -813,7 +807,7 @@ const PlasmicDescendants = {
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<T extends NodeNameType> =
-  typeof PlasmicDescendants[T][number];
+  (typeof PlasmicDescendants)[T][number];
 type NodeDefaultElementType = {
   single: "div";
   columns: "div";

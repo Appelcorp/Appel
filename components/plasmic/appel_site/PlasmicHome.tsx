@@ -74,13 +74,7 @@ export type PlasmicHome__OverridesType = {
 
 export interface DefaultHomeProps {}
 
-const __wrapUserFunction =
-  globalThis.__PlasmicWrapUserFunction ?? ((loc, fn) => fn());
-const __wrapUserPromise =
-  globalThis.__PlasmicWrapUserPromise ??
-  (async (loc, promise) => {
-    return await promise;
-  });
+const $$ = {};
 
 function useNextRouter() {
   try {
@@ -819,7 +813,7 @@ function PlasmicHome__RenderFunc(props: {
                         sty.text__jvEGy
                       )}
                     >
-                      {"The Powerhouse."}
+                      {"Luxury Meets Precision"}
                     </div>
                     <Button
                       className={classNames("__wab_instance", sty.button__bV5F)}
@@ -1055,7 +1049,7 @@ const PlasmicDescendants = {
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<T extends NodeNameType> =
-  typeof PlasmicDescendants[T][number];
+  (typeof PlasmicDescendants)[T][number];
 type NodeDefaultElementType = {
   root: "div";
   navigationBar: typeof NavigationBar;

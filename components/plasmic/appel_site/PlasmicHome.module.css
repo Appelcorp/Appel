@@ -902,13 +902,12 @@
   justify-content: flex-start;
   width: 100%;
   max-width: 100%;
-  background: url("/plasmic/appel_site/images/etopLite2Png.png") top -145% left 0% / cover no-repeat,
+  background: url("/plasmic/appel_site/images/etopLite2Png.png") top -145% right 0px / cover no-repeat,
     var(--token-NEon4Y--Z);
   overflow: hidden;
-  align-self: auto;
+  align-self: center;
   margin-bottom: 0px;
   margin-top: 0px;
-  left: auto;
   top: auto;
   z-index: 1;
   min-height: 1000px;

@@ -79,13 +79,7 @@ export type PlasmicAppelStore__OverridesType = {
 
 export interface DefaultAppelStoreProps {}
 
-const __wrapUserFunction =
-  globalThis.__PlasmicWrapUserFunction ?? ((loc, fn) => fn());
-const __wrapUserPromise =
-  globalThis.__PlasmicWrapUserPromise ??
-  (async (loc, promise) => {
-    return await promise;
-  });
+const $$ = {};
 
 function useNextRouter() {
   try {
@@ -984,7 +978,7 @@ function PlasmicAppelStore__RenderFunc(props: {
                     >
                       {hasVariant(globalVariants, "screen", "mobile")
                         ? "Simply Beautiful."
-                        : "In Full Color"}
+                        : "Design Meets Diversity"}
                     </div>
                   </div>
                 </div>
@@ -1003,21 +997,10 @@ function PlasmicAppelStore__RenderFunc(props: {
                   >
                     {hasVariant(globalVariants, "screen", "mobile")
                       ? "Buy Now"
-                      : "PRE ORDER"}
+                      : "BUY NOW"}
                   </div>
                 </Button>
               </p.Stack>
-              <div
-                className={classNames(
-                  projectcss.all,
-                  projectcss.__wab_text,
-                  sty.text___6GZ91
-                )}
-              >
-                {hasVariant(globalVariants, "screen", "mobile")
-                  ? "From $29.13/mo. for 24 mo. or $699 before trade in"
-                  : "Coming This Fall"}
-              </div>
             </div>
           </div>
           <div className={classNames(projectcss.all, sty.freeBox__xuLz)}>
@@ -1063,7 +1046,7 @@ function PlasmicAppelStore__RenderFunc(props: {
                     >
                       {hasVariant(globalVariants, "screen", "mobile")
                         ? "Pro Power. Pro Capabilities."
-                        : "The Powerhouse"}
+                        : "Luxury Meets Precision"}
                     </div>
                   </div>
                 </div>
@@ -1082,20 +1065,9 @@ function PlasmicAppelStore__RenderFunc(props: {
                   >
                     {hasVariant(globalVariants, "screen", "mobile")
                       ? "Buy Now"
-                      : "PRE ORDER"}
+                      : "BUY NOW"}
                   </div>
                 </Button>
-                <div
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.__wab_text,
-                    sty.text__fi5HV
-                  )}
-                >
-                  {hasVariant(globalVariants, "screen", "mobile")
-                    ? "From $29.13/mo. for 24 mo. or $699 before trade in"
-                    : "Coming This Fall"}
-                </div>
               </p.Stack>
             </div>
           </div>
@@ -1116,7 +1088,7 @@ const PlasmicDescendants = {
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<T extends NodeNameType> =
-  typeof PlasmicDescendants[T][number];
+  (typeof PlasmicDescendants)[T][number];
 type NodeDefaultElementType = {
   root: "div";
   footer: typeof Footer;

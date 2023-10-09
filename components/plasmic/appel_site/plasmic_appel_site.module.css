@@ -74,6 +74,13 @@
   --mixin-go-xXFSxko7nr_white-space: pre-wrap;
 }
 
+.plasmic_mixins {
+  --mixin-7BXzYCgesuYj3_white-space: pre-wrap;
+  --plasmic-mixin-body_white-space: var(--mixin-7BXzYCgesuYj3_white-space);
+  --mixin-4NgXYC1tSCWtb_white-space: pre-wrap;
+  --plasmic-mixin-menu-text_white-space: var(--mixin-4NgXYC1tSCWtb_white-space);
+}
+
 :where(.all) {
   display: block;
   white-space: inherit;
