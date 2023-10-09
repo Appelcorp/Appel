@@ -978,18 +978,25 @@
 }
 .option__qLg0:global(.__wab_instance) {
   position: relative;
-  align-self: center;
+  align-self: auto;
+}
+.hello {
+  text-align: left;
 }
 .option__nqytA:global(.__wab_instance) {
   position: relative;
-  align-self: center;
+  align-self: auto;
+}
+.plus {
+  text-align: left;
 }
 .option__yxhx:global(.__wab_instance) {
   position: relative;
-  align-self: center;
+  align-self: auto;
 }
 .plus2 {
   padding-left: 0px;
+  text-align: left;
 }
 .button___1ZzXr:global(.__wab_instance) {
   max-width: 100%;
