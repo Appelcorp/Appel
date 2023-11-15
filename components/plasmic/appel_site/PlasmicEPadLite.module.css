@@ -182,7 +182,7 @@
 .svg__sY7Dz {
   position: relative;
   object-fit: cover;
-  width: 1em;
+  width: auto;
   height: 1em;
 }
 .text__lDZtY {
@@ -203,7 +203,7 @@
 .svg__m2JS {
   position: relative;
   object-fit: cover;
-  width: 1em;
+  width: auto;
   height: 1em;
 }
 .svg___30D7V {
@@ -211,8 +211,6 @@
   object-fit: cover;
   max-width: 100%;
   color: #ffffff;
-  width: 1em;
-  flex-shrink: 0;
   height: 1em;
 }
 .freeBox__tK8Z {
@@ -374,7 +372,7 @@
 .svg__phxxH {
   position: relative;
   object-fit: cover;
-  width: 1em;
+  width: auto;
   height: 1em;
 }
 .text__pCDqD {
@@ -395,7 +393,7 @@
 .svg__oqbSq {
   position: relative;
   object-fit: cover;
-  width: 1em;
+  width: auto;
   height: 1em;
 }
 .button__sbKxl:global(.__wab_instance) {
@@ -406,7 +404,7 @@
 .svg__bbMdr {
   position: relative;
   object-fit: cover;
-  width: 1em;
+  width: auto;
   height: 1em;
 }
 .text___0XdKb {
@@ -427,7 +425,7 @@
 .svg__bw9Lh {
   position: relative;
   object-fit: cover;
-  width: 1em;
+  width: auto;
   height: 1em;
 }
 .button__vNMl:global(.__wab_instance) {
@@ -438,7 +436,7 @@
 .svg___607Af {
   position: relative;
   object-fit: cover;
-  width: 1em;
+  width: auto;
   height: 1em;
 }
 .text__p0ChK {
@@ -459,7 +457,7 @@
 .svg__grn2N {
   position: relative;
   object-fit: cover;
-  width: 1em;
+  width: auto;
   height: 1em;
 }
 .button__gpjc8:global(.__wab_instance) {
@@ -470,7 +468,7 @@
 .svg___5JwYx {
   position: relative;
   object-fit: cover;
-  width: 1em;
+  width: auto;
   height: 1em;
 }
 .text__zu3Nd {
@@ -491,7 +489,7 @@
 .svg__mwSjw {
   position: relative;
   object-fit: cover;
-  width: 1em;
+  width: auto;
   height: 1em;
 }
 .button__x18Zp:global(.__wab_instance) {
@@ -502,7 +500,7 @@
 .svg__sgWrl {
   position: relative;
   object-fit: cover;
-  width: 1em;
+  width: auto;
   height: 1em;
 }
 .text__vsNy {
@@ -523,7 +521,7 @@
 .svg__jpFmo {
   position: relative;
   object-fit: cover;
-  width: 1em;
+  width: auto;
   height: 1em;
 }
 .button__dRr1V:global(.__wab_instance) {
@@ -534,7 +532,7 @@
 .svg___7V86T {
   position: relative;
   object-fit: cover;
-  width: 1em;
+  width: auto;
   height: 1em;
 }
 .text__qnNT {
@@ -555,7 +553,7 @@
 .svg__pbg2B {
   position: relative;
   object-fit: cover;
-  width: 1em;
+  width: auto;
   height: 1em;
 }
 .button___0JvgC:global(.__wab_instance) {
@@ -571,7 +569,7 @@
 .svg__qHgEi {
   position: relative;
   object-fit: cover;
-  width: 1em;
+  width: auto;
   height: 1em;
 }
 .text__kVcMo {
@@ -592,7 +590,7 @@
 .svg___4Yml0 {
   position: relative;
   object-fit: cover;
-  width: 1em;
+  width: auto;
   height: 1em;
 }
 .button___40Vw2:global(.__wab_instance) {
@@ -603,7 +601,7 @@
 .svg__dxgFs {
   position: relative;
   object-fit: cover;
-  width: 1em;
+  width: auto;
   height: 1em;
 }
 .text__v8UMe {
@@ -624,7 +622,7 @@
 .svg__odNY {
   position: relative;
   object-fit: cover;
-  width: 1em;
+  width: auto;
   height: 1em;
 }
 .freeBox___7NrD {
@@ -660,7 +658,7 @@
 .svg__wz5K0 {
   position: relative;
   object-fit: cover;
-  width: 1em;
+  width: auto;
   height: 1em;
 }
 .text__llzxt {
@@ -681,7 +679,7 @@
 .svg__j4Tb0 {
   position: relative;
   object-fit: cover;
-  width: 1em;
+  width: auto;
   height: 1em;
 }
 .freeBox__x9KYl {
@@ -814,9 +812,6 @@
   width: 206px;
 }
 .img__wnUko > picture > img {
-  object-fit: cover;
-}
-.img__wnUko > :global(.__wab_img-spacer) > img {
   object-fit: cover;
 }
 .column__ujptC {
@@ -990,13 +985,13 @@
 .svg__nCcK1 {
   position: relative;
   object-fit: cover;
-  width: 1em;
+  width: auto;
   height: 1em;
 }
 .svg__j0Azi {
   position: relative;
   object-fit: cover;
-  width: 1em;
+  width: auto;
   height: 1em;
 }
 .freeBox__lIlNc {
@@ -1308,9 +1303,6 @@
 .img__zD1Ia > picture > img {
   object-fit: contain;
 }
-.img__zD1Ia > :global(.__wab_img-spacer) > img {
-  object-fit: contain;
-}
 .freeBox___8Niuv {
   display: flex;
   position: relative;
@@ -1400,9 +1392,6 @@
   flex-shrink: 0;
 }
 .img___5NLKu > picture > img {
-  object-fit: contain;
-}
-.img___5NLKu > :global(.__wab_img-spacer) > img {
   object-fit: contain;
 }
 .freeBox__lDsxp {

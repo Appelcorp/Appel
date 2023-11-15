@@ -213,6 +213,7 @@ function PlasmicFooter__RenderFunc(props: {
                   sty.link__hPwMv
                 )}
                 component={Link}
+                href={`/developer`}
                 platform={"nextjs"}
               >
                 {false ? (
@@ -228,7 +229,7 @@ function PlasmicFooter__RenderFunc(props: {
                     sty.text__e716
                   )}
                 >
-                  {"About"}
+                  {"Developer"}
                 </div>
                 {false ? (
                   <IconIcon
@@ -244,7 +245,7 @@ function PlasmicFooter__RenderFunc(props: {
                   sty.text__y0OAx
                 )}
               >
-                {"Event23"}
+                {"Event24"}
               </div>
               <p.Stack
                 as={p.PlasmicLink}
@@ -255,7 +256,7 @@ function PlasmicFooter__RenderFunc(props: {
                   sty.link__wOw2H
                 )}
                 component={Link}
-                href={"https://mastodon.au/@appel"}
+                href={"https://www.twitter.com/appel_us"}
                 platform={"nextjs"}
               >
                 <p.PlasmicLink
@@ -420,7 +421,7 @@ function makeNodeComponent<NodeName extends NodeNameType>(nodeName: NodeName) {
       () =>
         deriveRenderOpts(props, {
           name: nodeName,
-          descendantNames: [...PlasmicDescendants[nodeName]],
+          descendantNames: PlasmicDescendants[nodeName],
           internalArgPropNames: PlasmicFooter__ArgProps,
           internalVariantPropNames: PlasmicFooter__VariantProps
         }),

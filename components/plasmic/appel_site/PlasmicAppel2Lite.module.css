@@ -182,7 +182,7 @@
 .svg___6Irjo {
   position: relative;
   object-fit: cover;
-  width: 1em;
+  width: auto;
   height: 1em;
 }
 .text___3JdD {
@@ -203,7 +203,7 @@
 .svg__hiWjq {
   position: relative;
   object-fit: cover;
-  width: 1em;
+  width: auto;
   height: 1em;
 }
 .svg__sKyq {
@@ -211,8 +211,6 @@
   object-fit: cover;
   max-width: 100%;
   color: #ffffff;
-  width: 1em;
-  flex-shrink: 0;
   height: 1em;
 }
 .freeBox__rbe3F {
@@ -373,7 +371,7 @@
 .svg__trq6 {
   position: relative;
   object-fit: cover;
-  width: 1em;
+  width: auto;
   height: 1em;
 }
 .text___3VUbb {
@@ -394,7 +392,7 @@
 .svg__ldIoU {
   position: relative;
   object-fit: cover;
-  width: 1em;
+  width: auto;
   height: 1em;
 }
 .button__tBMwg:global(.__wab_instance) {
@@ -405,7 +403,7 @@
 .svg__kD6Sb {
   position: relative;
   object-fit: cover;
-  width: 1em;
+  width: auto;
   height: 1em;
 }
 .text__bJnfH {
@@ -426,7 +424,7 @@
 .svg__w0X0I {
   position: relative;
   object-fit: cover;
-  width: 1em;
+  width: auto;
   height: 1em;
 }
 .button__gc9Dr:global(.__wab_instance) {
@@ -437,7 +435,7 @@
 .svg___0Knov {
   position: relative;
   object-fit: cover;
-  width: 1em;
+  width: auto;
   height: 1em;
 }
 .text__r6JL {
@@ -458,7 +456,7 @@
 .svg__wjyQw {
   position: relative;
   object-fit: cover;
-  width: 1em;
+  width: auto;
   height: 1em;
 }
 .button__jJFcz:global(.__wab_instance) {
@@ -469,7 +467,7 @@
 .svg__muJ4 {
   position: relative;
   object-fit: cover;
-  width: 1em;
+  width: auto;
   height: 1em;
 }
 .text__rmKuf {
@@ -490,7 +488,7 @@
 .svg__xSuQo {
   position: relative;
   object-fit: cover;
-  width: 1em;
+  width: auto;
   height: 1em;
 }
 .button___3W9Af:global(.__wab_instance) {
@@ -501,7 +499,7 @@
 .svg__rvEyr {
   position: relative;
   object-fit: cover;
-  width: 1em;
+  width: auto;
   height: 1em;
 }
 .text__aVkje {
@@ -522,7 +520,7 @@
 .svg___7Rtqz {
   position: relative;
   object-fit: cover;
-  width: 1em;
+  width: auto;
   height: 1em;
 }
 .button__xUzEc:global(.__wab_instance) {
@@ -533,7 +531,7 @@
 .svg__kN23 {
   position: relative;
   object-fit: cover;
-  width: 1em;
+  width: auto;
   height: 1em;
 }
 .text__hNpYb {
@@ -554,7 +552,7 @@
 .svg__yqzVd {
   position: relative;
   object-fit: cover;
-  width: 1em;
+  width: auto;
   height: 1em;
 }
 .button__pTmib:global(.__wab_instance) {
@@ -570,7 +568,7 @@
 .svg___0Tsge {
   position: relative;
   object-fit: cover;
-  width: 1em;
+  width: auto;
   height: 1em;
 }
 .text__oh5 {
@@ -591,7 +589,7 @@
 .svg__cYOub {
   position: relative;
   object-fit: cover;
-  width: 1em;
+  width: auto;
   height: 1em;
 }
 .button__j9LyQ:global(.__wab_instance) {
@@ -602,7 +600,7 @@
 .svg__vpTHm {
   position: relative;
   object-fit: cover;
-  width: 1em;
+  width: auto;
   height: 1em;
 }
 .text___9CkRo {
@@ -623,7 +621,7 @@
 .svg__jyieZ {
   position: relative;
   object-fit: cover;
-  width: 1em;
+  width: auto;
   height: 1em;
 }
 .freeBox___3TdvB {
@@ -659,7 +657,7 @@
 .svg__dlLcF {
   position: relative;
   object-fit: cover;
-  width: 1em;
+  width: auto;
   height: 1em;
 }
 .text___6JjW {
@@ -680,7 +678,7 @@
 .svg__c4Clu {
   position: relative;
   object-fit: cover;
-  width: 1em;
+  width: auto;
   height: 1em;
 }
 .freeBox__i6GdC {
@@ -814,9 +812,6 @@
   width: 300px;
 }
 .img__gLfcn > picture > img {
-  object-fit: cover;
-}
-.img__gLfcn > :global(.__wab_img-spacer) > img {
   object-fit: cover;
 }
 .column__onfbo {
@@ -991,13 +986,13 @@
 .svg__wEmcT {
   position: relative;
   object-fit: cover;
-  width: 1em;
+  width: auto;
   height: 1em;
 }
 .svg__iiHr {
   position: relative;
   object-fit: cover;
-  width: 1em;
+  width: auto;
   height: 1em;
 }
 .freeBox___29AAo {
@@ -1308,9 +1303,6 @@
 .img___5Jx36 > picture > img {
   object-fit: cover;
 }
-.img___5Jx36 > :global(.__wab_img-spacer) > img {
-  object-fit: cover;
-}
 .freeBox__i6Cu1 {
   display: flex;
   position: relative;
@@ -1400,9 +1392,6 @@
   flex-shrink: 0;
 }
 .img__aAqP > picture > img {
-  object-fit: contain;
-}
-.img__aAqP > :global(.__wab_img-spacer) > img {
   object-fit: contain;
 }
 .freeBox__zui56 {

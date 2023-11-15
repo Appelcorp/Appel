@@ -55,9 +55,8 @@
 .svg__wzub3 {
   position: relative;
   object-fit: cover;
-  width: 1em;
+  width: auto;
   height: 1em;
-  flex-shrink: 0;
 }
 .input {
   width: 100%;
@@ -118,7 +117,6 @@
 .svg__pa3U9 {
   position: relative;
   object-fit: cover;
-  width: 1em;
+  width: auto;
   height: 1em;
-  flex-shrink: 0;
 }

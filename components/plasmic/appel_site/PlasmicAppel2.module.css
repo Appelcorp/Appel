@@ -182,7 +182,7 @@
 .svg___1QiAs {
   position: relative;
   object-fit: cover;
-  width: 1em;
+  width: auto;
   height: 1em;
 }
 .text__vpc7N {
@@ -203,7 +203,7 @@
 .svg__zpXH {
   position: relative;
   object-fit: cover;
-  width: 1em;
+  width: auto;
   height: 1em;
 }
 .svg___3Hhu {
@@ -211,8 +211,6 @@
   object-fit: cover;
   max-width: 100%;
   color: #ffffff;
-  width: 1em;
-  flex-shrink: 0;
   height: 1em;
 }
 .freeBox__gFew2 {
@@ -373,7 +371,7 @@
 .svg__fsy5J {
   position: relative;
   object-fit: cover;
-  width: 1em;
+  width: auto;
   height: 1em;
 }
 .text__yyKr {
@@ -394,7 +392,7 @@
 .svg__fq6T1 {
   position: relative;
   object-fit: cover;
-  width: 1em;
+  width: auto;
   height: 1em;
 }
 .button__ta4Ft:global(.__wab_instance) {
@@ -405,7 +403,7 @@
 .svg__ym2Jc {
   position: relative;
   object-fit: cover;
-  width: 1em;
+  width: auto;
   height: 1em;
 }
 .text__aehdL {
@@ -426,7 +424,7 @@
 .svg__y199Q {
   position: relative;
   object-fit: cover;
-  width: 1em;
+  width: auto;
   height: 1em;
 }
 .button__zgRlT:global(.__wab_instance) {
@@ -437,7 +435,7 @@
 .svg__yCrtt {
   position: relative;
   object-fit: cover;
-  width: 1em;
+  width: auto;
   height: 1em;
 }
 .text__njRSq {
@@ -458,7 +456,7 @@
 .svg__owcRd {
   position: relative;
   object-fit: cover;
-  width: 1em;
+  width: auto;
   height: 1em;
 }
 .button__u7NAn:global(.__wab_instance) {
@@ -469,7 +467,7 @@
 .svg__aPge {
   position: relative;
   object-fit: cover;
-  width: 1em;
+  width: auto;
   height: 1em;
 }
 .text___3Rrbt {
@@ -490,7 +488,7 @@
 .svg__ffT8W {
   position: relative;
   object-fit: cover;
-  width: 1em;
+  width: auto;
   height: 1em;
 }
 .button__f5LoA:global(.__wab_instance) {
@@ -501,7 +499,7 @@
 .svg__uXo9I {
   position: relative;
   object-fit: cover;
-  width: 1em;
+  width: auto;
   height: 1em;
 }
 .text__vFaOe {
@@ -522,7 +520,7 @@
 .svg___0IsbW {
   position: relative;
   object-fit: cover;
-  width: 1em;
+  width: auto;
   height: 1em;
 }
 .button__t6Ge1:global(.__wab_instance) {
@@ -533,7 +531,7 @@
 .svg__nmVzZ {
   position: relative;
   object-fit: cover;
-  width: 1em;
+  width: auto;
   height: 1em;
 }
 .text__hv6Ji {
@@ -554,7 +552,7 @@
 .svg___3UQxe {
   position: relative;
   object-fit: cover;
-  width: 1em;
+  width: auto;
   height: 1em;
 }
 .button___32ZCm:global(.__wab_instance) {
@@ -570,7 +568,7 @@
 .svg__zugce {
   position: relative;
   object-fit: cover;
-  width: 1em;
+  width: auto;
   height: 1em;
 }
 .text__ikd98 {
@@ -591,7 +589,7 @@
 .svg__f9QmP {
   position: relative;
   object-fit: cover;
-  width: 1em;
+  width: auto;
   height: 1em;
 }
 .button___4OOgE:global(.__wab_instance) {
@@ -602,7 +600,7 @@
 .svg__bwbud {
   position: relative;
   object-fit: cover;
-  width: 1em;
+  width: auto;
   height: 1em;
 }
 .text__xm2Et {
@@ -623,7 +621,7 @@
 .svg__vDVy7 {
   position: relative;
   object-fit: cover;
-  width: 1em;
+  width: auto;
   height: 1em;
 }
 .freeBox__ataUk {
@@ -659,7 +657,7 @@
 .svg__nWlXg {
   position: relative;
   object-fit: cover;
-  width: 1em;
+  width: auto;
   height: 1em;
 }
 .text__yhPin {
@@ -680,7 +678,7 @@
 .svg__a4SOf {
   position: relative;
   object-fit: cover;
-  width: 1em;
+  width: auto;
   height: 1em;
 }
 .freeBox___4FuXs {
@@ -813,9 +811,6 @@
   width: 300px;
 }
 .img__bsf5I > picture > img {
-  object-fit: cover;
-}
-.img__bsf5I > :global(.__wab_img-spacer) > img {
   object-fit: cover;
 }
 .column___2G6HT {
@@ -993,13 +988,13 @@
 .svg__ah5R5 {
   position: relative;
   object-fit: cover;
-  width: 1em;
+  width: auto;
   height: 1em;
 }
 .svg__tcIma {
   position: relative;
   object-fit: cover;
-  width: 1em;
+  width: auto;
   height: 1em;
 }
 .freeBox__jBzEq {
@@ -1310,9 +1305,6 @@
 .img__nPwKp > picture > img {
   object-fit: cover;
 }
-.img__nPwKp > :global(.__wab_img-spacer) > img {
-  object-fit: cover;
-}
 .freeBox__osCty {
   display: flex;
   position: relative;
@@ -1402,9 +1394,6 @@
   flex-shrink: 0;
 }
 .img__wWfrQ > picture > img {
-  object-fit: contain;
-}
-.img__wWfrQ > :global(.__wab_img-spacer) > img {
   object-fit: contain;
 }
 .freeBox__c0Hlq {

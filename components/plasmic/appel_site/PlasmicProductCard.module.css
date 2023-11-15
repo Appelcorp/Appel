@@ -45,9 +45,6 @@
 .img__jwE9O > picture > img {
   object-fit: cover;
 }
-.img__jwE9O > :global(.__wab_img-spacer) > img {
-  object-fit: cover;
-}
 .freeBox___9KLnE {
   position: absolute;
   left: auto;
@@ -101,8 +98,6 @@
   position: relative;
   object-fit: cover;
   color: var(--token-3JpfuKOQofckF);
-  width: 1em;
-  flex-shrink: 0;
   height: 1em;
 }
 .text__p7Zgr {
@@ -115,16 +110,12 @@
   position: relative;
   object-fit: cover;
   color: var(--token-3JpfuKOQofckF);
-  width: 1em;
-  flex-shrink: 0;
   height: 1em;
 }
 .svg__zcmmn {
   position: relative;
   object-fit: cover;
   color: var(--token-3JpfuKOQofckF);
-  width: 1em;
-  flex-shrink: 0;
   height: 1em;
 }
 .ratings__rcq1Z:global(.__wab_instance) {

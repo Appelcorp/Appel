@@ -182,7 +182,7 @@
 .svg__kB4MF {
   position: relative;
   object-fit: cover;
-  width: 1em;
+  width: auto;
   height: 1em;
 }
 .text__cRiUw {
@@ -203,7 +203,7 @@
 .svg__eFeW5 {
   position: relative;
   object-fit: cover;
-  width: 1em;
+  width: auto;
   height: 1em;
 }
 .svg__mWehT {
@@ -211,8 +211,6 @@
   object-fit: cover;
   max-width: 100%;
   color: #ffffff;
-  width: 1em;
-  flex-shrink: 0;
   height: 1em;
 }
 .freeBox___0Yxc {
@@ -373,7 +371,7 @@
 .svg__zTjIk {
   position: relative;
   object-fit: cover;
-  width: 1em;
+  width: auto;
   height: 1em;
 }
 .text__po7Ms {
@@ -394,7 +392,7 @@
 .svg__juMe8 {
   position: relative;
   object-fit: cover;
-  width: 1em;
+  width: auto;
   height: 1em;
 }
 .button__qcsHs:global(.__wab_instance) {
@@ -405,7 +403,7 @@
 .svg__fgrF {
   position: relative;
   object-fit: cover;
-  width: 1em;
+  width: auto;
   height: 1em;
 }
 .text__lGyxw {
@@ -426,7 +424,7 @@
 .svg__dnysQ {
   position: relative;
   object-fit: cover;
-  width: 1em;
+  width: auto;
   height: 1em;
 }
 .button__gYhGu:global(.__wab_instance) {
@@ -437,7 +435,7 @@
 .svg___7YRgA {
   position: relative;
   object-fit: cover;
-  width: 1em;
+  width: auto;
   height: 1em;
 }
 .text__veoG {
@@ -458,7 +456,7 @@
 .svg__sfKno {
   position: relative;
   object-fit: cover;
-  width: 1em;
+  width: auto;
   height: 1em;
 }
 .button__fpBo1:global(.__wab_instance) {
@@ -469,7 +467,7 @@
 .svg__gqkp {
   position: relative;
   object-fit: cover;
-  width: 1em;
+  width: auto;
   height: 1em;
 }
 .text__p8LWr {
@@ -490,7 +488,7 @@
 .svg__caHdC {
   position: relative;
   object-fit: cover;
-  width: 1em;
+  width: auto;
   height: 1em;
 }
 .button__oOp2X:global(.__wab_instance) {
@@ -501,7 +499,7 @@
 .svg___3MJmm {
   position: relative;
   object-fit: cover;
-  width: 1em;
+  width: auto;
   height: 1em;
 }
 .text__irqDg {
@@ -522,7 +520,7 @@
 .svg__gIsn {
   position: relative;
   object-fit: cover;
-  width: 1em;
+  width: auto;
   height: 1em;
 }
 .button__nCjPf:global(.__wab_instance) {
@@ -533,7 +531,7 @@
 .svg__b8BEr {
   position: relative;
   object-fit: cover;
-  width: 1em;
+  width: auto;
   height: 1em;
 }
 .text__s9UkR {
@@ -554,7 +552,7 @@
 .svg__oAsVb {
   position: relative;
   object-fit: cover;
-  width: 1em;
+  width: auto;
   height: 1em;
 }
 .button__pkNkO:global(.__wab_instance) {
@@ -570,7 +568,7 @@
 .svg__tpms7 {
   position: relative;
   object-fit: cover;
-  width: 1em;
+  width: auto;
   height: 1em;
 }
 .text___1ZpLe {
@@ -591,7 +589,7 @@
 .svg__ghNuV {
   position: relative;
   object-fit: cover;
-  width: 1em;
+  width: auto;
   height: 1em;
 }
 .button__eQk1X:global(.__wab_instance) {
@@ -602,7 +600,7 @@
 .svg___5PcHa {
   position: relative;
   object-fit: cover;
-  width: 1em;
+  width: auto;
   height: 1em;
 }
 .text__pu7Mi {
@@ -623,7 +621,7 @@
 .svg__zkJ96 {
   position: relative;
   object-fit: cover;
-  width: 1em;
+  width: auto;
   height: 1em;
 }
 .freeBox__mekX3 {
@@ -659,7 +657,7 @@
 .svg___6YgEg {
   position: relative;
   object-fit: cover;
-  width: 1em;
+  width: auto;
   height: 1em;
 }
 .text__k7XsE {
@@ -680,7 +678,7 @@
 .svg__e7Qg {
   position: relative;
   object-fit: cover;
-  width: 1em;
+  width: auto;
   height: 1em;
 }
 .freeBox__iUlou {
@@ -973,13 +971,13 @@
 .svg__fmPUk {
   position: relative;
   object-fit: cover;
-  width: 1em;
+  width: auto;
   height: 1em;
 }
 .svg__yekDs {
   position: relative;
   object-fit: cover;
-  width: 1em;
+  width: auto;
   height: 1em;
 }
 .footer:global(.__wab_instance) {

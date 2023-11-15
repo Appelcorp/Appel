@@ -168,7 +168,7 @@
 .svg__lRdd {
   position: relative;
   object-fit: cover;
-  width: 1em;
+  width: auto;
   height: 1em;
 }
 .text__zMtjy {
@@ -189,7 +189,7 @@
 .svg__wyyfP {
   position: relative;
   object-fit: cover;
-  width: 1em;
+  width: auto;
   height: 1em;
 }
 .button__lKsdZ:global(.__wab_instance) {
@@ -200,7 +200,7 @@
 .svg__ltntn {
   position: relative;
   object-fit: cover;
-  width: 1em;
+  width: auto;
   height: 1em;
 }
 .text__npGhf {
@@ -221,7 +221,7 @@
 .svg__kihW1 {
   position: relative;
   object-fit: cover;
-  width: 1em;
+  width: auto;
   height: 1em;
 }
 .button__z4Hl:global(.__wab_instance) {
@@ -232,7 +232,7 @@
 .svg___4ZKqu {
   position: relative;
   object-fit: cover;
-  width: 1em;
+  width: auto;
   height: 1em;
 }
 .text__q4ItF {
@@ -253,7 +253,7 @@
 .svg__xlbpV {
   position: relative;
   object-fit: cover;
-  width: 1em;
+  width: auto;
   height: 1em;
 }
 .button__iSgZh:global(.__wab_instance) {
@@ -264,7 +264,7 @@
 .svg__mnUH {
   position: relative;
   object-fit: cover;
-  width: 1em;
+  width: auto;
   height: 1em;
 }
 .text__atQag {
@@ -285,7 +285,7 @@
 .svg__ykLhs {
   position: relative;
   object-fit: cover;
-  width: 1em;
+  width: auto;
   height: 1em;
 }
 .button__hEAd:global(.__wab_instance) {
@@ -296,7 +296,7 @@
 .svg__isotl {
   position: relative;
   object-fit: cover;
-  width: 1em;
+  width: auto;
   height: 1em;
 }
 .text__l5Mtg {
@@ -317,7 +317,7 @@
 .svg__tkaV {
   position: relative;
   object-fit: cover;
-  width: 1em;
+  width: auto;
   height: 1em;
 }
 .button__zBkut:global(.__wab_instance) {
@@ -328,7 +328,7 @@
 .svg__kwrk {
   position: relative;
   object-fit: cover;
-  width: 1em;
+  width: auto;
   height: 1em;
 }
 .text__oU0Y {
@@ -349,7 +349,7 @@
 .svg__v18Bl {
   position: relative;
   object-fit: cover;
-  width: 1em;
+  width: auto;
   height: 1em;
 }
 .button__n46Oy:global(.__wab_instance) {
@@ -365,7 +365,7 @@
 .svg__mAlzL {
   position: relative;
   object-fit: cover;
-  width: 1em;
+  width: auto;
   height: 1em;
 }
 .text__cbpd4 {
@@ -386,7 +386,7 @@
 .svg__dTvyy {
   position: relative;
   object-fit: cover;
-  width: 1em;
+  width: auto;
   height: 1em;
 }
 .button__ljDge:global(.__wab_instance) {
@@ -397,7 +397,7 @@
 .svg__jix17 {
   position: relative;
   object-fit: cover;
-  width: 1em;
+  width: auto;
   height: 1em;
 }
 .text__d13N {
@@ -418,7 +418,7 @@
 .svg__xri1F {
   position: relative;
   object-fit: cover;
-  width: 1em;
+  width: auto;
   height: 1em;
 }
 .freeBox__heNsf {
@@ -454,7 +454,7 @@
 .svg__c0F93 {
   position: relative;
   object-fit: cover;
-  width: 1em;
+  width: auto;
   height: 1em;
 }
 .text__nCaJj {
@@ -475,7 +475,7 @@
 .svg__heNkU {
   position: relative;
   object-fit: cover;
-  width: 1em;
+  width: auto;
   height: 1em;
 }
 .freeBox__fUh3T {
@@ -989,7 +989,7 @@
 .svg___1FvoQ {
   position: relative;
   object-fit: cover;
-  width: 1em;
+  width: auto;
   height: 1em;
 }
 .text__rCQqr {
@@ -1010,7 +1010,7 @@
 .svg__aTfhl {
   position: relative;
   object-fit: cover;
-  width: 1em;
+  width: auto;
   height: 1em;
 }
 .svg__gVnLj {
@@ -1018,8 +1018,6 @@
   object-fit: cover;
   max-width: 100%;
   color: #ffffff;
-  width: 1em;
-  flex-shrink: 0;
   height: 1em;
 }
 .freeBox__kwSJx {
@@ -1155,88 +1153,66 @@
   position: relative;
   object-fit: cover;
   max-width: 100%;
-  width: 1em;
-  flex-shrink: 0;
   height: 1em;
 }
 .svg__uYy8B {
   position: relative;
   object-fit: cover;
   max-width: 100%;
-  width: 1em;
-  flex-shrink: 0;
   height: 1em;
 }
 .svg__l635A {
   position: relative;
   object-fit: cover;
   max-width: 100%;
-  width: 1em;
-  flex-shrink: 0;
   height: 1em;
 }
 .svg__lBzy {
   position: relative;
   object-fit: cover;
   max-width: 100%;
-  width: 1em;
-  flex-shrink: 0;
   height: 1em;
 }
 .svg__zKn1F {
   position: relative;
   object-fit: cover;
   max-width: 100%;
-  width: 1em;
-  flex-shrink: 0;
   height: 1em;
 }
 .svg__u6SaQ {
   position: relative;
   object-fit: cover;
   max-width: 100%;
-  width: 1em;
-  flex-shrink: 0;
   height: 1em;
 }
 .svg__vrWHl {
   position: relative;
   object-fit: cover;
   max-width: 100%;
-  width: 1em;
-  flex-shrink: 0;
   height: 1em;
 }
 .svg__yI2Tz {
   position: relative;
   object-fit: cover;
   max-width: 100%;
-  width: 1em;
-  flex-shrink: 0;
   height: 1em;
 }
 .svg__zfKjB {
   position: relative;
   object-fit: cover;
   max-width: 100%;
-  width: 1em;
-  flex-shrink: 0;
   height: 1em;
 }
 .svg__jQwU5 {
   position: relative;
   object-fit: cover;
   max-width: 100%;
-  width: 1em;
-  flex-shrink: 0;
   height: 1em;
 }
 .svg__xdUkB {
   position: relative;
   object-fit: cover;
   max-width: 100%;
-  width: 1em;
-  flex-shrink: 0;
   height: 1em;
 }
 .freeBox__tU71M {
@@ -1564,7 +1540,7 @@
 .svg__dzQsO {
   position: relative;
   object-fit: cover;
-  width: 1em;
+  width: auto;
   height: 1em;
 }
 .text__dmsnV {
@@ -1575,7 +1551,7 @@
 .svg___6Bw5Q {
   position: relative;
   object-fit: cover;
-  width: 1em;
+  width: auto;
   height: 1em;
 }
 .freeBox__spBsN {
@@ -1765,7 +1741,7 @@
 .svg___369Rp {
   position: relative;
   object-fit: cover;
-  width: 1em;
+  width: auto;
   height: 1em;
 }
 .text__iaWQ {
@@ -1776,7 +1752,7 @@
 .svg___7MPmR {
   position: relative;
   object-fit: cover;
-  width: 1em;
+  width: auto;
   height: 1em;
 }
 .footer:global(.__wab_instance) {

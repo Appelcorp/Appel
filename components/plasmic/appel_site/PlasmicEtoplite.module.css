@@ -182,7 +182,7 @@
 .svg__fcosy {
   position: relative;
   object-fit: cover;
-  width: 1em;
+  width: auto;
   height: 1em;
 }
 .text__ghHi3 {
@@ -203,7 +203,7 @@
 .svg__jD0B1 {
   position: relative;
   object-fit: cover;
-  width: 1em;
+  width: auto;
   height: 1em;
 }
 .svg___3X4Zb {
@@ -211,8 +211,6 @@
   object-fit: cover;
   max-width: 100%;
   color: #ffffff;
-  width: 1em;
-  flex-shrink: 0;
   height: 1em;
 }
 .freeBox__ucu9F {
@@ -373,7 +371,7 @@
 .svg__zls3Z {
   position: relative;
   object-fit: cover;
-  width: 1em;
+  width: auto;
   height: 1em;
 }
 .text___91Ro0 {
@@ -394,7 +392,7 @@
 .svg__lj8Pe {
   position: relative;
   object-fit: cover;
-  width: 1em;
+  width: auto;
   height: 1em;
 }
 .button__iGWno:global(.__wab_instance) {
@@ -405,7 +403,7 @@
 .svg___1HoHs {
   position: relative;
   object-fit: cover;
-  width: 1em;
+  width: auto;
   height: 1em;
 }
 .text__obsWc {
@@ -426,7 +424,7 @@
 .svg___0BNc8 {
   position: relative;
   object-fit: cover;
-  width: 1em;
+  width: auto;
   height: 1em;
 }
 .button__ns305:global(.__wab_instance) {
@@ -437,7 +435,7 @@
 .svg__isv8 {
   position: relative;
   object-fit: cover;
-  width: 1em;
+  width: auto;
   height: 1em;
 }
 .text___5NZ9I {
@@ -458,7 +456,7 @@
 .svg__ceYqU {
   position: relative;
   object-fit: cover;
-  width: 1em;
+  width: auto;
   height: 1em;
 }
 .button__mfCe:global(.__wab_instance) {
@@ -469,7 +467,7 @@
 .svg__evF7 {
   position: relative;
   object-fit: cover;
-  width: 1em;
+  width: auto;
   height: 1em;
 }
 .text__c4Mwn {
@@ -490,7 +488,7 @@
 .svg__xDKs {
   position: relative;
   object-fit: cover;
-  width: 1em;
+  width: auto;
   height: 1em;
 }
 .button__htX5A:global(.__wab_instance) {
@@ -501,7 +499,7 @@
 .svg___97DC {
   position: relative;
   object-fit: cover;
-  width: 1em;
+  width: auto;
   height: 1em;
 }
 .text__kft1K {
@@ -522,7 +520,7 @@
 .svg__yHnJv {
   position: relative;
   object-fit: cover;
-  width: 1em;
+  width: auto;
   height: 1em;
 }
 .button__t6NkD:global(.__wab_instance) {
@@ -533,7 +531,7 @@
 .svg__uwERg {
   position: relative;
   object-fit: cover;
-  width: 1em;
+  width: auto;
   height: 1em;
 }
 .text___3FLtf {
@@ -554,7 +552,7 @@
 .svg__jCx9 {
   position: relative;
   object-fit: cover;
-  width: 1em;
+  width: auto;
   height: 1em;
 }
 .button__vL40K:global(.__wab_instance) {
@@ -570,7 +568,7 @@
 .svg__qOoKu {
   position: relative;
   object-fit: cover;
-  width: 1em;
+  width: auto;
   height: 1em;
 }
 .text___2Lsdz {
@@ -591,7 +589,7 @@
 .svg__nSUe6 {
   position: relative;
   object-fit: cover;
-  width: 1em;
+  width: auto;
   height: 1em;
 }
 .button__kFrjS:global(.__wab_instance) {
@@ -602,7 +600,7 @@
 .svg___4Ts0G {
   position: relative;
   object-fit: cover;
-  width: 1em;
+  width: auto;
   height: 1em;
 }
 .text__qbBn {
@@ -623,7 +621,7 @@
 .svg___8A0Rl {
   position: relative;
   object-fit: cover;
-  width: 1em;
+  width: auto;
   height: 1em;
 }
 .freeBox__beYqb {
@@ -659,7 +657,7 @@
 .svg__cudAn {
   position: relative;
   object-fit: cover;
-  width: 1em;
+  width: auto;
   height: 1em;
 }
 .text___7Gofx {
@@ -680,7 +678,7 @@
 .svg__fzY49 {
   position: relative;
   object-fit: cover;
-  width: 1em;
+  width: auto;
   height: 1em;
 }
 .freeBox__hS2J {
@@ -813,9 +811,6 @@
   width: 539px;
 }
 .img__pNqab > picture > img {
-  object-fit: cover;
-}
-.img__pNqab > :global(.__wab_img-spacer) > img {
   object-fit: cover;
 }
 .column__rx9Qh {
@@ -993,13 +988,13 @@
 .svg__yf78G {
   position: relative;
   object-fit: cover;
-  width: 1em;
+  width: auto;
   height: 1em;
 }
 .svg__pJ4Rp {
   position: relative;
   object-fit: cover;
-  width: 1em;
+  width: auto;
   height: 1em;
 }
 .freeBox___5D2C {
@@ -1311,9 +1306,6 @@
 .img__tYeEe > picture > img {
   object-fit: cover;
 }
-.img__tYeEe > :global(.__wab_img-spacer) > img {
-  object-fit: cover;
-}
 @media (min-width: 0px) and (max-width: 768px) {
   .img__tYeEe {
     height: 102px;
@@ -1409,9 +1401,6 @@
   flex-shrink: 0;
 }
 .img__vpxqc > picture > img {
-  object-fit: contain;
-}
-.img__vpxqc > :global(.__wab_img-spacer) > img {
   object-fit: contain;
 }
 .freeBox__bmFsp {

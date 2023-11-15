@@ -131,9 +131,6 @@
 .img > picture > img {
   object-fit: contain;
 }
-.img > :global(.__wab_img-spacer) > img {
-  object-fit: contain;
-}
 .freeBox___07Ke {
   display: flex;
   position: relative;
@@ -160,23 +157,17 @@
   position: relative;
   object-fit: cover;
   color: var(--token-CO9-D_BxKw88r);
-  width: 1em;
-  flex-shrink: 0;
   height: 1em;
 }
 .svg__u5X0Z {
   position: relative;
   object-fit: cover;
   color: var(--token-CO9-D_BxKw88r);
-  width: 1em;
-  flex-shrink: 0;
   height: 1em;
 }
 .svg__gLcIb {
   position: relative;
   object-fit: cover;
   color: var(--token-CO9-D_BxKw88r);
-  width: 1em;
-  flex-shrink: 0;
   height: 1em;
 }

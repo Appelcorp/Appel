@@ -256,9 +256,8 @@
 .svg__itNh4 {
   position: relative;
   object-fit: cover;
-  width: 1em;
+  width: auto;
   height: 1em;
-  flex-shrink: 0;
 }
 .contentContainer {
   display: flex;
@@ -489,7 +488,6 @@
 .svg__ijWja {
   position: relative;
   object-fit: cover;
-  width: 1em;
+  width: auto;
   height: 1em;
-  flex-shrink: 0;
 }

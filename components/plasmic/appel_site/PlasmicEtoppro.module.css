@@ -182,7 +182,7 @@
 .svg__qXq8X {
   position: relative;
   object-fit: cover;
-  width: 1em;
+  width: auto;
   height: 1em;
 }
 .text__pf9Sa {
@@ -203,7 +203,7 @@
 .svg__bAv0H {
   position: relative;
   object-fit: cover;
-  width: 1em;
+  width: auto;
   height: 1em;
 }
 .svg__nsPak {
@@ -211,8 +211,6 @@
   object-fit: cover;
   max-width: 100%;
   color: #ffffff;
-  width: 1em;
-  flex-shrink: 0;
   height: 1em;
 }
 .freeBox__ns0K4 {
@@ -373,7 +371,7 @@
 .svg__eqnB8 {
   position: relative;
   object-fit: cover;
-  width: 1em;
+  width: auto;
   height: 1em;
 }
 .text__xAbYm {
@@ -394,7 +392,7 @@
 .svg__pE0Xs {
   position: relative;
   object-fit: cover;
-  width: 1em;
+  width: auto;
   height: 1em;
 }
 .button__bxm66:global(.__wab_instance) {
@@ -405,7 +403,7 @@
 .svg__i8ZkA {
   position: relative;
   object-fit: cover;
-  width: 1em;
+  width: auto;
   height: 1em;
 }
 .text___4QrZf {
@@ -426,7 +424,7 @@
 .svg__z7She {
   position: relative;
   object-fit: cover;
-  width: 1em;
+  width: auto;
   height: 1em;
 }
 .button__kYe71:global(.__wab_instance) {
@@ -437,7 +435,7 @@
 .svg__te2R8 {
   position: relative;
   object-fit: cover;
-  width: 1em;
+  width: auto;
   height: 1em;
 }
 .text__wBdG7 {
@@ -458,7 +456,7 @@
 .svg__xPiFl {
   position: relative;
   object-fit: cover;
-  width: 1em;
+  width: auto;
   height: 1em;
 }
 .button__ooMdk:global(.__wab_instance) {
@@ -469,7 +467,7 @@
 .svg__za5 {
   position: relative;
   object-fit: cover;
-  width: 1em;
+  width: auto;
   height: 1em;
 }
 .text__hYuqz {
@@ -490,7 +488,7 @@
 .svg__cVwSw {
   position: relative;
   object-fit: cover;
-  width: 1em;
+  width: auto;
   height: 1em;
 }
 .button___0K9ED:global(.__wab_instance) {
@@ -501,7 +499,7 @@
 .svg___9Prh7 {
   position: relative;
   object-fit: cover;
-  width: 1em;
+  width: auto;
   height: 1em;
 }
 .text__sSdFk {
@@ -522,7 +520,7 @@
 .svg___6A9P {
   position: relative;
   object-fit: cover;
-  width: 1em;
+  width: auto;
   height: 1em;
 }
 .button__cEtPq:global(.__wab_instance) {
@@ -533,7 +531,7 @@
 .svg___3TUit {
   position: relative;
   object-fit: cover;
-  width: 1em;
+  width: auto;
   height: 1em;
 }
 .text__siR2L {
@@ -554,7 +552,7 @@
 .svg__uwwod {
   position: relative;
   object-fit: cover;
-  width: 1em;
+  width: auto;
   height: 1em;
 }
 .button___2OoMl:global(.__wab_instance) {
@@ -570,7 +568,7 @@
 .svg___9IRqb {
   position: relative;
   object-fit: cover;
-  width: 1em;
+  width: auto;
   height: 1em;
 }
 .text__ofEzp {
@@ -591,7 +589,7 @@
 .svg__lQ7RO {
   position: relative;
   object-fit: cover;
-  width: 1em;
+  width: auto;
   height: 1em;
 }
 .button__cgszN:global(.__wab_instance) {
@@ -602,7 +600,7 @@
 .svg__uhbRt {
   position: relative;
   object-fit: cover;
-  width: 1em;
+  width: auto;
   height: 1em;
 }
 .text__ymBVz {
@@ -623,7 +621,7 @@
 .svg___6OhT5 {
   position: relative;
   object-fit: cover;
-  width: 1em;
+  width: auto;
   height: 1em;
 }
 .freeBox__w74Cr {
@@ -659,7 +657,7 @@
 .svg__vuLtA {
   position: relative;
   object-fit: cover;
-  width: 1em;
+  width: auto;
   height: 1em;
 }
 .text___57QIw {
@@ -680,7 +678,7 @@
 .svg__qoBm7 {
   position: relative;
   object-fit: cover;
-  width: 1em;
+  width: auto;
   height: 1em;
 }
 .freeBox__uZid0 {
@@ -813,9 +811,6 @@
   width: 539px;
 }
 .img___1Ju3N > picture > img {
-  object-fit: cover;
-}
-.img___1Ju3N > :global(.__wab_img-spacer) > img {
   object-fit: cover;
 }
 .column__qNLwR {
@@ -991,13 +986,13 @@
 .svg__rocuJ {
   position: relative;
   object-fit: cover;
-  width: 1em;
+  width: auto;
   height: 1em;
 }
 .svg___7IjIx {
   position: relative;
   object-fit: cover;
-  width: 1em;
+  width: auto;
   height: 1em;
 }
 .freeBox__n9LHz {
@@ -1309,9 +1304,6 @@
 .img___1Sren > picture > img {
   object-fit: cover;
 }
-.img___1Sren > :global(.__wab_img-spacer) > img {
-  object-fit: cover;
-}
 @media (min-width: 0px) and (max-width: 768px) {
   .img___1Sren {
     height: 102px;
@@ -1407,9 +1399,6 @@
   flex-shrink: 0;
 }
 .img__reyjq > picture > img {
-  object-fit: contain;
-}
-.img__reyjq > :global(.__wab_img-spacer) > img {
   object-fit: contain;
 }
 .freeBox__zoNr3 {

@@ -74,9 +74,6 @@
 .img__uu8K > picture > img {
   object-fit: cover;
 }
-.img__uu8K > :global(.__wab_img-spacer) > img {
-  object-fit: cover;
-}
 .freeBox__qkOf5 {
   display: flex;
   position: relative;
