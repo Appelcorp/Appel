@@ -827,7 +827,7 @@ function PlasmicHome__RenderFunc(props: {
                           sty.text__tiDiQ
                         )}
                       >
-                        {"PRE ORDER"}
+                        {"BUY NOW"}
                       </div>
                     </Button>
                   </div>
