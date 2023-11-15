@@ -866,32 +866,6 @@
           "componentType": "page"
         },
         {
-          "id": "TS4dv0hpF0E",
-          "name": "Etopreg",
-          "type": "managed",
-          "projectId": "wBRmoS7Qf8danpDnoXZLVz",
-          "renderModuleFilePath": "plasmic/appel_site/PlasmicEtopreg.tsx",
-          "importSpec": {
-            "modulePath": "../pages/shop/etop/etop.tsx"
-          },
-          "cssFilePath": "plasmic/appel_site/PlasmicEtopreg.module.css",
-          "scheme": "blackbox",
-          "componentType": "page"
-        },
-        {
-          "id": "PDT1ClOTrWQ",
-          "name": "Etoppro",
-          "type": "managed",
-          "projectId": "wBRmoS7Qf8danpDnoXZLVz",
-          "renderModuleFilePath": "plasmic/appel_site/PlasmicEtoppro.tsx",
-          "importSpec": {
-            "modulePath": "../pages/shop/etop/etop-pro.tsx"
-          },
-          "cssFilePath": "plasmic/appel_site/PlasmicEtoppro.module.css",
-          "scheme": "blackbox",
-          "componentType": "page"
-        },
-        {
           "id": "re_SLBn3gGi",
           "name": "Appel2Lite",
           "type": "managed",
@@ -956,6 +930,34 @@
           "scheme": "blackbox",
           "componentType": "page",
           "path": "/developer"
+        },
+        {
+          "id": "TS4dv0hpF0E",
+          "name": "Etopreg2",
+          "type": "managed",
+          "projectId": "wBRmoS7Qf8danpDnoXZLVz",
+          "renderModuleFilePath": "plasmic/appel_site/PlasmicEtopreg2.tsx",
+          "importSpec": {
+            "modulePath": "../pages/shop/etop/etop-2.tsx"
+          },
+          "cssFilePath": "plasmic/appel_site/PlasmicEtopreg2.module.css",
+          "scheme": "blackbox",
+          "componentType": "page",
+          "path": "/shop/etop/etop-2"
+        },
+        {
+          "id": "PDT1ClOTrWQ",
+          "name": "Etoppro2",
+          "type": "managed",
+          "projectId": "wBRmoS7Qf8danpDnoXZLVz",
+          "renderModuleFilePath": "plasmic/appel_site/PlasmicEtoppro2.tsx",
+          "importSpec": {
+            "modulePath": "../pages/shop/etop/etop-pro-2.tsx"
+          },
+          "cssFilePath": "plasmic/appel_site/PlasmicEtoppro2.module.css",
+          "scheme": "blackbox",
+          "componentType": "page",
+          "path": "/shop/etop/etop-pro-2"
         }
       ],
       "icons": [
@@ -1283,6 +1285,21 @@
           "id": "DzPVzDvGCHfb",
           "name": "EtopLite2SvgIcon",
           "moduleFilePath": "plasmic/appel_site/icons/PlasmicIcon__EtopLite2Svg.tsx"
+        },
+        {
+          "id": "ydbOhlD9HekK",
+          "name": "EstagesvgIcon",
+          "moduleFilePath": "plasmic/appel_site/icons/PlasmicIcon__Estagesvg.tsx"
+        },
+        {
+          "id": "18MBCTLC9d1y",
+          "name": "EstageUltrasvgIcon",
+          "moduleFilePath": "plasmic/appel_site/icons/PlasmicIcon__EstageUltrasvg.tsx"
+        },
+        {
+          "id": "FgkONTRVH2O-",
+          "name": "EdisplayMaxsvgIcon",
+          "moduleFilePath": "plasmic/appel_site/icons/PlasmicIcon__EdisplayMaxsvg.tsx"
         }
       ],
       "images": [
@@ -1895,6 +1912,16 @@
           "id": "_HayYJVeY4vh",
           "name": "etop lite 2.png",
           "filePath": "../public/plasmic/appel_site/images/etopLite2Png.png"
+        },
+        {
+          "id": "pcHXGpzvShKa",
+          "name": "etop pro 2.png",
+          "filePath": "../public/plasmic/appel_site/images/etopPro2Png.png"
+        },
+        {
+          "id": "qJ1AB7XIeesE",
+          "name": "etop 2.png",
+          "filePath": "../public/plasmic/appel_site/images/etop2Png.png"
         }
       ],
       "indirect": false,
