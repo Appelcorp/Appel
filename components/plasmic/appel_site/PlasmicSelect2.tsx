@@ -103,6 +103,7 @@ export type PlasmicSelect2__ArgsType = {
   "aria-label"?: string;
   "aria-labelledby"?: string;
   options?: any;
+  onChange?: (value: string) => void;
 };
 type ArgPropType = keyof PlasmicSelect2__ArgsType;
 export const PlasmicSelect2__ArgProps = new Array<ArgPropType>(
@@ -113,7 +114,8 @@ export const PlasmicSelect2__ArgProps = new Array<ArgPropType>(
   "name",
   "aria-label",
   "aria-labelledby",
-  "options"
+  "options",
+  "onChange"
 );
 
 export type PlasmicSelect2__OverridesType = {

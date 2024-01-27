@@ -36,7 +36,9 @@ import {
   deriveRenderOpts,
   ensureGlobalVariants
 } from "@plasmicapp/react-web";
+import Heade from "../../Heade"; // plasmic-import: SVZGM5FMLbLU/component
 import Button from "../../Button"; // plasmic-import: 2YS4YxHJgFKju/component
+import TextInput from "../../TextInput"; // plasmic-import: FUGagdHJdaBb/component
 import Footer from "../../Footer"; // plasmic-import: O8jRJZzkmVNu/component
 
 import { useScreenVariants as useScreenVariantseH80Ck18IRB } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: -eH80ck18iR_B/globalVariant
@@ -51,6 +53,7 @@ import sty from "./PlasmicSignin.module.css"; // plasmic-import: j8YYwCAE9xY/css
 import ChecksvgIcon from "./icons/PlasmicIcon__Checksvg"; // plasmic-import: nWUWSgWJ4hmrU/icon
 import Icon38Icon from "./icons/PlasmicIcon__Icon38"; // plasmic-import: tjW8u0N4RQb/icon
 import BarsIcon from "./icons/PlasmicIcon__Bars"; // plasmic-import: 4ZVpxMLEvcR9y/icon
+import SearchsvgIcon from "./icons/PlasmicIcon__Searchsvg"; // plasmic-import: 5wgbEj_6JJpV/icon
 
 createPlasmicElementProxy;
 
@@ -65,13 +68,14 @@ export const PlasmicSignin__ArgProps = new Array<ArgPropType>();
 
 export type PlasmicSignin__OverridesType = {
   single?: p.Flex<"div">;
+  heade?: p.Flex<typeof Heade>;
+  link?: p.Flex<"a"> & Partial<LinkProps>;
   columns?: p.Flex<"div">;
   column?: p.Flex<"div">;
   h1?: p.Flex<"h1">;
-  textInput?: p.Flex<"input">;
-  passwordInput?: p.Flex<"input">;
+  textInput?: p.Flex<typeof TextInput>;
+  textInput2?: p.Flex<typeof TextInput>;
   footer?: p.Flex<typeof Footer>;
-  textbox?: p.Flex<"input">;
 };
 
 export interface DefaultSigninProps {}
@@ -106,6 +110,30 @@ function PlasmicSignin__RenderFunc(props: {
   const $refs = refsRef.current;
 
   const currentUser = p.useCurrentUser?.() || {};
+
+  const stateSpecs: Parameters<typeof p.useDollarState>[0] = React.useMemo(
+    () => [
+      {
+        path: "textInput.value",
+        type: "private",
+        variableType: "text",
+        initFunc: ({ $props, $state, $queries, $ctx }) => ``
+      },
+      {
+        path: "textInput2.value",
+        type: "private",
+        variableType: "text",
+        initFunc: ({ $props, $state, $queries, $ctx }) => ``
+      }
+    ],
+    [$props, $ctx, $refs]
+  );
+  const $state = p.useDollarState(stateSpecs, {
+    $props,
+    $ctx,
+    $queries: {},
+    $refs
+  });
 
   const globalVariants = ensureGlobalVariants({
     screen: useScreenVariantseH80Ck18IRB()
@@ -153,6 +181,12 @@ function PlasmicSignin__RenderFunc(props: {
             sty.single
           )}
         >
+          <Heade
+            data-plasmic-name={"heade"}
+            data-plasmic-override={overrides.heade}
+            className={classNames("__wab_instance", sty.heade)}
+          />
+
           {(hasVariant(globalVariants, "screen", "mobile") ? true : false) ? (
             <p.Stack
               as={"div"}
@@ -165,11 +199,13 @@ function PlasmicSignin__RenderFunc(props: {
                 className={classNames(projectcss.all, sty.freeBox__xxsSp)}
               >
                 <p.PlasmicLink
+                  data-plasmic-name={"link"}
+                  data-plasmic-override={overrides.link}
                   className={classNames(
                     projectcss.all,
                     projectcss.a,
                     projectcss.__wab_text,
-                    sty.link__ebxGp
+                    sty.link
                   )}
                   component={Link}
                   href={`/`}
@@ -230,297 +266,6 @@ function PlasmicSignin__RenderFunc(props: {
           <p.Stack
             as={"div"}
             hasGap={true}
-            className={classNames(projectcss.all, sty.freeBox___0Yxc)}
-          >
-            <p.Stack
-              as={"div"}
-              hasGap={true}
-              className={classNames(projectcss.all, sty.freeBox__jVyEa)}
-            >
-              <p.PlasmicLink
-                className={classNames(
-                  projectcss.all,
-                  projectcss.a,
-                  projectcss.__wab_text,
-                  sty.link__okSjS
-                )}
-                component={Link}
-                href={`/`}
-                platform={"nextjs"}
-              >
-                {"\u212e"}
-              </p.PlasmicLink>
-              <p.Stack
-                as={"div"}
-                hasGap={true}
-                className={classNames(projectcss.all, sty.freeBox__uVy9S)}
-              >
-                <Button
-                  className={classNames("__wab_instance", sty.button___3TsV6)}
-                  color={"clear"}
-                  endIcon={
-                    <Icon38Icon
-                      className={classNames(projectcss.all, sty.svg__juMe8)}
-                      role={"img"}
-                    />
-                  }
-                  startIcon={
-                    <ChecksvgIcon
-                      className={classNames(projectcss.all, sty.svg__zTjIk)}
-                      role={"img"}
-                    />
-                  }
-                  submitsForm={true}
-                >
-                  <div
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.__wab_text,
-                      sty.text__po7Ms
-                    )}
-                  >
-                    {"Store"}
-                  </div>
-                </Button>
-                <Button
-                  className={classNames("__wab_instance", sty.button__qcsHs)}
-                  color={"clear"}
-                  endIcon={
-                    <Icon38Icon
-                      className={classNames(projectcss.all, sty.svg__dnysQ)}
-                      role={"img"}
-                    />
-                  }
-                  link={`/shop/appel`}
-                  startIcon={
-                    <ChecksvgIcon
-                      className={classNames(projectcss.all, sty.svg__fgrF)}
-                      role={"img"}
-                    />
-                  }
-                  submitsForm={true}
-                >
-                  <div
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.__wab_text,
-                      sty.text__lGyxw
-                    )}
-                  >
-                    {"Appel"}
-                  </div>
-                </Button>
-                <Button
-                  className={classNames("__wab_instance", sty.button__gYhGu)}
-                  color={"clear"}
-                  endIcon={
-                    <Icon38Icon
-                      className={classNames(projectcss.all, sty.svg__sfKno)}
-                      role={"img"}
-                    />
-                  }
-                  link={`/shop/epad`}
-                  startIcon={
-                    <ChecksvgIcon
-                      className={classNames(projectcss.all, sty.svg___7YRgA)}
-                      role={"img"}
-                    />
-                  }
-                  submitsForm={true}
-                >
-                  <div
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.__wab_text,
-                      sty.text__veoG
-                    )}
-                  >
-                    {"ePad"}
-                  </div>
-                </Button>
-                <Button
-                  className={classNames("__wab_instance", sty.button__fpBo1)}
-                  color={"clear"}
-                  endIcon={
-                    <Icon38Icon
-                      className={classNames(projectcss.all, sty.svg__caHdC)}
-                      role={"img"}
-                    />
-                  }
-                  link={`/shop/etop`}
-                  startIcon={
-                    <ChecksvgIcon
-                      className={classNames(projectcss.all, sty.svg__gqkp)}
-                      role={"img"}
-                    />
-                  }
-                  submitsForm={true}
-                >
-                  <div
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.__wab_text,
-                      sty.text__p8LWr
-                    )}
-                  >
-                    {"eTop"}
-                  </div>
-                </Button>
-                <Button
-                  className={classNames("__wab_instance", sty.button__oOp2X)}
-                  color={"clear"}
-                  endIcon={
-                    <Icon38Icon
-                      className={classNames(projectcss.all, sty.svg__gIsn)}
-                      role={"img"}
-                    />
-                  }
-                  startIcon={
-                    <ChecksvgIcon
-                      className={classNames(projectcss.all, sty.svg___3MJmm)}
-                      role={"img"}
-                    />
-                  }
-                  submitsForm={true}
-                >
-                  <div
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.__wab_text,
-                      sty.text__irqDg
-                    )}
-                  >
-                    {"InVision"}
-                  </div>
-                </Button>
-                <Button
-                  className={classNames("__wab_instance", sty.button__nCjPf)}
-                  color={"clear"}
-                  endIcon={
-                    <Icon38Icon
-                      className={classNames(projectcss.all, sty.svg__oAsVb)}
-                      role={"img"}
-                    />
-                  }
-                  startIcon={
-                    <ChecksvgIcon
-                      className={classNames(projectcss.all, sty.svg__b8BEr)}
-                      role={"img"}
-                    />
-                  }
-                  submitsForm={true}
-                >
-                  <div
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.__wab_text,
-                      sty.text__s9UkR
-                    )}
-                  >
-                    {"eMax"}
-                  </div>
-                </Button>
-                <Button
-                  className={classNames("__wab_instance", sty.button__pkNkO)}
-                  color={"clear"}
-                  endIcon={
-                    <Icon38Icon
-                      className={classNames(projectcss.all, sty.svg__ghNuV)}
-                      role={"img"}
-                    />
-                  }
-                  link={`/login`}
-                  startIcon={
-                    <ChecksvgIcon
-                      className={classNames(projectcss.all, sty.svg__tpms7)}
-                      role={"img"}
-                    />
-                  }
-                  submitsForm={true}
-                >
-                  <div
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.__wab_text,
-                      sty.text___1ZpLe
-                    )}
-                  >
-                    {"Log in"}
-                  </div>
-                </Button>
-                <Button
-                  className={classNames("__wab_instance", sty.button__eQk1X)}
-                  endIcon={
-                    <Icon38Icon
-                      className={classNames(projectcss.all, sty.svg__zkJ96)}
-                      role={"img"}
-                    />
-                  }
-                  startIcon={
-                    <ChecksvgIcon
-                      className={classNames(projectcss.all, sty.svg___5PcHa)}
-                      role={"img"}
-                    />
-                  }
-                  submitsForm={true}
-                >
-                  <div
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.__wab_text,
-                      sty.text__pu7Mi
-                    )}
-                  >
-                    {"Sign up"}
-                  </div>
-                </Button>
-              </p.Stack>
-              {false ? (
-                <div className={classNames(projectcss.all, sty.freeBox__mekX3)}>
-                  <button
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.button,
-                      projectcss.__wab_text,
-                      sty.button__oIl6
-                    )}
-                  >
-                    {"Sign up"}
-                  </button>
-                  <Button
-                    className={classNames("__wab_instance", sty.button__j1Bb9)}
-                    color={"clear"}
-                    endIcon={
-                      <Icon38Icon
-                        className={classNames(projectcss.all, sty.svg__e7Qg)}
-                        role={"img"}
-                      />
-                    }
-                    startIcon={
-                      <ChecksvgIcon
-                        className={classNames(projectcss.all, sty.svg___6YgEg)}
-                        role={"img"}
-                      />
-                    }
-                    submitsForm={true}
-                  >
-                    <div
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.__wab_text,
-                        sty.text__k7XsE
-                      )}
-                    >
-                      {"Log in"}
-                    </div>
-                  </Button>
-                </div>
-              ) : null}
-            </p.Stack>
-          </p.Stack>
-          <p.Stack
-            as={"div"}
-            hasGap={true}
             className={classNames(projectcss.all, sty.freeBox__iUlou)}
           >
             <div className={classNames(projectcss.all, sty.freeBox__rq3K5)}>
@@ -562,37 +307,44 @@ function PlasmicSignin__RenderFunc(props: {
                     hasGap={true}
                     className={classNames(projectcss.all, sty.freeBox__c9Qa8)}
                   >
-                    <input
+                    <TextInput
                       data-plasmic-name={"textInput"}
-                      data-plasmic-override={
-                        overrides.textInput ?? overrides.textbox
-                      }
-                      autoComplete={"username"}
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.input,
-                        sty.textInput
-                      )}
+                      data-plasmic-override={overrides.textInput}
+                      className={classNames("__wab_instance", sty.textInput)}
+                      onChange={(...eventArgs) => {
+                        p.generateStateOnChangeProp($state, [
+                          "textInput",
+                          "value"
+                        ])((e => e.target?.value).apply(null, eventArgs));
+                      }}
                       placeholder={"Username"}
-                      size={1}
                       type={"text"}
-                      value={""}
+                      value={
+                        p.generateStateValueProp($state, [
+                          "textInput",
+                          "value"
+                        ]) ?? ""
+                      }
                     />
 
-                    <input
-                      data-plasmic-name={"passwordInput"}
-                      data-plasmic-override={overrides.passwordInput}
-                      autoComplete={"current-password"}
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.input,
-                        sty.passwordInput
-                      )}
-                      name={""}
+                    <TextInput
+                      data-plasmic-name={"textInput2"}
+                      data-plasmic-override={overrides.textInput2}
+                      className={classNames("__wab_instance", sty.textInput2)}
+                      onChange={(...eventArgs) => {
+                        p.generateStateOnChangeProp($state, [
+                          "textInput2",
+                          "value"
+                        ])((e => e.target?.value).apply(null, eventArgs));
+                      }}
                       placeholder={"Password"}
-                      size={1}
                       type={"password"}
-                      value={""}
+                      value={
+                        p.generateStateValueProp($state, [
+                          "textInput2",
+                          "value"
+                        ]) ?? ""
+                      }
                     />
 
                     <div
@@ -627,19 +379,22 @@ function PlasmicSignin__RenderFunc(props: {
 const PlasmicDescendants = {
   single: [
     "single",
+    "heade",
+    "link",
     "columns",
     "column",
     "h1",
     "textInput",
-    "textbox",
-    "passwordInput",
+    "textInput2",
     "footer"
   ],
-  columns: ["columns", "column", "h1", "textInput", "textbox", "passwordInput"],
-  column: ["column", "h1", "textInput", "textbox", "passwordInput"],
+  heade: ["heade"],
+  link: ["link"],
+  columns: ["columns", "column", "h1", "textInput", "textInput2"],
+  column: ["column", "h1", "textInput", "textInput2"],
   h1: ["h1"],
-  textInput: ["textInput", "textbox"],
-  passwordInput: ["passwordInput"],
+  textInput: ["textInput"],
+  textInput2: ["textInput2"],
   footer: ["footer"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
@@ -647,11 +402,13 @@ type DescendantsType<T extends NodeNameType> =
   (typeof PlasmicDescendants)[T][number];
 type NodeDefaultElementType = {
   single: "div";
+  heade: typeof Heade;
+  link: "a";
   columns: "div";
   column: "div";
   h1: "h1";
-  textInput: "input";
-  passwordInput: "input";
+  textInput: typeof TextInput;
+  textInput2: typeof TextInput;
   footer: typeof Footer;
 };
 
@@ -715,11 +472,13 @@ export const PlasmicSignin = Object.assign(
   makeNodeComponent("single"),
   {
     // Helper components rendering sub-elements
+    heade: makeNodeComponent("heade"),
+    link: makeNodeComponent("link"),
     columns: makeNodeComponent("columns"),
     column: makeNodeComponent("column"),
     h1: makeNodeComponent("h1"),
     textInput: makeNodeComponent("textInput"),
-    passwordInput: makeNodeComponent("passwordInput"),
+    textInput2: makeNodeComponent("textInput2"),
     footer: makeNodeComponent("footer"),
 
     // Metadata about props expected for PlasmicSignin

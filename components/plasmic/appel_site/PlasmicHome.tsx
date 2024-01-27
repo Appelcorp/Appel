@@ -36,8 +36,9 @@ import {
   deriveRenderOpts,
   ensureGlobalVariants
 } from "@plasmicapp/react-web";
+import Heade from "../../Heade"; // plasmic-import: SVZGM5FMLbLU/component
 import Button from "../../Button"; // plasmic-import: 2YS4YxHJgFKju/component
-import { NavigationBar } from "@plasmicpkgs/plasmic-nav"; // plasmic-import: jGx9tiKJoex/codeComponent
+import { NavigationBar } from "@plasmicpkgs/plasmic-nav";
 import Footer from "../../Footer"; // plasmic-import: O8jRJZzkmVNu/component
 
 import { useScreenVariants as useScreenVariantseH80Ck18IRB } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: -eH80ck18iR_B/globalVariant
@@ -66,6 +67,7 @@ export const PlasmicHome__ArgProps = new Array<ArgPropType>();
 
 export type PlasmicHome__OverridesType = {
   root?: p.Flex<"div">;
+  heade?: p.Flex<typeof Heade>;
   navigationBar?: p.Flex<typeof NavigationBar>;
   link?: p.Flex<"a"> & Partial<LinkProps>;
   columns?: p.Flex<"div">;
@@ -149,6 +151,12 @@ function PlasmicHome__RenderFunc(props: {
             sty.root
           )}
         >
+          <Heade
+            data-plasmic-name={"heade"}
+            data-plasmic-override={overrides.heade}
+            className={classNames("__wab_instance", sty.heade)}
+          />
+
           <div className={classNames(projectcss.all, sty.freeBox__v6Zm)}>
             {(hasVariant(globalVariants, "screen", "mobile") ? true : false) ? (
               <p.Stack
@@ -320,379 +328,6 @@ function PlasmicHome__RenderFunc(props: {
               className={classNames(projectcss.all, sty.freeBox__vTD)}
             >
               <div className={classNames(projectcss.all, sty.freeBox__zIgH)}>
-                <p.Stack
-                  as={"div"}
-                  hasGap={true}
-                  className={classNames(projectcss.all, sty.freeBox__mrCc1)}
-                >
-                  <p.Stack
-                    as={"div"}
-                    hasGap={true}
-                    className={classNames(projectcss.all, sty.freeBox__pniGm)}
-                  >
-                    <div
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.__wab_text,
-                        sty.text__gfoE
-                      )}
-                    >
-                      {"\u212e"}
-                    </div>
-                    <p.Stack
-                      as={"div"}
-                      hasGap={true}
-                      className={classNames(projectcss.all, sty.freeBox__yehx1)}
-                    >
-                      <Button
-                        className={classNames(
-                          "__wab_instance",
-                          sty.button__dTm2F
-                        )}
-                        color={"clear"}
-                        endIcon={
-                          <Icon38Icon
-                            className={classNames(
-                              projectcss.all,
-                              sty.svg___5M9Co
-                            )}
-                            role={"img"}
-                          />
-                        }
-                        startIcon={
-                          <ChecksvgIcon
-                            className={classNames(
-                              projectcss.all,
-                              sty.svg__vcaWg
-                            )}
-                            role={"img"}
-                          />
-                        }
-                        submitsForm={true}
-                      >
-                        <div
-                          className={classNames(
-                            projectcss.all,
-                            projectcss.__wab_text,
-                            sty.text__xzvAs
-                          )}
-                        >
-                          {"Store"}
-                        </div>
-                      </Button>
-                      <Button
-                        className={classNames(
-                          "__wab_instance",
-                          sty.button__qvJf3
-                        )}
-                        color={"clear"}
-                        endIcon={
-                          <Icon38Icon
-                            className={classNames(
-                              projectcss.all,
-                              sty.svg__xqQs3
-                            )}
-                            role={"img"}
-                          />
-                        }
-                        link={`/shop/appel`}
-                        startIcon={
-                          <ChecksvgIcon
-                            className={classNames(
-                              projectcss.all,
-                              sty.svg__lCnJw
-                            )}
-                            role={"img"}
-                          />
-                        }
-                        submitsForm={true}
-                      >
-                        <div
-                          className={classNames(
-                            projectcss.all,
-                            projectcss.__wab_text,
-                            sty.text__fsr54
-                          )}
-                        >
-                          {"Appel"}
-                        </div>
-                      </Button>
-                      <Button
-                        className={classNames(
-                          "__wab_instance",
-                          sty.button__nw5Sk
-                        )}
-                        color={"clear"}
-                        endIcon={
-                          <Icon38Icon
-                            className={classNames(
-                              projectcss.all,
-                              sty.svg___9JwhU
-                            )}
-                            role={"img"}
-                          />
-                        }
-                        link={`/shop/epad`}
-                        startIcon={
-                          <ChecksvgIcon
-                            className={classNames(
-                              projectcss.all,
-                              sty.svg__tnG1
-                            )}
-                            role={"img"}
-                          />
-                        }
-                        submitsForm={true}
-                      >
-                        <div
-                          className={classNames(
-                            projectcss.all,
-                            projectcss.__wab_text,
-                            sty.text__bK15N
-                          )}
-                        >
-                          {"ePad"}
-                        </div>
-                      </Button>
-                      <Button
-                        className={classNames(
-                          "__wab_instance",
-                          sty.button__kJqdY
-                        )}
-                        color={"clear"}
-                        endIcon={
-                          <Icon38Icon
-                            className={classNames(
-                              projectcss.all,
-                              sty.svg__w6YZv
-                            )}
-                            role={"img"}
-                          />
-                        }
-                        link={`/shop/etop`}
-                        startIcon={
-                          <ChecksvgIcon
-                            className={classNames(
-                              projectcss.all,
-                              sty.svg__pRoyx
-                            )}
-                            role={"img"}
-                          />
-                        }
-                        submitsForm={true}
-                      >
-                        <div
-                          className={classNames(
-                            projectcss.all,
-                            projectcss.__wab_text,
-                            sty.text__qhPed
-                          )}
-                        >
-                          {"eTop"}
-                        </div>
-                      </Button>
-                      <Button
-                        className={classNames(
-                          "__wab_instance",
-                          sty.button__iAvuQ
-                        )}
-                        color={"clear"}
-                        endIcon={
-                          <Icon38Icon
-                            className={classNames(
-                              projectcss.all,
-                              sty.svg__sH0H
-                            )}
-                            role={"img"}
-                          />
-                        }
-                        startIcon={
-                          <ChecksvgIcon
-                            className={classNames(
-                              projectcss.all,
-                              sty.svg__gk0U9
-                            )}
-                            role={"img"}
-                          />
-                        }
-                        submitsForm={true}
-                      >
-                        <div
-                          className={classNames(
-                            projectcss.all,
-                            projectcss.__wab_text,
-                            sty.text__kufWo
-                          )}
-                        >
-                          {"InVision"}
-                        </div>
-                      </Button>
-                      <Button
-                        className={classNames(
-                          "__wab_instance",
-                          sty.button__vC2V8
-                        )}
-                        color={"clear"}
-                        endIcon={
-                          <Icon38Icon
-                            className={classNames(
-                              projectcss.all,
-                              sty.svg__tx3Or
-                            )}
-                            role={"img"}
-                          />
-                        }
-                        startIcon={
-                          <ChecksvgIcon
-                            className={classNames(
-                              projectcss.all,
-                              sty.svg__jpXwL
-                            )}
-                            role={"img"}
-                          />
-                        }
-                        submitsForm={true}
-                      >
-                        <div
-                          className={classNames(
-                            projectcss.all,
-                            projectcss.__wab_text,
-                            sty.text__syLcU
-                          )}
-                        >
-                          {"eMax"}
-                        </div>
-                      </Button>
-                      <Button
-                        className={classNames(
-                          "__wab_instance",
-                          sty.button___3H7C8
-                        )}
-                        color={"clear"}
-                        endIcon={
-                          <Icon38Icon
-                            className={classNames(
-                              projectcss.all,
-                              sty.svg__he2J9
-                            )}
-                            role={"img"}
-                          />
-                        }
-                        link={`/login`}
-                        startIcon={
-                          <ChecksvgIcon
-                            className={classNames(
-                              projectcss.all,
-                              sty.svg___3MeUz
-                            )}
-                            role={"img"}
-                          />
-                        }
-                        submitsForm={true}
-                      >
-                        <div
-                          className={classNames(
-                            projectcss.all,
-                            projectcss.__wab_text,
-                            sty.text___9SnOx
-                          )}
-                        >
-                          {"Log in"}
-                        </div>
-                      </Button>
-                      <Button
-                        className={classNames(
-                          "__wab_instance",
-                          sty.button__p4WLr
-                        )}
-                        endIcon={
-                          <Icon38Icon
-                            className={classNames(
-                              projectcss.all,
-                              sty.svg__c5Vmw
-                            )}
-                            role={"img"}
-                          />
-                        }
-                        startIcon={
-                          <ChecksvgIcon
-                            className={classNames(
-                              projectcss.all,
-                              sty.svg__t6WF7
-                            )}
-                            role={"img"}
-                          />
-                        }
-                        submitsForm={true}
-                      >
-                        <div
-                          className={classNames(
-                            projectcss.all,
-                            projectcss.__wab_text,
-                            sty.text__rJlKw
-                          )}
-                        >
-                          {"Sign up"}
-                        </div>
-                      </Button>
-                    </p.Stack>
-                    {false ? (
-                      <div
-                        className={classNames(
-                          projectcss.all,
-                          sty.freeBox__qx2C3
-                        )}
-                      >
-                        <button
-                          className={classNames(
-                            projectcss.all,
-                            projectcss.button,
-                            projectcss.__wab_text,
-                            sty.button__ydOHa
-                          )}
-                        >
-                          {"Sign up"}
-                        </button>
-                        <Button
-                          className={classNames(
-                            "__wab_instance",
-                            sty.button__n2VWx
-                          )}
-                          color={"clear"}
-                          endIcon={
-                            <Icon38Icon
-                              className={classNames(
-                                projectcss.all,
-                                sty.svg___6E6Dm
-                              )}
-                              role={"img"}
-                            />
-                          }
-                          startIcon={
-                            <ChecksvgIcon
-                              className={classNames(
-                                projectcss.all,
-                                sty.svg__dDbGb
-                              )}
-                              role={"img"}
-                            />
-                          }
-                          submitsForm={true}
-                        >
-                          <div
-                            className={classNames(
-                              projectcss.all,
-                              projectcss.__wab_text,
-                              sty.text__c8Uhr
-                            )}
-                          >
-                            {"Log in"}
-                          </div>
-                        </Button>
-                      </div>
-                    ) : null}
-                  </p.Stack>
-                </p.Stack>
                 <div
                   className={classNames(
                     projectcss.all,
@@ -1024,6 +659,8 @@ function PlasmicHome__RenderFunc(props: {
               data-plasmic-override={overrides.footer}
               className={classNames("__wab_instance", sty.footer)}
             />
+
+            <div className={classNames(projectcss.all, sty.freeBox__xpMZh)} />
           </div>
           <div
             className={classNames(
@@ -1041,7 +678,8 @@ function PlasmicHome__RenderFunc(props: {
 }
 
 const PlasmicDescendants = {
-  root: ["root", "navigationBar", "link", "columns", "footer"],
+  root: ["root", "heade", "navigationBar", "link", "columns", "footer"],
+  heade: ["heade"],
   navigationBar: ["navigationBar", "link"],
   link: ["link"],
   columns: ["columns"],
@@ -1052,6 +690,7 @@ type DescendantsType<T extends NodeNameType> =
   (typeof PlasmicDescendants)[T][number];
 type NodeDefaultElementType = {
   root: "div";
+  heade: typeof Heade;
   navigationBar: typeof NavigationBar;
   link: "a";
   columns: "div";
@@ -1118,6 +757,7 @@ export const PlasmicHome = Object.assign(
   makeNodeComponent("root"),
   {
     // Helper components rendering sub-elements
+    heade: makeNodeComponent("heade"),
     navigationBar: makeNodeComponent("navigationBar"),
     link: makeNodeComponent("link"),
     columns: makeNodeComponent("columns"),
