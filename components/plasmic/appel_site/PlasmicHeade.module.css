@@ -32,7 +32,9 @@
   top: auto;
   z-index: 3;
   background: #00000080;
+  backdrop-filter: blur(20px);
   min-width: 0;
+  -webkit-backdrop-filter: blur(20px);
   border-radius: 80px;
   padding: 10px;
   margin: 0px;
