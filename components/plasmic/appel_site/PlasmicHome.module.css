@@ -13,7 +13,10 @@
 }
 .heade:global(.__wab_instance) {
   max-width: 100%;
-  position: relative;
+  position: sticky;
+  left: 0px;
+  top: 0px;
+  z-index: 3;
 }
 .freeBox__v6Zm {
   display: flex;

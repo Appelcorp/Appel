@@ -36,8 +36,8 @@ import {
   deriveRenderOpts,
   ensureGlobalVariants
 } from "@plasmicapp/react-web";
-import Button from "../../Button"; // plasmic-import: 2YS4YxHJgFKju/component
 import Heade from "../../Heade"; // plasmic-import: SVZGM5FMLbLU/component
+import Button from "../../Button"; // plasmic-import: 2YS4YxHJgFKju/component
 
 import { useScreenVariants as useScreenVariantseH80Ck18IRB } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: -eH80ck18iR_B/globalVariant
 
@@ -65,8 +65,8 @@ export const PlasmicTerms__ArgProps = new Array<ArgPropType>();
 
 export type PlasmicTerms__OverridesType = {
   root?: p.Flex<"div">;
-  link?: p.Flex<"a"> & Partial<LinkProps>;
   heade?: p.Flex<typeof Heade>;
+  link?: p.Flex<"a"> & Partial<LinkProps>;
   h2?: p.Flex<"h2">;
 };
 
@@ -149,6 +149,12 @@ function PlasmicTerms__RenderFunc(props: {
             sty.root
           )}
         >
+          <Heade
+            data-plasmic-name={"heade"}
+            data-plasmic-override={overrides.heade}
+            className={classNames("__wab_instance", sty.heade)}
+          />
+
           <p.Stack
             as={"div"}
             hasGap={true}
@@ -239,12 +245,6 @@ function PlasmicTerms__RenderFunc(props: {
                 </p.Stack>
               </p.Stack>
             ) : null}
-            <Heade
-              data-plasmic-name={"heade"}
-              data-plasmic-override={overrides.heade}
-              className={classNames("__wab_instance", sty.heade)}
-            />
-
             <p.Stack
               as={"div"}
               hasGap={true}
@@ -316,9 +316,9 @@ function PlasmicTerms__RenderFunc(props: {
 }
 
 const PlasmicDescendants = {
-  root: ["root", "link", "heade", "h2"],
-  link: ["link"],
+  root: ["root", "heade", "link", "h2"],
   heade: ["heade"],
+  link: ["link"],
   h2: ["h2"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
@@ -326,8 +326,8 @@ type DescendantsType<T extends NodeNameType> =
   (typeof PlasmicDescendants)[T][number];
 type NodeDefaultElementType = {
   root: "div";
-  link: "a";
   heade: typeof Heade;
+  link: "a";
   h2: "h2";
 };
 
@@ -391,8 +391,8 @@ export const PlasmicTerms = Object.assign(
   makeNodeComponent("root"),
   {
     // Helper components rendering sub-elements
-    link: makeNodeComponent("link"),
     heade: makeNodeComponent("heade"),
+    link: makeNodeComponent("link"),
     h2: makeNodeComponent("h2"),
 
     // Metadata about props expected for PlasmicTerms

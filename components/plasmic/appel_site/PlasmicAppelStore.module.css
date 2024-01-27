@@ -11,7 +11,10 @@
 }
 .heade:global(.__wab_instance) {
   max-width: 100%;
-  position: relative;
+  position: sticky;
+  left: 0px;
+  top: 0px;
+  z-index: 1;
 }
 .freeBox___55Pf2 {
   display: flex;

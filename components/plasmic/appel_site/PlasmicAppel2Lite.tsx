@@ -36,8 +36,8 @@ import {
   deriveRenderOpts,
   ensureGlobalVariants
 } from "@plasmicapp/react-web";
-import Button from "../../Button"; // plasmic-import: 2YS4YxHJgFKju/component
 import Heade from "../../Heade"; // plasmic-import: SVZGM5FMLbLU/component
+import Button from "../../Button"; // plasmic-import: 2YS4YxHJgFKju/component
 import Select from "../../Select"; // plasmic-import: NNJmEAQECZJ/component
 import Select__Option from "../../Select__Option"; // plasmic-import: hjMs8PXBOz6/component
 import Footer from "../../Footer"; // plasmic-import: O8jRJZzkmVNu/component
@@ -68,8 +68,8 @@ export const PlasmicAppel2Lite__ArgProps = new Array<ArgPropType>();
 
 export type PlasmicAppel2Lite__OverridesType = {
   single?: p.Flex<"div">;
-  link?: p.Flex<"a"> & Partial<LinkProps>;
   heade?: p.Flex<typeof Heade>;
+  link?: p.Flex<"a"> & Partial<LinkProps>;
   columns?: p.Flex<"div">;
   h1?: p.Flex<"h1">;
   select?: p.Flex<typeof Select>;
@@ -176,6 +176,12 @@ function PlasmicAppel2Lite__RenderFunc(props: {
             sty.single
           )}
         >
+          <Heade
+            data-plasmic-name={"heade"}
+            data-plasmic-override={overrides.heade}
+            className={classNames("__wab_instance", sty.heade)}
+          />
+
           {(hasVariant(globalVariants, "screen", "mobile") ? true : false) ? (
             <p.Stack
               as={"div"}
@@ -255,12 +261,6 @@ function PlasmicAppel2Lite__RenderFunc(props: {
               </p.Stack>
             </p.Stack>
           ) : null}
-          <Heade
-            data-plasmic-name={"heade"}
-            data-plasmic-override={overrides.heade}
-            className={classNames("__wab_instance", sty.heade)}
-          />
-
           <p.Stack
             as={"div"}
             hasGap={true}
@@ -535,8 +535,8 @@ function PlasmicAppel2Lite__RenderFunc(props: {
 const PlasmicDescendants = {
   single: [
     "single",
-    "link",
     "heade",
+    "link",
     "columns",
     "h1",
     "select",
@@ -545,8 +545,8 @@ const PlasmicDescendants = {
     "h2",
     "footer"
   ],
-  link: ["link"],
   heade: ["heade"],
+  link: ["link"],
   columns: ["columns", "h1", "select", "hello", "plus"],
   h1: ["h1"],
   select: ["select", "hello", "plus"],
@@ -560,8 +560,8 @@ type DescendantsType<T extends NodeNameType> =
   (typeof PlasmicDescendants)[T][number];
 type NodeDefaultElementType = {
   single: "div";
-  link: "a";
   heade: typeof Heade;
+  link: "a";
   columns: "div";
   h1: "h1";
   select: typeof Select;
@@ -631,8 +631,8 @@ export const PlasmicAppel2Lite = Object.assign(
   makeNodeComponent("single"),
   {
     // Helper components rendering sub-elements
-    link: makeNodeComponent("link"),
     heade: makeNodeComponent("heade"),
+    link: makeNodeComponent("link"),
     columns: makeNodeComponent("columns"),
     h1: makeNodeComponent("h1"),
     select: makeNodeComponent("select"),
