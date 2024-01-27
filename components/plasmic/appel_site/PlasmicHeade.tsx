@@ -138,6 +138,34 @@ function PlasmicHeade__RenderFunc(props: {
                 projectcss.__wab_text,
                 sty.text__guik3
               )}
+              onClick={async event => {
+                const $steps = {};
+
+                $steps["goToHome"] = true
+                  ? (() => {
+                      const actionArgs = { destination: `/` };
+                      return (({ destination }) => {
+                        if (
+                          typeof destination === "string" &&
+                          destination.startsWith("#")
+                        ) {
+                          document
+                            .getElementById(destination.substr(1))
+                            .scrollIntoView({ behavior: "smooth" });
+                        } else {
+                          __nextRouter?.push(destination);
+                        }
+                      })?.apply(null, [actionArgs]);
+                    })()
+                  : undefined;
+                if (
+                  $steps["goToHome"] != null &&
+                  typeof $steps["goToHome"] === "object" &&
+                  typeof $steps["goToHome"].then === "function"
+                ) {
+                  $steps["goToHome"] = await $steps["goToHome"];
+                }
+              }}
             >
               {"\u212e"}
             </div>

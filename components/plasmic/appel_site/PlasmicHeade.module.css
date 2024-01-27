@@ -19,7 +19,7 @@
   max-width: 100%;
   left: 0px;
   top: 0px;
-  z-index: 1;
+  z-index: 20;
   min-width: 0;
   padding: 10px;
 }
@@ -137,6 +137,7 @@
   text-align: center;
   white-space: pre;
   user-select: text;
+  cursor: pointer;
 }
 .freeBox__q9MOb {
   display: flex;

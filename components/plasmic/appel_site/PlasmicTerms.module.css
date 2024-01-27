@@ -39,7 +39,7 @@
   position: sticky;
   left: 0px;
   top: 0px;
-  z-index: 3;
+  z-index: 20;
 }
 .freeBox__thSg0 {
   display: flex;
