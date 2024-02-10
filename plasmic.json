@@ -905,19 +905,6 @@
           "componentType": "page"
         },
         {
-          "id": "ODCRtGAk6YgZ",
-          "name": "Etoplite2",
-          "type": "managed",
-          "projectId": "wBRmoS7Qf8danpDnoXZLVz",
-          "renderModuleFilePath": "plasmic/appel_site/PlasmicEtoplite2.tsx",
-          "importSpec": {
-            "modulePath": "../pages/shop/etop/etop-lite-2.tsx"
-          },
-          "cssFilePath": "plasmic/appel_site/PlasmicEtoplite2.module.css",
-          "scheme": "blackbox",
-          "componentType": "page"
-        },
-        {
           "id": "6KmAq4PCH4et",
           "name": "Developers",
           "type": "managed",
@@ -971,6 +958,20 @@
           "cssFilePath": "plasmic/appel_site/PlasmicHeade.module.css",
           "scheme": "blackbox",
           "componentType": "component"
+        },
+        {
+          "id": "ODCRtGAk6YgZ",
+          "name": "Etoplite3",
+          "type": "managed",
+          "projectId": "wBRmoS7Qf8danpDnoXZLVz",
+          "renderModuleFilePath": "plasmic/appel_site/PlasmicEtoplite3.tsx",
+          "importSpec": {
+            "modulePath": "../pages/shop/etop/etop-lite-3.tsx"
+          },
+          "cssFilePath": "plasmic/appel_site/PlasmicEtoplite3.module.css",
+          "scheme": "blackbox",
+          "componentType": "page",
+          "path": "/shop/etop/etop-lite-3"
         }
       ],
       "icons": [
@@ -1965,6 +1966,16 @@
           "id": "53R_QF7WxxWS",
           "name": "appospub2.png 2",
           "filePath": "../public/plasmic/appel_site/images/appospub2Png2.png"
+        },
+        {
+          "id": "xflBgupneUZu",
+          "name": "etop lite 3.png",
+          "filePath": "../public/plasmic/appel_site/images/etopLite3Png.png"
+        },
+        {
+          "id": "pwQGQ8zYF3ED",
+          "name": "charger2.png",
+          "filePath": "../public/plasmic/appel_site/images/charger2Png.png"
         }
       ],
       "indirect": false,

@@ -267,7 +267,7 @@ function PlasmicETopStore__RenderFunc(props: {
                     sty.link__zQi3V
                   )}
                   component={Link}
-                  href={`/shop/etop/etop-lite-2`}
+                  href={`/shop/etop/etop-lite-3`}
                   platform={"nextjs"}
                 >
                   {"eTop Lite 2"}
@@ -484,7 +484,7 @@ function PlasmicETopStore__RenderFunc(props: {
                       sty.h1__oMls4
                     )}
                   >
-                    {"eTop 2"}
+                    {"eTop Lite 3"}
                   </h1>
                 </div>
                 <div className={classNames(projectcss.all, sty.freeBox__qqWl2)}>
@@ -500,7 +500,7 @@ function PlasmicETopStore__RenderFunc(props: {
                     >
                       {hasVariant(globalVariants, "screen", "mobile")
                         ? "$1,999"
-                        : "$1,999"}
+                        : "From $999"}
                     </div>
                     <div
                       className={classNames(
@@ -511,7 +511,7 @@ function PlasmicETopStore__RenderFunc(props: {
                     >
                       {hasVariant(globalVariants, "screen", "mobile")
                         ? "Powerful Performance"
-                        : "x2.. no, x10 the performance."}
+                        : "Revolutionary, Dynamic, Essential."}
                     </div>
                   </div>
                 </div>
@@ -785,7 +785,7 @@ function PlasmicETopStore__RenderFunc(props: {
                     >
                       {hasVariant(globalVariants, "screen", "mobile")
                         ? "$19,999"
-                        : "$3,999"}
+                        : "From $3,999"}
                     </div>
                     <div
                       className={classNames(

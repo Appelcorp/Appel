@@ -593,7 +593,7 @@ function PlasmicHome__RenderFunc(props: {
                     </div>
                     <Button
                       className={classNames("__wab_instance", sty.button__dwDn)}
-                      link={`/shop/etop/etop-lite-2`}
+                      link={`/shop/etop/etop-lite-3`}
                       submitsForm={true}
                     >
                       <div
