@@ -394,9 +394,9 @@ function PlasmicETopStore__RenderFunc(props: {
                   displayWidth={"auto"}
                   loading={"lazy"}
                   src={{
-                    src: "/plasmic/appel_site/images/appos5Png.png",
-                    fullWidth: 1080,
-                    fullHeight: 1080,
+                    src: "/plasmic/appel_site/images/appospub2Png2.png",
+                    fullWidth: 500,
+                    fullHeight: 500,
                     aspectRatio: undefined
                   }}
                 />
@@ -408,7 +408,16 @@ function PlasmicETopStore__RenderFunc(props: {
                     sty.text__gUv7Y
                   )}
                 >
-                  {"AppOS 5"}
+                  {"AppOS Public"}
+                </div>
+                <div
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.__wab_text,
+                    sty.text__bv1P
+                  )}
+                >
+                  {"Coming Soon"}
                 </div>
               </div>
             </Stack__>
@@ -420,29 +429,73 @@ function PlasmicETopStore__RenderFunc(props: {
                 hasGap={true}
                 className={classNames(projectcss.all, sty.freeBox__fxhR)}
               >
-                <div className={classNames(projectcss.all, sty.freeBox__ai7Hj)}>
+                <Button
+                  className={classNames("__wab_instance", sty.button__dq26M)}
+                  color={"blue"}
+                  isDisabled={true}
+                  submitsForm={false}
+                >
+                  <div
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text__qy2Yl
+                    )}
+                  >
+                    {hasVariant(globalVariants, "screen", "mobile")
+                      ? "Buy Now"
+                      : "Learn More"}
+                  </div>
+                </Button>
+                <Button
+                  className={classNames("__wab_instance", sty.button__actAh)}
+                  color={"blue"}
+                  isDisabled={true}
+                  submitsForm={false}
+                >
+                  <div
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text__ymTss
+                    )}
+                  >
+                    {hasVariant(globalVariants, "screen", "mobile")
+                      ? "Buy Now"
+                      : "DOWNLOAD"}
+                  </div>
+                </Button>
+              </Stack__>
+            </div>
+          </div>
+          <div className={classNames(projectcss.all, sty.freeBox__eLupu)}>
+            <div className={classNames(projectcss.all, sty.freeBox__orvSy)}>
+              <Stack__
+                as={"div"}
+                hasGap={true}
+                className={classNames(projectcss.all, sty.freeBox__jvluD)}
+              >
+                <div className={classNames(projectcss.all, sty.freeBox__gdTh1)}>
                   <h1
                     className={classNames(
                       projectcss.all,
                       projectcss.h1,
                       projectcss.__wab_text,
-                      sty.h1__nk7Vw
+                      sty.h1__oMls4
                     )}
                   >
                     {"eTop 2"}
                   </h1>
                 </div>
-                <div
-                  className={classNames(projectcss.all, sty.freeBox___5CjOn)}
-                >
+                <div className={classNames(projectcss.all, sty.freeBox__qqWl2)}>
                   <div
-                    className={classNames(projectcss.all, sty.freeBox__a93IJ)}
+                    className={classNames(projectcss.all, sty.freeBox__fv5Sl)}
                   >
                     <div
                       className={classNames(
                         projectcss.all,
                         projectcss.__wab_text,
-                        sty.text___4Ofdw
+                        sty.text__kzQqQ
                       )}
                     >
                       {hasVariant(globalVariants, "screen", "mobile")
@@ -453,7 +506,7 @@ function PlasmicETopStore__RenderFunc(props: {
                       className={classNames(
                         projectcss.all,
                         projectcss.__wab_text,
-                        sty.text___0Hk3K
+                        sty.text__aeIVl
                       )}
                     >
                       {hasVariant(globalVariants, "screen", "mobile")
@@ -463,7 +516,7 @@ function PlasmicETopStore__RenderFunc(props: {
                   </div>
                 </div>
                 <Button
-                  className={classNames("__wab_instance", sty.button__dq26M)}
+                  className={classNames("__wab_instance", sty.button__ayI05)}
                   color={"blue"}
                   link={`/shop/etop/etop-2`}
                   submitsForm={true}
@@ -472,7 +525,7 @@ function PlasmicETopStore__RenderFunc(props: {
                     className={classNames(
                       projectcss.all,
                       projectcss.__wab_text,
-                      sty.text__qy2Yl
+                      sty.text__wFBwt
                     )}
                   >
                     {hasVariant(globalVariants, "screen", "mobile")

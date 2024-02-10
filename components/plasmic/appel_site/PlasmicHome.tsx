@@ -352,9 +352,32 @@ function PlasmicHome__RenderFunc(props: {
             >
               <div className={classNames(projectcss.all, sty.freeBox__zIgH)}>
                 <div className={classNames(projectcss.all, sty.freeBox__pzsY1)}>
-                  <div
+                  <Stack__
+                    as={"div"}
+                    hasGap={true}
                     className={classNames(projectcss.all, sty.freeBox___2FuG6)}
                   >
+                    <Button
+                      className={classNames(
+                        "__wab_instance",
+                        sty.button___7EAnR
+                      )}
+                      color={"blue"}
+                      isDisabled={true}
+                      submitsForm={true}
+                    >
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.__wab_text,
+                          sty.text__j8Qxu
+                        )}
+                      >
+                        {hasVariant(globalVariants, "screen", "mobile")
+                          ? "Buy Now"
+                          : "Learn More"}
+                      </div>
+                    </Button>
                     <Button
                       className={classNames(
                         "__wab_instance",
@@ -373,7 +396,7 @@ function PlasmicHome__RenderFunc(props: {
                         {"DOWNLOAD"}
                       </div>
                     </Button>
-                  </div>
+                  </Stack__>
                 </div>
               </div>
             </Stack__>

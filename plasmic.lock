@@ -201,12 +201,12 @@
         {
           "type": "renderModule",
           "assetId": "cwWSae17Ytui",
-          "checksum": "84ffa9ba8d80bf69b2f4dec896076e8e"
+          "checksum": "9fa0261df38975b3c2f76a56ac1db7e0"
         },
         {
           "type": "cssRules",
           "assetId": "cwWSae17Ytui",
-          "checksum": "84ffa9ba8d80bf69b2f4dec896076e8e"
+          "checksum": "9fa0261df38975b3c2f76a56ac1db7e0"
         },
         {
           "type": "renderModule",
@@ -521,12 +521,12 @@
         {
           "type": "renderModule",
           "assetId": "j5MKN8ABkLT",
-          "checksum": "11c0d6c708d66e13cae4f78ce4dd299d"
+          "checksum": "e8003502149decfbea0b5ada27bfb8df"
         },
         {
           "type": "cssRules",
           "assetId": "j5MKN8ABkLT",
-          "checksum": "11c0d6c708d66e13cae4f78ce4dd299d"
+          "checksum": "e8003502149decfbea0b5ada27bfb8df"
         },
         {
           "type": "renderModule",
@@ -1582,6 +1582,16 @@
           "assetId": "wBRmoS7Qf8danpDnoXZLVz",
           "type": "projectCss",
           "checksum": "27fcc7b03e9af7403e0802fefb6d8061"
+        },
+        {
+          "type": "image",
+          "assetId": "rOyx4Wwbfkcx",
+          "checksum": "91172e798d5b0cd5cb24afe54ea88027"
+        },
+        {
+          "type": "image",
+          "assetId": "53R_QF7WxxWS",
+          "checksum": "1d9aef95c90cac71c3d205906a16d11e"
         }
       ],
       "codegenVersion": "0.0.1"

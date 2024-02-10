@@ -1955,6 +1955,16 @@
           "id": "rriCq2gbG0lH",
           "name": "apppub.png",
           "filePath": "../public/plasmic/appel_site/images/apppubpng.png"
+        },
+        {
+          "id": "rOyx4Wwbfkcx",
+          "name": "appospub2.png",
+          "filePath": "../public/plasmic/appel_site/images/appospub2Png.png"
+        },
+        {
+          "id": "53R_QF7WxxWS",
+          "name": "appospub2.png 2",
+          "filePath": "../public/plasmic/appel_site/images/appospub2Png2.png"
         }
       ],
       "indirect": false,
