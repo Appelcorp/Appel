@@ -17,25 +17,48 @@ import Head from "next/head";
 import Link, { LinkProps } from "next/link";
 import { useRouter } from "next/router";
 
-import * as p from "@plasmicapp/react-web";
-import * as ph from "@plasmicapp/react-web/lib/host";
-
 import {
-  hasVariant,
-  classNames,
-  wrapWithClassName,
-  createPlasmicElementProxy,
-  makeFragment,
+  Flex as Flex__,
   MultiChoiceArg,
+  PlasmicDataSourceContextProvider as PlasmicDataSourceContextProvider__,
+  PlasmicIcon as PlasmicIcon__,
+  PlasmicImg as PlasmicImg__,
+  PlasmicLink as PlasmicLink__,
+  PlasmicPageGuard as PlasmicPageGuard__,
   SingleBooleanChoiceArg,
   SingleChoiceArg,
-  pick,
-  omit,
-  useTrigger,
+  Stack as Stack__,
   StrictProps,
+  Trans as Trans__,
+  classNames,
+  createPlasmicElementProxy,
   deriveRenderOpts,
-  ensureGlobalVariants
+  ensureGlobalVariants,
+  generateOnMutateForSpec,
+  generateStateOnChangeProp,
+  generateStateOnChangePropForCodeComponents,
+  generateStateValueProp,
+  get as $stateGet,
+  hasVariant,
+  initializeCodeComponentStates,
+  initializePlasmicStates,
+  makeFragment,
+  omit,
+  pick,
+  renderPlasmicSlot,
+  set as $stateSet,
+  useCurrentUser,
+  useDollarState,
+  usePlasmicTranslator,
+  useTrigger,
+  wrapWithClassName
 } from "@plasmicapp/react-web";
+import {
+  DataCtxReader as DataCtxReader__,
+  useDataEnv,
+  useGlobalActions
+} from "@plasmicapp/react-web/lib/host";
+
 import Ratings from "../../Ratings"; // plasmic-import: faSfgy_UKHA9q/component
 
 import "@plasmicapp/react-web/lib/plasmic.css";
@@ -80,7 +103,7 @@ export const PlasmicProductCard__ArgProps = new Array<ArgPropType>(
 );
 
 export type PlasmicProductCard__OverridesType = {
-  root?: p.Flex<"div">;
+  root?: Flex__<"div">;
 };
 
 export interface DefaultProductCardProps {
@@ -118,13 +141,13 @@ function PlasmicProductCard__RenderFunc(props: {
   };
 
   const __nextRouter = useNextRouter();
-  const $ctx = ph.useDataEnv?.() || {};
+  const $ctx = useDataEnv?.() || {};
   const refsRef = React.useRef({});
   const $refs = refsRef.current;
 
-  const currentUser = p.useCurrentUser?.() || {};
+  const currentUser = useCurrentUser?.() || {};
 
-  const stateSpecs: Parameters<typeof p.useDollarState>[0] = React.useMemo(
+  const stateSpecs: Parameters<typeof useDollarState>[0] = React.useMemo(
     () => [
       {
         path: "withReviews",
@@ -141,7 +164,7 @@ function PlasmicProductCard__RenderFunc(props: {
     ],
     [$props, $ctx, $refs]
   );
-  const $state = p.useDollarState(stateSpecs, {
+  const $state = useDollarState(stateSpecs, {
     $props,
     $ctx,
     $queries: {},
@@ -154,7 +177,7 @@ function PlasmicProductCard__RenderFunc(props: {
   };
 
   return (
-    <p.Stack
+    <Stack__
       as={"div"}
       data-plasmic-name={"root"}
       data-plasmic-override={overrides.root}
@@ -182,9 +205,9 @@ function PlasmicProductCard__RenderFunc(props: {
       data-plasmic-trigger-props={[triggerRootHoverProps]}
     >
       <div className={classNames(projectcss.all, sty.freeBox__zhQfb)}>
-        {p.renderPlasmicSlot({
+        {renderPlasmicSlot({
           defaultContents: (
-            <p.PlasmicImg
+            <PlasmicImg__
               alt={""}
               className={classNames(sty.img__jwE9O)}
               displayHeight={"auto"}
@@ -223,7 +246,7 @@ function PlasmicProductCard__RenderFunc(props: {
             {"Sale"}
           </div>
         </div>
-        <p.Stack
+        <Stack__
           as={"div"}
           hasGap={true}
           className={classNames(projectcss.all, sty.freeBox__ezlNs)}
@@ -251,9 +274,9 @@ function PlasmicProductCard__RenderFunc(props: {
             className={classNames(projectcss.all, sty.svg__zcmmn)}
             role={"img"}
           />
-        </p.Stack>
+        </Stack__>
       </div>
-      {p.renderPlasmicSlot({
+      {renderPlasmicSlot({
         defaultContents: (
           <Ratings
             className={classNames("__wab_instance", sty.ratings__rcq1Z)}
@@ -262,23 +285,23 @@ function PlasmicProductCard__RenderFunc(props: {
 
         value: args.ratings
       })}
-      <p.Stack
+      <Stack__
         as={"div"}
         hasGap={true}
         className={classNames(projectcss.all, sty.freeBox__jPsRb)}
       >
-        {p.renderPlasmicSlot({
+        {renderPlasmicSlot({
           defaultContents: "Title",
           value: args.title,
           className: classNames(sty.slotTargetTitle)
         })}
-        {p.renderPlasmicSlot({
+        {renderPlasmicSlot({
           defaultContents: "$100",
           value: args.price,
           className: classNames(sty.slotTargetPrice)
         })}
-      </p.Stack>
-    </p.Stack>
+      </Stack__>
+    </Stack__>
   ) as React.ReactElement | null;
 }
 

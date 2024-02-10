@@ -17,25 +17,48 @@ import Head from "next/head";
 import Link, { LinkProps } from "next/link";
 import { useRouter } from "next/router";
 
-import * as p from "@plasmicapp/react-web";
-import * as ph from "@plasmicapp/react-web/lib/host";
-
 import {
-  hasVariant,
-  classNames,
-  wrapWithClassName,
-  createPlasmicElementProxy,
-  makeFragment,
+  Flex as Flex__,
   MultiChoiceArg,
+  PlasmicDataSourceContextProvider as PlasmicDataSourceContextProvider__,
+  PlasmicIcon as PlasmicIcon__,
+  PlasmicImg as PlasmicImg__,
+  PlasmicLink as PlasmicLink__,
+  PlasmicPageGuard as PlasmicPageGuard__,
   SingleBooleanChoiceArg,
   SingleChoiceArg,
-  pick,
-  omit,
-  useTrigger,
+  Stack as Stack__,
   StrictProps,
+  Trans as Trans__,
+  classNames,
+  createPlasmicElementProxy,
   deriveRenderOpts,
-  ensureGlobalVariants
+  ensureGlobalVariants,
+  generateOnMutateForSpec,
+  generateStateOnChangeProp,
+  generateStateOnChangePropForCodeComponents,
+  generateStateValueProp,
+  get as $stateGet,
+  hasVariant,
+  initializeCodeComponentStates,
+  initializePlasmicStates,
+  makeFragment,
+  omit,
+  pick,
+  renderPlasmicSlot,
+  set as $stateSet,
+  useCurrentUser,
+  useDollarState,
+  usePlasmicTranslator,
+  useTrigger,
+  wrapWithClassName
 } from "@plasmicapp/react-web";
+import {
+  DataCtxReader as DataCtxReader__,
+  useDataEnv,
+  useGlobalActions
+} from "@plasmicapp/react-web/lib/host";
+
 import Heade from "../../Heade"; // plasmic-import: SVZGM5FMLbLU/component
 import Button from "../../Button"; // plasmic-import: 2YS4YxHJgFKju/component
 import Select from "../../Select"; // plasmic-import: NNJmEAQECZJ/component
@@ -66,14 +89,14 @@ type ArgPropType = keyof PlasmicAppel3Pro__ArgsType;
 export const PlasmicAppel3Pro__ArgProps = new Array<ArgPropType>();
 
 export type PlasmicAppel3Pro__OverridesType = {
-  single?: p.Flex<"div">;
-  heade?: p.Flex<typeof Heade>;
-  link?: p.Flex<"a"> & Partial<LinkProps>;
-  columns?: p.Flex<"div">;
-  h1?: p.Flex<"h1">;
-  select2?: p.Flex<typeof Select>;
-  h2?: p.Flex<"h2">;
-  footer?: p.Flex<typeof Footer>;
+  single?: Flex__<"div">;
+  heade?: Flex__<typeof Heade>;
+  link?: Flex__<"a"> & Partial<LinkProps>;
+  columns?: Flex__<"div">;
+  h1?: Flex__<"h1">;
+  select2?: Flex__<typeof Select>;
+  h2?: Flex__<"h2">;
+  footer?: Flex__<typeof Footer>;
 };
 
 export interface DefaultAppel3ProProps {}
@@ -103,13 +126,13 @@ function PlasmicAppel3Pro__RenderFunc(props: {
   };
 
   const __nextRouter = useNextRouter();
-  const $ctx = ph.useDataEnv?.() || {};
+  const $ctx = useDataEnv?.() || {};
   const refsRef = React.useRef({});
   const $refs = refsRef.current;
 
-  const currentUser = p.useCurrentUser?.() || {};
+  const currentUser = useCurrentUser?.() || {};
 
-  const stateSpecs: Parameters<typeof p.useDollarState>[0] = React.useMemo(
+  const stateSpecs: Parameters<typeof useDollarState>[0] = React.useMemo(
     () => [
       {
         path: "select2.value",
@@ -120,7 +143,7 @@ function PlasmicAppel3Pro__RenderFunc(props: {
     ],
     [$props, $ctx, $refs]
   );
-  const $state = p.useDollarState(stateSpecs, {
+  const $state = useDollarState(stateSpecs, {
     $props,
     $ctx,
     $queries: {},
@@ -155,7 +178,7 @@ function PlasmicAppel3Pro__RenderFunc(props: {
       `}</style>
 
       <div className={projectcss.plasmic_page_wrapper}>
-        <p.Stack
+        <Stack__
           as={"div"}
           data-plasmic-name={"single"}
           data-plasmic-override={overrides.single}
@@ -179,7 +202,7 @@ function PlasmicAppel3Pro__RenderFunc(props: {
             className={classNames("__wab_instance", sty.heade)}
           />
 
-          <p.Stack
+          <Stack__
             as={"div"}
             hasGap={true}
             className={classNames(projectcss.all, sty.freeBox__hYmpA)}
@@ -188,17 +211,17 @@ function PlasmicAppel3Pro__RenderFunc(props: {
               {(
                 hasVariant(globalVariants, "screen", "mobile") ? true : false
               ) ? (
-                <p.Stack
+                <Stack__
                   as={"div"}
                   hasGap={true}
                   className={classNames(projectcss.all, sty.freeBox__lIbmZ)}
                 >
-                  <p.Stack
+                  <Stack__
                     as={"div"}
                     hasGap={true}
                     className={classNames(projectcss.all, sty.freeBox__bU8G)}
                   >
-                    <p.PlasmicLink
+                    <PlasmicLink__
                       data-plasmic-name={"link"}
                       data-plasmic-override={overrides.link}
                       className={classNames(
@@ -212,7 +235,7 @@ function PlasmicAppel3Pro__RenderFunc(props: {
                       platform={"nextjs"}
                     >
                       {"\u212e"}
-                    </p.PlasmicLink>
+                    </PlasmicLink__>
                     {false ? (
                       <div
                         className={classNames(
@@ -272,8 +295,8 @@ function PlasmicAppel3Pro__RenderFunc(props: {
                       className={classNames(projectcss.all, sty.svg__g1ZNv)}
                       role={"img"}
                     />
-                  </p.Stack>
-                </p.Stack>
+                  </Stack__>
+                </Stack__>
               ) : null}
               <div
                 data-plasmic-name={"columns"}
@@ -281,7 +304,7 @@ function PlasmicAppel3Pro__RenderFunc(props: {
                 className={classNames(projectcss.all, sty.columns)}
               >
                 <div className={classNames(projectcss.all, sty.column__vj7Eo)}>
-                  <p.PlasmicImg
+                  <PlasmicImg__
                     alt={""}
                     className={classNames(sty.img__vyzH1)}
                     displayHeight={"auto"}
@@ -299,7 +322,7 @@ function PlasmicAppel3Pro__RenderFunc(props: {
                     }}
                   />
                 </div>
-                <p.Stack
+                <Stack__
                   as={"div"}
                   hasGap={true}
                   className={classNames(projectcss.all, sty.column__k7VoH)}
@@ -325,7 +348,7 @@ function PlasmicAppel3Pro__RenderFunc(props: {
                   >
                     {"From $999 or\n $41.63/mo for 24 mo."}
                   </div>
-                  <p.Stack
+                  <Stack__
                     as={"div"}
                     hasGap={true}
                     className={classNames(projectcss.all, sty.freeBox__naA3Q)}
@@ -335,10 +358,9 @@ function PlasmicAppel3Pro__RenderFunc(props: {
                       data-plasmic-override={overrides.select2}
                       className={classNames("__wab_instance", sty.select2)}
                       onChange={(...eventArgs) => {
-                        p.generateStateOnChangeProp($state, [
-                          "select2",
-                          "value"
-                        ])(eventArgs[0]);
+                        generateStateOnChangeProp($state, ["select2", "value"])(
+                          eventArgs[0]
+                        );
                       }}
                       options={(() => {
                         const __composite = [
@@ -362,7 +384,7 @@ function PlasmicAppel3Pro__RenderFunc(props: {
                           {"Pick Color"}
                         </div>
                       }
-                      value={p.generateStateValueProp($state, [
+                      value={generateStateValueProp($state, [
                         "select2",
                         "value"
                       ])}
@@ -374,22 +396,22 @@ function PlasmicAppel3Pro__RenderFunc(props: {
                     >
                       {"BUY NOW"}
                     </Button>
-                  </p.Stack>
-                </p.Stack>
+                  </Stack__>
+                </Stack__>
               </div>
             </div>
-          </p.Stack>
-          <p.Stack
+          </Stack__>
+          <Stack__
             as={"div"}
             hasGap={true}
             className={classNames(projectcss.all, sty.freeBox__pPa7S)}
           >
-            <p.Stack
+            <Stack__
               as={"div"}
               hasGap={true}
               className={classNames(projectcss.all, sty.freeBox__zDIT)}
             >
-              <p.Stack
+              <Stack__
                 as={"div"}
                 hasGap={true}
                 className={classNames(projectcss.all, sty.freeBox__xpmhM)}
@@ -410,19 +432,19 @@ function PlasmicAppel3Pro__RenderFunc(props: {
                       : "What's in the Box"}
                   </h2>
                 </div>
-              </p.Stack>
-              <p.Stack
+              </Stack__>
+              <Stack__
                 as={"div"}
                 hasGap={true}
                 className={classNames(projectcss.all, sty.freeBox__bMxKu)}
               >
                 <div className={classNames(projectcss.all, sty.freeBox__s83Yt)}>
-                  <p.Stack
+                  <Stack__
                     as={"div"}
                     hasGap={true}
                     className={classNames(projectcss.all, sty.freeBox__kkmb5)}
                   >
-                    <p.PlasmicImg
+                    <PlasmicImg__
                       alt={""}
                       className={classNames(sty.img__wRokx)}
                       displayHeight={"auto"}
@@ -453,15 +475,15 @@ function PlasmicAppel3Pro__RenderFunc(props: {
                         {"Device (All Colours Shown)"}
                       </div>
                     </div>
-                  </p.Stack>
+                  </Stack__>
                 </div>
                 <div className={classNames(projectcss.all, sty.freeBox__c7YLd)}>
-                  <p.Stack
+                  <Stack__
                     as={"div"}
                     hasGap={true}
                     className={classNames(projectcss.all, sty.freeBox__ny7D1)}
                   >
-                    <p.PlasmicImg
+                    <PlasmicImg__
                       alt={""}
                       className={classNames(sty.img__k2QR4)}
                       displayHeight={"161px"}
@@ -495,17 +517,17 @@ function PlasmicAppel3Pro__RenderFunc(props: {
                         {"Charging Cable"}
                       </div>
                     </div>
-                  </p.Stack>
+                  </Stack__>
                 </div>
-              </p.Stack>
-            </p.Stack>
-          </p.Stack>
+              </Stack__>
+            </Stack__>
+          </Stack__>
           <Footer
             data-plasmic-name={"footer"}
             data-plasmic-override={overrides.footer}
             className={classNames("__wab_instance", sty.footer)}
           />
-        </p.Stack>
+        </Stack__>
       </div>
     </React.Fragment>
   ) as React.ReactElement | null;

@@ -17,25 +17,47 @@ import Head from "next/head";
 import Link, { LinkProps } from "next/link";
 import { useRouter } from "next/router";
 
-import * as p from "@plasmicapp/react-web";
-import * as ph from "@plasmicapp/react-web/lib/host";
-
 import {
-  hasVariant,
-  classNames,
-  wrapWithClassName,
-  createPlasmicElementProxy,
-  makeFragment,
+  Flex as Flex__,
   MultiChoiceArg,
+  PlasmicDataSourceContextProvider as PlasmicDataSourceContextProvider__,
+  PlasmicIcon as PlasmicIcon__,
+  PlasmicImg as PlasmicImg__,
+  PlasmicLink as PlasmicLink__,
+  PlasmicPageGuard as PlasmicPageGuard__,
   SingleBooleanChoiceArg,
   SingleChoiceArg,
-  pick,
-  omit,
-  useTrigger,
+  Stack as Stack__,
   StrictProps,
+  Trans as Trans__,
+  classNames,
+  createPlasmicElementProxy,
   deriveRenderOpts,
-  ensureGlobalVariants
+  ensureGlobalVariants,
+  generateOnMutateForSpec,
+  generateStateOnChangeProp,
+  generateStateOnChangePropForCodeComponents,
+  generateStateValueProp,
+  get as $stateGet,
+  hasVariant,
+  initializeCodeComponentStates,
+  initializePlasmicStates,
+  makeFragment,
+  omit,
+  pick,
+  renderPlasmicSlot,
+  set as $stateSet,
+  useCurrentUser,
+  useDollarState,
+  usePlasmicTranslator,
+  useTrigger,
+  wrapWithClassName
 } from "@plasmicapp/react-web";
+import {
+  DataCtxReader as DataCtxReader__,
+  useDataEnv,
+  useGlobalActions
+} from "@plasmicapp/react-web/lib/host";
 
 import "@plasmicapp/react-web/lib/plasmic.css";
 
@@ -70,7 +92,7 @@ export const PlasmicBlogPost__ArgProps = new Array<ArgPropType>(
 );
 
 export type PlasmicBlogPost__OverridesType = {
-  root?: p.Flex<"div">;
+  root?: Flex__<"div">;
 };
 
 export interface DefaultBlogPostProps {
@@ -107,13 +129,13 @@ function PlasmicBlogPost__RenderFunc(props: {
   };
 
   const __nextRouter = useNextRouter();
-  const $ctx = ph.useDataEnv?.() || {};
+  const $ctx = useDataEnv?.() || {};
   const refsRef = React.useRef({});
   const $refs = refsRef.current;
 
-  const currentUser = p.useCurrentUser?.() || {};
+  const currentUser = useCurrentUser?.() || {};
 
-  const stateSpecs: Parameters<typeof p.useDollarState>[0] = React.useMemo(
+  const stateSpecs: Parameters<typeof useDollarState>[0] = React.useMemo(
     () => [
       {
         path: "long",
@@ -124,7 +146,7 @@ function PlasmicBlogPost__RenderFunc(props: {
     ],
     [$props, $ctx, $refs]
   );
-  const $state = p.useDollarState(stateSpecs, {
+  const $state = useDollarState(stateSpecs, {
     $props,
     $ctx,
     $queries: {},
@@ -132,7 +154,7 @@ function PlasmicBlogPost__RenderFunc(props: {
   });
 
   return (
-    <p.Stack
+    <Stack__
       as={"div"}
       data-plasmic-name={"root"}
       data-plasmic-override={overrides.root}
@@ -156,9 +178,9 @@ function PlasmicBlogPost__RenderFunc(props: {
           [sty.freeBoxlong__pE8XfVpdfx]: hasVariant($state, "long", "long")
         })}
       >
-        {p.renderPlasmicSlot({
+        {renderPlasmicSlot({
           defaultContents: (
-            <p.PlasmicImg
+            <PlasmicImg__
               alt={""}
               className={classNames(sty.img__uu8K)}
               displayHeight={"auto"}
@@ -179,26 +201,26 @@ function PlasmicBlogPost__RenderFunc(props: {
           value: args.image
         })}
       </div>
-      <p.Stack
+      <Stack__
         as={"div"}
         hasGap={true}
         className={classNames(projectcss.all, sty.freeBox__qkOf5, {
           [sty.freeBoxlong__qkOf5Vpdfx]: hasVariant($state, "long", "long")
         })}
       >
-        {p.renderPlasmicSlot({
+        {renderPlasmicSlot({
           defaultContents: "Why Brands are Looking at Local Language",
           value: args.title,
           className: classNames(sty.slotTargetTitle, {
             [sty.slotTargetTitlelong]: hasVariant($state, "long", "long")
           })
         })}
-        {p.renderPlasmicSlot({
+        {renderPlasmicSlot({
           defaultContents: "By Robert Norby / 18th March 2018",
           value: args.author,
           className: classNames(sty.slotTargetAuthor)
         })}
-        {p.renderPlasmicSlot({
+        {renderPlasmicSlot({
           defaultContents:
             "Nemo Enim Ipsam Voluptatem Quia Voluptas Sit Aspernatur Aut Odit Aut Fugit, Sed Quia Consequuntur Magni Dolores Eos Qui Ratione Voluptatem Sequi Nesciunt....",
           value: args.description,
@@ -206,8 +228,8 @@ function PlasmicBlogPost__RenderFunc(props: {
             [sty.slotTargetDescriptionlong]: hasVariant($state, "long", "long")
           })
         })}
-      </p.Stack>
-    </p.Stack>
+      </Stack__>
+    </Stack__>
   ) as React.ReactElement | null;
 }
 

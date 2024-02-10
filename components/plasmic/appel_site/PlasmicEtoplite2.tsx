@@ -17,25 +17,48 @@ import Head from "next/head";
 import Link, { LinkProps } from "next/link";
 import { useRouter } from "next/router";
 
-import * as p from "@plasmicapp/react-web";
-import * as ph from "@plasmicapp/react-web/lib/host";
-
 import {
-  hasVariant,
-  classNames,
-  wrapWithClassName,
-  createPlasmicElementProxy,
-  makeFragment,
+  Flex as Flex__,
   MultiChoiceArg,
+  PlasmicDataSourceContextProvider as PlasmicDataSourceContextProvider__,
+  PlasmicIcon as PlasmicIcon__,
+  PlasmicImg as PlasmicImg__,
+  PlasmicLink as PlasmicLink__,
+  PlasmicPageGuard as PlasmicPageGuard__,
   SingleBooleanChoiceArg,
   SingleChoiceArg,
-  pick,
-  omit,
-  useTrigger,
+  Stack as Stack__,
   StrictProps,
+  Trans as Trans__,
+  classNames,
+  createPlasmicElementProxy,
   deriveRenderOpts,
-  ensureGlobalVariants
+  ensureGlobalVariants,
+  generateOnMutateForSpec,
+  generateStateOnChangeProp,
+  generateStateOnChangePropForCodeComponents,
+  generateStateValueProp,
+  get as $stateGet,
+  hasVariant,
+  initializeCodeComponentStates,
+  initializePlasmicStates,
+  makeFragment,
+  omit,
+  pick,
+  renderPlasmicSlot,
+  set as $stateSet,
+  useCurrentUser,
+  useDollarState,
+  usePlasmicTranslator,
+  useTrigger,
+  wrapWithClassName
 } from "@plasmicapp/react-web";
+import {
+  DataCtxReader as DataCtxReader__,
+  useDataEnv,
+  useGlobalActions
+} from "@plasmicapp/react-web/lib/host";
+
 import Heade from "../../Heade"; // plasmic-import: SVZGM5FMLbLU/component
 import Button from "../../Button"; // plasmic-import: 2YS4YxHJgFKju/component
 import Select from "../../Select"; // plasmic-import: NNJmEAQECZJ/component
@@ -67,17 +90,17 @@ type ArgPropType = keyof PlasmicEtoplite2__ArgsType;
 export const PlasmicEtoplite2__ArgProps = new Array<ArgPropType>();
 
 export type PlasmicEtoplite2__OverridesType = {
-  single?: p.Flex<"div">;
-  heade?: p.Flex<typeof Heade>;
-  link?: p.Flex<"a"> & Partial<LinkProps>;
-  columns?: p.Flex<"div">;
-  h1?: p.Flex<"h1">;
-  select?: p.Flex<typeof Select>;
-  hello?: p.Flex<"div">;
-  plus?: p.Flex<"div">;
-  plus2?: p.Flex<"div">;
-  h2?: p.Flex<"h2">;
-  footer?: p.Flex<typeof Footer>;
+  single?: Flex__<"div">;
+  heade?: Flex__<typeof Heade>;
+  link?: Flex__<"a"> & Partial<LinkProps>;
+  columns?: Flex__<"div">;
+  h1?: Flex__<"h1">;
+  select?: Flex__<typeof Select>;
+  hello?: Flex__<"div">;
+  plus?: Flex__<"div">;
+  plus2?: Flex__<"div">;
+  h2?: Flex__<"h2">;
+  footer?: Flex__<typeof Footer>;
 };
 
 export interface DefaultEtoplite2Props {}
@@ -107,13 +130,13 @@ function PlasmicEtoplite2__RenderFunc(props: {
   };
 
   const __nextRouter = useNextRouter();
-  const $ctx = ph.useDataEnv?.() || {};
+  const $ctx = useDataEnv?.() || {};
   const refsRef = React.useRef({});
   const $refs = refsRef.current;
 
-  const currentUser = p.useCurrentUser?.() || {};
+  const currentUser = useCurrentUser?.() || {};
 
-  const stateSpecs: Parameters<typeof p.useDollarState>[0] = React.useMemo(
+  const stateSpecs: Parameters<typeof useDollarState>[0] = React.useMemo(
     () => [
       {
         path: "select.value",
@@ -124,7 +147,7 @@ function PlasmicEtoplite2__RenderFunc(props: {
     ],
     [$props, $ctx, $refs]
   );
-  const $state = p.useDollarState(stateSpecs, {
+  const $state = useDollarState(stateSpecs, {
     $props,
     $ctx,
     $queries: {},
@@ -159,7 +182,7 @@ function PlasmicEtoplite2__RenderFunc(props: {
       `}</style>
 
       <div className={projectcss.plasmic_page_wrapper}>
-        <p.Stack
+        <Stack__
           as={"div"}
           data-plasmic-name={"single"}
           data-plasmic-override={overrides.single}
@@ -184,17 +207,17 @@ function PlasmicEtoplite2__RenderFunc(props: {
           />
 
           {(hasVariant(globalVariants, "screen", "mobile") ? true : false) ? (
-            <p.Stack
+            <Stack__
               as={"div"}
               hasGap={true}
               className={classNames(projectcss.all, sty.freeBox___35Zg8)}
             >
-              <p.Stack
+              <Stack__
                 as={"div"}
                 hasGap={true}
                 className={classNames(projectcss.all, sty.freeBox__kuoRf)}
               >
-                <p.PlasmicLink
+                <PlasmicLink__
                   data-plasmic-name={"link"}
                   data-plasmic-override={overrides.link}
                   className={classNames(
@@ -208,7 +231,7 @@ function PlasmicEtoplite2__RenderFunc(props: {
                   platform={"nextjs"}
                 >
                   {"\u212e"}
-                </p.PlasmicLink>
+                </PlasmicLink__>
                 {false ? (
                   <div
                     className={classNames(projectcss.all, sty.freeBox___4YeDb)}
@@ -259,10 +282,10 @@ function PlasmicEtoplite2__RenderFunc(props: {
                   className={classNames(projectcss.all, sty.svg__r8Vv)}
                   role={"img"}
                 />
-              </p.Stack>
-            </p.Stack>
+              </Stack__>
+            </Stack__>
           ) : null}
-          <p.Stack
+          <Stack__
             as={"div"}
             hasGap={true}
             className={classNames(projectcss.all, sty.freeBox__qLf)}
@@ -274,7 +297,7 @@ function PlasmicEtoplite2__RenderFunc(props: {
                 className={classNames(projectcss.all, sty.columns)}
               >
                 <div className={classNames(projectcss.all, sty.column___5JN1R)}>
-                  <p.PlasmicImg
+                  <PlasmicImg__
                     alt={""}
                     className={classNames(sty.img__sBq6)}
                     displayHeight={"auto"}
@@ -285,14 +308,14 @@ function PlasmicEtoplite2__RenderFunc(props: {
                     displayWidth={"539px"}
                     loading={"lazy"}
                     src={{
-                      src: "/plasmic/appel_site/images/etopLite2Png.png",
-                      fullWidth: 4234,
-                      fullHeight: 2480,
+                      src: "/plasmic/appel_site/images/etopLite2Png2.png",
+                      fullWidth: 8468,
+                      fullHeight: 4962,
                       aspectRatio: undefined
                     }}
                   />
                 </div>
-                <p.Stack
+                <Stack__
                   as={"div"}
                   hasGap={true}
                   className={classNames(projectcss.all, sty.column__cunsl)}
@@ -318,7 +341,7 @@ function PlasmicEtoplite2__RenderFunc(props: {
                   >
                     {"From $999 or\n $41.63/mo for 24 mo."}
                   </div>
-                  <p.Stack
+                  <Stack__
                     as={"div"}
                     hasGap={true}
                     className={classNames(projectcss.all, sty.freeBox__dnxLp)}
@@ -328,10 +351,9 @@ function PlasmicEtoplite2__RenderFunc(props: {
                       data-plasmic-override={overrides.select}
                       className={classNames("__wab_instance", sty.select)}
                       onChange={(...eventArgs) => {
-                        p.generateStateOnChangeProp($state, [
-                          "select",
-                          "value"
-                        ])(eventArgs[0]);
+                        generateStateOnChangeProp($state, ["select", "value"])(
+                          eventArgs[0]
+                        );
                       }}
                       placeholder={
                         <div
@@ -344,7 +366,7 @@ function PlasmicEtoplite2__RenderFunc(props: {
                           {"Pick Color"}
                         </div>
                       }
-                      value={p.generateStateValueProp($state, [
+                      value={generateStateValueProp($state, [
                         "select",
                         "value"
                       ])}
@@ -416,22 +438,22 @@ function PlasmicEtoplite2__RenderFunc(props: {
                     >
                       {"Pre Order"}
                     </Button>
-                  </p.Stack>
-                </p.Stack>
+                  </Stack__>
+                </Stack__>
               </div>
             </div>
-          </p.Stack>
-          <p.Stack
+          </Stack__>
+          <Stack__
             as={"div"}
             hasGap={true}
             className={classNames(projectcss.all, sty.freeBox__bXp2E)}
           >
-            <p.Stack
+            <Stack__
               as={"div"}
               hasGap={true}
               className={classNames(projectcss.all, sty.freeBox__eTvJz)}
             >
-              <p.Stack
+              <Stack__
                 as={"div"}
                 hasGap={true}
                 className={classNames(projectcss.all, sty.freeBox__dpFug)}
@@ -452,19 +474,19 @@ function PlasmicEtoplite2__RenderFunc(props: {
                       : "What's in the Box"}
                   </h2>
                 </div>
-              </p.Stack>
-              <p.Stack
+              </Stack__>
+              <Stack__
                 as={"div"}
                 hasGap={true}
                 className={classNames(projectcss.all, sty.freeBox__klTa4)}
               >
                 <div className={classNames(projectcss.all, sty.freeBox__xwaVy)}>
-                  <p.Stack
+                  <Stack__
                     as={"div"}
                     hasGap={true}
                     className={classNames(projectcss.all, sty.freeBox___3BvLu)}
                   >
-                    <p.PlasmicImg
+                    <PlasmicImg__
                       alt={""}
                       className={classNames(sty.img___1XFr)}
                       displayHeight={
@@ -499,15 +521,15 @@ function PlasmicEtoplite2__RenderFunc(props: {
                         {"Device"}
                       </div>
                     </div>
-                  </p.Stack>
+                  </Stack__>
                 </div>
                 <div className={classNames(projectcss.all, sty.freeBox__cIIr)}>
-                  <p.Stack
+                  <Stack__
                     as={"div"}
                     hasGap={true}
                     className={classNames(projectcss.all, sty.freeBox__tsdnz)}
                   >
-                    <p.PlasmicImg
+                    <PlasmicImg__
                       alt={""}
                       className={classNames(sty.img__faPnY)}
                       displayHeight={"161px"}
@@ -538,17 +560,17 @@ function PlasmicEtoplite2__RenderFunc(props: {
                         {"Charging Cable"}
                       </div>
                     </div>
-                  </p.Stack>
+                  </Stack__>
                 </div>
-              </p.Stack>
-            </p.Stack>
-          </p.Stack>
+              </Stack__>
+            </Stack__>
+          </Stack__>
           <Footer
             data-plasmic-name={"footer"}
             data-plasmic-override={overrides.footer}
             className={classNames("__wab_instance", sty.footer)}
           />
-        </p.Stack>
+        </Stack__>
       </div>
     </React.Fragment>
   ) as React.ReactElement | null;

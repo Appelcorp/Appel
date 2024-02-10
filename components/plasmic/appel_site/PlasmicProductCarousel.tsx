@@ -17,25 +17,48 @@ import Head from "next/head";
 import Link, { LinkProps } from "next/link";
 import { useRouter } from "next/router";
 
-import * as p from "@plasmicapp/react-web";
-import * as ph from "@plasmicapp/react-web/lib/host";
-
 import {
-  hasVariant,
-  classNames,
-  wrapWithClassName,
-  createPlasmicElementProxy,
-  makeFragment,
+  Flex as Flex__,
   MultiChoiceArg,
+  PlasmicDataSourceContextProvider as PlasmicDataSourceContextProvider__,
+  PlasmicIcon as PlasmicIcon__,
+  PlasmicImg as PlasmicImg__,
+  PlasmicLink as PlasmicLink__,
+  PlasmicPageGuard as PlasmicPageGuard__,
   SingleBooleanChoiceArg,
   SingleChoiceArg,
-  pick,
-  omit,
-  useTrigger,
+  Stack as Stack__,
   StrictProps,
+  Trans as Trans__,
+  classNames,
+  createPlasmicElementProxy,
   deriveRenderOpts,
-  ensureGlobalVariants
+  ensureGlobalVariants,
+  generateOnMutateForSpec,
+  generateStateOnChangeProp,
+  generateStateOnChangePropForCodeComponents,
+  generateStateValueProp,
+  get as $stateGet,
+  hasVariant,
+  initializeCodeComponentStates,
+  initializePlasmicStates,
+  makeFragment,
+  omit,
+  pick,
+  renderPlasmicSlot,
+  set as $stateSet,
+  useCurrentUser,
+  useDollarState,
+  usePlasmicTranslator,
+  useTrigger,
+  wrapWithClassName
 } from "@plasmicapp/react-web";
+import {
+  DataCtxReader as DataCtxReader__,
+  useDataEnv,
+  useGlobalActions
+} from "@plasmicapp/react-web/lib/host";
+
 import LinkButton from "../../LinkButton"; // plasmic-import: 8jGL1lk6yNuYV/component
 
 import "@plasmicapp/react-web/lib/plasmic.css";
@@ -66,8 +89,8 @@ type ArgPropType = keyof PlasmicProductCarousel__ArgsType;
 export const PlasmicProductCarousel__ArgProps = new Array<ArgPropType>();
 
 export type PlasmicProductCarousel__OverridesType = {
-  root?: p.Flex<"div">;
-  img?: p.Flex<typeof p.PlasmicImg>;
+  root?: Flex__<"div">;
+  img?: Flex__<typeof PlasmicImg__>;
 };
 
 export interface DefaultProductCarouselProps {
@@ -100,13 +123,13 @@ function PlasmicProductCarousel__RenderFunc(props: {
   };
 
   const __nextRouter = useNextRouter();
-  const $ctx = ph.useDataEnv?.() || {};
+  const $ctx = useDataEnv?.() || {};
   const refsRef = React.useRef({});
   const $refs = refsRef.current;
 
-  const currentUser = p.useCurrentUser?.() || {};
+  const currentUser = useCurrentUser?.() || {};
 
-  const stateSpecs: Parameters<typeof p.useDollarState>[0] = React.useMemo(
+  const stateSpecs: Parameters<typeof useDollarState>[0] = React.useMemo(
     () => [
       {
         path: "slider",
@@ -117,7 +140,7 @@ function PlasmicProductCarousel__RenderFunc(props: {
     ],
     [$props, $ctx, $refs]
   );
-  const $state = p.useDollarState(stateSpecs, {
+  const $state = useDollarState(stateSpecs, {
     $props,
     $ctx,
     $queries: {},
@@ -142,7 +165,7 @@ function PlasmicProductCarousel__RenderFunc(props: {
       )}
     >
       <div className={classNames(projectcss.all, sty.freeBox__qs5Ae)}>
-        <p.Stack
+        <Stack__
           as={"div"}
           hasGap={true}
           className={classNames(projectcss.all, sty.freeBox__lRPa6, {
@@ -262,7 +285,7 @@ function PlasmicProductCarousel__RenderFunc(props: {
                 : " $499.00"}
             </div>
           </div>
-          <p.Stack
+          <Stack__
             as={"div"}
             hasGap={true}
             className={classNames(projectcss.all, sty.freeBox__uTxj8)}
@@ -278,10 +301,10 @@ function PlasmicProductCarousel__RenderFunc(props: {
               text={"More Info"}
               type={"blankOrange"}
             />
-          </p.Stack>
-        </p.Stack>
+          </Stack__>
+        </Stack__>
         <div className={classNames(projectcss.all, sty.freeBox__wo4FA)}>
-          <p.PlasmicImg
+          <PlasmicImg__
             data-plasmic-name={"img"}
             data-plasmic-override={overrides.img}
             alt={""}
@@ -321,12 +344,12 @@ function PlasmicProductCarousel__RenderFunc(props: {
           />
         </div>
       </div>
-      <p.Stack
+      <Stack__
         as={"div"}
         hasGap={true}
         className={classNames(projectcss.all, sty.freeBox___07Ke)}
       >
-        <p.PlasmicIcon
+        <PlasmicIcon__
           PlasmicIconType={
             hasVariant($state, "slider", "third")
               ? CircleOIcon
@@ -349,7 +372,7 @@ function PlasmicProductCarousel__RenderFunc(props: {
           role={"img"}
         />
 
-        <p.PlasmicIcon
+        <PlasmicIcon__
           PlasmicIconType={
             hasVariant($state, "slider", "second")
               ? DotCircleOIcon
@@ -375,7 +398,7 @@ function PlasmicProductCarousel__RenderFunc(props: {
           role={"img"}
         />
 
-        <p.PlasmicIcon
+        <PlasmicIcon__
           PlasmicIconType={
             hasVariant($state, "slider", "third") ? DotCircleOIcon : CircleOIcon
           }
@@ -388,7 +411,7 @@ function PlasmicProductCarousel__RenderFunc(props: {
           })}
           role={"img"}
         />
-      </p.Stack>
+      </Stack__>
     </div>
   ) as React.ReactElement | null;
 }
@@ -402,7 +425,7 @@ type DescendantsType<T extends NodeNameType> =
   (typeof PlasmicDescendants)[T][number];
 type NodeDefaultElementType = {
   root: "div";
-  img: typeof p.PlasmicImg;
+  img: typeof PlasmicImg__;
 };
 
 type ReservedPropsType = "variants" | "args" | "overrides";

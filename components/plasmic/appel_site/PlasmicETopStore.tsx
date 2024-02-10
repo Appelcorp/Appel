@@ -17,25 +17,48 @@ import Head from "next/head";
 import Link, { LinkProps } from "next/link";
 import { useRouter } from "next/router";
 
-import * as p from "@plasmicapp/react-web";
-import * as ph from "@plasmicapp/react-web/lib/host";
-
 import {
-  hasVariant,
-  classNames,
-  wrapWithClassName,
-  createPlasmicElementProxy,
-  makeFragment,
+  Flex as Flex__,
   MultiChoiceArg,
+  PlasmicDataSourceContextProvider as PlasmicDataSourceContextProvider__,
+  PlasmicIcon as PlasmicIcon__,
+  PlasmicImg as PlasmicImg__,
+  PlasmicLink as PlasmicLink__,
+  PlasmicPageGuard as PlasmicPageGuard__,
   SingleBooleanChoiceArg,
   SingleChoiceArg,
-  pick,
-  omit,
-  useTrigger,
+  Stack as Stack__,
   StrictProps,
+  Trans as Trans__,
+  classNames,
+  createPlasmicElementProxy,
   deriveRenderOpts,
-  ensureGlobalVariants
+  ensureGlobalVariants,
+  generateOnMutateForSpec,
+  generateStateOnChangeProp,
+  generateStateOnChangePropForCodeComponents,
+  generateStateValueProp,
+  get as $stateGet,
+  hasVariant,
+  initializeCodeComponentStates,
+  initializePlasmicStates,
+  makeFragment,
+  omit,
+  pick,
+  renderPlasmicSlot,
+  set as $stateSet,
+  useCurrentUser,
+  useDollarState,
+  usePlasmicTranslator,
+  useTrigger,
+  wrapWithClassName
 } from "@plasmicapp/react-web";
+import {
+  DataCtxReader as DataCtxReader__,
+  useDataEnv,
+  useGlobalActions
+} from "@plasmicapp/react-web/lib/host";
+
 import Heade from "../../Heade"; // plasmic-import: SVZGM5FMLbLU/component
 import Button from "../../Button"; // plasmic-import: 2YS4YxHJgFKju/component
 import Footer from "../../Footer"; // plasmic-import: O8jRJZzkmVNu/component
@@ -73,10 +96,10 @@ type ArgPropType = keyof PlasmicETopStore__ArgsType;
 export const PlasmicETopStore__ArgProps = new Array<ArgPropType>();
 
 export type PlasmicETopStore__OverridesType = {
-  root?: p.Flex<"div">;
-  heade?: p.Flex<typeof Heade>;
-  img?: p.Flex<typeof p.PlasmicImg>;
-  footer?: p.Flex<typeof Footer>;
+  root?: Flex__<"div">;
+  heade?: Flex__<typeof Heade>;
+  img?: Flex__<typeof PlasmicImg__>;
+  footer?: Flex__<typeof Footer>;
 };
 
 export interface DefaultETopStoreProps {}
@@ -106,11 +129,11 @@ function PlasmicETopStore__RenderFunc(props: {
   };
 
   const __nextRouter = useNextRouter();
-  const $ctx = ph.useDataEnv?.() || {};
+  const $ctx = useDataEnv?.() || {};
   const refsRef = React.useRef({});
   const $refs = refsRef.current;
 
-  const currentUser = p.useCurrentUser?.() || {};
+  const currentUser = useCurrentUser?.() || {};
 
   const globalVariants = ensureGlobalVariants({
     screen: useScreenVariantseH80Ck18IRB()
@@ -162,12 +185,12 @@ function PlasmicETopStore__RenderFunc(props: {
             className={classNames("__wab_instance", sty.heade)}
           />
 
-          <p.Stack
+          <Stack__
             as={"div"}
             hasGap={true}
             className={classNames(projectcss.all, sty.freeBox__b7Q0J)}
           >
-            <p.Stack
+            <Stack__
               as={"div"}
               hasGap={true}
               className={classNames(projectcss.all, sty.freeBox__v7X6Y)}
@@ -178,7 +201,7 @@ function PlasmicETopStore__RenderFunc(props: {
                   role={"img"}
                 />
 
-                <p.PlasmicLink
+                <PlasmicLink__
                   className={classNames(
                     projectcss.all,
                     projectcss.a,
@@ -190,7 +213,7 @@ function PlasmicETopStore__RenderFunc(props: {
                   platform={"nextjs"}
                 >
                   {"eTop Pro 2"}
-                </p.PlasmicLink>
+                </PlasmicLink__>
                 <div
                   className={classNames(
                     projectcss.all,
@@ -207,7 +230,7 @@ function PlasmicETopStore__RenderFunc(props: {
                   role={"img"}
                 />
 
-                <p.PlasmicLink
+                <PlasmicLink__
                   className={classNames(
                     projectcss.all,
                     projectcss.a,
@@ -219,7 +242,7 @@ function PlasmicETopStore__RenderFunc(props: {
                   platform={"nextjs"}
                 >
                   {"eTop 2"}
-                </p.PlasmicLink>
+                </PlasmicLink__>
                 <div
                   className={classNames(
                     projectcss.all,
@@ -236,7 +259,7 @@ function PlasmicETopStore__RenderFunc(props: {
                   role={"img"}
                 />
 
-                <p.PlasmicLink
+                <PlasmicLink__
                   className={classNames(
                     projectcss.all,
                     projectcss.a,
@@ -248,7 +271,7 @@ function PlasmicETopStore__RenderFunc(props: {
                   platform={"nextjs"}
                 >
                   {"eTop Lite 2"}
-                </p.PlasmicLink>
+                </PlasmicLink__>
               </div>
               <div className={classNames(projectcss.all, sty.freeBox__ebgi)}>
                 <EstageUltrasvgIcon
@@ -358,7 +381,7 @@ function PlasmicETopStore__RenderFunc(props: {
                 </div>
               </div>
               <div className={classNames(projectcss.all, sty.freeBox__ppEmN)}>
-                <p.PlasmicImg
+                <PlasmicImg__
                   data-plasmic-name={"img"}
                   data-plasmic-override={overrides.img}
                   alt={""}
@@ -388,11 +411,11 @@ function PlasmicETopStore__RenderFunc(props: {
                   {"AppOS 5"}
                 </div>
               </div>
-            </p.Stack>
-          </p.Stack>
+            </Stack__>
+          </Stack__>
           <div className={classNames(projectcss.all, sty.freeBox__wTle4)}>
             <div className={classNames(projectcss.all, sty.freeBox___1W11Q)}>
-              <p.Stack
+              <Stack__
                 as={"div"}
                 hasGap={true}
                 className={classNames(projectcss.all, sty.freeBox__fxhR)}
@@ -457,21 +480,21 @@ function PlasmicETopStore__RenderFunc(props: {
                       : "Buy Now"}
                   </div>
                 </Button>
-              </p.Stack>
+              </Stack__>
             </div>
           </div>
           {(hasVariant(globalVariants, "screen", "mobile") ? true : false) ? (
-            <p.Stack
+            <Stack__
               as={"div"}
               hasGap={true}
               className={classNames(projectcss.all, sty.freeBox__ivmf5)}
             >
-              <p.Stack
+              <Stack__
                 as={"div"}
                 hasGap={true}
                 className={classNames(projectcss.all, sty.freeBox__mieZq)}
               >
-                <p.PlasmicLink
+                <PlasmicLink__
                   className={classNames(
                     projectcss.all,
                     projectcss.a,
@@ -483,7 +506,7 @@ function PlasmicETopStore__RenderFunc(props: {
                   platform={"nextjs"}
                 >
                   {"\u212e"}
-                </p.PlasmicLink>
+                </PlasmicLink__>
                 {false ? (
                   <div
                     className={classNames(projectcss.all, sty.freeBox__ooJlb)}
@@ -537,16 +560,16 @@ function PlasmicETopStore__RenderFunc(props: {
                   className={classNames(projectcss.all, sty.svg__kYoZ)}
                   role={"img"}
                 />
-              </p.Stack>
-            </p.Stack>
+              </Stack__>
+            </Stack__>
           ) : null}
           {(hasVariant(globalVariants, "screen", "mobile") ? true : false) ? (
-            <p.Stack
+            <Stack__
               as={"div"}
               hasGap={true}
               className={classNames(projectcss.all, sty.freeBox__hThBq)}
             >
-              <p.Stack
+              <Stack__
                 as={"div"}
                 hasGap={true}
                 className={classNames(projectcss.all, sty.freeBox___5BsBv)}
@@ -605,8 +628,8 @@ function PlasmicETopStore__RenderFunc(props: {
                   className={classNames(projectcss.all, sty.svg__oqp9V)}
                   role={"img"}
                 />
-              </p.Stack>
-              <p.Stack
+              </Stack__>
+              <Stack__
                 as={"div"}
                 hasGap={true}
                 className={classNames(projectcss.all, sty.freeBox__pZoGu)}
@@ -674,12 +697,12 @@ function PlasmicETopStore__RenderFunc(props: {
                 >
                   {"eOS 14"}
                 </div>
-              </p.Stack>
-            </p.Stack>
+              </Stack__>
+            </Stack__>
           ) : null}
           <div className={classNames(projectcss.all, sty.freeBox___4Q63)}>
             <div className={classNames(projectcss.all, sty.freeBox__eP5X)}>
-              <p.Stack
+              <Stack__
                 as={"div"}
                 hasGap={true}
                 className={classNames(projectcss.all, sty.freeBox__wWZe)}
@@ -742,7 +765,7 @@ function PlasmicETopStore__RenderFunc(props: {
                       : "Buy Now"}
                   </div>
                 </Button>
-              </p.Stack>
+              </Stack__>
             </div>
           </div>
           <Footer
@@ -768,7 +791,7 @@ type DescendantsType<T extends NodeNameType> =
 type NodeDefaultElementType = {
   root: "div";
   heade: typeof Heade;
-  img: typeof p.PlasmicImg;
+  img: typeof PlasmicImg__;
   footer: typeof Footer;
 };
 

@@ -17,25 +17,48 @@ import Head from "next/head";
 import Link, { LinkProps } from "next/link";
 import { useRouter } from "next/router";
 
-import * as p from "@plasmicapp/react-web";
-import * as ph from "@plasmicapp/react-web/lib/host";
-
 import {
-  hasVariant,
-  classNames,
-  wrapWithClassName,
-  createPlasmicElementProxy,
-  makeFragment,
+  Flex as Flex__,
   MultiChoiceArg,
+  PlasmicDataSourceContextProvider as PlasmicDataSourceContextProvider__,
+  PlasmicIcon as PlasmicIcon__,
+  PlasmicImg as PlasmicImg__,
+  PlasmicLink as PlasmicLink__,
+  PlasmicPageGuard as PlasmicPageGuard__,
   SingleBooleanChoiceArg,
   SingleChoiceArg,
-  pick,
-  omit,
-  useTrigger,
+  Stack as Stack__,
   StrictProps,
+  Trans as Trans__,
+  classNames,
+  createPlasmicElementProxy,
   deriveRenderOpts,
-  ensureGlobalVariants
+  ensureGlobalVariants,
+  generateOnMutateForSpec,
+  generateStateOnChangeProp,
+  generateStateOnChangePropForCodeComponents,
+  generateStateValueProp,
+  get as $stateGet,
+  hasVariant,
+  initializeCodeComponentStates,
+  initializePlasmicStates,
+  makeFragment,
+  omit,
+  pick,
+  renderPlasmicSlot,
+  set as $stateSet,
+  useCurrentUser,
+  useDollarState,
+  usePlasmicTranslator,
+  useTrigger,
+  wrapWithClassName
 } from "@plasmicapp/react-web";
+import {
+  DataCtxReader as DataCtxReader__,
+  useDataEnv,
+  useGlobalActions
+} from "@plasmicapp/react-web/lib/host";
+
 import LinkButton from "../../LinkButton"; // plasmic-import: 8jGL1lk6yNuYV/component
 
 import "@plasmicapp/react-web/lib/plasmic.css";
@@ -57,8 +80,8 @@ type ArgPropType = keyof PlasmicFeatureItem__ArgsType;
 export const PlasmicFeatureItem__ArgProps = new Array<ArgPropType>();
 
 export type PlasmicFeatureItem__OverridesType = {
-  root?: p.Flex<"div">;
-  linkButton?: p.Flex<typeof LinkButton>;
+  root?: Flex__<"div">;
+  linkButton?: Flex__<typeof LinkButton>;
 };
 
 export interface DefaultFeatureItemProps {
@@ -90,11 +113,11 @@ function PlasmicFeatureItem__RenderFunc(props: {
   };
 
   const __nextRouter = useNextRouter();
-  const $ctx = ph.useDataEnv?.() || {};
+  const $ctx = useDataEnv?.() || {};
   const refsRef = React.useRef({});
   const $refs = refsRef.current;
 
-  const currentUser = p.useCurrentUser?.() || {};
+  const currentUser = useCurrentUser?.() || {};
 
   return (
     <div
@@ -117,7 +140,7 @@ function PlasmicFeatureItem__RenderFunc(props: {
         <div className={classNames(projectcss.all, sty.freeBox__e9Z4D)} />
 
         <div className={classNames(projectcss.all, sty.freeBox__wE9Eo)}>
-          <p.Stack
+          <Stack__
             as={"div"}
             hasGap={true}
             className={classNames(projectcss.all, sty.freeBox__jxHaU)}
@@ -162,7 +185,7 @@ function PlasmicFeatureItem__RenderFunc(props: {
                 {" $399"}
               </div>
             </div>
-            <p.Stack
+            <Stack__
               as={"div"}
               hasGap={true}
               className={classNames(projectcss.all, sty.freeBox__gxObN)}
@@ -174,8 +197,8 @@ function PlasmicFeatureItem__RenderFunc(props: {
                 text={"View More"}
                 type={"solidOrange"}
               />
-            </p.Stack>
-          </p.Stack>
+            </Stack__>
+          </Stack__>
         </div>
       </div>
     </div>

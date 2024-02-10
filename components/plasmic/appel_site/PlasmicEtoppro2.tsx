@@ -17,25 +17,48 @@ import Head from "next/head";
 import Link, { LinkProps } from "next/link";
 import { useRouter } from "next/router";
 
-import * as p from "@plasmicapp/react-web";
-import * as ph from "@plasmicapp/react-web/lib/host";
-
 import {
-  hasVariant,
-  classNames,
-  wrapWithClassName,
-  createPlasmicElementProxy,
-  makeFragment,
+  Flex as Flex__,
   MultiChoiceArg,
+  PlasmicDataSourceContextProvider as PlasmicDataSourceContextProvider__,
+  PlasmicIcon as PlasmicIcon__,
+  PlasmicImg as PlasmicImg__,
+  PlasmicLink as PlasmicLink__,
+  PlasmicPageGuard as PlasmicPageGuard__,
   SingleBooleanChoiceArg,
   SingleChoiceArg,
-  pick,
-  omit,
-  useTrigger,
+  Stack as Stack__,
   StrictProps,
+  Trans as Trans__,
+  classNames,
+  createPlasmicElementProxy,
   deriveRenderOpts,
-  ensureGlobalVariants
+  ensureGlobalVariants,
+  generateOnMutateForSpec,
+  generateStateOnChangeProp,
+  generateStateOnChangePropForCodeComponents,
+  generateStateValueProp,
+  get as $stateGet,
+  hasVariant,
+  initializeCodeComponentStates,
+  initializePlasmicStates,
+  makeFragment,
+  omit,
+  pick,
+  renderPlasmicSlot,
+  set as $stateSet,
+  useCurrentUser,
+  useDollarState,
+  usePlasmicTranslator,
+  useTrigger,
+  wrapWithClassName
 } from "@plasmicapp/react-web";
+import {
+  DataCtxReader as DataCtxReader__,
+  useDataEnv,
+  useGlobalActions
+} from "@plasmicapp/react-web/lib/host";
+
 import Heade from "../../Heade"; // plasmic-import: SVZGM5FMLbLU/component
 import Button from "../../Button"; // plasmic-import: 2YS4YxHJgFKju/component
 import Select from "../../Select"; // plasmic-import: NNJmEAQECZJ/component
@@ -67,16 +90,16 @@ type ArgPropType = keyof PlasmicEtoppro2__ArgsType;
 export const PlasmicEtoppro2__ArgProps = new Array<ArgPropType>();
 
 export type PlasmicEtoppro2__OverridesType = {
-  single?: p.Flex<"div">;
-  heade?: p.Flex<typeof Heade>;
-  link?: p.Flex<"a"> & Partial<LinkProps>;
-  columns?: p.Flex<"div">;
-  h1?: p.Flex<"h1">;
-  select?: p.Flex<typeof Select>;
-  hello?: p.Flex<"div">;
-  plus?: p.Flex<"div">;
-  h2?: p.Flex<"h2">;
-  footer?: p.Flex<typeof Footer>;
+  single?: Flex__<"div">;
+  heade?: Flex__<typeof Heade>;
+  link?: Flex__<"a"> & Partial<LinkProps>;
+  columns?: Flex__<"div">;
+  h1?: Flex__<"h1">;
+  select?: Flex__<typeof Select>;
+  hello?: Flex__<"div">;
+  plus?: Flex__<"div">;
+  h2?: Flex__<"h2">;
+  footer?: Flex__<typeof Footer>;
 };
 
 export interface DefaultEtoppro2Props {}
@@ -106,13 +129,13 @@ function PlasmicEtoppro2__RenderFunc(props: {
   };
 
   const __nextRouter = useNextRouter();
-  const $ctx = ph.useDataEnv?.() || {};
+  const $ctx = useDataEnv?.() || {};
   const refsRef = React.useRef({});
   const $refs = refsRef.current;
 
-  const currentUser = p.useCurrentUser?.() || {};
+  const currentUser = useCurrentUser?.() || {};
 
-  const stateSpecs: Parameters<typeof p.useDollarState>[0] = React.useMemo(
+  const stateSpecs: Parameters<typeof useDollarState>[0] = React.useMemo(
     () => [
       {
         path: "select.value",
@@ -123,7 +146,7 @@ function PlasmicEtoppro2__RenderFunc(props: {
     ],
     [$props, $ctx, $refs]
   );
-  const $state = p.useDollarState(stateSpecs, {
+  const $state = useDollarState(stateSpecs, {
     $props,
     $ctx,
     $queries: {},
@@ -158,7 +181,7 @@ function PlasmicEtoppro2__RenderFunc(props: {
       `}</style>
 
       <div className={projectcss.plasmic_page_wrapper}>
-        <p.Stack
+        <Stack__
           as={"div"}
           data-plasmic-name={"single"}
           data-plasmic-override={overrides.single}
@@ -183,17 +206,17 @@ function PlasmicEtoppro2__RenderFunc(props: {
           />
 
           {(hasVariant(globalVariants, "screen", "mobile") ? true : false) ? (
-            <p.Stack
+            <Stack__
               as={"div"}
               hasGap={true}
               className={classNames(projectcss.all, sty.freeBox__uM1Sa)}
             >
-              <p.Stack
+              <Stack__
                 as={"div"}
                 hasGap={true}
                 className={classNames(projectcss.all, sty.freeBox__qcDaC)}
               >
-                <p.PlasmicLink
+                <PlasmicLink__
                   data-plasmic-name={"link"}
                   data-plasmic-override={overrides.link}
                   className={classNames(
@@ -207,7 +230,7 @@ function PlasmicEtoppro2__RenderFunc(props: {
                   platform={"nextjs"}
                 >
                   {"\u212e"}
-                </p.PlasmicLink>
+                </PlasmicLink__>
                 {false ? (
                   <div
                     className={classNames(projectcss.all, sty.freeBox__hhYcj)}
@@ -255,10 +278,10 @@ function PlasmicEtoppro2__RenderFunc(props: {
                   className={classNames(projectcss.all, sty.svg__nsPak)}
                   role={"img"}
                 />
-              </p.Stack>
-            </p.Stack>
+              </Stack__>
+            </Stack__>
           ) : null}
-          <p.Stack
+          <Stack__
             as={"div"}
             hasGap={true}
             className={classNames(projectcss.all, sty.freeBox__uZid0)}
@@ -270,7 +293,7 @@ function PlasmicEtoppro2__RenderFunc(props: {
                 className={classNames(projectcss.all, sty.columns)}
               >
                 <div className={classNames(projectcss.all, sty.column__uCaWc)}>
-                  <p.PlasmicImg
+                  <PlasmicImg__
                     alt={""}
                     className={classNames(sty.img___1Ju3N)}
                     displayHeight={"auto"}
@@ -281,14 +304,14 @@ function PlasmicEtoppro2__RenderFunc(props: {
                     displayWidth={"539px"}
                     loading={"lazy"}
                     src={{
-                      src: "/plasmic/appel_site/images/etopPro2Png.png",
-                      fullWidth: 4234,
-                      fullHeight: 2481,
+                      src: "/plasmic/appel_site/images/etopPro2Png2.png",
+                      fullWidth: 8468,
+                      fullHeight: 4962,
                       aspectRatio: undefined
                     }}
                   />
                 </div>
-                <p.Stack
+                <Stack__
                   as={"div"}
                   hasGap={true}
                   className={classNames(projectcss.all, sty.column__qNLwR)}
@@ -314,7 +337,7 @@ function PlasmicEtoppro2__RenderFunc(props: {
                   >
                     {"From $3,999 or\n $166.62/mo for 24 mo."}
                   </div>
-                  <p.Stack
+                  <Stack__
                     as={"div"}
                     hasGap={true}
                     className={classNames(projectcss.all, sty.freeBox___2M6N6)}
@@ -324,10 +347,9 @@ function PlasmicEtoppro2__RenderFunc(props: {
                       data-plasmic-override={overrides.select}
                       className={classNames("__wab_instance", sty.select)}
                       onChange={(...eventArgs) => {
-                        p.generateStateOnChangeProp($state, [
-                          "select",
-                          "value"
-                        ])(eventArgs[0]);
+                        generateStateOnChangeProp($state, ["select", "value"])(
+                          eventArgs[0]
+                        );
                       }}
                       placeholder={
                         <div
@@ -340,7 +362,7 @@ function PlasmicEtoppro2__RenderFunc(props: {
                           {"Pick Color"}
                         </div>
                       }
-                      value={p.generateStateValueProp($state, [
+                      value={generateStateValueProp($state, [
                         "select",
                         "value"
                       ])}
@@ -393,22 +415,22 @@ function PlasmicEtoppro2__RenderFunc(props: {
                     >
                       {"Buy"}
                     </Button>
-                  </p.Stack>
-                </p.Stack>
+                  </Stack__>
+                </Stack__>
               </div>
             </div>
-          </p.Stack>
-          <p.Stack
+          </Stack__>
+          <Stack__
             as={"div"}
             hasGap={true}
             className={classNames(projectcss.all, sty.freeBox__n9LHz)}
           >
-            <p.Stack
+            <Stack__
               as={"div"}
               hasGap={true}
               className={classNames(projectcss.all, sty.freeBox___2Ald3)}
             >
-              <p.Stack
+              <Stack__
                 as={"div"}
                 hasGap={true}
                 className={classNames(projectcss.all, sty.freeBox___7PyJn)}
@@ -429,8 +451,8 @@ function PlasmicEtoppro2__RenderFunc(props: {
                       : "What's in the Box"}
                   </h2>
                 </div>
-              </p.Stack>
-              <p.Stack
+              </Stack__>
+              <Stack__
                 as={"div"}
                 hasGap={true}
                 className={classNames(projectcss.all, sty.freeBox__bva2)}
@@ -438,12 +460,12 @@ function PlasmicEtoppro2__RenderFunc(props: {
                 <div
                   className={classNames(projectcss.all, sty.freeBox___5I9KC)}
                 >
-                  <p.Stack
+                  <Stack__
                     as={"div"}
                     hasGap={true}
                     className={classNames(projectcss.all, sty.freeBox__uZnGj)}
                   >
-                    <p.PlasmicImg
+                    <PlasmicImg__
                       alt={""}
                       className={classNames(sty.img___1Sren)}
                       displayHeight={
@@ -458,9 +480,9 @@ function PlasmicEtoppro2__RenderFunc(props: {
                       displayWidth={"auto"}
                       loading={"lazy"}
                       src={{
-                        src: "/plasmic/appel_site/images/etopPro2Png.png",
-                        fullWidth: 4234,
-                        fullHeight: 2481,
+                        src: "/plasmic/appel_site/images/etopPro2Png2.png",
+                        fullWidth: 8468,
+                        fullHeight: 4962,
                         aspectRatio: undefined
                       }}
                     />
@@ -478,17 +500,17 @@ function PlasmicEtoppro2__RenderFunc(props: {
                         {"Device"}
                       </div>
                     </div>
-                  </p.Stack>
+                  </Stack__>
                 </div>
                 <div
                   className={classNames(projectcss.all, sty.freeBox___6KYqm)}
                 >
-                  <p.Stack
+                  <Stack__
                     as={"div"}
                     hasGap={true}
                     className={classNames(projectcss.all, sty.freeBox__teXZt)}
                   >
-                    <p.PlasmicImg
+                    <PlasmicImg__
                       alt={""}
                       className={classNames(sty.img__reyjq)}
                       displayHeight={"161px"}
@@ -519,17 +541,17 @@ function PlasmicEtoppro2__RenderFunc(props: {
                         {"Charging Cable"}
                       </div>
                     </div>
-                  </p.Stack>
+                  </Stack__>
                 </div>
-              </p.Stack>
-            </p.Stack>
-          </p.Stack>
+              </Stack__>
+            </Stack__>
+          </Stack__>
           <Footer
             data-plasmic-name={"footer"}
             data-plasmic-override={overrides.footer}
             className={classNames("__wab_instance", sty.footer)}
           />
-        </p.Stack>
+        </Stack__>
       </div>
     </React.Fragment>
   ) as React.ReactElement | null;

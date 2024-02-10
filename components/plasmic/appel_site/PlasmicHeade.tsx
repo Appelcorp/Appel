@@ -17,25 +17,48 @@ import Head from "next/head";
 import Link, { LinkProps } from "next/link";
 import { useRouter } from "next/router";
 
-import * as p from "@plasmicapp/react-web";
-import * as ph from "@plasmicapp/react-web/lib/host";
-
 import {
-  hasVariant,
-  classNames,
-  wrapWithClassName,
-  createPlasmicElementProxy,
-  makeFragment,
+  Flex as Flex__,
   MultiChoiceArg,
+  PlasmicDataSourceContextProvider as PlasmicDataSourceContextProvider__,
+  PlasmicIcon as PlasmicIcon__,
+  PlasmicImg as PlasmicImg__,
+  PlasmicLink as PlasmicLink__,
+  PlasmicPageGuard as PlasmicPageGuard__,
   SingleBooleanChoiceArg,
   SingleChoiceArg,
-  pick,
-  omit,
-  useTrigger,
+  Stack as Stack__,
   StrictProps,
+  Trans as Trans__,
+  classNames,
+  createPlasmicElementProxy,
   deriveRenderOpts,
-  ensureGlobalVariants
+  ensureGlobalVariants,
+  generateOnMutateForSpec,
+  generateStateOnChangeProp,
+  generateStateOnChangePropForCodeComponents,
+  generateStateValueProp,
+  get as $stateGet,
+  hasVariant,
+  initializeCodeComponentStates,
+  initializePlasmicStates,
+  makeFragment,
+  omit,
+  pick,
+  renderPlasmicSlot,
+  set as $stateSet,
+  useCurrentUser,
+  useDollarState,
+  usePlasmicTranslator,
+  useTrigger,
+  wrapWithClassName
 } from "@plasmicapp/react-web";
+import {
+  DataCtxReader as DataCtxReader__,
+  useDataEnv,
+  useGlobalActions
+} from "@plasmicapp/react-web/lib/host";
+
 import Button from "../../Button"; // plasmic-import: 2YS4YxHJgFKju/component
 
 import { useScreenVariants as useScreenVariantseH80Ck18IRB } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: -eH80ck18iR_B/globalVariant
@@ -62,7 +85,7 @@ type ArgPropType = keyof PlasmicHeade__ArgsType;
 export const PlasmicHeade__ArgProps = new Array<ArgPropType>();
 
 export type PlasmicHeade__OverridesType = {
-  root?: p.Flex<"div">;
+  root?: Flex__<"div">;
 };
 
 export interface DefaultHeadeProps {
@@ -94,11 +117,11 @@ function PlasmicHeade__RenderFunc(props: {
   };
 
   const __nextRouter = useNextRouter();
-  const $ctx = ph.useDataEnv?.() || {};
+  const $ctx = useDataEnv?.() || {};
   const refsRef = React.useRef({});
   const $refs = refsRef.current;
 
-  const currentUser = p.useCurrentUser?.() || {};
+  const currentUser = useCurrentUser?.() || {};
 
   const globalVariants = ensureGlobalVariants({
     screen: useScreenVariantseH80Ck18IRB()
@@ -122,12 +145,12 @@ function PlasmicHeade__RenderFunc(props: {
       )}
     >
       <div className={classNames(projectcss.all, sty.freeBox__uj4Xq)}>
-        <p.Stack
+        <Stack__
           as={"div"}
           hasGap={true}
           className={classNames(projectcss.all, sty.freeBox__u6I8S)}
         >
-          <p.Stack
+          <Stack__
             as={"div"}
             hasGap={true}
             className={classNames(projectcss.all, sty.freeBox__ppTbn)}
@@ -169,7 +192,7 @@ function PlasmicHeade__RenderFunc(props: {
             >
               {"\u212e"}
             </div>
-            <p.Stack
+            <Stack__
               as={"div"}
               hasGap={true}
               className={classNames(projectcss.all, sty.freeBox__q9MOb)}
@@ -393,7 +416,7 @@ function PlasmicHeade__RenderFunc(props: {
                   {"Sign up"}
                 </div>
               </Button>
-            </p.Stack>
+            </Stack__>
             {false ? (
               <div className={classNames(projectcss.all, sty.freeBox___9RXwz)}>
                 <button
@@ -435,8 +458,8 @@ function PlasmicHeade__RenderFunc(props: {
                 </Button>
               </div>
             ) : null}
-          </p.Stack>
-        </p.Stack>
+          </Stack__>
+        </Stack__>
       </div>
     </div>
   ) as React.ReactElement | null;

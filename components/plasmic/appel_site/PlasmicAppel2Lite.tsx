@@ -17,25 +17,48 @@ import Head from "next/head";
 import Link, { LinkProps } from "next/link";
 import { useRouter } from "next/router";
 
-import * as p from "@plasmicapp/react-web";
-import * as ph from "@plasmicapp/react-web/lib/host";
-
 import {
-  hasVariant,
-  classNames,
-  wrapWithClassName,
-  createPlasmicElementProxy,
-  makeFragment,
+  Flex as Flex__,
   MultiChoiceArg,
+  PlasmicDataSourceContextProvider as PlasmicDataSourceContextProvider__,
+  PlasmicIcon as PlasmicIcon__,
+  PlasmicImg as PlasmicImg__,
+  PlasmicLink as PlasmicLink__,
+  PlasmicPageGuard as PlasmicPageGuard__,
   SingleBooleanChoiceArg,
   SingleChoiceArg,
-  pick,
-  omit,
-  useTrigger,
+  Stack as Stack__,
   StrictProps,
+  Trans as Trans__,
+  classNames,
+  createPlasmicElementProxy,
   deriveRenderOpts,
-  ensureGlobalVariants
+  ensureGlobalVariants,
+  generateOnMutateForSpec,
+  generateStateOnChangeProp,
+  generateStateOnChangePropForCodeComponents,
+  generateStateValueProp,
+  get as $stateGet,
+  hasVariant,
+  initializeCodeComponentStates,
+  initializePlasmicStates,
+  makeFragment,
+  omit,
+  pick,
+  renderPlasmicSlot,
+  set as $stateSet,
+  useCurrentUser,
+  useDollarState,
+  usePlasmicTranslator,
+  useTrigger,
+  wrapWithClassName
 } from "@plasmicapp/react-web";
+import {
+  DataCtxReader as DataCtxReader__,
+  useDataEnv,
+  useGlobalActions
+} from "@plasmicapp/react-web/lib/host";
+
 import Heade from "../../Heade"; // plasmic-import: SVZGM5FMLbLU/component
 import Button from "../../Button"; // plasmic-import: 2YS4YxHJgFKju/component
 import Select from "../../Select"; // plasmic-import: NNJmEAQECZJ/component
@@ -67,16 +90,16 @@ type ArgPropType = keyof PlasmicAppel2Lite__ArgsType;
 export const PlasmicAppel2Lite__ArgProps = new Array<ArgPropType>();
 
 export type PlasmicAppel2Lite__OverridesType = {
-  single?: p.Flex<"div">;
-  heade?: p.Flex<typeof Heade>;
-  link?: p.Flex<"a"> & Partial<LinkProps>;
-  columns?: p.Flex<"div">;
-  h1?: p.Flex<"h1">;
-  select?: p.Flex<typeof Select>;
-  hello?: p.Flex<"div">;
-  plus?: p.Flex<"div">;
-  h2?: p.Flex<"h2">;
-  footer?: p.Flex<typeof Footer>;
+  single?: Flex__<"div">;
+  heade?: Flex__<typeof Heade>;
+  link?: Flex__<"a"> & Partial<LinkProps>;
+  columns?: Flex__<"div">;
+  h1?: Flex__<"h1">;
+  select?: Flex__<typeof Select>;
+  hello?: Flex__<"div">;
+  plus?: Flex__<"div">;
+  h2?: Flex__<"h2">;
+  footer?: Flex__<typeof Footer>;
 };
 
 export interface DefaultAppel2LiteProps {}
@@ -106,13 +129,13 @@ function PlasmicAppel2Lite__RenderFunc(props: {
   };
 
   const __nextRouter = useNextRouter();
-  const $ctx = ph.useDataEnv?.() || {};
+  const $ctx = useDataEnv?.() || {};
   const refsRef = React.useRef({});
   const $refs = refsRef.current;
 
-  const currentUser = p.useCurrentUser?.() || {};
+  const currentUser = useCurrentUser?.() || {};
 
-  const stateSpecs: Parameters<typeof p.useDollarState>[0] = React.useMemo(
+  const stateSpecs: Parameters<typeof useDollarState>[0] = React.useMemo(
     () => [
       {
         path: "select.value",
@@ -123,7 +146,7 @@ function PlasmicAppel2Lite__RenderFunc(props: {
     ],
     [$props, $ctx, $refs]
   );
-  const $state = p.useDollarState(stateSpecs, {
+  const $state = useDollarState(stateSpecs, {
     $props,
     $ctx,
     $queries: {},
@@ -158,7 +181,7 @@ function PlasmicAppel2Lite__RenderFunc(props: {
       `}</style>
 
       <div className={projectcss.plasmic_page_wrapper}>
-        <p.Stack
+        <Stack__
           as={"div"}
           data-plasmic-name={"single"}
           data-plasmic-override={overrides.single}
@@ -183,17 +206,17 @@ function PlasmicAppel2Lite__RenderFunc(props: {
           />
 
           {(hasVariant(globalVariants, "screen", "mobile") ? true : false) ? (
-            <p.Stack
+            <Stack__
               as={"div"}
               hasGap={true}
               className={classNames(projectcss.all, sty.freeBox__ru5Xr)}
             >
-              <p.Stack
+              <Stack__
                 as={"div"}
                 hasGap={true}
                 className={classNames(projectcss.all, sty.freeBox___88Ub)}
               >
-                <p.PlasmicLink
+                <PlasmicLink__
                   data-plasmic-name={"link"}
                   data-plasmic-override={overrides.link}
                   className={classNames(
@@ -207,7 +230,7 @@ function PlasmicAppel2Lite__RenderFunc(props: {
                   platform={"nextjs"}
                 >
                   {"\u212e"}
-                </p.PlasmicLink>
+                </PlasmicLink__>
                 {false ? (
                   <div
                     className={classNames(projectcss.all, sty.freeBox__yOlaH)}
@@ -258,10 +281,10 @@ function PlasmicAppel2Lite__RenderFunc(props: {
                   className={classNames(projectcss.all, sty.svg__sKyq)}
                   role={"img"}
                 />
-              </p.Stack>
-            </p.Stack>
+              </Stack__>
+            </Stack__>
           ) : null}
-          <p.Stack
+          <Stack__
             as={"div"}
             hasGap={true}
             className={classNames(projectcss.all, sty.freeBox__i6GdC)}
@@ -273,7 +296,7 @@ function PlasmicAppel2Lite__RenderFunc(props: {
                 className={classNames(projectcss.all, sty.columns)}
               >
                 <div className={classNames(projectcss.all, sty.column__vgFm)}>
-                  <p.PlasmicImg
+                  <PlasmicImg__
                     alt={""}
                     className={classNames(sty.img__gLfcn)}
                     displayHeight={"auto"}
@@ -291,7 +314,7 @@ function PlasmicAppel2Lite__RenderFunc(props: {
                     }}
                   />
                 </div>
-                <p.Stack
+                <Stack__
                   as={"div"}
                   hasGap={true}
                   className={classNames(projectcss.all, sty.column__onfbo)}
@@ -317,7 +340,7 @@ function PlasmicAppel2Lite__RenderFunc(props: {
                   >
                     {"From $499 or\n $20.79/mo for 24 mo."}
                   </div>
-                  <p.Stack
+                  <Stack__
                     as={"div"}
                     hasGap={true}
                     className={classNames(projectcss.all, sty.freeBox___2Pjp9)}
@@ -327,10 +350,9 @@ function PlasmicAppel2Lite__RenderFunc(props: {
                       data-plasmic-override={overrides.select}
                       className={classNames("__wab_instance", sty.select)}
                       onChange={(...eventArgs) => {
-                        p.generateStateOnChangeProp($state, [
-                          "select",
-                          "value"
-                        ])(eventArgs[0]);
+                        generateStateOnChangeProp($state, ["select", "value"])(
+                          eventArgs[0]
+                        );
                       }}
                       placeholder={
                         <div
@@ -343,7 +365,7 @@ function PlasmicAppel2Lite__RenderFunc(props: {
                           {"Pick Model"}
                         </div>
                       }
-                      value={p.generateStateValueProp($state, [
+                      value={generateStateValueProp($state, [
                         "select",
                         "value"
                       ])}
@@ -396,22 +418,22 @@ function PlasmicAppel2Lite__RenderFunc(props: {
                     >
                       {"Buy"}
                     </Button>
-                  </p.Stack>
-                </p.Stack>
+                  </Stack__>
+                </Stack__>
               </div>
             </div>
-          </p.Stack>
-          <p.Stack
+          </Stack__>
+          <Stack__
             as={"div"}
             hasGap={true}
             className={classNames(projectcss.all, sty.freeBox___29AAo)}
           >
-            <p.Stack
+            <Stack__
               as={"div"}
               hasGap={true}
               className={classNames(projectcss.all, sty.freeBox__dnJ)}
             >
-              <p.Stack
+              <Stack__
                 as={"div"}
                 hasGap={true}
                 className={classNames(projectcss.all, sty.freeBox__yVwU7)}
@@ -432,19 +454,19 @@ function PlasmicAppel2Lite__RenderFunc(props: {
                       : "What's in the Box"}
                   </h2>
                 </div>
-              </p.Stack>
-              <p.Stack
+              </Stack__>
+              <Stack__
                 as={"div"}
                 hasGap={true}
                 className={classNames(projectcss.all, sty.freeBox__guZh)}
               >
                 <div className={classNames(projectcss.all, sty.freeBox__aOdh)}>
-                  <p.Stack
+                  <Stack__
                     as={"div"}
                     hasGap={true}
                     className={classNames(projectcss.all, sty.freeBox__vxKz)}
                   >
-                    <p.PlasmicImg
+                    <PlasmicImg__
                       alt={""}
                       className={classNames(sty.img___5Jx36)}
                       displayHeight={"auto"}
@@ -475,17 +497,17 @@ function PlasmicAppel2Lite__RenderFunc(props: {
                         {"Device"}
                       </div>
                     </div>
-                  </p.Stack>
+                  </Stack__>
                 </div>
                 <div
                   className={classNames(projectcss.all, sty.freeBox___9KyuE)}
                 >
-                  <p.Stack
+                  <Stack__
                     as={"div"}
                     hasGap={true}
                     className={classNames(projectcss.all, sty.freeBox__mIb7O)}
                   >
-                    <p.PlasmicImg
+                    <PlasmicImg__
                       alt={""}
                       className={classNames(sty.img__aAqP)}
                       displayHeight={"161px"}
@@ -516,17 +538,17 @@ function PlasmicAppel2Lite__RenderFunc(props: {
                         {"Charging Cable"}
                       </div>
                     </div>
-                  </p.Stack>
+                  </Stack__>
                 </div>
-              </p.Stack>
-            </p.Stack>
-          </p.Stack>
+              </Stack__>
+            </Stack__>
+          </Stack__>
           <Footer
             data-plasmic-name={"footer"}
             data-plasmic-override={overrides.footer}
             className={classNames("__wab_instance", sty.footer)}
           />
-        </p.Stack>
+        </Stack__>
       </div>
     </React.Fragment>
   ) as React.ReactElement | null;

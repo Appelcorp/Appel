@@ -17,25 +17,48 @@ import Head from "next/head";
 import Link, { LinkProps } from "next/link";
 import { useRouter } from "next/router";
 
-import * as p from "@plasmicapp/react-web";
-import * as ph from "@plasmicapp/react-web/lib/host";
-
 import {
-  hasVariant,
-  classNames,
-  wrapWithClassName,
-  createPlasmicElementProxy,
-  makeFragment,
+  Flex as Flex__,
   MultiChoiceArg,
+  PlasmicDataSourceContextProvider as PlasmicDataSourceContextProvider__,
+  PlasmicIcon as PlasmicIcon__,
+  PlasmicImg as PlasmicImg__,
+  PlasmicLink as PlasmicLink__,
+  PlasmicPageGuard as PlasmicPageGuard__,
   SingleBooleanChoiceArg,
   SingleChoiceArg,
-  pick,
-  omit,
-  useTrigger,
+  Stack as Stack__,
   StrictProps,
+  Trans as Trans__,
+  classNames,
+  createPlasmicElementProxy,
   deriveRenderOpts,
-  ensureGlobalVariants
+  ensureGlobalVariants,
+  generateOnMutateForSpec,
+  generateStateOnChangeProp,
+  generateStateOnChangePropForCodeComponents,
+  generateStateValueProp,
+  get as $stateGet,
+  hasVariant,
+  initializeCodeComponentStates,
+  initializePlasmicStates,
+  makeFragment,
+  omit,
+  pick,
+  renderPlasmicSlot,
+  set as $stateSet,
+  useCurrentUser,
+  useDollarState,
+  usePlasmicTranslator,
+  useTrigger,
+  wrapWithClassName
 } from "@plasmicapp/react-web";
+import {
+  DataCtxReader as DataCtxReader__,
+  useDataEnv,
+  useGlobalActions
+} from "@plasmicapp/react-web/lib/host";
+
 import MenuButton from "../../MenuButton"; // plasmic-import: HLuWO5sS_me31/component
 import LinkButton from "../../LinkButton"; // plasmic-import: 8jGL1lk6yNuYV/component
 
@@ -66,9 +89,9 @@ type ArgPropType = keyof PlasmicHeader__ArgsType;
 export const PlasmicHeader__ArgProps = new Array<ArgPropType>();
 
 export type PlasmicHeader__OverridesType = {
-  root?: p.Flex<"div">;
-  menuButton?: p.Flex<typeof MenuButton>;
-  img?: p.Flex<typeof p.PlasmicImg>;
+  root?: Flex__<"div">;
+  menuButton?: Flex__<typeof MenuButton>;
+  img?: Flex__<typeof PlasmicImg__>;
 };
 
 export interface DefaultHeaderProps {
@@ -101,13 +124,13 @@ function PlasmicHeader__RenderFunc(props: {
   };
 
   const __nextRouter = useNextRouter();
-  const $ctx = ph.useDataEnv?.() || {};
+  const $ctx = useDataEnv?.() || {};
   const refsRef = React.useRef({});
   const $refs = refsRef.current;
 
-  const currentUser = p.useCurrentUser?.() || {};
+  const currentUser = useCurrentUser?.() || {};
 
-  const stateSpecs: Parameters<typeof p.useDollarState>[0] = React.useMemo(
+  const stateSpecs: Parameters<typeof useDollarState>[0] = React.useMemo(
     () => [
       {
         path: "expanded",
@@ -118,7 +141,7 @@ function PlasmicHeader__RenderFunc(props: {
     ],
     [$props, $ctx, $refs]
   );
-  const $state = p.useDollarState(stateSpecs, {
+  const $state = useDollarState(stateSpecs, {
     $props,
     $ctx,
     $queries: {},
@@ -147,7 +170,7 @@ function PlasmicHeader__RenderFunc(props: {
         { [sty.rootexpanded]: hasVariant($state, "expanded", "expanded") }
       )}
     >
-      <p.Stack
+      <Stack__
         as={"div"}
         hasGap={true}
         className={classNames(projectcss.all, sty.freeBox__jjnTm)}
@@ -166,13 +189,13 @@ function PlasmicHeader__RenderFunc(props: {
           }
         />
 
-        <p.PlasmicLink
+        <PlasmicLink__
           className={classNames(projectcss.all, projectcss.a, sty.link__gMtN)}
           component={Link}
           href={"/"}
           platform={"nextjs"}
         >
-          <p.PlasmicImg
+          <PlasmicImg__
             data-plasmic-name={"img"}
             data-plasmic-override={overrides.img}
             alt={""}
@@ -200,7 +223,7 @@ function PlasmicHeader__RenderFunc(props: {
           >
             {"Typedream"}
           </div>
-        </p.PlasmicLink>
+        </PlasmicLink__>
         <div
           className={classNames(projectcss.all, sty.freeBox__ehHUz, {
             [sty.freeBoxexpanded__ehHUzE429R]: hasVariant(
@@ -301,7 +324,7 @@ function PlasmicHeader__RenderFunc(props: {
           />
 
           <div className={classNames(projectcss.all, sty.freeBox__fbrjf)}>
-            <p.PlasmicLink
+            <PlasmicLink__
               className={classNames(
                 projectcss.all,
                 projectcss.a,
@@ -320,10 +343,10 @@ function PlasmicHeader__RenderFunc(props: {
               >
                 {"Login"}
               </div>
-            </p.PlasmicLink>
+            </PlasmicLink__>
           </div>
         </div>
-      </p.Stack>
+      </Stack__>
       <div
         className={classNames(projectcss.all, sty.freeBox___7WjC1, {
           [sty.freeBoxexpanded___7WjC1E429R]: hasVariant(
@@ -378,7 +401,7 @@ type DescendantsType<T extends NodeNameType> =
 type NodeDefaultElementType = {
   root: "div";
   menuButton: typeof MenuButton;
-  img: typeof p.PlasmicImg;
+  img: typeof PlasmicImg__;
 };
 
 type ReservedPropsType = "variants" | "args" | "overrides";

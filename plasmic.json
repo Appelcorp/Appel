@@ -41,8 +41,7 @@
         }
       ],
       "splitsProviderFilePath": "",
-      "customFunctions": [],
-      "jsBundleThemes": []
+      "customFunctions": []
     },
     {
       "projectId": "caTPwKxj5ZrD9LQ7DMdK4Z",
@@ -100,8 +99,7 @@
         }
       ],
       "customFunctions": [],
-      "splitsProviderFilePath": "",
-      "jsBundleThemes": []
+      "splitsProviderFilePath": ""
     },
     {
       "projectId": "gLnoj82AzKVVT7qXiqAbHD",
@@ -167,8 +165,7 @@
         }
       ],
       "splitsProviderFilePath": "",
-      "customFunctions": [],
-      "jsBundleThemes": []
+      "customFunctions": []
     },
     {
       "projectId": "szjgMQpPpxhmkjnaBvZQJG",
@@ -190,8 +187,7 @@
         }
       ],
       "splitsProviderFilePath": "",
-      "customFunctions": [],
-      "jsBundleThemes": []
+      "customFunctions": []
     },
     {
       "projectId": "58GpZjZCWTaJ8AUhpCwt2K",
@@ -213,8 +209,7 @@
         }
       ],
       "splitsProviderFilePath": "",
-      "customFunctions": [],
-      "jsBundleThemes": []
+      "customFunctions": []
     },
     {
       "projectId": "5dGW8Awro3qq8Hh5MveXLP",
@@ -271,8 +266,7 @@
         }
       ],
       "splitsProviderFilePath": "",
-      "customFunctions": [],
-      "jsBundleThemes": []
+      "customFunctions": []
     },
     {
       "projectId": "eiC1VCbma8t6iMexZerqLa",
@@ -294,8 +288,7 @@
         }
       ],
       "splitsProviderFilePath": "",
-      "customFunctions": [],
-      "jsBundleThemes": []
+      "customFunctions": []
     },
     {
       "projectId": "xp1p7dmg329XVLHyuEUxD2",
@@ -413,8 +406,7 @@
         }
       ],
       "splitsProviderFilePath": "",
-      "customFunctions": [],
-      "jsBundleThemes": []
+      "customFunctions": []
     },
     {
       "projectId": "seaQhLVS4bbjiGvJJrRwyL",
@@ -1935,6 +1927,26 @@
           "id": "qJ1AB7XIeesE",
           "name": "etop 2.png",
           "filePath": "../public/plasmic/appel_site/images/etop2Png.png"
+        },
+        {
+          "id": "YuJQktGoVvgv",
+          "name": "etop lite 2.png 2",
+          "filePath": "../public/plasmic/appel_site/images/etopLite2Png2.png"
+        },
+        {
+          "id": "IhdQEUKa784e",
+          "name": "etop pro 2.png 2",
+          "filePath": "../public/plasmic/appel_site/images/etopPro2Png2.png"
+        },
+        {
+          "id": "N570N6T2U8HF",
+          "name": "etop 2.png 2",
+          "filePath": "../public/plasmic/appel_site/images/etop2Png2.png"
+        },
+        {
+          "id": "rriCq2gbG0lH",
+          "name": "apppub.png",
+          "filePath": "../public/plasmic/appel_site/images/apppubpng.png"
         }
       ],
       "indirect": false,
@@ -2354,8 +2366,7 @@
         }
       ],
       "customFunctions": [],
-      "splitsProviderFilePath": "",
-      "jsBundleThemes": []
+      "splitsProviderFilePath": ""
     }
   ],
   "globalVariants": {
@@ -2372,6 +2383,6 @@
   "nextjsConfig": {
     "pagesDir": "../pages"
   },
-  "cliVersion": "0.1.326",
-  "$schema": "https://unpkg.com/@plasmicapp/cli@0.1.326/dist/plasmic.schema.json"
+  "cliVersion": "0.1.327",
+  "$schema": "https://unpkg.com/@plasmicapp/cli@0.1.327/dist/plasmic.schema.json"
 }

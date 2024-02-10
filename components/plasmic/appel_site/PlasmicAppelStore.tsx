@@ -17,25 +17,48 @@ import Head from "next/head";
 import Link, { LinkProps } from "next/link";
 import { useRouter } from "next/router";
 
-import * as p from "@plasmicapp/react-web";
-import * as ph from "@plasmicapp/react-web/lib/host";
-
 import {
-  hasVariant,
-  classNames,
-  wrapWithClassName,
-  createPlasmicElementProxy,
-  makeFragment,
+  Flex as Flex__,
   MultiChoiceArg,
+  PlasmicDataSourceContextProvider as PlasmicDataSourceContextProvider__,
+  PlasmicIcon as PlasmicIcon__,
+  PlasmicImg as PlasmicImg__,
+  PlasmicLink as PlasmicLink__,
+  PlasmicPageGuard as PlasmicPageGuard__,
   SingleBooleanChoiceArg,
   SingleChoiceArg,
-  pick,
-  omit,
-  useTrigger,
+  Stack as Stack__,
   StrictProps,
+  Trans as Trans__,
+  classNames,
+  createPlasmicElementProxy,
   deriveRenderOpts,
-  ensureGlobalVariants
+  ensureGlobalVariants,
+  generateOnMutateForSpec,
+  generateStateOnChangeProp,
+  generateStateOnChangePropForCodeComponents,
+  generateStateValueProp,
+  get as $stateGet,
+  hasVariant,
+  initializeCodeComponentStates,
+  initializePlasmicStates,
+  makeFragment,
+  omit,
+  pick,
+  renderPlasmicSlot,
+  set as $stateSet,
+  useCurrentUser,
+  useDollarState,
+  usePlasmicTranslator,
+  useTrigger,
+  wrapWithClassName
 } from "@plasmicapp/react-web";
+import {
+  DataCtxReader as DataCtxReader__,
+  useDataEnv,
+  useGlobalActions
+} from "@plasmicapp/react-web/lib/host";
+
 import Heade from "../../Heade"; // plasmic-import: SVZGM5FMLbLU/component
 import Button from "../../Button"; // plasmic-import: 2YS4YxHJgFKju/component
 import Footer from "../../Footer"; // plasmic-import: O8jRJZzkmVNu/component
@@ -74,9 +97,9 @@ type ArgPropType = keyof PlasmicAppelStore__ArgsType;
 export const PlasmicAppelStore__ArgProps = new Array<ArgPropType>();
 
 export type PlasmicAppelStore__OverridesType = {
-  root?: p.Flex<"div">;
-  heade?: p.Flex<typeof Heade>;
-  footer?: p.Flex<typeof Footer>;
+  root?: Flex__<"div">;
+  heade?: Flex__<typeof Heade>;
+  footer?: Flex__<typeof Footer>;
 };
 
 export interface DefaultAppelStoreProps {}
@@ -106,11 +129,11 @@ function PlasmicAppelStore__RenderFunc(props: {
   };
 
   const __nextRouter = useNextRouter();
-  const $ctx = ph.useDataEnv?.() || {};
+  const $ctx = useDataEnv?.() || {};
   const refsRef = React.useRef({});
   const $refs = refsRef.current;
 
-  const currentUser = p.useCurrentUser?.() || {};
+  const currentUser = useCurrentUser?.() || {};
 
   const globalVariants = ensureGlobalVariants({
     screen: useScreenVariantseH80Ck18IRB()
@@ -162,12 +185,12 @@ function PlasmicAppelStore__RenderFunc(props: {
             className={classNames("__wab_instance", sty.heade)}
           />
 
-          <p.Stack
+          <Stack__
             as={"div"}
             hasGap={true}
             className={classNames(projectcss.all, sty.freeBox___55Pf2)}
           >
-            <p.Stack
+            <Stack__
               as={"div"}
               hasGap={true}
               className={classNames(projectcss.all, sty.freeBox__km9UG)}
@@ -178,7 +201,7 @@ function PlasmicAppelStore__RenderFunc(props: {
                   role={"img"}
                 />
 
-                <p.PlasmicLink
+                <PlasmicLink__
                   className={classNames(
                     projectcss.all,
                     projectcss.a,
@@ -190,8 +213,8 @@ function PlasmicAppelStore__RenderFunc(props: {
                   platform={"nextjs"}
                 >
                   {"Appel 3 Pro"}
-                </p.PlasmicLink>
-                <p.PlasmicLink
+                </PlasmicLink__>
+                <PlasmicLink__
                   className={classNames(
                     projectcss.all,
                     projectcss.a,
@@ -203,7 +226,7 @@ function PlasmicAppelStore__RenderFunc(props: {
                   platform={"nextjs"}
                 >
                   {"New"}
-                </p.PlasmicLink>
+                </PlasmicLink__>
               </div>
               <div className={classNames(projectcss.all, sty.freeBox__aZap2)}>
                 <Appel1Svg2Icon
@@ -211,7 +234,7 @@ function PlasmicAppelStore__RenderFunc(props: {
                   role={"img"}
                 />
 
-                <p.PlasmicLink
+                <PlasmicLink__
                   className={classNames(
                     projectcss.all,
                     projectcss.a,
@@ -223,8 +246,8 @@ function PlasmicAppelStore__RenderFunc(props: {
                   platform={"nextjs"}
                 >
                   {"Appel 3"}
-                </p.PlasmicLink>
-                <p.PlasmicLink
+                </PlasmicLink__>
+                <PlasmicLink__
                   className={classNames(
                     projectcss.all,
                     projectcss.a,
@@ -236,7 +259,7 @@ function PlasmicAppelStore__RenderFunc(props: {
                   platform={"nextjs"}
                 >
                   {"New"}
-                </p.PlasmicLink>
+                </PlasmicLink__>
               </div>
               <div className={classNames(projectcss.all, sty.freeBox__hUNzw)}>
                 <Appel2ProAndRegsvg2Icon
@@ -244,7 +267,7 @@ function PlasmicAppelStore__RenderFunc(props: {
                   role={"img"}
                 />
 
-                <p.PlasmicLink
+                <PlasmicLink__
                   className={classNames(
                     projectcss.all,
                     projectcss.a,
@@ -256,7 +279,7 @@ function PlasmicAppelStore__RenderFunc(props: {
                   platform={"nextjs"}
                 >
                   {"Appel 2"}
-                </p.PlasmicLink>
+                </PlasmicLink__>
               </div>
               <div className={classNames(projectcss.all, sty.freeBox__sAmbw)}>
                 <Appellitesvg2Icon
@@ -264,7 +287,7 @@ function PlasmicAppelStore__RenderFunc(props: {
                   role={"img"}
                 />
 
-                <p.PlasmicLink
+                <PlasmicLink__
                   className={classNames(
                     projectcss.all,
                     projectcss.a,
@@ -276,7 +299,7 @@ function PlasmicAppelStore__RenderFunc(props: {
                   platform={"nextjs"}
                 >
                   {"Appel 2 Lite"}
-                </p.PlasmicLink>
+                </PlasmicLink__>
               </div>
               <div className={classNames(projectcss.all, sty.freeBox__ersp)}>
                 <Comparesvg2Icon
@@ -392,20 +415,20 @@ function PlasmicAppelStore__RenderFunc(props: {
                   {"Preview"}
                 </div>
               </div>
-            </p.Stack>
-          </p.Stack>
+            </Stack__>
+          </Stack__>
           {(hasVariant(globalVariants, "screen", "mobile") ? true : false) ? (
-            <p.Stack
+            <Stack__
               as={"div"}
               hasGap={true}
               className={classNames(projectcss.all, sty.freeBox__vdRy2)}
             >
-              <p.Stack
+              <Stack__
                 as={"div"}
                 hasGap={true}
                 className={classNames(projectcss.all, sty.freeBox__njeEn)}
               >
-                <p.PlasmicLink
+                <PlasmicLink__
                   className={classNames(
                     projectcss.all,
                     projectcss.a,
@@ -417,7 +440,7 @@ function PlasmicAppelStore__RenderFunc(props: {
                   platform={"nextjs"}
                 >
                   {"\u212e"}
-                </p.PlasmicLink>
+                </PlasmicLink__>
                 {false ? (
                   <div
                     className={classNames(projectcss.all, sty.freeBox__evlZf)}
@@ -468,16 +491,16 @@ function PlasmicAppelStore__RenderFunc(props: {
                   className={classNames(projectcss.all, sty.svg__j0RrR)}
                   role={"img"}
                 />
-              </p.Stack>
-            </p.Stack>
+              </Stack__>
+            </Stack__>
           ) : null}
           {(hasVariant(globalVariants, "screen", "mobile") ? true : false) ? (
-            <p.Stack
+            <Stack__
               as={"div"}
               hasGap={true}
               className={classNames(projectcss.all, sty.freeBox__yFyen)}
             >
-              <p.Stack
+              <Stack__
                 as={"div"}
                 hasGap={true}
                 className={classNames(projectcss.all, sty.freeBox__aPpcU)}
@@ -536,13 +559,13 @@ function PlasmicAppelStore__RenderFunc(props: {
                   className={classNames(projectcss.all, sty.svg__fRoVn)}
                   role={"img"}
                 />
-              </p.Stack>
-              <p.Stack
+              </Stack__>
+              <Stack__
                 as={"div"}
                 hasGap={true}
                 className={classNames(projectcss.all, sty.freeBox__k5Ef)}
               >
-                <p.PlasmicLink
+                <PlasmicLink__
                   className={classNames(
                     projectcss.all,
                     projectcss.a,
@@ -554,8 +577,8 @@ function PlasmicAppelStore__RenderFunc(props: {
                   platform={"nextjs"}
                 >
                   {"Appel 2 Pro"}
-                </p.PlasmicLink>
-                <p.PlasmicLink
+                </PlasmicLink__>
+                <PlasmicLink__
                   className={classNames(
                     projectcss.all,
                     projectcss.a,
@@ -567,7 +590,7 @@ function PlasmicAppelStore__RenderFunc(props: {
                   platform={"nextjs"}
                 >
                   {"Appel 2"}
-                </p.PlasmicLink>
+                </PlasmicLink__>
                 <div
                   className={classNames(
                     projectcss.all,
@@ -649,12 +672,12 @@ function PlasmicAppelStore__RenderFunc(props: {
                 >
                   {"Shop Appel"}
                 </div>
-              </p.Stack>
-            </p.Stack>
+              </Stack__>
+            </Stack__>
           ) : null}
           <div className={classNames(projectcss.all, sty.freeBox__a05ND)}>
             <div className={classNames(projectcss.all, sty.freeBox__v7NGq)}>
-              <p.Stack
+              <Stack__
                 as={"div"}
                 hasGap={true}
                 className={classNames(projectcss.all, sty.freeBox__t7C53)}
@@ -717,12 +740,12 @@ function PlasmicAppelStore__RenderFunc(props: {
                       : "BUY NOW"}
                   </div>
                 </Button>
-              </p.Stack>
+              </Stack__>
             </div>
           </div>
           <div className={classNames(projectcss.all, sty.freeBox__xuLz)}>
             <div className={classNames(projectcss.all, sty.freeBox__dRfVv)}>
-              <p.Stack
+              <Stack__
                 as={"div"}
                 hasGap={true}
                 className={classNames(projectcss.all, sty.freeBox___9Smf3)}
@@ -785,7 +808,7 @@ function PlasmicAppelStore__RenderFunc(props: {
                       : "BUY NOW"}
                   </div>
                 </Button>
-              </p.Stack>
+              </Stack__>
             </div>
           </div>
           <Footer

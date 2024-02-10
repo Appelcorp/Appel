@@ -17,25 +17,48 @@ import Head from "next/head";
 import Link, { LinkProps } from "next/link";
 import { useRouter } from "next/router";
 
-import * as p from "@plasmicapp/react-web";
-import * as ph from "@plasmicapp/react-web/lib/host";
-
 import {
-  hasVariant,
-  classNames,
-  wrapWithClassName,
-  createPlasmicElementProxy,
-  makeFragment,
+  Flex as Flex__,
   MultiChoiceArg,
+  PlasmicDataSourceContextProvider as PlasmicDataSourceContextProvider__,
+  PlasmicIcon as PlasmicIcon__,
+  PlasmicImg as PlasmicImg__,
+  PlasmicLink as PlasmicLink__,
+  PlasmicPageGuard as PlasmicPageGuard__,
   SingleBooleanChoiceArg,
   SingleChoiceArg,
-  pick,
-  omit,
-  useTrigger,
+  Stack as Stack__,
   StrictProps,
+  Trans as Trans__,
+  classNames,
+  createPlasmicElementProxy,
   deriveRenderOpts,
-  ensureGlobalVariants
+  ensureGlobalVariants,
+  generateOnMutateForSpec,
+  generateStateOnChangeProp,
+  generateStateOnChangePropForCodeComponents,
+  generateStateValueProp,
+  get as $stateGet,
+  hasVariant,
+  initializeCodeComponentStates,
+  initializePlasmicStates,
+  makeFragment,
+  omit,
+  pick,
+  renderPlasmicSlot,
+  set as $stateSet,
+  useCurrentUser,
+  useDollarState,
+  usePlasmicTranslator,
+  useTrigger,
+  wrapWithClassName
 } from "@plasmicapp/react-web";
+import {
+  DataCtxReader as DataCtxReader__,
+  useDataEnv,
+  useGlobalActions
+} from "@plasmicapp/react-web/lib/host";
+
 import Heade from "../../Heade"; // plasmic-import: SVZGM5FMLbLU/component
 import Button from "../../Button"; // plasmic-import: 2YS4YxHJgFKju/component
 import Footer from "../../Footer"; // plasmic-import: O8jRJZzkmVNu/component
@@ -72,9 +95,9 @@ type ArgPropType = keyof PlasmicEPadStore__ArgsType;
 export const PlasmicEPadStore__ArgProps = new Array<ArgPropType>();
 
 export type PlasmicEPadStore__OverridesType = {
-  root?: p.Flex<"div">;
-  heade?: p.Flex<typeof Heade>;
-  footer?: p.Flex<typeof Footer>;
+  root?: Flex__<"div">;
+  heade?: Flex__<typeof Heade>;
+  footer?: Flex__<typeof Footer>;
 };
 
 export interface DefaultEPadStoreProps {}
@@ -104,11 +127,11 @@ function PlasmicEPadStore__RenderFunc(props: {
   };
 
   const __nextRouter = useNextRouter();
-  const $ctx = ph.useDataEnv?.() || {};
+  const $ctx = useDataEnv?.() || {};
   const refsRef = React.useRef({});
   const $refs = refsRef.current;
 
-  const currentUser = p.useCurrentUser?.() || {};
+  const currentUser = useCurrentUser?.() || {};
 
   const globalVariants = ensureGlobalVariants({
     screen: useScreenVariantseH80Ck18IRB()
@@ -160,12 +183,12 @@ function PlasmicEPadStore__RenderFunc(props: {
             className={classNames("__wab_instance", sty.heade)}
           />
 
-          <p.Stack
+          <Stack__
             as={"div"}
             hasGap={true}
             className={classNames(projectcss.all, sty.freeBox__fUh3T)}
           >
-            <p.Stack
+            <Stack__
               as={"div"}
               hasGap={true}
               className={classNames(projectcss.all, sty.freeBox__oc1Iq)}
@@ -176,7 +199,7 @@ function PlasmicEPadStore__RenderFunc(props: {
                   role={"img"}
                 />
 
-                <p.PlasmicLink
+                <PlasmicLink__
                   className={classNames(
                     projectcss.all,
                     projectcss.a,
@@ -188,7 +211,7 @@ function PlasmicEPadStore__RenderFunc(props: {
                   platform={"nextjs"}
                 >
                   {"ePad Pro"}
-                </p.PlasmicLink>
+                </PlasmicLink__>
               </div>
               <div className={classNames(projectcss.all, sty.freeBox__asQJf)}>
                 <Appel11SvgIcon
@@ -196,7 +219,7 @@ function PlasmicEPadStore__RenderFunc(props: {
                   role={"img"}
                 />
 
-                <p.PlasmicLink
+                <PlasmicLink__
                   className={classNames(
                     projectcss.all,
                     projectcss.a,
@@ -208,7 +231,7 @@ function PlasmicEPadStore__RenderFunc(props: {
                   platform={"nextjs"}
                 >
                   {"ePad"}
-                </p.PlasmicLink>
+                </PlasmicLink__>
               </div>
               <div className={classNames(projectcss.all, sty.freeBox___2DAc)}>
                 <Appel12SvgIcon
@@ -216,7 +239,7 @@ function PlasmicEPadStore__RenderFunc(props: {
                   role={"img"}
                 />
 
-                <p.PlasmicLink
+                <PlasmicLink__
                   className={classNames(
                     projectcss.all,
                     projectcss.a,
@@ -228,7 +251,7 @@ function PlasmicEPadStore__RenderFunc(props: {
                   platform={"nextjs"}
                 >
                   {"ePad Lite"}
-                </p.PlasmicLink>
+                </PlasmicLink__>
               </div>
               <div className={classNames(projectcss.all, sty.freeBox___3Ydim)}>
                 <Comparesvg2Icon
@@ -312,20 +335,20 @@ function PlasmicEPadStore__RenderFunc(props: {
                   {"Preview"}
                 </div>
               </div>
-            </p.Stack>
-          </p.Stack>
+            </Stack__>
+          </Stack__>
           {(hasVariant(globalVariants, "screen", "mobile") ? true : false) ? (
-            <p.Stack
+            <Stack__
               as={"div"}
               hasGap={true}
               className={classNames(projectcss.all, sty.freeBox__kAbz)}
             >
-              <p.Stack
+              <Stack__
                 as={"div"}
                 hasGap={true}
                 className={classNames(projectcss.all, sty.freeBox___1Zdj3)}
               >
-                <p.PlasmicLink
+                <PlasmicLink__
                   className={classNames(
                     projectcss.all,
                     projectcss.a,
@@ -337,7 +360,7 @@ function PlasmicEPadStore__RenderFunc(props: {
                   platform={"nextjs"}
                 >
                   {"\u212e"}
-                </p.PlasmicLink>
+                </PlasmicLink__>
                 {false ? (
                   <div
                     className={classNames(projectcss.all, sty.freeBox__dwGU)}
@@ -391,16 +414,16 @@ function PlasmicEPadStore__RenderFunc(props: {
                   className={classNames(projectcss.all, sty.svg__gVnLj)}
                   role={"img"}
                 />
-              </p.Stack>
-            </p.Stack>
+              </Stack__>
+            </Stack__>
           ) : null}
           {(hasVariant(globalVariants, "screen", "mobile") ? true : false) ? (
-            <p.Stack
+            <Stack__
               as={"div"}
               hasGap={true}
               className={classNames(projectcss.all, sty.freeBox__kwSJx)}
             >
-              <p.Stack
+              <Stack__
                 as={"div"}
                 hasGap={true}
                 className={classNames(projectcss.all, sty.freeBox__baSc3)}
@@ -459,8 +482,8 @@ function PlasmicEPadStore__RenderFunc(props: {
                   className={classNames(projectcss.all, sty.svg__xdUkB)}
                   role={"img"}
                 />
-              </p.Stack>
-              <p.Stack
+              </Stack__>
+              <Stack__
                 as={"div"}
                 hasGap={true}
                 className={classNames(projectcss.all, sty.freeBox__tU71M)}
@@ -528,12 +551,12 @@ function PlasmicEPadStore__RenderFunc(props: {
                 >
                   {"eOS 14"}
                 </div>
-              </p.Stack>
-            </p.Stack>
+              </Stack__>
+            </Stack__>
           ) : null}
           <div className={classNames(projectcss.all, sty.freeBox__lbKkc)}>
             <div className={classNames(projectcss.all, sty.freeBox__yJdZs)}>
-              <p.Stack
+              <Stack__
                 as={"div"}
                 hasGap={true}
                 className={classNames(projectcss.all, sty.freeBox__pFbFh)}
@@ -598,12 +621,12 @@ function PlasmicEPadStore__RenderFunc(props: {
                       : "Buy Now"}
                   </div>
                 </Button>
-              </p.Stack>
+              </Stack__>
             </div>
           </div>
           <div className={classNames(projectcss.all, sty.freeBox__spBsN)}>
             <div className={classNames(projectcss.all, sty.freeBox__eDtVq)}>
-              <p.Stack
+              <Stack__
                 as={"div"}
                 hasGap={true}
                 className={classNames(projectcss.all, sty.freeBox__dOt91)}
@@ -666,7 +689,7 @@ function PlasmicEPadStore__RenderFunc(props: {
                       : "Buy Now"}
                   </div>
                 </Button>
-              </p.Stack>
+              </Stack__>
             </div>
           </div>
           <Footer

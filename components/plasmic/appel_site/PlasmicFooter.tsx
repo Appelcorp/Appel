@@ -17,25 +17,47 @@ import Head from "next/head";
 import Link, { LinkProps } from "next/link";
 import { useRouter } from "next/router";
 
-import * as p from "@plasmicapp/react-web";
-import * as ph from "@plasmicapp/react-web/lib/host";
-
 import {
-  hasVariant,
-  classNames,
-  wrapWithClassName,
-  createPlasmicElementProxy,
-  makeFragment,
+  Flex as Flex__,
   MultiChoiceArg,
+  PlasmicDataSourceContextProvider as PlasmicDataSourceContextProvider__,
+  PlasmicIcon as PlasmicIcon__,
+  PlasmicImg as PlasmicImg__,
+  PlasmicLink as PlasmicLink__,
+  PlasmicPageGuard as PlasmicPageGuard__,
   SingleBooleanChoiceArg,
   SingleChoiceArg,
-  pick,
-  omit,
-  useTrigger,
+  Stack as Stack__,
   StrictProps,
+  Trans as Trans__,
+  classNames,
+  createPlasmicElementProxy,
   deriveRenderOpts,
-  ensureGlobalVariants
+  ensureGlobalVariants,
+  generateOnMutateForSpec,
+  generateStateOnChangeProp,
+  generateStateOnChangePropForCodeComponents,
+  generateStateValueProp,
+  get as $stateGet,
+  hasVariant,
+  initializeCodeComponentStates,
+  initializePlasmicStates,
+  makeFragment,
+  omit,
+  pick,
+  renderPlasmicSlot,
+  set as $stateSet,
+  useCurrentUser,
+  useDollarState,
+  usePlasmicTranslator,
+  useTrigger,
+  wrapWithClassName
 } from "@plasmicapp/react-web";
+import {
+  DataCtxReader as DataCtxReader__,
+  useDataEnv,
+  useGlobalActions
+} from "@plasmicapp/react-web/lib/host";
 
 import { useScreenVariants as useScreenVariantseH80Ck18IRB } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: -eH80ck18iR_B/globalVariant
 
@@ -61,8 +83,8 @@ type ArgPropType = keyof PlasmicFooter__ArgsType;
 export const PlasmicFooter__ArgProps = new Array<ArgPropType>();
 
 export type PlasmicFooter__OverridesType = {
-  root?: p.Flex<"div">;
-  columns?: p.Flex<"div">;
+  root?: Flex__<"div">;
+  columns?: Flex__<"div">;
 };
 
 export interface DefaultFooterProps {
@@ -94,11 +116,11 @@ function PlasmicFooter__RenderFunc(props: {
   };
 
   const __nextRouter = useNextRouter();
-  const $ctx = ph.useDataEnv?.() || {};
+  const $ctx = useDataEnv?.() || {};
   const refsRef = React.useRef({});
   const $refs = refsRef.current;
 
-  const currentUser = p.useCurrentUser?.() || {};
+  const currentUser = useCurrentUser?.() || {};
 
   const globalVariants = ensureGlobalVariants({
     screen: useScreenVariantseH80Ck18IRB()
@@ -121,7 +143,7 @@ function PlasmicFooter__RenderFunc(props: {
         sty.root
       )}
     >
-      <p.Stack
+      <Stack__
         as={"div"}
         data-plasmic-name={"columns"}
         data-plasmic-override={overrides.columns}
@@ -129,7 +151,7 @@ function PlasmicFooter__RenderFunc(props: {
         className={classNames(projectcss.all, sty.columns)}
       >
         <div className={classNames(projectcss.all, sty.column___02Q7W)}>
-          <p.Stack
+          <Stack__
             as={"div"}
             hasGap={true}
             className={classNames(projectcss.all, sty.freeBox__u0AeA)}
@@ -144,7 +166,7 @@ function PlasmicFooter__RenderFunc(props: {
             >
               {"Appel"}
             </h3>
-            <p.Stack
+            <Stack__
               as={"div"}
               hasGap={true}
               className={classNames(projectcss.all, sty.freeBox__eyoNw)}
@@ -158,12 +180,12 @@ function PlasmicFooter__RenderFunc(props: {
               >
                 {"Connect with us"}
               </div>
-              <p.Stack
+              <Stack__
                 as={"div"}
                 hasGap={true}
                 className={classNames(projectcss.all, sty.freeBox__odo5G)}
               >
-                <p.PlasmicLink
+                <PlasmicLink__
                   className={classNames(
                     projectcss.all,
                     projectcss.a,
@@ -178,13 +200,13 @@ function PlasmicFooter__RenderFunc(props: {
                     className={classNames(projectcss.all, sty.svg__rw3Lg)}
                     role={"img"}
                   />
-                </p.PlasmicLink>
-              </p.Stack>
-            </p.Stack>
-          </p.Stack>
+                </PlasmicLink__>
+              </Stack__>
+            </Stack__>
+          </Stack__>
         </div>
         <div className={classNames(projectcss.all, sty.column__ox0Ih)}>
-          <p.Stack
+          <Stack__
             as={"div"}
             hasGap={true}
             className={classNames(projectcss.all, sty.freeBox__gL5)}
@@ -199,13 +221,13 @@ function PlasmicFooter__RenderFunc(props: {
             >
               {"Company"}
             </h3>
-            <p.Stack
+            <Stack__
               as={"div"}
               hasGap={true}
               className={classNames(projectcss.all, sty.freeBox__w9Aj5)}
             >
-              <p.Stack
-                as={p.PlasmicLink}
+              <Stack__
+                as={PlasmicLink__}
                 hasGap={true}
                 className={classNames(
                   projectcss.all,
@@ -237,7 +259,7 @@ function PlasmicFooter__RenderFunc(props: {
                     role={"img"}
                   />
                 ) : null}
-              </p.Stack>
+              </Stack__>
               <div
                 className={classNames(
                   projectcss.all,
@@ -247,8 +269,8 @@ function PlasmicFooter__RenderFunc(props: {
               >
                 {"Event24"}
               </div>
-              <p.Stack
-                as={p.PlasmicLink}
+              <Stack__
+                as={PlasmicLink__}
                 hasGap={true}
                 className={classNames(
                   projectcss.all,
@@ -259,7 +281,7 @@ function PlasmicFooter__RenderFunc(props: {
                 href={"https://www.twitter.com/appel_us"}
                 platform={"nextjs"}
               >
-                <p.PlasmicLink
+                <PlasmicLink__
                   className={classNames(
                     projectcss.all,
                     projectcss.a,
@@ -271,13 +293,13 @@ function PlasmicFooter__RenderFunc(props: {
                   platform={"nextjs"}
                 >
                   {"X"}
-                </p.PlasmicLink>
-              </p.Stack>
-            </p.Stack>
-          </p.Stack>
+                </PlasmicLink__>
+              </Stack__>
+            </Stack__>
+          </Stack__>
         </div>
         <div className={classNames(projectcss.all, sty.column__un8V)}>
-          <p.Stack
+          <Stack__
             as={"div"}
             hasGap={true}
             className={classNames(projectcss.all, sty.freeBox__frlJd)}
@@ -292,13 +314,13 @@ function PlasmicFooter__RenderFunc(props: {
             >
               {"Legal"}
             </h3>
-            <p.Stack
+            <Stack__
               as={"div"}
               hasGap={true}
               className={classNames(projectcss.all, sty.freeBox__nydGi)}
             >
-              <p.Stack
-                as={p.PlasmicLink}
+              <Stack__
+                as={PlasmicLink__}
                 hasGap={true}
                 className={classNames(
                   projectcss.all,
@@ -329,9 +351,9 @@ function PlasmicFooter__RenderFunc(props: {
                     role={"img"}
                   />
                 ) : null}
-              </p.Stack>
-              <p.Stack
-                as={p.PlasmicLink}
+              </Stack__>
+              <Stack__
+                as={PlasmicLink__}
                 hasGap={true}
                 className={classNames(
                   projectcss.all,
@@ -347,7 +369,7 @@ function PlasmicFooter__RenderFunc(props: {
                     role={"img"}
                   />
                 ) : null}
-                <p.PlasmicLink
+                <PlasmicLink__
                   className={classNames(
                     projectcss.all,
                     projectcss.a,
@@ -359,18 +381,18 @@ function PlasmicFooter__RenderFunc(props: {
                   platform={"nextjs"}
                 >
                   {"Terms"}
-                </p.PlasmicLink>
+                </PlasmicLink__>
                 {false ? (
                   <IconIcon
                     className={classNames(projectcss.all, sty.svg__uthX1)}
                     role={"img"}
                   />
                 ) : null}
-              </p.Stack>
-            </p.Stack>
-          </p.Stack>
+              </Stack__>
+            </Stack__>
+          </Stack__>
         </div>
-      </p.Stack>
+      </Stack__>
     </div>
   ) as React.ReactElement | null;
 }

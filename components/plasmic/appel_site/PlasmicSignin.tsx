@@ -17,25 +17,48 @@ import Head from "next/head";
 import Link, { LinkProps } from "next/link";
 import { useRouter } from "next/router";
 
-import * as p from "@plasmicapp/react-web";
-import * as ph from "@plasmicapp/react-web/lib/host";
-
 import {
-  hasVariant,
-  classNames,
-  wrapWithClassName,
-  createPlasmicElementProxy,
-  makeFragment,
+  Flex as Flex__,
   MultiChoiceArg,
+  PlasmicDataSourceContextProvider as PlasmicDataSourceContextProvider__,
+  PlasmicIcon as PlasmicIcon__,
+  PlasmicImg as PlasmicImg__,
+  PlasmicLink as PlasmicLink__,
+  PlasmicPageGuard as PlasmicPageGuard__,
   SingleBooleanChoiceArg,
   SingleChoiceArg,
-  pick,
-  omit,
-  useTrigger,
+  Stack as Stack__,
   StrictProps,
+  Trans as Trans__,
+  classNames,
+  createPlasmicElementProxy,
   deriveRenderOpts,
-  ensureGlobalVariants
+  ensureGlobalVariants,
+  generateOnMutateForSpec,
+  generateStateOnChangeProp,
+  generateStateOnChangePropForCodeComponents,
+  generateStateValueProp,
+  get as $stateGet,
+  hasVariant,
+  initializeCodeComponentStates,
+  initializePlasmicStates,
+  makeFragment,
+  omit,
+  pick,
+  renderPlasmicSlot,
+  set as $stateSet,
+  useCurrentUser,
+  useDollarState,
+  usePlasmicTranslator,
+  useTrigger,
+  wrapWithClassName
 } from "@plasmicapp/react-web";
+import {
+  DataCtxReader as DataCtxReader__,
+  useDataEnv,
+  useGlobalActions
+} from "@plasmicapp/react-web/lib/host";
+
 import Heade from "../../Heade"; // plasmic-import: SVZGM5FMLbLU/component
 import Button from "../../Button"; // plasmic-import: 2YS4YxHJgFKju/component
 import TextInput from "../../TextInput"; // plasmic-import: FUGagdHJdaBb/component
@@ -67,15 +90,15 @@ type ArgPropType = keyof PlasmicSignin__ArgsType;
 export const PlasmicSignin__ArgProps = new Array<ArgPropType>();
 
 export type PlasmicSignin__OverridesType = {
-  single?: p.Flex<"div">;
-  heade?: p.Flex<typeof Heade>;
-  link?: p.Flex<"a"> & Partial<LinkProps>;
-  columns?: p.Flex<"div">;
-  column?: p.Flex<"div">;
-  h1?: p.Flex<"h1">;
-  textInput?: p.Flex<typeof TextInput>;
-  textInput2?: p.Flex<typeof TextInput>;
-  footer?: p.Flex<typeof Footer>;
+  single?: Flex__<"div">;
+  heade?: Flex__<typeof Heade>;
+  link?: Flex__<"a"> & Partial<LinkProps>;
+  columns?: Flex__<"div">;
+  column?: Flex__<"div">;
+  h1?: Flex__<"h1">;
+  textInput?: Flex__<typeof TextInput>;
+  textInput2?: Flex__<typeof TextInput>;
+  footer?: Flex__<typeof Footer>;
 };
 
 export interface DefaultSigninProps {}
@@ -105,13 +128,13 @@ function PlasmicSignin__RenderFunc(props: {
   };
 
   const __nextRouter = useNextRouter();
-  const $ctx = ph.useDataEnv?.() || {};
+  const $ctx = useDataEnv?.() || {};
   const refsRef = React.useRef({});
   const $refs = refsRef.current;
 
-  const currentUser = p.useCurrentUser?.() || {};
+  const currentUser = useCurrentUser?.() || {};
 
-  const stateSpecs: Parameters<typeof p.useDollarState>[0] = React.useMemo(
+  const stateSpecs: Parameters<typeof useDollarState>[0] = React.useMemo(
     () => [
       {
         path: "textInput.value",
@@ -128,7 +151,7 @@ function PlasmicSignin__RenderFunc(props: {
     ],
     [$props, $ctx, $refs]
   );
-  const $state = p.useDollarState(stateSpecs, {
+  const $state = useDollarState(stateSpecs, {
     $props,
     $ctx,
     $queries: {},
@@ -163,7 +186,7 @@ function PlasmicSignin__RenderFunc(props: {
       `}</style>
 
       <div className={projectcss.plasmic_page_wrapper}>
-        <p.Stack
+        <Stack__
           as={"div"}
           data-plasmic-name={"single"}
           data-plasmic-override={overrides.single}
@@ -188,17 +211,17 @@ function PlasmicSignin__RenderFunc(props: {
           />
 
           {(hasVariant(globalVariants, "screen", "mobile") ? true : false) ? (
-            <p.Stack
+            <Stack__
               as={"div"}
               hasGap={true}
               className={classNames(projectcss.all, sty.freeBox__mrPVb)}
             >
-              <p.Stack
+              <Stack__
                 as={"div"}
                 hasGap={true}
                 className={classNames(projectcss.all, sty.freeBox__xxsSp)}
               >
-                <p.PlasmicLink
+                <PlasmicLink__
                   data-plasmic-name={"link"}
                   data-plasmic-override={overrides.link}
                   className={classNames(
@@ -212,7 +235,7 @@ function PlasmicSignin__RenderFunc(props: {
                   platform={"nextjs"}
                 >
                   {"\u212e"}
-                </p.PlasmicLink>
+                </PlasmicLink__>
                 {false ? (
                   <div
                     className={classNames(projectcss.all, sty.freeBox__tmEt)}
@@ -260,10 +283,10 @@ function PlasmicSignin__RenderFunc(props: {
                   className={classNames(projectcss.all, sty.svg__mWehT)}
                   role={"img"}
                 />
-              </p.Stack>
-            </p.Stack>
+              </Stack__>
+            </Stack__>
           ) : null}
-          <p.Stack
+          <Stack__
             as={"div"}
             hasGap={true}
             className={classNames(projectcss.all, sty.freeBox__iUlou)}
@@ -274,7 +297,7 @@ function PlasmicSignin__RenderFunc(props: {
                 data-plasmic-override={overrides.columns}
                 className={classNames(projectcss.all, sty.columns)}
               >
-                <p.Stack
+                <Stack__
                   as={"div"}
                   data-plasmic-name={"column"}
                   data-plasmic-override={overrides.column}
@@ -302,7 +325,7 @@ function PlasmicSignin__RenderFunc(props: {
                   >
                     {"Sign in to make shopping easier."}
                   </div>
-                  <p.Stack
+                  <Stack__
                     as={"div"}
                     hasGap={true}
                     className={classNames(projectcss.all, sty.freeBox__c9Qa8)}
@@ -312,7 +335,7 @@ function PlasmicSignin__RenderFunc(props: {
                       data-plasmic-override={overrides.textInput}
                       className={classNames("__wab_instance", sty.textInput)}
                       onChange={(...eventArgs) => {
-                        p.generateStateOnChangeProp($state, [
+                        generateStateOnChangeProp($state, [
                           "textInput",
                           "value"
                         ])((e => e.target?.value).apply(null, eventArgs));
@@ -320,7 +343,7 @@ function PlasmicSignin__RenderFunc(props: {
                       placeholder={"Username"}
                       type={"text"}
                       value={
-                        p.generateStateValueProp($state, [
+                        generateStateValueProp($state, [
                           "textInput",
                           "value"
                         ]) ?? ""
@@ -332,7 +355,7 @@ function PlasmicSignin__RenderFunc(props: {
                       data-plasmic-override={overrides.textInput2}
                       className={classNames("__wab_instance", sty.textInput2)}
                       onChange={(...eventArgs) => {
-                        p.generateStateOnChangeProp($state, [
+                        generateStateOnChangeProp($state, [
                           "textInput2",
                           "value"
                         ])((e => e.target?.value).apply(null, eventArgs));
@@ -340,7 +363,7 @@ function PlasmicSignin__RenderFunc(props: {
                       placeholder={"Password"}
                       type={"password"}
                       value={
-                        p.generateStateValueProp($state, [
+                        generateStateValueProp($state, [
                           "textInput2",
                           "value"
                         ]) ?? ""
@@ -360,17 +383,17 @@ function PlasmicSignin__RenderFunc(props: {
                         {"Sign In"}
                       </Button>
                     </div>
-                  </p.Stack>
-                </p.Stack>
+                  </Stack__>
+                </Stack__>
               </div>
             </div>
-          </p.Stack>
+          </Stack__>
           <Footer
             data-plasmic-name={"footer"}
             data-plasmic-override={overrides.footer}
             className={classNames("__wab_instance", sty.footer)}
           />
-        </p.Stack>
+        </Stack__>
       </div>
     </React.Fragment>
   ) as React.ReactElement | null;

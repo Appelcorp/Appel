@@ -17,25 +17,48 @@ import Head from "next/head";
 import Link, { LinkProps } from "next/link";
 import { useRouter } from "next/router";
 
-import * as p from "@plasmicapp/react-web";
-import * as ph from "@plasmicapp/react-web/lib/host";
-
 import {
-  hasVariant,
-  classNames,
-  wrapWithClassName,
-  createPlasmicElementProxy,
-  makeFragment,
+  Flex as Flex__,
   MultiChoiceArg,
+  PlasmicDataSourceContextProvider as PlasmicDataSourceContextProvider__,
+  PlasmicIcon as PlasmicIcon__,
+  PlasmicImg as PlasmicImg__,
+  PlasmicLink as PlasmicLink__,
+  PlasmicPageGuard as PlasmicPageGuard__,
   SingleBooleanChoiceArg,
   SingleChoiceArg,
-  pick,
-  omit,
-  useTrigger,
+  Stack as Stack__,
   StrictProps,
+  Trans as Trans__,
+  classNames,
+  createPlasmicElementProxy,
   deriveRenderOpts,
-  ensureGlobalVariants
+  ensureGlobalVariants,
+  generateOnMutateForSpec,
+  generateStateOnChangeProp,
+  generateStateOnChangePropForCodeComponents,
+  generateStateValueProp,
+  get as $stateGet,
+  hasVariant,
+  initializeCodeComponentStates,
+  initializePlasmicStates,
+  makeFragment,
+  omit,
+  pick,
+  renderPlasmicSlot,
+  set as $stateSet,
+  useCurrentUser,
+  useDollarState,
+  usePlasmicTranslator,
+  useTrigger,
+  wrapWithClassName
 } from "@plasmicapp/react-web";
+import {
+  DataCtxReader as DataCtxReader__,
+  useDataEnv,
+  useGlobalActions
+} from "@plasmicapp/react-web/lib/host";
+
 import Button from "../../Button"; // plasmic-import: 2YS4YxHJgFKju/component
 import { NavigationBar } from "@plasmicpkgs/plasmic-nav";
 import Footer from "../../Footer"; // plasmic-import: O8jRJZzkmVNu/component
@@ -65,10 +88,10 @@ type ArgPropType = keyof PlasmicDevelopers__ArgsType;
 export const PlasmicDevelopers__ArgProps = new Array<ArgPropType>();
 
 export type PlasmicDevelopers__OverridesType = {
-  root?: p.Flex<"div">;
-  navigationBar?: p.Flex<typeof NavigationBar>;
-  link?: p.Flex<"a"> & Partial<LinkProps>;
-  footer?: p.Flex<typeof Footer>;
+  root?: Flex__<"div">;
+  navigationBar?: Flex__<typeof NavigationBar>;
+  link?: Flex__<"a"> & Partial<LinkProps>;
+  footer?: Flex__<typeof Footer>;
 };
 
 export interface DefaultDevelopersProps {}
@@ -98,11 +121,11 @@ function PlasmicDevelopers__RenderFunc(props: {
   };
 
   const __nextRouter = useNextRouter();
-  const $ctx = ph.useDataEnv?.() || {};
+  const $ctx = useDataEnv?.() || {};
   const refsRef = React.useRef({});
   const $refs = refsRef.current;
 
-  const currentUser = p.useCurrentUser?.() || {};
+  const currentUser = useCurrentUser?.() || {};
 
   const globalVariants = ensureGlobalVariants({
     screen: useScreenVariantseH80Ck18IRB()
@@ -150,12 +173,12 @@ function PlasmicDevelopers__RenderFunc(props: {
         >
           <div className={classNames(projectcss.all, sty.freeBox__avnp1)}>
             {(hasVariant(globalVariants, "screen", "mobile") ? true : false) ? (
-              <p.Stack
+              <Stack__
                 as={"div"}
                 hasGap={true}
                 className={classNames(projectcss.all, sty.freeBox__glnp0)}
               >
-                <p.Stack
+                <Stack__
                   as={"div"}
                   hasGap={true}
                   className={classNames(projectcss.all, sty.freeBox__ckfyH)}
@@ -216,7 +239,7 @@ function PlasmicDevelopers__RenderFunc(props: {
                     data-plasmic-name={"navigationBar"}
                     data-plasmic-override={overrides.navigationBar}
                     brand={
-                      <p.PlasmicLink
+                      <PlasmicLink__
                         data-plasmic-name={"link"}
                         data-plasmic-override={overrides.link}
                         className={classNames(
@@ -230,7 +253,7 @@ function PlasmicDevelopers__RenderFunc(props: {
                         platform={"nextjs"}
                       >
                         {"\u212e"}
-                      </p.PlasmicLink>
+                      </PlasmicLink__>
                     }
                     className={classNames("__wab_instance", sty.navigationBar)}
                     closeButton={
@@ -242,7 +265,7 @@ function PlasmicDevelopers__RenderFunc(props: {
                     forceOpenMenu={false}
                     itemsGap={8}
                     menuItems={
-                      <p.Stack
+                      <Stack__
                         as={"div"}
                         hasGap={true}
                         className={classNames(
@@ -300,7 +323,7 @@ function PlasmicDevelopers__RenderFunc(props: {
                         >
                           {"Sign In"}
                         </Button>
-                      </p.Stack>
+                      </Stack__>
                     }
                     openButton={
                       <BarsIcon
@@ -310,21 +333,21 @@ function PlasmicDevelopers__RenderFunc(props: {
                     }
                     responsiveBreakpoint={768}
                   />
-                </p.Stack>
-              </p.Stack>
+                </Stack__>
+              </Stack__>
             ) : null}
-            <p.Stack
+            <Stack__
               as={"div"}
               hasGap={true}
               className={classNames(projectcss.all, sty.freeBox__xizhj)}
             >
               <div className={classNames(projectcss.all, sty.freeBox__bFc0O)}>
-                <p.Stack
+                <Stack__
                   as={"div"}
                   hasGap={true}
                   className={classNames(projectcss.all, sty.freeBox__yyJ8O)}
                 >
-                  <p.Stack
+                  <Stack__
                     as={"div"}
                     hasGap={true}
                     className={classNames(projectcss.all, sty.freeBox__koLPi)}
@@ -338,7 +361,7 @@ function PlasmicDevelopers__RenderFunc(props: {
                     >
                       {"\u212e"}
                     </div>
-                    <p.Stack
+                    <Stack__
                       as={"div"}
                       hasGap={true}
                       className={classNames(projectcss.all, sty.freeBox__rmvOv)}
@@ -525,7 +548,7 @@ function PlasmicDevelopers__RenderFunc(props: {
                           {"Sign up"}
                         </div>
                       </Button>
-                    </p.Stack>
+                    </Stack__>
                     {false ? (
                       <div
                         className={classNames(
@@ -581,8 +604,8 @@ function PlasmicDevelopers__RenderFunc(props: {
                         </Button>
                       </div>
                     ) : null}
-                  </p.Stack>
-                </p.Stack>
+                  </Stack__>
+                </Stack__>
                 <div
                   className={classNames(
                     projectcss.all,
@@ -595,8 +618,8 @@ function PlasmicDevelopers__RenderFunc(props: {
                   }
                 </div>
               </div>
-            </p.Stack>
-            <p.Stack
+            </Stack__>
+            <Stack__
               as={"div"}
               hasGap={true}
               className={classNames(projectcss.all, sty.freeBox__raPlz)}
@@ -609,7 +632,7 @@ function PlasmicDevelopers__RenderFunc(props: {
                   className={classNames(projectcss.all, sty.freeBox__pJvD)}
                 />
               </div>
-            </p.Stack>
+            </Stack__>
             <div className={classNames(projectcss.all, sty.freeBox__myxZ2)}>
               <div
                 className={classNames(

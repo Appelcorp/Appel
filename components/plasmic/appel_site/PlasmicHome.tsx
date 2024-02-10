@@ -17,25 +17,48 @@ import Head from "next/head";
 import Link, { LinkProps } from "next/link";
 import { useRouter } from "next/router";
 
-import * as p from "@plasmicapp/react-web";
-import * as ph from "@plasmicapp/react-web/lib/host";
-
 import {
-  hasVariant,
-  classNames,
-  wrapWithClassName,
-  createPlasmicElementProxy,
-  makeFragment,
+  Flex as Flex__,
   MultiChoiceArg,
+  PlasmicDataSourceContextProvider as PlasmicDataSourceContextProvider__,
+  PlasmicIcon as PlasmicIcon__,
+  PlasmicImg as PlasmicImg__,
+  PlasmicLink as PlasmicLink__,
+  PlasmicPageGuard as PlasmicPageGuard__,
   SingleBooleanChoiceArg,
   SingleChoiceArg,
-  pick,
-  omit,
-  useTrigger,
+  Stack as Stack__,
   StrictProps,
+  Trans as Trans__,
+  classNames,
+  createPlasmicElementProxy,
   deriveRenderOpts,
-  ensureGlobalVariants
+  ensureGlobalVariants,
+  generateOnMutateForSpec,
+  generateStateOnChangeProp,
+  generateStateOnChangePropForCodeComponents,
+  generateStateValueProp,
+  get as $stateGet,
+  hasVariant,
+  initializeCodeComponentStates,
+  initializePlasmicStates,
+  makeFragment,
+  omit,
+  pick,
+  renderPlasmicSlot,
+  set as $stateSet,
+  useCurrentUser,
+  useDollarState,
+  usePlasmicTranslator,
+  useTrigger,
+  wrapWithClassName
 } from "@plasmicapp/react-web";
+import {
+  DataCtxReader as DataCtxReader__,
+  useDataEnv,
+  useGlobalActions
+} from "@plasmicapp/react-web/lib/host";
+
 import Heade from "../../Heade"; // plasmic-import: SVZGM5FMLbLU/component
 import Button from "../../Button"; // plasmic-import: 2YS4YxHJgFKju/component
 import { NavigationBar } from "@plasmicpkgs/plasmic-nav";
@@ -66,12 +89,12 @@ type ArgPropType = keyof PlasmicHome__ArgsType;
 export const PlasmicHome__ArgProps = new Array<ArgPropType>();
 
 export type PlasmicHome__OverridesType = {
-  root?: p.Flex<"div">;
-  heade?: p.Flex<typeof Heade>;
-  navigationBar?: p.Flex<typeof NavigationBar>;
-  link?: p.Flex<"a"> & Partial<LinkProps>;
-  columns?: p.Flex<"div">;
-  footer?: p.Flex<typeof Footer>;
+  root?: Flex__<"div">;
+  heade?: Flex__<typeof Heade>;
+  navigationBar?: Flex__<typeof NavigationBar>;
+  link?: Flex__<"a"> & Partial<LinkProps>;
+  columns?: Flex__<"div">;
+  footer?: Flex__<typeof Footer>;
 };
 
 export interface DefaultHomeProps {}
@@ -101,11 +124,11 @@ function PlasmicHome__RenderFunc(props: {
   };
 
   const __nextRouter = useNextRouter();
-  const $ctx = ph.useDataEnv?.() || {};
+  const $ctx = useDataEnv?.() || {};
   const refsRef = React.useRef({});
   const $refs = refsRef.current;
 
-  const currentUser = p.useCurrentUser?.() || {};
+  const currentUser = useCurrentUser?.() || {};
 
   const globalVariants = ensureGlobalVariants({
     screen: useScreenVariantseH80Ck18IRB()
@@ -159,12 +182,12 @@ function PlasmicHome__RenderFunc(props: {
 
           <div className={classNames(projectcss.all, sty.freeBox__v6Zm)}>
             {(hasVariant(globalVariants, "screen", "mobile") ? true : false) ? (
-              <p.Stack
+              <Stack__
                 as={"div"}
                 hasGap={true}
                 className={classNames(projectcss.all, sty.freeBox__jlBcd)}
               >
-                <p.Stack
+                <Stack__
                   as={"div"}
                   hasGap={true}
                   className={classNames(projectcss.all, sty.freeBox__nis5T)}
@@ -225,7 +248,7 @@ function PlasmicHome__RenderFunc(props: {
                     data-plasmic-name={"navigationBar"}
                     data-plasmic-override={overrides.navigationBar}
                     brand={
-                      <p.PlasmicLink
+                      <PlasmicLink__
                         data-plasmic-name={"link"}
                         data-plasmic-override={overrides.link}
                         className={classNames(
@@ -239,7 +262,7 @@ function PlasmicHome__RenderFunc(props: {
                         platform={"nextjs"}
                       >
                         {"\u212e"}
-                      </p.PlasmicLink>
+                      </PlasmicLink__>
                     }
                     className={classNames("__wab_instance", sty.navigationBar)}
                     closeButton={
@@ -251,7 +274,7 @@ function PlasmicHome__RenderFunc(props: {
                     forceOpenMenu={false}
                     itemsGap={8}
                     menuItems={
-                      <p.Stack
+                      <Stack__
                         as={"div"}
                         hasGap={true}
                         className={classNames(
@@ -309,7 +332,7 @@ function PlasmicHome__RenderFunc(props: {
                         >
                           {"Sign In"}
                         </Button>
-                      </p.Stack>
+                      </Stack__>
                     }
                     openButton={
                       <BarsIcon
@@ -319,56 +342,26 @@ function PlasmicHome__RenderFunc(props: {
                     }
                     responsiveBreakpoint={768}
                   />
-                </p.Stack>
-              </p.Stack>
+                </Stack__>
+              </Stack__>
             ) : null}
-            <p.Stack
+            <Stack__
               as={"div"}
               hasGap={true}
               className={classNames(projectcss.all, sty.freeBox__vTD)}
             >
               <div className={classNames(projectcss.all, sty.freeBox__zIgH)}>
-                <div
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.__wab_text,
-                    sty.text__cy62H
-                  )}
-                >
-                  {
-                    "Mobile site is VERY VERY VERY VERY VERY BROKEN, only home page works sadly."
-                  }
-                </div>
                 <div className={classNames(projectcss.all, sty.freeBox__pzsY1)}>
                   <div
                     className={classNames(projectcss.all, sty.freeBox___2FuG6)}
                   >
-                    <h3
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.h3,
-                        projectcss.__wab_text,
-                        sty.h3___413VX
-                      )}
-                    >
-                      {"eTop Lite 2"}
-                    </h3>
-                    <div
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.__wab_text,
-                        sty.text__ft8AR
-                      )}
-                    >
-                      {"Snappy and Sleek"}
-                    </div>
                     <Button
                       className={classNames(
                         "__wab_instance",
                         sty.button__mZcEw
                       )}
-                      link={`/shop/etop/etop-lite-2`}
-                      submitsForm={true}
+                      isDisabled={true}
+                      submitsForm={false}
                     >
                       <div
                         className={classNames(
@@ -377,14 +370,14 @@ function PlasmicHome__RenderFunc(props: {
                           sty.text__dZ7S
                         )}
                       >
-                        {"PRE ORDER"}
+                        {"DOWNLOAD"}
                       </div>
                     </Button>
                   </div>
                 </div>
               </div>
-            </p.Stack>
-            <p.Stack
+            </Stack__>
+            <Stack__
               as={"div"}
               hasGap={true}
               className={classNames(projectcss.all, sty.freeBox__awRWg)}
@@ -397,9 +390,9 @@ function PlasmicHome__RenderFunc(props: {
                   className={classNames(projectcss.all, sty.freeBox__tYPev)}
                 />
               </div>
-            </p.Stack>
+            </Stack__>
             <div className={classNames(projectcss.all, sty.freeBox__duoSr)}>
-              <p.Stack
+              <Stack__
                 as={"div"}
                 data-plasmic-name={"columns"}
                 data-plasmic-override={overrides.columns}
@@ -410,7 +403,7 @@ function PlasmicHome__RenderFunc(props: {
                   <div
                     className={classNames(projectcss.all, sty.freeBox__vrobv)}
                   >
-                    <p.PlasmicImg
+                    <PlasmicImg__
                       alt={""}
                       className={classNames(sty.img__qVNb)}
                       displayHeight={"auto"}
@@ -471,7 +464,7 @@ function PlasmicHome__RenderFunc(props: {
                   <div
                     className={classNames(projectcss.all, sty.freeBox__uQvef)}
                   >
-                    <p.PlasmicImg
+                    <PlasmicImg__
                       alt={""}
                       className={classNames(sty.img__a8BAe)}
                       displayHeight={"auto"}
@@ -535,7 +528,7 @@ function PlasmicHome__RenderFunc(props: {
                   <div
                     className={classNames(projectcss.all, sty.freeBox__s8BtF)}
                   >
-                    <p.PlasmicImg
+                    <PlasmicImg__
                       alt={""}
                       className={classNames(sty.img___4KChV)}
                       displayHeight={"auto"}
@@ -596,7 +589,7 @@ function PlasmicHome__RenderFunc(props: {
                   <div
                     className={classNames(projectcss.all, sty.freeBox__tmZq2)}
                   >
-                    <p.PlasmicImg
+                    <PlasmicImg__
                       alt={""}
                       className={classNames(sty.img__uihOq)}
                       displayHeight={"auto"}
@@ -652,7 +645,7 @@ function PlasmicHome__RenderFunc(props: {
                     </Button>
                   </div>
                 </div>
-              </p.Stack>
+              </Stack__>
             </div>
             <Footer
               data-plasmic-name={"footer"}
