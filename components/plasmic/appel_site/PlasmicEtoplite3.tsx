@@ -436,7 +436,7 @@ function PlasmicEtoplite3__RenderFunc(props: {
                       )}
                       submitsForm={true}
                     >
-                      {"Pre Order"}
+                      {"Buy"}
                     </Button>
                   </Stack__>
                 </Stack__>
