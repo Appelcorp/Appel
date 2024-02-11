@@ -975,14 +975,14 @@
         },
         {
           "id": "KVz1UiCXjxfR",
-          "name": "ETopStore2",
+          "name": "AppOsPublic",
           "type": "managed",
           "projectId": "wBRmoS7Qf8danpDnoXZLVz",
-          "renderModuleFilePath": "plasmic/appel_site/PlasmicETopStore2.tsx",
+          "renderModuleFilePath": "plasmic/appel_site/PlasmicAppOsPublic.tsx",
           "importSpec": {
             "modulePath": "../pages/developer/appos/public.tsx"
           },
-          "cssFilePath": "plasmic/appel_site/PlasmicETopStore2.module.css",
+          "cssFilePath": "plasmic/appel_site/PlasmicAppOsPublic.module.css",
           "scheme": "blackbox",
           "componentType": "page",
           "path": "/developer/appos/public"

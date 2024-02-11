@@ -381,7 +381,6 @@ function PlasmicDevelopers__RenderFunc(props: {
                             role={"img"}
                           />
                         }
-                        link={`/shop/appel`}
                         startIcon={
                           <ChecksvgIcon
                             className={classNames(
@@ -418,7 +417,7 @@ function PlasmicDevelopers__RenderFunc(props: {
                             role={"img"}
                           />
                         }
-                        link={`/shop/etop`}
+                        link={`/developer/appos/public`}
                         startIcon={
                           <ChecksvgIcon
                             className={classNames(
