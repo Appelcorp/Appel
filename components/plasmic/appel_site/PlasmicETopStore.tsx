@@ -72,14 +72,14 @@ import plasmic_antd_5_hostless_css from "../antd_5_hostless/plasmic_antd_5_hostl
 import projectcss from "./plasmic_appel_site.module.css"; // plasmic-import: wBRmoS7Qf8danpDnoXZLVz/projectcss
 import sty from "./PlasmicETopStore.module.css"; // plasmic-import: j5MKN8ABkLT/css
 
-import EtopProsvgIcon from "./icons/PlasmicIcon__EtopProsvg"; // plasmic-import: _ToeTuh5Qo/icon
-import EtopsvgIcon from "./icons/PlasmicIcon__Etopsvg"; // plasmic-import: 9eM4XrGdro/icon
-import EtopLite2SvgIcon from "./icons/PlasmicIcon__EtopLite2Svg"; // plasmic-import: DzPVzDvGCHfb/icon
-import EstageUltrasvgIcon from "./icons/PlasmicIcon__EstageUltrasvg"; // plasmic-import: 18MBCTLC9d1y/icon
-import EstagesvgIcon from "./icons/PlasmicIcon__Estagesvg"; // plasmic-import: ydbOhlD9HekK/icon
+import EtopProsvg2Icon from "./icons/PlasmicIcon__EtopProsvg2"; // plasmic-import: w4p7MXAUl7Vc/icon
+import Etopsvg2Icon from "./icons/PlasmicIcon__Etopsvg2"; // plasmic-import: fHdqKQ7Nqp9O/icon
+import EtopLite4SvgIcon from "./icons/PlasmicIcon__EtopLite4Svg"; // plasmic-import: dw9AOYRL19id/icon
+import EstageUltrasvg2Icon from "./icons/PlasmicIcon__EstageUltrasvg2"; // plasmic-import: hlQYQ61BkEVI/icon
+import Estagesvg2Icon from "./icons/PlasmicIcon__Estagesvg2"; // plasmic-import: f0qcdRXzwBRF/icon
 import EmaxStudiosvgIcon from "./icons/PlasmicIcon__EmaxStudiosvg"; // plasmic-import: nAjN-qQurd/icon
-import EdisplayMaxsvgIcon from "./icons/PlasmicIcon__EdisplayMaxsvg"; // plasmic-import: FgkONTRVH2O-/icon
-import Comparesvg2Icon from "./icons/PlasmicIcon__Comparesvg2"; // plasmic-import: PKKaeI26jF/icon
+import EdisplayMaxsvg2Icon from "./icons/PlasmicIcon__EdisplayMaxsvg2"; // plasmic-import: UmIBgsUvD0y-/icon
+import Comparesvg3Icon from "./icons/PlasmicIcon__Comparesvg3"; // plasmic-import: nV-VwQSZJ3oW/icon
 import ChecksvgIcon from "./icons/PlasmicIcon__Checksvg"; // plasmic-import: nWUWSgWJ4hmrU/icon
 import Icon38Icon from "./icons/PlasmicIcon__Icon38"; // plasmic-import: tjW8u0N4RQb/icon
 import BarsIcon from "./icons/PlasmicIcon__Bars"; // plasmic-import: 4ZVpxMLEvcR9y/icon
@@ -196,7 +196,7 @@ function PlasmicETopStore__RenderFunc(props: {
               className={classNames(projectcss.all, sty.freeBox__v7X6Y)}
             >
               <div className={classNames(projectcss.all, sty.freeBox__obMXh)}>
-                <EtopProsvgIcon
+                <EtopProsvg2Icon
                   className={classNames(projectcss.all, sty.svg___9KjVe)}
                   role={"img"}
                 />
@@ -216,7 +216,7 @@ function PlasmicETopStore__RenderFunc(props: {
                 </PlasmicLink__>
               </div>
               <div className={classNames(projectcss.all, sty.freeBox__r9YYs)}>
-                <EtopsvgIcon
+                <Etopsvg2Icon
                   className={classNames(projectcss.all, sty.svg__fwuSz)}
                   role={"img"}
                 />
@@ -236,7 +236,7 @@ function PlasmicETopStore__RenderFunc(props: {
                 </PlasmicLink__>
               </div>
               <div className={classNames(projectcss.all, sty.freeBox__rr0Zj)}>
-                <EtopLite2SvgIcon
+                <EtopLite4SvgIcon
                   className={classNames(projectcss.all, sty.svg__zEkIa)}
                   role={"img"}
                 />
@@ -265,7 +265,7 @@ function PlasmicETopStore__RenderFunc(props: {
                 </div>
               </div>
               <div className={classNames(projectcss.all, sty.freeBox__ebgi)}>
-                <EstageUltrasvgIcon
+                <EstageUltrasvg2Icon
                   className={classNames(projectcss.all, sty.svg__yRpnv)}
                   role={"img"}
                 />
@@ -281,7 +281,7 @@ function PlasmicETopStore__RenderFunc(props: {
                 </div>
               </div>
               <div className={classNames(projectcss.all, sty.freeBox__vdRTx)}>
-                <EstagesvgIcon
+                <Estagesvg2Icon
                   className={classNames(projectcss.all, sty.svg__vtccu)}
                   role={"img"}
                 />
@@ -313,7 +313,7 @@ function PlasmicETopStore__RenderFunc(props: {
                 </div>
               </div>
               <div className={classNames(projectcss.all, sty.freeBox__upj3E)}>
-                <EdisplayMaxsvgIcon
+                <EdisplayMaxsvg2Icon
                   className={classNames(projectcss.all, sty.svg___6LnmL)}
                   role={"img"}
                 />
@@ -329,7 +329,7 @@ function PlasmicETopStore__RenderFunc(props: {
                 </div>
               </div>
               <div className={classNames(projectcss.all, sty.freeBox__yzG2M)}>
-                <Comparesvg2Icon
+                <Comparesvg3Icon
                   className={classNames(projectcss.all, sty.svg__zbclO)}
                   role={"img"}
                 />

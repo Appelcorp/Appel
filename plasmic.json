@@ -1328,6 +1328,41 @@
           "id": "FgkONTRVH2O-",
           "name": "EdisplayMaxsvgIcon",
           "moduleFilePath": "plasmic/appel_site/icons/PlasmicIcon__EdisplayMaxsvg.tsx"
+        },
+        {
+          "id": "w4p7MXAUl7Vc",
+          "name": "EtopProsvg2Icon",
+          "moduleFilePath": "plasmic/appel_site/icons/PlasmicIcon__EtopProsvg2.tsx"
+        },
+        {
+          "id": "fHdqKQ7Nqp9O",
+          "name": "Etopsvg2Icon",
+          "moduleFilePath": "plasmic/appel_site/icons/PlasmicIcon__Etopsvg2.tsx"
+        },
+        {
+          "id": "dw9AOYRL19id",
+          "name": "EtopLite4SvgIcon",
+          "moduleFilePath": "plasmic/appel_site/icons/PlasmicIcon__EtopLite4Svg.tsx"
+        },
+        {
+          "id": "hlQYQ61BkEVI",
+          "name": "EstageUltrasvg2Icon",
+          "moduleFilePath": "plasmic/appel_site/icons/PlasmicIcon__EstageUltrasvg2.tsx"
+        },
+        {
+          "id": "f0qcdRXzwBRF",
+          "name": "Estagesvg2Icon",
+          "moduleFilePath": "plasmic/appel_site/icons/PlasmicIcon__Estagesvg2.tsx"
+        },
+        {
+          "id": "UmIBgsUvD0y-",
+          "name": "EdisplayMaxsvg2Icon",
+          "moduleFilePath": "plasmic/appel_site/icons/PlasmicIcon__EdisplayMaxsvg2.tsx"
+        },
+        {
+          "id": "nV-VwQSZJ3oW",
+          "name": "Comparesvg3Icon",
+          "moduleFilePath": "plasmic/appel_site/icons/PlasmicIcon__Comparesvg3.tsx"
         }
       ],
       "images": [
