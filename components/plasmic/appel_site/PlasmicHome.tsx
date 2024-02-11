@@ -62,6 +62,7 @@ import {
 import Heade from "../../Heade"; // plasmic-import: SVZGM5FMLbLU/component
 import Button from "../../Button"; // plasmic-import: 2YS4YxHJgFKju/component
 import { NavigationBar } from "@plasmicpkgs/plasmic-nav";
+import { Reveal } from "@plasmicpkgs/react-awesome-reveal";
 import Footer from "../../Footer"; // plasmic-import: O8jRJZzkmVNu/component
 
 import { useScreenVariants as useScreenVariantseH80Ck18IRB } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: -eH80ck18iR_B/globalVariant
@@ -93,6 +94,7 @@ export type PlasmicHome__OverridesType = {
   heade?: Flex__<typeof Heade>;
   navigationBar?: Flex__<typeof NavigationBar>;
   link?: Flex__<"a"> & Partial<LinkProps>;
+  reveal?: Flex__<typeof Reveal>;
   columns?: Flex__<"div">;
   footer?: Flex__<typeof Footer>;
 };
@@ -351,53 +353,67 @@ function PlasmicHome__RenderFunc(props: {
               className={classNames(projectcss.all, sty.freeBox__vTD)}
             >
               <div className={classNames(projectcss.all, sty.freeBox__zIgH)}>
-                <div className={classNames(projectcss.all, sty.freeBox__pzsY1)}>
-                  <Stack__
-                    as={"div"}
-                    hasGap={true}
-                    className={classNames(projectcss.all, sty.freeBox___2FuG6)}
+                <Reveal
+                  data-plasmic-name={"reveal"}
+                  data-plasmic-override={overrides.reveal}
+                  className={classNames("__wab_instance", sty.reveal)}
+                  duration={2000}
+                  effect={"fade"}
+                  triggerOnce={true}
+                >
+                  <div
+                    className={classNames(projectcss.all, sty.freeBox__pzsY1)}
                   >
-                    <Button
+                    <Stack__
+                      as={"div"}
+                      hasGap={true}
                       className={classNames(
-                        "__wab_instance",
-                        sty.button___7EAnR
+                        projectcss.all,
+                        sty.freeBox___2FuG6
                       )}
-                      color={"blue"}
-                      isDisabled={true}
-                      submitsForm={true}
                     >
-                      <div
+                      <Button
                         className={classNames(
-                          projectcss.all,
-                          projectcss.__wab_text,
-                          sty.text__j8Qxu
+                          "__wab_instance",
+                          sty.button__mZcEw
                         )}
+                        isDisabled={true}
+                        submitsForm={false}
                       >
-                        {hasVariant(globalVariants, "screen", "mobile")
-                          ? "Buy Now"
-                          : "Learn More"}
-                      </div>
-                    </Button>
-                    <Button
-                      className={classNames(
-                        "__wab_instance",
-                        sty.button__mZcEw
-                      )}
-                      isDisabled={true}
-                      submitsForm={false}
-                    >
-                      <div
+                        <div
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.__wab_text,
+                            sty.text__dZ7S
+                          )}
+                        >
+                          {"DOWNLOAD"}
+                        </div>
+                      </Button>
+                      <Button
                         className={classNames(
-                          projectcss.all,
-                          projectcss.__wab_text,
-                          sty.text__dZ7S
+                          "__wab_instance",
+                          sty.button___7EAnR
                         )}
+                        color={"clear"}
+                        link={`/developer/appos/public`}
+                        submitsForm={true}
                       >
-                        {"DOWNLOAD"}
-                      </div>
-                    </Button>
-                  </Stack__>
-                </div>
+                        <div
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.__wab_text,
+                            sty.text__j8Qxu
+                          )}
+                        >
+                          {hasVariant(globalVariants, "screen", "mobile")
+                            ? "Buy Now"
+                            : "Learn More"}
+                        </div>
+                      </Button>
+                    </Stack__>
+                  </div>
+                </Reveal>
               </div>
             </Stack__>
             <Stack__
@@ -694,10 +710,19 @@ function PlasmicHome__RenderFunc(props: {
 }
 
 const PlasmicDescendants = {
-  root: ["root", "heade", "navigationBar", "link", "columns", "footer"],
+  root: [
+    "root",
+    "heade",
+    "navigationBar",
+    "link",
+    "reveal",
+    "columns",
+    "footer"
+  ],
   heade: ["heade"],
   navigationBar: ["navigationBar", "link"],
   link: ["link"],
+  reveal: ["reveal"],
   columns: ["columns"],
   footer: ["footer"]
 } as const;
@@ -709,6 +734,7 @@ type NodeDefaultElementType = {
   heade: typeof Heade;
   navigationBar: typeof NavigationBar;
   link: "a";
+  reveal: typeof Reveal;
   columns: "div";
   footer: typeof Footer;
 };
@@ -776,6 +802,7 @@ export const PlasmicHome = Object.assign(
     heade: makeNodeComponent("heade"),
     navigationBar: makeNodeComponent("navigationBar"),
     link: makeNodeComponent("link"),
+    reveal: makeNodeComponent("reveal"),
     columns: makeNodeComponent("columns"),
     footer: makeNodeComponent("footer"),
 

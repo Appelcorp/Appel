@@ -418,12 +418,17 @@
   width: 100%;
   min-width: 0;
 }
+.reveal:global(.__wab_instance) {
+  max-width: 100%;
+  object-fit: cover;
+  position: relative;
+}
 .freeBox__pzsY1 {
   display: flex;
   position: relative;
   flex-direction: column;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: center;
   width: 100%;
   max-width: 100%;
   background: url("/plasmic/appel_site/images/apppubpng.png") top 0% right 0px / cover no-repeat
@@ -478,11 +483,31 @@
   > img {
   margin-left: 10px;
 }
+.button__mZcEw:global(.__wab_instance) {
+  max-width: 100%;
+  position: relative;
+}
+.svg__flkx {
+  position: relative;
+  object-fit: cover;
+  width: auto;
+  height: 1em;
+}
+.text__dZ7S {
+  text-transform: uppercase;
+  padding-right: 0px;
+}
+.svg__fbiyq {
+  position: relative;
+  object-fit: cover;
+  width: auto;
+  height: 1em;
+}
 .button___7EAnR:global(.__wab_instance) {
   max-width: 100%;
   position: relative;
 }
-.svg___3ArtR {
+.svg___5LyH {
   position: relative;
   object-fit: cover;
   width: auto;
@@ -493,27 +518,7 @@
   color: #ededec;
   user-select: none;
 }
-.svg__yzplF {
-  position: relative;
-  object-fit: cover;
-  width: auto;
-  height: 1em;
-}
-.button__mZcEw:global(.__wab_instance) {
-  max-width: 100%;
-  position: relative;
-}
-.svg__k5WPs {
-  position: relative;
-  object-fit: cover;
-  width: auto;
-  height: 1em;
-}
-.text__dZ7S {
-  text-transform: uppercase;
-  padding-right: 0px;
-}
-.svg__r8LZo {
+.svg__pdTCr {
   position: relative;
   object-fit: cover;
   width: auto;

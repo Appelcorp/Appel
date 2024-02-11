@@ -214,15 +214,6 @@ function PlasmicETopStore__RenderFunc(props: {
                 >
                   {"eTop Pro 2"}
                 </PlasmicLink__>
-                <div
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.__wab_text,
-                    sty.text__aAi4N
-                  )}
-                >
-                  {"New"}
-                </div>
               </div>
               <div className={classNames(projectcss.all, sty.freeBox__r9YYs)}>
                 <EtopsvgIcon
@@ -243,15 +234,6 @@ function PlasmicETopStore__RenderFunc(props: {
                 >
                   {"eTop 2"}
                 </PlasmicLink__>
-                <div
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.__wab_text,
-                    sty.text__f7Pdv
-                  )}
-                >
-                  {"New"}
-                </div>
               </div>
               <div className={classNames(projectcss.all, sty.freeBox__rr0Zj)}>
                 <EtopLite2SvgIcon
@@ -270,8 +252,17 @@ function PlasmicETopStore__RenderFunc(props: {
                   href={`/shop/etop/etop-lite-3`}
                   platform={"nextjs"}
                 >
-                  {"eTop Lite 2"}
+                  {"eTop Lite 3"}
                 </PlasmicLink__>
+                <div
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.__wab_text,
+                    sty.text__jiVM
+                  )}
+                >
+                  {"New"}
+                </div>
               </div>
               <div className={classNames(projectcss.all, sty.freeBox__ebgi)}>
                 <EstageUltrasvgIcon
@@ -288,15 +279,6 @@ function PlasmicETopStore__RenderFunc(props: {
                 >
                   {"eStage Ultra"}
                 </div>
-                <div
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.__wab_text,
-                    sty.text__erqFq
-                  )}
-                >
-                  {"New"}
-                </div>
               </div>
               <div className={classNames(projectcss.all, sty.freeBox__vdRTx)}>
                 <EstagesvgIcon
@@ -312,15 +294,6 @@ function PlasmicETopStore__RenderFunc(props: {
                   )}
                 >
                   {"eStage"}
-                </div>
-                <div
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.__wab_text,
-                    sty.text___9Y6Xf
-                  )}
-                >
-                  {"New"}
                 </div>
               </div>
               <div className={classNames(projectcss.all, sty.freeBox___5D6Uc)}>
@@ -353,15 +326,6 @@ function PlasmicETopStore__RenderFunc(props: {
                   )}
                 >
                   {"eDisplay Max"}
-                </div>
-                <div
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.__wab_text,
-                    sty.text___7QHn
-                  )}
-                >
-                  {"New"}
                 </div>
               </div>
               <div className={classNames(projectcss.all, sty.freeBox__yzG2M)}>
@@ -401,15 +365,18 @@ function PlasmicETopStore__RenderFunc(props: {
                   }}
                 />
 
-                <div
+                <PlasmicLink__
                   className={classNames(
                     projectcss.all,
+                    projectcss.a,
                     projectcss.__wab_text,
-                    sty.text__gUv7Y
+                    sty.link__gUv7Y
                   )}
+                  component={Link}
+                  platform={"nextjs"}
                 >
                   {"AppOS Public"}
-                </div>
+                </PlasmicLink__>
                 <div
                   className={classNames(
                     projectcss.all,
@@ -430,24 +397,6 @@ function PlasmicETopStore__RenderFunc(props: {
                 className={classNames(projectcss.all, sty.freeBox__fxhR)}
               >
                 <Button
-                  className={classNames("__wab_instance", sty.button__dq26M)}
-                  color={"blue"}
-                  isDisabled={true}
-                  submitsForm={false}
-                >
-                  <div
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.__wab_text,
-                      sty.text__qy2Yl
-                    )}
-                  >
-                    {hasVariant(globalVariants, "screen", "mobile")
-                      ? "Buy Now"
-                      : "Learn More"}
-                  </div>
-                </Button>
-                <Button
                   className={classNames("__wab_instance", sty.button__actAh)}
                   color={"blue"}
                   isDisabled={true}
@@ -463,6 +412,24 @@ function PlasmicETopStore__RenderFunc(props: {
                     {hasVariant(globalVariants, "screen", "mobile")
                       ? "Buy Now"
                       : "DOWNLOAD"}
+                  </div>
+                </Button>
+                <Button
+                  className={classNames("__wab_instance", sty.button__dq26M)}
+                  color={"clear"}
+                  link={`/developer/appos/public`}
+                  submitsForm={false}
+                >
+                  <div
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text__qy2Yl
+                    )}
+                  >
+                    {hasVariant(globalVariants, "screen", "mobile")
+                      ? "Buy Now"
+                      : "Learn More"}
                   </div>
                 </Button>
               </Stack__>
@@ -518,7 +485,7 @@ function PlasmicETopStore__RenderFunc(props: {
                 <Button
                   className={classNames("__wab_instance", sty.button__ayI05)}
                   color={"blue"}
-                  link={`/shop/etop/etop-2`}
+                  link={`/shop/etop/etop-lite-3`}
                   submitsForm={true}
                 >
                   <div

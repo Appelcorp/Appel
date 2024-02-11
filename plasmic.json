@@ -972,6 +972,20 @@
           "scheme": "blackbox",
           "componentType": "page",
           "path": "/shop/etop/etop-lite-3"
+        },
+        {
+          "id": "KVz1UiCXjxfR",
+          "name": "ETopStore2",
+          "type": "managed",
+          "projectId": "wBRmoS7Qf8danpDnoXZLVz",
+          "renderModuleFilePath": "plasmic/appel_site/PlasmicETopStore2.tsx",
+          "importSpec": {
+            "modulePath": "../pages/developer/appos/public.tsx"
+          },
+          "cssFilePath": "plasmic/appel_site/PlasmicETopStore2.module.css",
+          "scheme": "blackbox",
+          "componentType": "page",
+          "path": "/developer/appos/public"
         }
       ],
       "icons": [
@@ -1976,6 +1990,41 @@
           "id": "pwQGQ8zYF3ED",
           "name": "charger2.png",
           "filePath": "../public/plasmic/appel_site/images/charger2Png.png"
+        },
+        {
+          "id": "iEW5ACKnBqY4",
+          "name": "twopcsha.png",
+          "filePath": "../public/plasmic/appel_site/images/twopcshapng.png"
+        },
+        {
+          "id": "ymzHos6Z_uPH",
+          "name": "twopcsha.png 2",
+          "filePath": "../public/plasmic/appel_site/images/twopcshapng2.png"
+        },
+        {
+          "id": "6C5Ly2Zi5l7h",
+          "name": "appelwebapps.png",
+          "filePath": "../public/plasmic/appel_site/images/appelwebappspng.png"
+        },
+        {
+          "id": "5pT1QrvafLjo",
+          "name": "appelwebapps.png 2",
+          "filePath": "../public/plasmic/appel_site/images/appelwebappspng2.png"
+        },
+        {
+          "id": "6U_a1jD935LP",
+          "name": "appelx2.png",
+          "filePath": "../public/plasmic/appel_site/images/appelx2Png.png"
+        },
+        {
+          "id": "hJJesWwqlNbw",
+          "name": "appelx3.png",
+          "filePath": "../public/plasmic/appel_site/images/appelx3Png.png"
+        },
+        {
+          "id": "wZ-eoxdB5K3D",
+          "name": "appelx3.png 2",
+          "filePath": "../public/plasmic/appel_site/images/appelx3Png2.png"
         }
       ],
       "indirect": false,
