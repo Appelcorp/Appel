@@ -425,7 +425,7 @@ function PlasmicEtoplite3__RenderFunc(props: {
                             sty.plus2
                           )}
                         >
-                          {"Navy"}
+                          {"Crimson"}
                         </div>
                       </Select__Option>
                     </Select>
