@@ -497,7 +497,8 @@ function PlasmicAppOsPublic__RenderFunc(props: {
               <Button2
                 className={classNames("__wab_instance", sty.button2__ansY0)}
                 color={"link"}
-                isDisabled={true}
+                link={"https://youtu.be/ZTVQ7WxYNME"}
+                target={true}
               >
                 <div
                   className={classNames(
