@@ -373,6 +373,7 @@ function PlasmicETopStore__RenderFunc(props: {
                     sty.link__gUv7Y
                   )}
                   component={Link}
+                  href={`/developer/appos/public`}
                   platform={"nextjs"}
                 >
                   {"AppOS Public"}

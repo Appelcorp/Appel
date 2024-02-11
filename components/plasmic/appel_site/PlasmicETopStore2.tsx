@@ -780,7 +780,7 @@ function PlasmicETopStore2__RenderFunc(props: {
                 sty.text__v2J1
               )}
             >
-              {"Coming late 2024."}
+              {"Coming late 2024.*"}
             </div>
             <div
               className={classNames(
@@ -790,6 +790,23 @@ function PlasmicETopStore2__RenderFunc(props: {
               )}
             >
               {"Trailer and event coming this month."}
+            </div>
+          </Stack__>
+          <Stack__
+            as={"div"}
+            hasGap={true}
+            className={classNames(projectcss.all, sty.freeBox__mkSEz)}
+          >
+            <div
+              className={classNames(
+                projectcss.all,
+                projectcss.__wab_text,
+                sty.text__hhVid
+              )}
+            >
+              {
+                "*Coming late 2024 for alpha testers, an official date for final release is unset."
+              }
             </div>
           </Stack__>
           <Footer
