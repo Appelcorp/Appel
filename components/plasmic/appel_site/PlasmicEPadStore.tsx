@@ -212,6 +212,15 @@ function PlasmicEPadStore__RenderFunc(props: {
                 >
                   {"ePad Pro"}
                 </PlasmicLink__>
+                <div
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.__wab_text,
+                    sty.text__jIpxI
+                  )}
+                >
+                  {"New"}
+                </div>
               </div>
               <div className={classNames(projectcss.all, sty.freeBox__asQJf)}>
                 <Appel11SvgIcon
@@ -232,6 +241,15 @@ function PlasmicEPadStore__RenderFunc(props: {
                 >
                   {"ePad"}
                 </PlasmicLink__>
+                <div
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.__wab_text,
+                    sty.text___4VIrN
+                  )}
+                >
+                  {"New"}
+                </div>
               </div>
               <div className={classNames(projectcss.all, sty.freeBox___2DAc)}>
                 <Appel12SvgIcon
@@ -599,7 +617,7 @@ function PlasmicEPadStore__RenderFunc(props: {
                     >
                       {hasVariant(globalVariants, "screen", "mobile")
                         ? "A Powerful Beast"
-                        : "Your New Laptop"}
+                        : "Fantasy Meets Reality"}
                     </div>
                   </div>
                 </div>
@@ -667,7 +685,7 @@ function PlasmicEPadStore__RenderFunc(props: {
                     >
                       {hasVariant(globalVariants, "screen", "mobile")
                         ? "Insanely Speedy"
-                        : "Insanely Speedy"}
+                        : "A Revolution in Computing"}
                     </div>
                   </div>
                 </div>

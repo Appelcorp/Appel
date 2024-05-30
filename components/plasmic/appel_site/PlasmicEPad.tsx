@@ -94,7 +94,6 @@ export type PlasmicEPad__OverridesType = {
   heade?: Flex__<typeof Heade>;
   link?: Flex__<"a"> & Partial<LinkProps>;
   columns?: Flex__<"div">;
-  h1?: Flex__<"h1">;
   select?: Flex__<typeof Select>;
   hello?: Flex__<"div">;
   plus?: Flex__<"div">;
@@ -304,12 +303,12 @@ function PlasmicEPad__RenderFunc(props: {
                     displayMaxWidth={"100%"}
                     displayMinHeight={"0"}
                     displayMinWidth={"0"}
-                    displayWidth={"206px"}
+                    displayWidth={"400px"}
                     loading={"lazy"}
                     src={{
-                      src: "/plasmic/appel_site/images/elpadBackpng.png",
-                      fullWidth: 4209,
-                      fullHeight: 5769,
+                      src: "/plasmic/appel_site/images/mainpicpng5.png",
+                      fullWidth: 1565,
+                      fullHeight: 1443,
                       aspectRatio: undefined
                     }}
                   />
@@ -319,18 +318,32 @@ function PlasmicEPad__RenderFunc(props: {
                   hasGap={true}
                   className={classNames(projectcss.all, sty.column__oh0Yy)}
                 >
-                  <h1
-                    data-plasmic-name={"h1"}
-                    data-plasmic-override={overrides.h1}
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.h1,
-                      projectcss.__wab_text,
-                      sty.h1
-                    )}
+                  <Stack__
+                    as={"div"}
+                    hasGap={true}
+                    className={classNames(projectcss.all, sty.freeBox__xxssx)}
                   >
-                    {"ePad"}
-                  </h1>
+                    <h1
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.h1,
+                        projectcss.__wab_text,
+                        sty.h1__oizEv
+                      )}
+                    >
+                      {"ePad"}
+                    </h1>
+                    <h1
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.h1,
+                        projectcss.__wab_text,
+                        sty.h1___756Ws
+                      )}
+                    >
+                      {"Gen 2"}
+                    </h1>
+                  </Stack__>
                   <div
                     className={classNames(
                       projectcss.all,
@@ -349,12 +362,13 @@ function PlasmicEPad__RenderFunc(props: {
                       data-plasmic-name={"select"}
                       data-plasmic-override={overrides.select}
                       className={classNames("__wab_instance", sty.select)}
+                      name={``}
                       onChange={(...eventArgs) => {
                         generateStateOnChangeProp($state, ["select", "value"])(
                           eventArgs[0]
                         );
                       }}
-                      placeholder={"Pick Model"}
+                      placeholder={"Pick Color"}
                       value={generateStateValueProp($state, [
                         "select",
                         "value"
@@ -376,7 +390,7 @@ function PlasmicEPad__RenderFunc(props: {
                             sty.hello
                           )}
                         >
-                          {"Pro"}
+                          {"Shine"}
                         </div>
                       </Select__Option>
                       <Select__Option
@@ -395,7 +409,7 @@ function PlasmicEPad__RenderFunc(props: {
                             sty.plus
                           )}
                         >
-                          {"Option 2"}
+                          {"Matte"}
                         </div>
                       </Select__Option>
                     </Select>
@@ -467,7 +481,7 @@ function PlasmicEPad__RenderFunc(props: {
                       displayWidth={"119px"}
                       loading={"lazy"}
                       src={{
-                        src: "/plasmic/appel_site/images/elpadBackpng.png",
+                        src: "/plasmic/appel_site/images/elpadGen2Backpng.png",
                         fullWidth: 4209,
                         fullHeight: 5769,
                         aspectRatio: undefined
@@ -548,7 +562,6 @@ const PlasmicDescendants = {
     "heade",
     "link",
     "columns",
-    "h1",
     "select",
     "hello",
     "plus",
@@ -557,8 +570,7 @@ const PlasmicDescendants = {
   ],
   heade: ["heade"],
   link: ["link"],
-  columns: ["columns", "h1", "select", "hello", "plus"],
-  h1: ["h1"],
+  columns: ["columns", "select", "hello", "plus"],
   select: ["select", "hello", "plus"],
   hello: ["hello"],
   plus: ["plus"],
@@ -573,7 +585,6 @@ type NodeDefaultElementType = {
   heade: typeof Heade;
   link: "a";
   columns: "div";
-  h1: "h1";
   select: typeof Select;
   hello: "div";
   plus: "div";
@@ -644,7 +655,6 @@ export const PlasmicEPad = Object.assign(
     heade: makeNodeComponent("heade"),
     link: makeNodeComponent("link"),
     columns: makeNodeComponent("columns"),
-    h1: makeNodeComponent("h1"),
     select: makeNodeComponent("select"),
     hello: makeNodeComponent("hello"),
     plus: makeNodeComponent("plus"),

@@ -153,6 +153,19 @@
   font-family: "Inter", sans-serif;
   min-width: 0;
 }
+.text__jIpxI {
+  width: 100%;
+  color: var(--token-GcwBAJtdG3Xn);
+  white-space: pre-wrap;
+  user-select: text;
+  flex-shrink: 1;
+  flex-grow: 0;
+  flex-basis: auto;
+  text-align: center;
+  font-family: "Inter", sans-serif;
+  font-size: 12px;
+  min-width: 0;
+}
 .freeBox__asQJf {
   display: flex;
   position: relative;
@@ -185,6 +198,19 @@
   flex-basis: auto;
   text-align: center;
   font-family: "Inter", sans-serif;
+  min-width: 0;
+}
+.text___4VIrN {
+  width: 100%;
+  color: var(--token-GcwBAJtdG3Xn);
+  white-space: pre-wrap;
+  user-select: text;
+  flex-shrink: 1;
+  flex-grow: 0;
+  flex-basis: auto;
+  text-align: center;
+  font-family: "Inter", sans-serif;
+  font-size: 12px;
   min-width: 0;
 }
 .freeBox___2DAc {
@@ -901,7 +927,7 @@
   width: 100%;
   height: 100%;
   max-width: 100%;
-  background: url("/plasmic/appel_site/images/epadpng2.png") left 50% bottom 107.71% / cover no-repeat,
+  background: url("/plasmic/appel_site/images/epad2Png.png") left 50% top 20% / cover no-repeat,
     var(--token-NEon4Y--Z);
   overflow: hidden;
   align-self: auto;
@@ -1101,7 +1127,7 @@
   width: 100%;
   height: 100%;
   max-width: 100%;
-  background: url("/plasmic/appel_site/images/epadpropng.png") left 50% bottom 101.73% / cover no-repeat,
+  background: url("/plasmic/appel_site/images/img0582Png.png") left 50% top 20% / cover no-repeat,
     var(--token-NEon4Y--Z);
   overflow: hidden;
   align-self: auto;

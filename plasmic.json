@@ -41,8 +41,7 @@
         }
       ],
       "splitsProviderFilePath": "",
-      "customFunctions": [],
-      "jsBundleThemes": []
+      "customFunctions": []
     },
     {
       "projectId": "caTPwKxj5ZrD9LQ7DMdK4Z",
@@ -100,8 +99,7 @@
         }
       ],
       "customFunctions": [],
-      "splitsProviderFilePath": "",
-      "jsBundleThemes": []
+      "splitsProviderFilePath": ""
     },
     {
       "projectId": "gLnoj82AzKVVT7qXiqAbHD",
@@ -167,8 +165,7 @@
         }
       ],
       "splitsProviderFilePath": "",
-      "customFunctions": [],
-      "jsBundleThemes": []
+      "customFunctions": []
     },
     {
       "projectId": "szjgMQpPpxhmkjnaBvZQJG",
@@ -190,8 +187,7 @@
         }
       ],
       "splitsProviderFilePath": "",
-      "customFunctions": [],
-      "jsBundleThemes": []
+      "customFunctions": []
     },
     {
       "projectId": "58GpZjZCWTaJ8AUhpCwt2K",
@@ -213,8 +209,7 @@
         }
       ],
       "splitsProviderFilePath": "",
-      "customFunctions": [],
-      "jsBundleThemes": []
+      "customFunctions": []
     },
     {
       "projectId": "5dGW8Awro3qq8Hh5MveXLP",
@@ -242,8 +237,7 @@
         }
       ],
       "splitsProviderFilePath": "",
-      "customFunctions": [],
-      "jsBundleThemes": []
+      "customFunctions": []
     },
     {
       "projectId": "84wxoth5npGrp6RRXPL88z",
@@ -271,8 +265,7 @@
         }
       ],
       "splitsProviderFilePath": "",
-      "customFunctions": [],
-      "jsBundleThemes": []
+      "customFunctions": []
     },
     {
       "projectId": "eiC1VCbma8t6iMexZerqLa",
@@ -294,8 +287,7 @@
         }
       ],
       "splitsProviderFilePath": "",
-      "customFunctions": [],
-      "jsBundleThemes": []
+      "customFunctions": []
     },
     {
       "projectId": "xp1p7dmg329XVLHyuEUxD2",
@@ -413,8 +405,7 @@
         }
       ],
       "splitsProviderFilePath": "",
-      "customFunctions": [],
-      "jsBundleThemes": []
+      "customFunctions": []
     },
     {
       "projectId": "seaQhLVS4bbjiGvJJrRwyL",
@@ -2060,6 +2051,41 @@
           "id": "wZ-eoxdB5K3D",
           "name": "appelx3.png 2",
           "filePath": "../public/plasmic/appel_site/images/appelx3Png2.png"
+        },
+        {
+          "id": "jG9knqzXNk-i",
+          "name": "epad2.png",
+          "filePath": "../public/plasmic/appel_site/images/epad2Png.png"
+        },
+        {
+          "id": "50J5WkyqpdTb",
+          "name": "mainpic.png 5",
+          "filePath": "../public/plasmic/appel_site/images/mainpicpng5.png"
+        },
+        {
+          "id": "WePN4RHh2OQq",
+          "name": "elpad (gen 2) back.png",
+          "filePath": "../public/plasmic/appel_site/images/elpadGen2Backpng.png"
+        },
+        {
+          "id": "IzYxp7q0pFKj",
+          "name": "epad2pro.png",
+          "filePath": "../public/plasmic/appel_site/images/epad2Propng.png"
+        },
+        {
+          "id": "y9-SOME1zMK8",
+          "name": "IMG_0582.PNG",
+          "filePath": "../public/plasmic/appel_site/images/img0582Png.png"
+        },
+        {
+          "id": "fSWib_xZ6xaQ",
+          "name": "IMG_0584.PNG",
+          "filePath": "../public/plasmic/appel_site/images/img0584Png.png"
+        },
+        {
+          "id": "XPBOgsbjx8Ll",
+          "name": "IMG_0585.PNG",
+          "filePath": "../public/plasmic/appel_site/images/img0585Png.png"
         }
       ],
       "indirect": false,
@@ -2479,8 +2505,7 @@
         }
       ],
       "customFunctions": [],
-      "splitsProviderFilePath": "",
-      "jsBundleThemes": []
+      "splitsProviderFilePath": ""
     }
   ],
   "globalVariants": {
@@ -2497,6 +2522,6 @@
   "nextjsConfig": {
     "pagesDir": "../pages"
   },
-  "cliVersion": "0.1.327",
-  "$schema": "https://unpkg.com/@plasmicapp/cli@0.1.327/dist/plasmic.schema.json"
+  "cliVersion": "0.1.330",
+  "$schema": "https://unpkg.com/@plasmicapp/cli@0.1.330/dist/plasmic.schema.json"
 }

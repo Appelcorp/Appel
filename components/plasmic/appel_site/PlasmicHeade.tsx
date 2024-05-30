@@ -86,6 +86,7 @@ export const PlasmicHeade__ArgProps = new Array<ArgPropType>();
 
 export type PlasmicHeade__OverridesType = {
   root?: Flex__<"div">;
+  link?: Flex__<"a"> & Partial<LinkProps>;
 };
 
 export interface DefaultHeadeProps {
@@ -459,6 +460,34 @@ function PlasmicHeade__RenderFunc(props: {
               </div>
             ) : null}
           </Stack__>
+          <div className={classNames(projectcss.all, sty.freeBox__v5Zv5)}>
+            <div
+              className={classNames(
+                projectcss.all,
+                projectcss.__wab_text,
+                sty.text__r4X6O
+              )}
+            >
+              {
+                "Get 20% to 50% off your next Appel Phone when trading in any iPhone.*"
+              }
+            </div>
+            <PlasmicLink__
+              data-plasmic-name={"link"}
+              data-plasmic-override={overrides.link}
+              className={classNames(
+                projectcss.all,
+                projectcss.a,
+                projectcss.__wab_text,
+                sty.link
+              )}
+              component={Link}
+              href={`/shop/appel`}
+              platform={"nextjs"}
+            >
+              {" Shop Appel >"}
+            </PlasmicLink__>
+          </div>
         </Stack__>
       </div>
     </div>
@@ -466,13 +495,15 @@ function PlasmicHeade__RenderFunc(props: {
 }
 
 const PlasmicDescendants = {
-  root: ["root"]
+  root: ["root", "link"],
+  link: ["link"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<T extends NodeNameType> =
   (typeof PlasmicDescendants)[T][number];
 type NodeDefaultElementType = {
   root: "div";
+  link: "a";
 };
 
 type ReservedPropsType = "variants" | "args" | "overrides";
@@ -535,6 +566,7 @@ export const PlasmicHeade = Object.assign(
   makeNodeComponent("root"),
   {
     // Helper components rendering sub-elements
+    link: makeNodeComponent("link"),
 
     // Metadata about props expected for PlasmicHeade
     internalVariantProps: PlasmicHeade__VariantProps,

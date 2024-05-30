@@ -94,10 +94,9 @@ export type PlasmicEPadPro__OverridesType = {
   heade?: Flex__<typeof Heade>;
   link?: Flex__<"a"> & Partial<LinkProps>;
   columns?: Flex__<"div">;
-  h1?: Flex__<"h1">;
-  select?: Flex__<typeof Select>;
-  hello?: Flex__<"div">;
-  plus?: Flex__<"div">;
+  select2?: Flex__<typeof Select>;
+  hello2?: Flex__<"div">;
+  plus2?: Flex__<"div">;
   h2?: Flex__<"h2">;
   footer?: Flex__<typeof Footer>;
 };
@@ -138,7 +137,7 @@ function PlasmicEPadPro__RenderFunc(props: {
   const stateSpecs: Parameters<typeof useDollarState>[0] = React.useMemo(
     () => [
       {
-        path: "select.value",
+        path: "select2.value",
         type: "private",
         variableType: "text",
         initFunc: ({ $props, $state, $queries, $ctx }) => undefined
@@ -293,21 +292,21 @@ function PlasmicEPadPro__RenderFunc(props: {
                 data-plasmic-override={overrides.columns}
                 className={classNames(projectcss.all, sty.columns)}
               >
-                <div className={classNames(projectcss.all, sty.column__h4Ru)}>
+                <div className={classNames(projectcss.all, sty.column__coXSj)}>
                   <PlasmicImg__
                     alt={""}
-                    className={classNames(sty.img__qjqY6)}
+                    className={classNames(sty.img___4NIng)}
                     displayHeight={"auto"}
                     displayMaxHeight={"none"}
                     displayMaxWidth={"100%"}
                     displayMinHeight={"0"}
                     displayMinWidth={"0"}
-                    displayWidth={"206px"}
+                    displayWidth={"400px"}
                     loading={"lazy"}
                     src={{
-                      src: "/plasmic/appel_site/images/casepng.png",
-                      fullWidth: 1013,
-                      fullHeight: 1403,
+                      src: "/plasmic/appel_site/images/img0584Png.png",
+                      fullWidth: 6257,
+                      fullHeight: 5769,
                       aspectRatio: undefined
                     }}
                   />
@@ -315,92 +314,107 @@ function PlasmicEPadPro__RenderFunc(props: {
                 <Stack__
                   as={"div"}
                   hasGap={true}
-                  className={classNames(projectcss.all, sty.column__bKhnk)}
+                  className={classNames(projectcss.all, sty.column__zhTEt)}
                 >
-                  <h1
-                    data-plasmic-name={"h1"}
-                    data-plasmic-override={overrides.h1}
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.h1,
-                      projectcss.__wab_text,
-                      sty.h1
-                    )}
+                  <Stack__
+                    as={"div"}
+                    hasGap={true}
+                    className={classNames(projectcss.all, sty.freeBox__gVAp)}
                   >
-                    {"ePad Pro"}
-                  </h1>
+                    <h1
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.h1,
+                        projectcss.__wab_text,
+                        sty.h1__xYMzV
+                      )}
+                    >
+                      {"ePad Pro"}
+                    </h1>
+                    <h1
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.h1,
+                        projectcss.__wab_text,
+                        sty.h1__zjrpP
+                      )}
+                    >
+                      {"Gen 2"}
+                    </h1>
+                  </Stack__>
                   <div
                     className={classNames(
                       projectcss.all,
                       projectcss.__wab_text,
-                      sty.text__xGuNf
+                      sty.text__yj1Jc
                     )}
                   >
-                    {"From $699 or\n $29.13/mo for 24 mo."}
+                    {"From $999 or\n $41.63/mo for 24 mo."}
                   </div>
                   <Stack__
                     as={"div"}
                     hasGap={true}
-                    className={classNames(projectcss.all, sty.freeBox__oste)}
+                    className={classNames(projectcss.all, sty.freeBox__gHOdk)}
                   >
                     <Select
-                      data-plasmic-name={"select"}
-                      data-plasmic-override={overrides.select}
-                      className={classNames("__wab_instance", sty.select)}
+                      data-plasmic-name={"select2"}
+                      data-plasmic-override={overrides.select2}
+                      className={classNames("__wab_instance", sty.select2)}
+                      name={``}
                       onChange={(...eventArgs) => {
-                        generateStateOnChangeProp($state, ["select", "value"])(
+                        generateStateOnChangeProp($state, ["select2", "value"])(
                           eventArgs[0]
                         );
                       }}
-                      placeholder={"Pick Model"}
+                      placeholder={"Pick Color"}
                       value={generateStateValueProp($state, [
-                        "select",
+                        "select2",
                         "value"
                       ])}
                     >
                       <Select__Option
                         className={classNames(
                           "__wab_instance",
-                          sty.option___8Ivr5
+                          sty.option__hColG
                         )}
                         value={"value1"}
                       >
                         <div
-                          data-plasmic-name={"hello"}
-                          data-plasmic-override={overrides.hello}
+                          data-plasmic-name={"hello2"}
+                          data-plasmic-override={overrides.hello2}
                           className={classNames(
                             projectcss.all,
                             projectcss.__wab_text,
-                            sty.hello
+                            sty.hello2
                           )}
                         >
-                          {"Pro"}
+                          {"Shine"}
                         </div>
                       </Select__Option>
                       <Select__Option
                         className={classNames(
                           "__wab_instance",
-                          sty.option__gGg2Z
+                          sty.option__r7JSq
                         )}
                         value={"value2"}
                       >
                         <div
-                          data-plasmic-name={"plus"}
-                          data-plasmic-override={overrides.plus}
+                          data-plasmic-name={"plus2"}
+                          data-plasmic-override={overrides.plus2}
                           className={classNames(
                             projectcss.all,
                             projectcss.__wab_text,
-                            sty.plus
+                            sty.plus2
                           )}
                         >
-                          {"Option 2"}
+                          {"Matte"}
                         </div>
                       </Select__Option>
                     </Select>
                     <Button
                       className={classNames(
                         "__wab_instance",
-                        sty.button__f1PCw
+                        sty.button__npTte
                       )}
                       submitsForm={true}
                     >
@@ -467,9 +481,9 @@ function PlasmicEPadPro__RenderFunc(props: {
                       displayWidth={"119px"}
                       loading={"lazy"}
                       src={{
-                        src: "/plasmic/appel_site/images/casepng.png",
-                        fullWidth: 1013,
-                        fullHeight: 1403,
+                        src: "/plasmic/appel_site/images/img0585Png.png",
+                        fullWidth: 4209,
+                        fullHeight: 5769,
                         aspectRatio: undefined
                       }}
                     />
@@ -551,20 +565,18 @@ const PlasmicDescendants = {
     "heade",
     "link",
     "columns",
-    "h1",
-    "select",
-    "hello",
-    "plus",
+    "select2",
+    "hello2",
+    "plus2",
     "h2",
     "footer"
   ],
   heade: ["heade"],
   link: ["link"],
-  columns: ["columns", "h1", "select", "hello", "plus"],
-  h1: ["h1"],
-  select: ["select", "hello", "plus"],
-  hello: ["hello"],
-  plus: ["plus"],
+  columns: ["columns", "select2", "hello2", "plus2"],
+  select2: ["select2", "hello2", "plus2"],
+  hello2: ["hello2"],
+  plus2: ["plus2"],
   h2: ["h2"],
   footer: ["footer"]
 } as const;
@@ -576,10 +588,9 @@ type NodeDefaultElementType = {
   heade: typeof Heade;
   link: "a";
   columns: "div";
-  h1: "h1";
-  select: typeof Select;
-  hello: "div";
-  plus: "div";
+  select2: typeof Select;
+  hello2: "div";
+  plus2: "div";
   h2: "h2";
   footer: typeof Footer;
 };
@@ -647,10 +658,9 @@ export const PlasmicEPadPro = Object.assign(
     heade: makeNodeComponent("heade"),
     link: makeNodeComponent("link"),
     columns: makeNodeComponent("columns"),
-    h1: makeNodeComponent("h1"),
-    select: makeNodeComponent("select"),
-    hello: makeNodeComponent("hello"),
-    plus: makeNodeComponent("plus"),
+    select2: makeNodeComponent("select2"),
+    hello2: makeNodeComponent("hello2"),
+    plus2: makeNodeComponent("plus2"),
     h2: makeNodeComponent("h2"),
     footer: makeNodeComponent("footer"),
 

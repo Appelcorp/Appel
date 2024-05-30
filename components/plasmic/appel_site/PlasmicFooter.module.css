@@ -7,6 +7,17 @@
   background: var(--token-dzXZ6pAO5);
   min-width: 0;
 }
+.text__zBgKz {
+  position: relative;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  text-align: center;
+  color: #ffffff;
+  font-size: 10px;
+  min-width: 0;
+  padding: 8px;
+}
 .columns {
   display: flex;
   position: relative;
@@ -20,6 +31,7 @@
   align-self: center;
   flex-shrink: 1;
   min-width: 0;
+  --plsmc-rc-col-gap: 0px;
   padding: 92px 24px;
 }
 .columns > :global(.__wab_flex-container) {
@@ -41,9 +53,6 @@
   > picture
   > img {
   margin-left: 20px;
-}
-.columns {
-  --plsmc-rc-col-gap: 0px;
 }
 .columns > :global(.__wab_flex-container) > :nth-child(3n + 1) {
   width: calc((100% - 3 * var(--plsmc-rc-col-gap, 0px)) * 6 / 12);

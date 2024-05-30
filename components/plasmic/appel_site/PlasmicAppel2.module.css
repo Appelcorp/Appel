@@ -292,9 +292,6 @@
   padding: 0px;
 }
 .columns {
-  --plsmc-rc-col-gap: 0px;
-}
-.columns {
   display: flex;
   position: relative;
   width: 100%;
@@ -304,6 +301,7 @@
   flex-direction: row;
   flex-wrap: nowrap;
   min-width: 0;
+  --plsmc-rc-col-gap: 0px;
   padding: 0px;
 }
 .columns > :nth-child(2n + 1) {

@@ -143,6 +143,15 @@ function PlasmicFooter__RenderFunc(props: {
         sty.root
       )}
     >
+      <div
+        className={classNames(
+          projectcss.all,
+          projectcss.__wab_text,
+          sty.text__zBgKz
+        )}
+      >
+        {"*Approved iPhones are iPhone 8 and later."}
+      </div>
       <Stack__
         as={"div"}
         data-plasmic-name={"columns"}
