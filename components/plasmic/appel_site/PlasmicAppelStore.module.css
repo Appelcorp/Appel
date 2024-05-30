@@ -500,19 +500,6 @@
   font-family: "Inter", sans-serif;
   min-width: 0;
 }
-.text__wkHtm {
-  width: 100%;
-  color: var(--token-GcwBAJtdG3Xn);
-  white-space: pre-wrap;
-  user-select: text;
-  flex-shrink: 1;
-  flex-grow: 0;
-  flex-basis: auto;
-  text-align: center;
-  font-family: "Inter", sans-serif;
-  font-size: 12px;
-  min-width: 0;
-}
 .freeBox__vdRy2 {
   display: flex;
   flex-direction: row;

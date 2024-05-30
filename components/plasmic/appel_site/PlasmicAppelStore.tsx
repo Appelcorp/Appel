@@ -405,15 +405,6 @@ function PlasmicAppelStore__RenderFunc(props: {
                 >
                   {"eOS 15"}
                 </div>
-                <div
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.__wab_text,
-                    sty.text__wkHtm
-                  )}
-                >
-                  {"Preview"}
-                </div>
               </div>
             </Stack__>
           </Stack__>

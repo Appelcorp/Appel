@@ -343,15 +343,6 @@ function PlasmicEPadStore__RenderFunc(props: {
                 >
                   {"eOS 15"}
                 </div>
-                <div
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.__wab_text,
-                    sty.text__zx8T
-                  )}
-                >
-                  {"Preview"}
-                </div>
               </div>
             </Stack__>
           </Stack__>
