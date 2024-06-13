@@ -68,7 +68,7 @@ import plasmic_antd_5_hostless_css from "../antd_5_hostless/plasmic_antd_5_hostl
 import projectcss from "./plasmic_appel_site.module.css"; // plasmic-import: wBRmoS7Qf8danpDnoXZLVz/projectcss
 import sty from "./PlasmicFooter.module.css"; // plasmic-import: O8jRJZzkmVNu/css
 
-import TwitterXSeeklogocom4Svg2Icon from "./icons/PlasmicIcon__TwitterXSeeklogocom4Svg2"; // plasmic-import: AXYHtippGlW3/icon
+import LocationArrowIcon from "./icons/PlasmicIcon__LocationArrow"; // plasmic-import: DXQzI1V2eRK4m/icon
 import IconIcon from "./icons/PlasmicIcon__Icon"; // plasmic-import: zVudMwrt8UrDS/icon
 
 createPlasmicElementProxy;
@@ -199,11 +199,13 @@ function PlasmicFooter__RenderFunc(props: {
                     sty.link___2WDq6
                   )}
                   component={Link}
-                  href={"https://www.twitter.com/appel_us"}
+                  href={
+                    "https://launch.glide.page/dl/home/s/17171d/r/q4RKiQK2QNKqCebwd2od3g"
+                  }
                   platform={"nextjs"}
                   target={undefined}
                 >
-                  <TwitterXSeeklogocom4Svg2Icon
+                  <LocationArrowIcon
                     className={classNames(projectcss.all, sty.svg__rw3Lg)}
                     role={"img"}
                   />
@@ -296,10 +298,12 @@ function PlasmicFooter__RenderFunc(props: {
                     sty.link__stTL
                   )}
                   component={Link}
-                  href={"https://www.twitter.com/appel_us"}
+                  href={
+                    "https://launch.glide.page/dl/home/s/17171d/r/q4RKiQK2QNKqCebwd2od3g"
+                  }
                   platform={"nextjs"}
                 >
-                  {"X"}
+                  {"Launch"}
                 </PlasmicLink__>
               </Stack__>
             </Stack__>

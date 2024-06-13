@@ -263,6 +263,7 @@
   left: auto;
   top: auto;
   flex-direction: column;
+  padding-left: 0px;
   min-width: 0;
 }
 .freeBox__w9Aj5 > :global(.__wab_flex-container) {
