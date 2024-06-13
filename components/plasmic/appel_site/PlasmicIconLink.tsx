@@ -126,8 +126,6 @@ function PlasmicIconLink__RenderFunc(props: {
   const refsRef = React.useRef({});
   const $refs = refsRef.current;
 
-  const currentUser = useCurrentUser?.() || {};
-
   return (
     <PlasmicLink__
       data-plasmic-name={"root"}

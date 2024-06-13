@@ -530,6 +530,13 @@
   width: auto;
   height: 1em;
 }
+.text__yLyte {
+  position: relative;
+  width: 100%;
+  height: auto;
+  max-width: 800px;
+  min-width: 0;
+}
 .freeBox__lIlNc {
   display: flex;
   flex-direction: column;

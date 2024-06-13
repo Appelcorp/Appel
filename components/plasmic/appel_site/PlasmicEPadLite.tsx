@@ -133,8 +133,6 @@ function PlasmicEPadLite__RenderFunc(props: {
   const refsRef = React.useRef({});
   const $refs = refsRef.current;
 
-  const currentUser = useCurrentUser?.() || {};
-
   const stateSpecs: Parameters<typeof useDollarState>[0] = React.useMemo(
     () => [
       {
@@ -406,6 +404,17 @@ function PlasmicEPadLite__RenderFunc(props: {
                       {"Buy"}
                     </Button>
                   </Stack__>
+                  <div
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text__yLyte
+                    )}
+                  >
+                    {
+                      "We  are discontinuing the Lite models so we have limited stock of them."
+                    }
+                  </div>
                 </Stack__>
               </div>
             </div>

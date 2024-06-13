@@ -133,8 +133,6 @@ function PlasmicAppelStore__RenderFunc(props: {
   const refsRef = React.useRef({});
   const $refs = refsRef.current;
 
-  const currentUser = useCurrentUser?.() || {};
-
   const globalVariants = ensureGlobalVariants({
     screen: useScreenVariantseH80Ck18IRB()
   });
@@ -295,7 +293,7 @@ function PlasmicAppelStore__RenderFunc(props: {
                     sty.link__ldjTl
                   )}
                   component={Link}
-                  href={`/shop/appel/appel-2-lite`}
+                  href={`/discontinue1923901230`}
                   platform={"nextjs"}
                 >
                   {"Appel 2 Lite"}
