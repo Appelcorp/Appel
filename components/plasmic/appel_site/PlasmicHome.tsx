@@ -94,7 +94,6 @@ export type PlasmicHome__OverridesType = {
   heade?: Flex__<typeof Heade>;
   navigationBar?: Flex__<typeof NavigationBar>;
   link?: Flex__<"a"> & Partial<LinkProps>;
-  reveal?: Flex__<typeof Reveal>;
   columns?: Flex__<"div">;
   footer?: Flex__<typeof Footer>;
 };
@@ -352,65 +351,14 @@ function PlasmicHome__RenderFunc(props: {
             >
               <div className={classNames(projectcss.all, sty.freeBox__zIgH)}>
                 <Reveal
-                  data-plasmic-name={"reveal"}
-                  data-plasmic-override={overrides.reveal}
-                  className={classNames("__wab_instance", sty.reveal)}
+                  className={classNames("__wab_instance", sty.reveal__jGGcI)}
                   duration={2000}
                   effect={"fade"}
                   triggerOnce={true}
                 >
                   <div
                     className={classNames(projectcss.all, sty.freeBox__pzsY1)}
-                  >
-                    <Stack__
-                      as={"div"}
-                      hasGap={true}
-                      className={classNames(
-                        projectcss.all,
-                        sty.freeBox___2FuG6
-                      )}
-                    >
-                      <Button
-                        className={classNames(
-                          "__wab_instance",
-                          sty.button__mZcEw
-                        )}
-                        isDisabled={true}
-                        submitsForm={false}
-                      >
-                        <div
-                          className={classNames(
-                            projectcss.all,
-                            projectcss.__wab_text,
-                            sty.text__dZ7S
-                          )}
-                        >
-                          {"DOWNLOAD"}
-                        </div>
-                      </Button>
-                      <Button
-                        className={classNames(
-                          "__wab_instance",
-                          sty.button___7EAnR
-                        )}
-                        color={"clear"}
-                        link={`/developer/appos/public`}
-                        submitsForm={true}
-                      >
-                        <div
-                          className={classNames(
-                            projectcss.all,
-                            projectcss.__wab_text,
-                            sty.text__j8Qxu
-                          )}
-                        >
-                          {hasVariant(globalVariants, "screen", "mobile")
-                            ? "Buy Now"
-                            : "Learn More"}
-                        </div>
-                      </Button>
-                    </Stack__>
-                  </div>
+                  />
                 </Reveal>
               </div>
             </Stack__>
@@ -429,260 +377,284 @@ function PlasmicHome__RenderFunc(props: {
               </div>
             </Stack__>
             <div className={classNames(projectcss.all, sty.freeBox__duoSr)}>
-              <Stack__
-                as={"div"}
-                data-plasmic-name={"columns"}
-                data-plasmic-override={overrides.columns}
-                hasGap={true}
-                className={classNames(projectcss.all, sty.columns)}
+              <Reveal
+                big={true}
+                className={classNames("__wab_instance", sty.reveal__p9EU)}
+                damping={2}
+                direction={"up"}
+                duration={3000}
+                triggerOnce={true}
               >
-                <div className={classNames(projectcss.all, sty.column__xZ3Bi)}>
+                <Stack__
+                  as={"div"}
+                  data-plasmic-name={"columns"}
+                  data-plasmic-override={overrides.columns}
+                  hasGap={true}
+                  className={classNames(projectcss.all, sty.columns)}
+                >
                   <div
-                    className={classNames(projectcss.all, sty.freeBox__vrobv)}
+                    className={classNames(projectcss.all, sty.column__xZ3Bi)}
                   >
-                    <PlasmicImg__
-                      alt={""}
-                      className={classNames(sty.img__qVNb)}
-                      displayHeight={"auto"}
-                      displayMaxHeight={"none"}
-                      displayMaxWidth={"100%"}
-                      displayMinHeight={"0"}
-                      displayMinWidth={"0"}
-                      displayWidth={"80px"}
-                      loading={"lazy"}
-                      src={{
-                        src: "/plasmic/appel_site/images/mainpicpropng2.png",
-                        fullWidth: 1196,
-                        fullHeight: 1614,
-                        aspectRatio: undefined
-                      }}
-                    />
-                  </div>
-                  <div
-                    className={classNames(projectcss.all, sty.freeBox__eApPv)}
-                  >
-                    <h3
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.h3,
-                        projectcss.__wab_text,
-                        sty.h3__lmoJt
-                      )}
-                    >
-                      {"Appel 3 Pro"}
-                    </h3>
                     <div
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.__wab_text,
-                        sty.text__jvEGy
-                      )}
+                      className={classNames(projectcss.all, sty.freeBox__vrobv)}
                     >
-                      {"Luxury Meets Precision"}
+                      <PlasmicImg__
+                        alt={""}
+                        className={classNames(sty.img__qVNb)}
+                        displayHeight={"auto"}
+                        displayMaxHeight={"none"}
+                        displayMaxWidth={"100%"}
+                        displayMinHeight={"0"}
+                        displayMinWidth={"0"}
+                        displayWidth={"80px"}
+                        loading={"lazy"}
+                        src={{
+                          src: "/plasmic/appel_site/images/mainpicpropng2.png",
+                          fullWidth: 1196,
+                          fullHeight: 1614,
+                          aspectRatio: undefined
+                        }}
+                      />
                     </div>
-                    <Button
-                      className={classNames("__wab_instance", sty.button__bV5F)}
-                      link={`/shop/appel/appel-3-pro`}
-                      submitsForm={true}
+                    <div
+                      className={classNames(projectcss.all, sty.freeBox__eApPv)}
                     >
+                      <h3
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.h3,
+                          projectcss.__wab_text,
+                          sty.h3__lmoJt
+                        )}
+                      >
+                        {"Appel 3 Pro"}
+                      </h3>
                       <div
                         className={classNames(
                           projectcss.all,
                           projectcss.__wab_text,
-                          sty.text__tiDiQ
+                          sty.text__jvEGy
                         )}
                       >
-                        {"BUY NOW"}
+                        {"Luxury Meets Precision"}
                       </div>
-                    </Button>
-                  </div>
-                </div>
-                <div className={classNames(projectcss.all, sty.column__l5B7)}>
-                  <div
-                    className={classNames(projectcss.all, sty.freeBox__uQvef)}
-                  >
-                    <PlasmicImg__
-                      alt={""}
-                      className={classNames(sty.img__a8BAe)}
-                      displayHeight={"auto"}
-                      displayMaxHeight={"none"}
-                      displayMaxWidth={"100%"}
-                      displayMinHeight={"0"}
-                      displayMinWidth={"0"}
-                      displayWidth={"176px"}
-                      loading={"lazy"}
-                      src={{
-                        src: "/plasmic/appel_site/images/epadpng.png",
-                        fullWidth: 6800,
-                        fullHeight: 6529,
-                        aspectRatio: undefined
-                      }}
-                    />
-                  </div>
-                  <div
-                    className={classNames(projectcss.all, sty.freeBox__apg8V)}
-                  >
-                    <h3
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.h3,
-                        projectcss.__wab_text,
-                        sty.h3__poG1
-                      )}
-                    >
-                      {"ePad"}
-                    </h3>
-                    <div
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.__wab_text,
-                        sty.text___4IxgT
-                      )}
-                    >
-                      {"Your New Laptop."}
+                      <Button
+                        className={classNames(
+                          "__wab_instance",
+                          sty.button__bV5F
+                        )}
+                        link={`/shop/appel/appel-3-pro`}
+                        submitsForm={true}
+                      >
+                        <div
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.__wab_text,
+                            sty.text__tiDiQ
+                          )}
+                        >
+                          {"BUY NOW"}
+                        </div>
+                      </Button>
                     </div>
-                    <Button
-                      className={classNames(
-                        "__wab_instance",
-                        sty.button__bGgzS
-                      )}
-                      link={`/shop/epad/epad`}
-                      submitsForm={true}
+                  </div>
+                  <div className={classNames(projectcss.all, sty.column__l5B7)}>
+                    <div
+                      className={classNames(projectcss.all, sty.freeBox__uQvef)}
                     >
+                      <PlasmicImg__
+                        alt={""}
+                        className={classNames(sty.img__a8BAe)}
+                        displayHeight={"auto"}
+                        displayMaxHeight={"none"}
+                        displayMaxWidth={"100%"}
+                        displayMinHeight={"0"}
+                        displayMinWidth={"0"}
+                        displayWidth={"176px"}
+                        loading={"lazy"}
+                        src={{
+                          src: "/plasmic/appel_site/images/mainpicpng5.png",
+                          fullWidth: 1565,
+                          fullHeight: 1443,
+                          aspectRatio: undefined
+                        }}
+                      />
+                    </div>
+                    <div
+                      className={classNames(projectcss.all, sty.freeBox__apg8V)}
+                    >
+                      <h3
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.h3,
+                          projectcss.__wab_text,
+                          sty.h3__poG1
+                        )}
+                      >
+                        {"ePad"}
+                      </h3>
                       <div
                         className={classNames(
                           projectcss.all,
                           projectcss.__wab_text,
-                          sty.text__eblEm
+                          sty.text___4IxgT
                         )}
                       >
-                        {"Buy Now"}
+                        {"Fantasy Meets Reality"}
                       </div>
-                    </Button>
-                  </div>
-                </div>
-                <div className={classNames(projectcss.all, sty.column__li1Jk)}>
-                  <div
-                    className={classNames(projectcss.all, sty.freeBox__s8BtF)}
-                  >
-                    <PlasmicImg__
-                      alt={""}
-                      className={classNames(sty.img___4KChV)}
-                      displayHeight={"auto"}
-                      displayMaxHeight={"none"}
-                      displayMaxWidth={"100%"}
-                      displayMinHeight={"0"}
-                      displayMinWidth={"0"}
-                      displayWidth={"378px"}
-                      loading={"lazy"}
-                      src={{
-                        src: "/plasmic/appel_site/images/etopLite2Png.png",
-                        fullWidth: 4234,
-                        fullHeight: 2480,
-                        aspectRatio: undefined
-                      }}
-                    />
-                  </div>
-                  <div
-                    className={classNames(projectcss.all, sty.freeBox__isg2E)}
-                  >
-                    <h3
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.h3,
-                        projectcss.__wab_text,
-                        sty.h3__taKy
-                      )}
-                    >
-                      {"eTop Lite 2"}
-                    </h3>
-                    <div
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.__wab_text,
-                        sty.text___2Wgk
-                      )}
-                    >
-                      {"Snappy and Sleek"}
+                      <Button
+                        className={classNames(
+                          "__wab_instance",
+                          sty.button__bGgzS
+                        )}
+                        link={`/shop/epad/epad`}
+                        submitsForm={true}
+                      >
+                        <div
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.__wab_text,
+                            sty.text__eblEm
+                          )}
+                        >
+                          {"Buy Now"}
+                        </div>
+                      </Button>
                     </div>
-                    <Button
-                      className={classNames("__wab_instance", sty.button__dwDn)}
-                      link={`/shop/etop/etop-lite-3`}
-                      submitsForm={true}
+                  </div>
+                  <div
+                    className={classNames(projectcss.all, sty.column__li1Jk)}
+                  >
+                    <div
+                      className={classNames(projectcss.all, sty.freeBox__s8BtF)}
                     >
+                      <PlasmicImg__
+                        alt={""}
+                        className={classNames(sty.img___4KChV)}
+                        displayHeight={"auto"}
+                        displayMaxHeight={"none"}
+                        displayMaxWidth={"100%"}
+                        displayMinHeight={"0"}
+                        displayMinWidth={"0"}
+                        displayWidth={"378px"}
+                        loading={"lazy"}
+                        src={{
+                          src: "/plasmic/appel_site/images/etopLite2Png.png",
+                          fullWidth: 4234,
+                          fullHeight: 2480,
+                          aspectRatio: undefined
+                        }}
+                      />
+                    </div>
+                    <div
+                      className={classNames(projectcss.all, sty.freeBox__isg2E)}
+                    >
+                      <h3
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.h3,
+                          projectcss.__wab_text,
+                          sty.h3__taKy
+                        )}
+                      >
+                        {"eTop Lite 2"}
+                      </h3>
                       <div
                         className={classNames(
                           projectcss.all,
                           projectcss.__wab_text,
-                          sty.text__b713P
+                          sty.text___2Wgk
                         )}
                       >
-                        {"PRE ORDER"}
+                        {"Snappy and Sleek"}
                       </div>
-                    </Button>
-                  </div>
-                </div>
-                <div className={classNames(projectcss.all, sty.column__wbSkg)}>
-                  <div
-                    className={classNames(projectcss.all, sty.freeBox__tmZq2)}
-                  >
-                    <PlasmicImg__
-                      alt={""}
-                      className={classNames(sty.img__uihOq)}
-                      displayHeight={"auto"}
-                      displayMaxHeight={"none"}
-                      displayMaxWidth={"100%"}
-                      displayMinHeight={"0"}
-                      displayMinWidth={"0"}
-                      displayWidth={"201px"}
-                      loading={"lazy"}
-                      src={{
-                        src: "/plasmic/appel_site/images/pod11Png.png",
-                        fullWidth: 299,
-                        fullHeight: 314,
-                        aspectRatio: undefined
-                      }}
-                    />
-                  </div>
-                  <div
-                    className={classNames(projectcss.all, sty.freeBox__qTtm6)}
-                  >
-                    <h3
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.h3,
-                        projectcss.__wab_text,
-                        sty.h3___7JqWl
-                      )}
-                    >
-                      {"eMax"}
-                    </h3>
-                    <div
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.__wab_text,
-                        sty.text__qRcr7
-                      )}
-                    >
-                      {"The Worlds Best Audio."}
+                      <Button
+                        className={classNames(
+                          "__wab_instance",
+                          sty.button__dwDn
+                        )}
+                        link={`/shop/etop/etop-lite-3`}
+                        submitsForm={true}
+                      >
+                        <div
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.__wab_text,
+                            sty.text__b713P
+                          )}
+                        >
+                          {"PRE ORDER"}
+                        </div>
+                      </Button>
                     </div>
-                    <Button
-                      className={classNames("__wab_instance", sty.button__c1Wm)}
-                      submitsForm={true}
+                  </div>
+                  <div
+                    className={classNames(projectcss.all, sty.column__wbSkg)}
+                  >
+                    <div
+                      className={classNames(projectcss.all, sty.freeBox__tmZq2)}
                     >
+                      <PlasmicImg__
+                        alt={""}
+                        className={classNames(sty.img__uihOq)}
+                        displayHeight={"auto"}
+                        displayMaxHeight={"none"}
+                        displayMaxWidth={"100%"}
+                        displayMinHeight={"0"}
+                        displayMinWidth={"0"}
+                        displayWidth={"201px"}
+                        loading={"lazy"}
+                        src={{
+                          src: "/plasmic/appel_site/images/pod11Png.png",
+                          fullWidth: 299,
+                          fullHeight: 314,
+                          aspectRatio: undefined
+                        }}
+                      />
+                    </div>
+                    <div
+                      className={classNames(projectcss.all, sty.freeBox__qTtm6)}
+                    >
+                      <h3
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.h3,
+                          projectcss.__wab_text,
+                          sty.h3___7JqWl
+                        )}
+                      >
+                        {"eMax"}
+                      </h3>
                       <div
                         className={classNames(
                           projectcss.all,
                           projectcss.__wab_text,
-                          sty.text__eGhaQ
+                          sty.text__qRcr7
                         )}
                       >
-                        {"Buy Now"}
+                        {"The Worlds Best Audio."}
                       </div>
-                    </Button>
+                      <Button
+                        className={classNames(
+                          "__wab_instance",
+                          sty.button__c1Wm
+                        )}
+                        submitsForm={true}
+                      >
+                        <div
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.__wab_text,
+                            sty.text__eGhaQ
+                          )}
+                        >
+                          {"Buy Now"}
+                        </div>
+                      </Button>
+                    </div>
                   </div>
-                </div>
-              </Stack__>
+                </Stack__>
+              </Reveal>
             </div>
             <Footer
               data-plasmic-name={"footer"}
@@ -708,19 +680,10 @@ function PlasmicHome__RenderFunc(props: {
 }
 
 const PlasmicDescendants = {
-  root: [
-    "root",
-    "heade",
-    "navigationBar",
-    "link",
-    "reveal",
-    "columns",
-    "footer"
-  ],
+  root: ["root", "heade", "navigationBar", "link", "columns", "footer"],
   heade: ["heade"],
   navigationBar: ["navigationBar", "link"],
   link: ["link"],
-  reveal: ["reveal"],
   columns: ["columns"],
   footer: ["footer"]
 } as const;
@@ -732,7 +695,6 @@ type NodeDefaultElementType = {
   heade: typeof Heade;
   navigationBar: typeof NavigationBar;
   link: "a";
-  reveal: typeof Reveal;
   columns: "div";
   footer: typeof Footer;
 };
@@ -800,7 +762,6 @@ export const PlasmicHome = Object.assign(
     heade: makeNodeComponent("heade"),
     navigationBar: makeNodeComponent("navigationBar"),
     link: makeNodeComponent("link"),
-    reveal: makeNodeComponent("reveal"),
     columns: makeNodeComponent("columns"),
     footer: makeNodeComponent("footer"),
 

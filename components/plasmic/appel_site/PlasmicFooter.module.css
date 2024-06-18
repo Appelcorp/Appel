@@ -4,8 +4,11 @@
   height: auto;
   position: relative;
   flex-direction: column-reverse;
-  background: var(--token-dzXZ6pAO5);
+  background: #00000080;
+  backdrop-filter: blur(20px);
   min-width: 0;
+  -webkit-backdrop-filter: blur(20px);
+  padding: 0px;
 }
 .text__zBgKz {
   position: relative;
@@ -32,7 +35,7 @@
   flex-shrink: 1;
   min-width: 0;
   --plsmc-rc-col-gap: 0px;
-  padding: 92px 24px;
+  padding: 24px 24px 92px;
 }
 .columns > :global(.__wab_flex-container) {
   flex-direction: row;
