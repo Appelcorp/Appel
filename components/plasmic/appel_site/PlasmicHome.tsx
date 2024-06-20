@@ -539,9 +539,9 @@ function PlasmicHome__RenderFunc(props: {
                         displayWidth={"378px"}
                         loading={"lazy"}
                         src={{
-                          src: "/plasmic/appel_site/images/etopLite2Png.png",
-                          fullWidth: 4234,
-                          fullHeight: 2480,
+                          src: "/plasmic/appel_site/images/etopLite3Png.png",
+                          fullWidth: 8468,
+                          fullHeight: 4962,
                           aspectRatio: undefined
                         }}
                       />
@@ -557,7 +557,7 @@ function PlasmicHome__RenderFunc(props: {
                           sty.h3__taKy
                         )}
                       >
-                        {"eTop Lite 2"}
+                        {"eTop Lite 3"}
                       </h3>
                       <div
                         className={classNames(
@@ -566,7 +566,7 @@ function PlasmicHome__RenderFunc(props: {
                           sty.text___2Wgk
                         )}
                       >
-                        {"Snappy and Sleek"}
+                        {"Slimmest laptop ever."}
                       </div>
                       <Button
                         className={classNames(
@@ -583,7 +583,7 @@ function PlasmicHome__RenderFunc(props: {
                             sty.text__b713P
                           )}
                         >
-                          {"PRE ORDER"}
+                          {"BUY NOW"}
                         </div>
                       </Button>
                     </div>
