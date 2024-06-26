@@ -467,7 +467,7 @@ function PlasmicHeade__RenderFunc(props: {
               )}
             >
               {
-                "Get 20% to 50% off your next Appel Phone when trading in any iPhone.*"
+                "We are no longer shipping to NYC customers, you must find a nearby Appel store. "
               }
             </div>
             <PlasmicLink__
@@ -480,10 +480,10 @@ function PlasmicHeade__RenderFunc(props: {
                 sty.link
               )}
               component={Link}
-              href={`/shop/appel`}
+              href={"https://portal.311.nyc.gov/article/?kanumber=KA-03612"}
               platform={"nextjs"}
             >
-              {" Shop Appel >"}
+              {"Learn more..."}
             </PlasmicLink__>
           </div>
         </Stack__>

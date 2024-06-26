@@ -73,10 +73,16 @@ import IconIcon from "./icons/PlasmicIcon__Icon"; // plasmic-import: zVudMwrt8Ur
 
 createPlasmicElementProxy;
 
-export type PlasmicFooter__VariantMembers = {};
-export type PlasmicFooter__VariantsArgs = {};
+export type PlasmicFooter__VariantMembers = {
+  alternative: "alternative";
+};
+export type PlasmicFooter__VariantsArgs = {
+  alternative?: SingleBooleanChoiceArg<"alternative">;
+};
 type VariantPropType = keyof PlasmicFooter__VariantsArgs;
-export const PlasmicFooter__VariantProps = new Array<VariantPropType>();
+export const PlasmicFooter__VariantProps = new Array<VariantPropType>(
+  "alternative"
+);
 
 export type PlasmicFooter__ArgsType = {};
 type ArgPropType = keyof PlasmicFooter__ArgsType;
@@ -88,6 +94,7 @@ export type PlasmicFooter__OverridesType = {
 };
 
 export interface DefaultFooterProps {
+  alternative?: SingleBooleanChoiceArg<"alternative">;
   className?: string;
 }
 
@@ -120,6 +127,30 @@ function PlasmicFooter__RenderFunc(props: {
   const refsRef = React.useRef({});
   const $refs = refsRef.current;
 
+  const stateSpecs: Parameters<typeof useDollarState>[0] = React.useMemo(
+    () => [
+      {
+        path: "variable",
+        type: "private",
+        variableType: "text",
+        initFunc: ({ $props, $state, $queries, $ctx }) => ""
+      },
+      {
+        path: "alternative",
+        type: "private",
+        variableType: "variant",
+        initFunc: ({ $props, $state, $queries, $ctx }) => $props.alternative
+      }
+    ],
+    [$props, $ctx, $refs]
+  );
+  const $state = useDollarState(stateSpecs, {
+    $props,
+    $ctx,
+    $queries: {},
+    $refs
+  });
+
   const globalVariants = ensureGlobalVariants({
     screen: useScreenVariantseH80Ck18IRB()
   });
@@ -138,26 +169,38 @@ function PlasmicFooter__RenderFunc(props: {
         projectcss.plasmic_tokens,
         plasmic_library_plasmic_color_type_css.plasmic_tokens,
         plasmic_antd_5_hostless_css.plasmic_tokens,
-        sty.root
+        sty.root,
+        {
+          [sty.rootalternative]: hasVariant(
+            $state,
+            "alternative",
+            "alternative"
+          )
+        }
       )}
     >
-      <div
-        className={classNames(
-          projectcss.all,
-          projectcss.__wab_text,
-          sty.text__zBgKz
-        )}
-      >
-        {"*Approved iPhones are iPhone 8 and later."}
-      </div>
       <Stack__
         as={"div"}
         data-plasmic-name={"columns"}
         data-plasmic-override={overrides.columns}
         hasGap={true}
-        className={classNames(projectcss.all, sty.columns)}
+        className={classNames(projectcss.all, sty.columns, {
+          [sty.columnsalternative]: hasVariant(
+            $state,
+            "alternative",
+            "alternative"
+          )
+        })}
       >
-        <div className={classNames(projectcss.all, sty.column___02Q7W)}>
+        <div
+          className={classNames(projectcss.all, sty.column___02Q7W, {
+            [sty.columnalternative___02Q7WLu1Ci]: hasVariant(
+              $state,
+              "alternative",
+              "alternative"
+            )
+          })}
+        >
           <Stack__
             as={"div"}
             hasGap={true}

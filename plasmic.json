@@ -2525,6 +2525,12 @@
         "name": "Screen",
         "projectId": "wBRmoS7Qf8danpDnoXZLVz",
         "contextFilePath": "plasmic/appel_site/PlasmicGlobalVariant__Screen.tsx"
+      },
+      {
+        "id": "KboTZS5D-XOv",
+        "name": "UnnamedGlobalGroupOfVariants",
+        "projectId": "wBRmoS7Qf8danpDnoXZLVz",
+        "contextFilePath": "plasmic/appel_site/PlasmicGlobalVariant__UnnamedGlobalGroupOfVariants.tsx"
       }
     ]
   },

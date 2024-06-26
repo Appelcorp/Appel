@@ -659,6 +659,7 @@ function PlasmicHome__RenderFunc(props: {
             <Footer
               data-plasmic-name={"footer"}
               data-plasmic-override={overrides.footer}
+              alternative={true}
               className={classNames("__wab_instance", sty.footer)}
             />
 

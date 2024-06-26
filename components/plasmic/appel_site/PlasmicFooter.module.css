@@ -4,22 +4,14 @@
   height: auto;
   position: relative;
   flex-direction: column-reverse;
-  background: #00000080;
+  background: #000000;
   backdrop-filter: blur(20px);
   min-width: 0;
   -webkit-backdrop-filter: blur(20px);
   padding: 0px;
 }
-.text__zBgKz {
-  position: relative;
-  width: 100%;
-  height: auto;
-  max-width: 100%;
-  text-align: center;
-  color: #ffffff;
-  font-size: 10px;
-  min-width: 0;
-  padding: 8px;
+.rootalternative {
+  background: #00000080;
 }
 .columns {
   display: flex;
